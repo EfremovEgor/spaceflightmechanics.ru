@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #0056a6;
+
+    --color-text-primary: #002159;
+    --color-link: #1e87f0;
+    --color-link-hover: #0f6ecd;
+}
+
+html {
+    @apply text-text-primary
+}
+
+.container {
+    max-width: 980px;
+
+
+
+
+}
+
+.paragraph {
+    @apply mt-4 text-justify
+}
+
+.link {
+    @apply text-link hover:text-link-hover hover:underline
+}
+
+.button-promo {
+    @apply text-white bg-primary hover:underline py-3 px-16 text-lg
+}
+
+
+.sessions-table-full {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.sessions-table-full tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.sessions-table-full tr:last-child {
+    border-bottom: none;
+}
+
+.sessions-table-full td {
+    border-right: 1px solid #ccc;
+    padding: 1rem;
+    vertical-align: top;
+}
+
+.sessions-table-full td:last-child {
+    border-right: none;
+}
