@@ -46,7 +46,7 @@ export const TechnicalSessions: {
 			"The session addresses sub-orbital, Earth to orbit and in-space propulsion, including both chemical and non-chemical rocket propulsion, air-breathing propulsion, and combined air-breathing and rocket systems. The session also welcomes advanced solar and nuclear systems for spacecraft power and propulsion, novel power generation and energy harvesting, and examine the prospects for using space-based power plants to provide energy remotely to the Earth or other planets.",
 	},
 	{
-		name: "Space Law & Economics",
+		name: "Space Policy, Law & Economics",
 		chair: "Leslie I. Tennen, Private Practice Sterns and Tennen, USA",
 		description:
 			"The session is devoted to the discussion of the complex and increasingly critical intersection of legal frameworks, policy development, and economic considerations that govern space activities. The session is also focused on governance, regulation, and sustainable economic growth in the space sector, commercialization of space exploration activities.",
