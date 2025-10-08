@@ -18,7 +18,8 @@ export const TechnicalSessions: {
 	{
 		name: "Small Satellite Missions",
 		chair: "Shufan Wu, Shanghai Jiao Tong University, China",
-		description: "Session description",
+		description:
+			"The session is focused on recent advances in small satellite class missions such as microsatellites, nanosatellites, CubeSats and small and “megaconstellations” enabling valuable results for the mission end-user. Papers should demonstrate a degree of ingenuity and innovation in small satellite utilization, design, manufacture and/or engineering. The session also covers important lessons-learned, description of notable missions in the planning stages, including topics that demonstrate the value of small satellites and their constellations, their applications.",
 	},
 	{
 		name: "Earth Observations",
@@ -27,10 +28,10 @@ export const TechnicalSessions: {
 			"The session covers all aspects of Earth observations from space, including observations related to the Earth’s environment, services to meet societal needs, and economic benefit. Aspects include programs, constellations, missions, and systems; microwave and optical sensors, land, oceanographic, atmospheric, geological, geophysical, societal, security, economic, and business domains, the associated science, ground data-processing, applications, and services.",
 	},
 	{
-		name: "Deep Space Exploration",
+		name: "Space Sensors & Actuators",
 		chair: "Giancarlo Genta, Politecnico di Torino, Italy",
 		description:
-			"This session covers deep space exploration strategies and architectures, as well as technology roadmaps. The session will address current and future missions to the Moon, planets, and asteroids, including orbital missions, robotic surface missions, as well as life sciences, resource utilisation and preparatory activities for future solar system exploration.",
+			"The technical session on Space Sensors & Actuators is focused on the essential components that enable spacecraft to perceive their environment, execute control commands, and perform scientific, operational, and exploratory tasks. This topic is devoted to advancements in sensor technologies, actuator systems, and other crucial on-board equipment that contribute to the success of space missions.",
 	},
 	{
 		name: "Space Materials & Structures",
@@ -46,7 +47,7 @@ export const TechnicalSessions: {
 	},
 	{
 		name: "Space Law & Economics",
-		chair: "Heyaw Terefe, Addis Ababa University, Ethiopia",
+		chair: "Leslie I. Tennen, Private Practice Sterns and Tennen, USA",
 		description:
 			"The session is devoted to the discussion of the complex and increasingly critical intersection of legal frameworks, policy development, and economic considerations that govern space activities. The session is also focused on governance, regulation, and sustainable economic growth in the space sector, commercialization of space exploration activities.",
 	},
