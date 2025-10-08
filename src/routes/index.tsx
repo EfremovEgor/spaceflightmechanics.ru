@@ -1,6 +1,7 @@
 import ExternalLink from "@/components/common/ExternalLink";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import { Routes } from "@/lib/routes";
+import { TechnicalSessions } from "@/lib/sessions";
 import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
@@ -69,14 +70,9 @@ function App() {
 				</strong>
 
 				<ul className="list-disc list-inside ml-4">
-					<li>Space Flight Mechanics</li>
-					<li>Space Operations</li>
-					<li>Small Satellite Missions</li>
-					<li>Earth Observations</li>
-					<li>Deep Space Exploration</li>
-					<li>Space Materials & Structures</li>
-					<li>Space Power & Propulsion</li>
-					<li>Space Law & Economics</li>
+					{TechnicalSessions.map((s) => (
+						<li>{s.name}</li>
+					))}
 				</ul>
 			</p>
 		</BasePageLayout>
