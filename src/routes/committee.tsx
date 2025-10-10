@@ -170,7 +170,7 @@ function RouteComponent() {
 	const { t } = useTranslation();
 
 	return (
-		<BasePageLayout name={t("committee.Program Committee")}>
+		<BasePageLayout name={"International Program Committee"}>
 			<p className="paragraph flex flex-col">
 				{committee.map((m) => (
 					<span>

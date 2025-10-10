@@ -43,12 +43,12 @@ function App() {
 				/>
 				, 6 Miklukho-Maklaya Str., Moscow, 117198, Russia
 				<br />
-				<strong>Abstract Submission Deadline:</strong> October 31, 2025{" "}
+				<strong>Abstract Submission Deadline:</strong> November 15, 2025{" "}
 				<br />
 				<strong>
 					Paper and Presentation Submission Deadline:
 				</strong>{" "}
-				November 15, 2025
+				November 20, 2025
 			</p>
 			<p className="paragraph">
 				Papers for the Forum shall be selected basing on the quality of
