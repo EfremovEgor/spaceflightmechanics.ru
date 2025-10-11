@@ -1,7 +1,6 @@
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import { Routes } from "@/lib/routes";
 import { createFileRoute } from "@tanstack/react-router";
-import { useTranslation } from "react-i18next";
 const committee: {
 	fullName: string;
 	affiliation: string;
