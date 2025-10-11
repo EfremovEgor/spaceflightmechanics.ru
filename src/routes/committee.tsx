@@ -167,8 +167,6 @@ export const Route = createFileRoute("/committee")({
 });
 
 function RouteComponent() {
-	const { t } = useTranslation();
-
 	return (
 		<BasePageLayout name={"International Program Committee"}>
 			<p className="paragraph flex flex-col">

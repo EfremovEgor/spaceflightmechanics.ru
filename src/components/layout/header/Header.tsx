@@ -17,7 +17,7 @@ const Header = () => {
 				<div className="container px-2 mx-auto pt-12">
 					<div className="flex flex-row justify-between">
 						<div className="flex flex-col justify-around pb-4 gap-6 text-center mx-auto sm:mx-0 sm:text-left">
-							<div className="flex flex-row gap-2 items-center align-middle justify-center sm:justify-start">
+							<div className="flex flex-row gap-4 items-center align-middle justify-center sm:justify-start">
 								<img
 									className="w-[140px] sm:w-[220px] h-auto"
 									src="/images/ras-logo.png"
