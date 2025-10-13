@@ -21,5 +21,7 @@ jobs:
               run: |
                   sshpass -p '${{ secrets.SERVER_PASSWORD }}' ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
                     cd /var/www/spaceflightmechanics.com
-                    sh ./scripts/deploy.sh
-                  '
+                    git pull origin master
+                    yarn
+                    yarn build
+                    '
