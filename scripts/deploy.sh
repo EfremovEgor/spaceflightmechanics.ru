@@ -1,4 +1,4 @@
 #!/bin/bash
 git pull origin master
-yarn
-yarn build
+~/.nvm/versions/node/v24.9.0/bin/yarn
+~/.nvm/versions/node/v24.9.0/bin/yarn build

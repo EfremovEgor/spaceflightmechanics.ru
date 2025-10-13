@@ -33,7 +33,7 @@ function App() {
 
 			<p className="paragraph">
 				<strong>Partner (African region)</strong>:{" "}
-				<strong>Skylinks International Holdings Ltd</strong>, Nairobi
+				<strong>Skylinks International Holdings Ltd</strong>, Nairobi,
 				Kenya. <br /> Phone: +254717410544, +254721406821, email:{" "}
 				<a href="mailto:catherine@skylinksinternational.co.ke">
 					catherine@skylinksinternational.co.ke
