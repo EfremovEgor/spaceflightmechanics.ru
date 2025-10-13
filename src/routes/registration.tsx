@@ -18,7 +18,17 @@ function RouteComponent() {
 			<p className="paragraph">
 				Registration payment is provided in Chinese Yuan (500 CNY), or
 				Russian Ruble (5000 RUB). The payment could be done by bank
-				transfer using the links: Chinese Yuan, Russian Ruble.
+				transfer using the following bank details:{" "}
+				<DownloadLink
+					path="/files/cny_bank_details.docx"
+					text="Chinese Yuan"
+				/>
+				,{" "}
+				<DownloadLink
+					path="/files/rub_bank_details.docx"
+					text="Russian Ruble"
+				/>
+				.
 			</p>
 			<p className="paragraph">
 				For payment in Russian Ruble, you can also use MIR bank card by
@@ -28,20 +38,6 @@ function RouteComponent() {
 					to="https://offers.rudn.ru/offer/MzIwMTI3MDAwMDAxMg=="
 				/>
 				, or press the Register Now button below.
-			</p>
-			<p className="paragraph">
-				The payment in any of two currencies could be done by bank
-				transfer using the following bank details:{" "}
-				<DownloadLink
-					path="/files/rub_bank_details.docx"
-					text="Russian Ruble"
-				/>
-				,{" "}
-				<DownloadLink
-					path="/files/cny_bank_details.docx"
-					text="Chinese Yuan"
-				/>
-				.
 			</p>
 			<p className="paragraph">
 				If you require assistance during this process, or you have any
