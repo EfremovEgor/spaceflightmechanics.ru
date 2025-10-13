@@ -17,9 +17,40 @@ jobs:
                   sudo apt-get update
                   sudo apt-get install -y sshpass
 
+            - name: Debug server environment
+              run: |
+                  sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no \
+                    ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
+                    echo "=== Debug Info ==="
+                    echo "Current directory: $(pwd)"
+                    echo "PATH: $PATH"
+                    echo "User: $(whoami)"
+                    echo "Home: $HOME"
+                    echo "Node version: $(which node 2>/dev/null || echo "node not found")"
+                    echo "Yarn version: $(which yarn 2>/dev/null || echo "yarn not found")"
+                    echo "NVM dir: $NVM_DIR"
+                    echo "=== Listing node binaries ==="
+                    ls -la ~/.nvm/versions/node/v24.9.0/bin/ || echo "Node binaries not found"
+                  '
+
             - name: Deploy to server
               run: |
-                  sshpass -p '${{ secrets.SERVER_PASSWORD }}' ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
-                    cd /var/www/spaceflightmechanics.com
-                    sh ./scripts/deploy.sh
-                    '
+                  sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no \
+                  ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
+                  set -e
+                  echo "Starting deployment..."
+
+                  cd /var/www/spaceflightmechanics.com
+                  git pull origin master
+
+                  # Используем полные пути к бинарникам
+                  export PATH="$HOME/.nvm/versions/node/v24.9.0/bin:$PATH"
+
+                  echo "Running yarn install..."
+                  yarn install
+
+                  echo "Running yarn build..."
+                  yarn build
+
+                  echo "Deployment completed successfully!"
+                  '
