@@ -26,11 +26,15 @@ function App() {
 				Forum is organized by{" "}
 				<strong>Russian Academy of Sciences</strong> and{" "}
 				<strong>RUDN University</strong>.
+				<br />
+				Phone: +7 933 6677352, email: orgcom@spacescitech.com (Local
+				Organizing Committee).
 			</p>
+
 			<p className="paragraph">
 				<strong>Partner (African region)</strong>:{" "}
 				<strong>Skylinks International Holdings Ltd</strong>, Nairobi
-				Kenya. <br /> Tel.: +254 717410544, +254 721406821. Email:{" "}
+				Kenya. <br /> Phone: +254 717410544, +254 721406821, email:{" "}
 				<a href="mailto:catherine@skylinksinternational.co.ke">
 					catherine@skylinksinternational.co.ke
 				</a>

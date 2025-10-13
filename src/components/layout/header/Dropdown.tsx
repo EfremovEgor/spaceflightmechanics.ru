@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Dropdown = ({ title, children }: PropsWithChildren<Props>) => {
-	const [open, setOpen] = useState(true);
+	const [open, setOpen] = useState(false);
 	let timeoutId: ReturnType<typeof setTimeout>;
 
 	const handleEnter = () => {
