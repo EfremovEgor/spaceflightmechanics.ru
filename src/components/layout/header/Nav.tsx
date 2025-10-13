@@ -14,14 +14,14 @@ const Nav = () => {
 					<div className="flex flex-col gap-1 px-2 py-4">
 						{Object.values(route.routes).map((r) =>
 							r.disabled ? (
-								<p className="text-gray-400">
+								<p className="text-gray-400 text-nowrap">
 									{t(`routes.${r.name}`)}
 								</p>
 							) : (
 								<Link
 									to={`${route.path}/${r.path}` as string}
 									key={r.name}
-									className="hover:underline [&.active]:underline [&.active]:link"
+									className="hover:underline [&.active]:underline [&.active]:link text-nowrap"
 								>
 									{t(`routes.${r.name}`)}
 								</Link>

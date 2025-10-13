@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Dropdown = ({ title, children }: PropsWithChildren<Props>) => {
-	const [open, setOpen] = useState(false);
+	const [open, setOpen] = useState(true);
 	let timeoutId: ReturnType<typeof setTimeout>;
 
 	const handleEnter = () => {
@@ -38,7 +38,7 @@ const Dropdown = ({ title, children }: PropsWithChildren<Props>) => {
 
 			<div
 				className={`absolute left-1/2 -translate-x-1/2 top-13 shadow bg-white
-                    w-full transition-all duration-200 origin-top 
+                    w-fit transition-all duration-200 origin-top 
                     ${
 						open
 							? "opacity-100 scale-100"
