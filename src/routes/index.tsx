@@ -28,10 +28,9 @@ function App() {
 				<strong>RUDN University</strong>.
 			</p>
 			<p className="paragraph">
-				<strong>Partner (African region)</strong>: <br /> Skylinks
-				International Holdings Ltd, Nairobi Kenya. <br /> Tel.: +254
-				717410544, +254 721406821.
-				<br /> Email:{" "}
+				<strong>Partner (African region)</strong>:{" "}
+				<strong>Skylinks International Holdings Ltd</strong>, Nairobi
+				Kenya. <br /> Tel.: +254 717410544, +254 721406821. Email:{" "}
 				<a href="mailto:catherine@skylinksinternational.co.ke">
 					catherine@skylinksinternational.co.ke
 				</a>
