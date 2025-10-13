@@ -40,9 +40,12 @@ const Nav = () => {
 			</Link>
 		);
 	};
+
 	return (
-		<div className="container px-2 mx-auto text-lg py-6 justify-between hidden md:flex">
-			{Object.values(Routes).map((v) => resolveRoute(v))}
+		<div className="sticky top-0 z-50 bg-primary w-full">
+			<div className="container px-2 mx-auto text-lg py-6 justify-between hidden md:flex">
+				{Object.values(Routes).map((v) => resolveRoute(v))}
+			</div>
 		</div>
 	);
 };
