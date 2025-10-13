@@ -12,15 +12,21 @@ const Nav = () => {
 			return (
 				<Dropdown title={t(`routes.${route.name}`)}>
 					<div className="flex flex-col gap-1 px-2 py-4">
-						{Object.values(route.routes).map((r) => (
-							<Link
-								to={`${route.path}/${r.path}` as string}
-								key={r.name}
-								className="hover:underline [&.active]:underline [&.active]:link"
-							>
-								{t(`routes.${r.name}`)}
-							</Link>
-						))}
+						{Object.values(route.routes).map((r) =>
+							r.disabled ? (
+								<p className="text-gray-400">
+									{t(`routes.${r.name}`)}
+								</p>
+							) : (
+								<Link
+									to={`${route.path}/${r.path}` as string}
+									key={r.name}
+									className="hover:underline [&.active]:underline [&.active]:link"
+								>
+									{t(`routes.${r.name}`)}
+								</Link>
+							)
+						)}
 					</div>
 				</Dropdown>
 			);

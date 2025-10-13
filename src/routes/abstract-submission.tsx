@@ -1,3 +1,4 @@
+import DownloadLink from "@/components/common/DownloadLink";
 import ExternalLink from "@/components/common/ExternalLink";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import { Routes } from "@/lib/routes";
@@ -30,18 +31,23 @@ function RouteComponent() {
 					to="https://confchair.org/call_for_papers/issf2025/submit?lang=en"
 					text="web-based submission system"
 				/>{" "}
-				not later than October 31, 2025.
+				not later than November 15, 2025.
 			</p>
 			<p className="paragraph">
-				<strong>Manuscripts</strong> could be submitted in English, or
-				Russian. Manuscripts are to be prepared using the template here:
-				in English, or Russian.
+				<strong>Manuscripts</strong> could be prepared in English, or
+				Russian languages using the following{" "}
+				<DownloadLink
+					path="/files/manuscript_template.docx"
+					text="Manuscript template"
+				/>
+				, and submitted in .docx format not later than November 20,
+				2025.
 			</p>
 			<p className="paragraph">
-				<strong>Presentations</strong> are to be submitted in English,
-				though the report could be done in English or Russian.
-				Presentations are to be prepared in .pptx format (16x9 aspect
-				ratio).
+				<strong>Presentations</strong> are prepared in English language
+				and submitted in .pptx format (16x9 aspect ratio) not later than
+				November 20, 2025. The report could be made in English or
+				Russian.
 			</p>
 			<p className="paragraph">
 				If you require assistance during the submission process, please

@@ -63,27 +63,38 @@ const NavDropdown = () => {
 											</span>
 											<div className="flex flex-col ml-4">
 												{Object.values(r.routes).map(
-													(s) => (
-														<Link
-															onClick={
-																handleLeave
-															}
-															to={
-																`${r.path}/${s.path}` as string
-															}
-															key={s.name}
-															className="text-white [&.active]:underline"
-														>
-															{t(
-																`routes.${s.name}`
-															)}
-														</Link>
-													)
+													(s) =>
+														s.disabled ? (
+															<p className="text-gray-300">
+																{t(
+																	`routes.${s.name}`
+																)}
+															</p>
+														) : (
+															<Link
+																onClick={
+																	handleLeave
+																}
+																to={
+																	`${r.path}/${s.path}` as string
+																}
+																key={s.name}
+																className="text-white [&.active]:underline"
+															>
+																{t(
+																	`routes.${s.name}`
+																)}
+															</Link>
+														)
 												)}
 											</div>
 										</div>
 									);
-								return (
+								return r.disabled ? (
+									<p className="text-gray-400">
+										{t(`routes.${r.name}`)}
+									</p>
+								) : (
 									<Link
 										onClick={handleLeave}
 										to={r.path}

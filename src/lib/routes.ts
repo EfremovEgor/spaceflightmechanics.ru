@@ -9,6 +9,7 @@ export interface Route {
 	routes?: { [key: string]: Route };
 	hidden?: boolean;
 	showInNav?: boolean;
+	disabled?: boolean;
 }
 export type TRoutes = { [key: string]: Route };
 
@@ -52,6 +53,7 @@ export const Routes: TRoutes = {
 						title: makeMetaTitle("Plenary Sessions"),
 					},
 				],
+				disabled: true,
 			},
 			technical_sessions: {
 				name: "technical_sessions",
@@ -72,6 +74,7 @@ export const Routes: TRoutes = {
 						title: makeMetaTitle("Highlight Lectures"),
 					},
 				],
+				disabled: true,
 			},
 		},
 	},

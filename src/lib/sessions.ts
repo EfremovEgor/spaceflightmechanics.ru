@@ -7,31 +7,31 @@ export const TechnicalSessions: {
 		name: "Space Flight Mechanics",
 		chair: "Antonio Prado, National Institute for Space Research (INPE), Brazil",
 		description:
-			"The session addresses advances in orbital mechanics, attitude dynamics, guidance, navigation and control of space systems, including applications related to the guidance, navigation and control of Earth-orbiting and interplanetary spacecraft, formation flying, rendezvous and docking. The session also covers topics on natural orbital dynamics of spacecraft in the Solar System and orbit determination.",
+			"The session addresses advances in orbital mechanics, attitude dynamics, guidance, navigation and control of single or multi-spacecraft systems as well as space robotics, including applications related to the guidance, navigation and control of Earth-orbiting and interplanetary spacecraft, formation flying, rendezvous and docking. The session also covers topics on natural orbital dynamics of spacecraft in the Solar System and orbit determination.",
 	},
 	{
 		name: "Space Operations",
 		chair: "Renuganth Varatharajoo, University of Putra Malaysia, Malaysia",
 		description:
-			"The session is dedicated to the intricate processes involved in designing, executing, and refining spacecraft missions. This topic covers a variety of methodologies and innovative approaches crucial for ensuring the success of space missions, from conceptual design through launch, operation, and post-mission evaluation. The focus of the topic is on integrating systems engineering principles, operational strategies, and optimization techniques to maximize mission performance and scientific results.",
+			"The session is dedicated to the intricate processes involved in designing and executing spacecraft missions in near and deep space, including planetary defense and near-Earth objects. This topic covers a variety of innovative approaches crucial for ensuring the success of space missions, from conceptual design through launch, operation, and post-mission evaluation. The focus of the topic is on operational strategies and optimization techniques to maximize mission performance.",
 	},
 	{
 		name: "Small Satellite Missions",
 		chair: "Shufan Wu, Shanghai Jiao Tong University, China",
 		description:
-			"The session is focused on recent advances in small satellite class missions such as microsatellites, nanosatellites, CubeSats and small and “megaconstellations” enabling valuable results for the mission end-user. Papers should demonstrate a degree of ingenuity and innovation in small satellite utilization, design, manufacture and/or engineering. The session also covers important lessons-learned, description of notable missions in the planning stages, including topics that demonstrate the value of small satellites and their constellations, their applications.",
+			"The session is focused on recent advances in small satellite class missions such as microsatellites, nanosatellites, CubeSats, as well as small satellites mega-constellations enabling valuable results for the mission end-user. The session also covers important lessons-learned topics, description of past and perspective space missions, different applications of small satellites and their constellations.",
 	},
 	{
 		name: "Earth Observations",
-		chair: "Tarun Singh Symbiosis International (Deemed University), India",
+		chair: "Tarun Singh, Symbiosis International (Deemed University), India",
 		description:
-			"The session covers all aspects of Earth observations from space, including observations related to the Earth’s environment, services to meet societal needs, and economic benefit. Aspects include programs, constellations, missions, and systems; microwave and optical sensors, land, oceanographic, atmospheric, geological, geophysical, societal, security, economic, and business domains, the associated science, ground data-processing, applications, and services.",
+			"The session covers technological aspects of Earth observations from space in favor of different industries and rational nature management, including implementation of AIML for analyzing massive amounts of data collected by Earth observation missions, revealing insights through geospatial analytics that are crucial for resource managements, urban planning, oceanographic, atmospheric, geological, geophysical, societal, security, and more. ",
 	},
 	{
 		name: "Space Sensors & Actuators",
-		chair: "Giancarlo Genta, Politecnico di Torino, Italy",
+		chair: "Emmanuel Mashonjowa, University of Zimbabwe, Zimbabve",
 		description:
-			"The technical session on Space Sensors & Actuators is focused on the essential components that enable spacecraft to perceive their environment, execute control commands, and perform scientific, operational, and exploratory tasks. This topic is devoted to advancements in sensor technologies, actuator systems, and other crucial on-board equipment that contribute to the success of space missions.",
+			"The session addresses essential components that enable spacecraft to perceive their environment, execute control commands, and perform scientific and operational tasks, technological improvements. The session is focused on new developments in sensor technologies and actuator systems, like MEMS-based sensors and piezoelectric actuators, and other crucial on-board equipment that make sensors and actuators smaller and more functional, and contribute to the success of space missions.",
 	},
 	{
 		name: "Space Materials & Structures",
@@ -43,13 +43,13 @@ export const TechnicalSessions: {
 		name: "Space Power & Propulsion",
 		chair: "Felix Mora-Camino, French Civil Aviation University, France",
 		description:
-			"The session addresses sub-orbital, Earth to orbit and in-space propulsion, including both chemical and non-chemical rocket propulsion, air-breathing propulsion, and combined air-breathing and rocket systems. The session also welcomes advanced solar and nuclear systems for spacecraft power and propulsion, novel power generation and energy harvesting, and examine the prospects for using space-based power plants to provide energy remotely to the Earth or other planets.",
+			"The session addresses sub-orbital, Earth to orbit and in-space propulsion, including both chemical and non-chemical rocket propulsion, air-breathing propulsion, and combined air-breathing and rocket systems. The session welcomes advanced solar and nuclear systems for spacecraft power and propulsion, novel power generation and energy harvesting, and examine the prospects for using space-based power plants to provide energy remotely to the Earth or other planets.",
 	},
 	{
 		name: "Space Policy, Law & Economics",
 		chair: "Leslie I. Tennen, Private Practice Sterns and Tennen, USA",
 		description:
-			"The session is devoted to the discussion of the complex and increasingly critical intersection of legal frameworks, policy development, and economic considerations that govern space activities. The session is also focused on governance, regulation, and sustainable economic growth in the space sector, commercialization of space exploration activities.",
+			"The session is devoted to the discussion of the complex and increasingly critical intersection of technical policy development, legal frameworks, and economic considerations that govern space activities. The session is also focused on governance, regulation, and sustainable economic growth in the space sector, commercialization of space exploration activities, current initiatives for commercial space access and their technological developments.",
 	},
 ];
 

@@ -13,9 +13,9 @@ const resources = {
 				registration: "Registration",
 				forums: "Forums",
 				contact: "Contact",
-				plenary_sessions: "Plenary Sessions",
+				plenary_sessions: "Plenary Sessions (TBC)",
 				technical_sessions: "Technical Sessions",
-				highlight_lectures: "Highlight Lectures",
+				highlight_lectures: "Highlight Lectures (TBC)",
 			},
 			home: {
 				About: "About",

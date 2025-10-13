@@ -25,7 +25,9 @@ function RouteComponent() {
 								</h2>
 								<div className="mt-4">
 									<strong>Session Chair:</strong> <br />
-									{TechnicalSessions[0].chair}
+									<p className="line-clamp-2 h-[2.8em] ">
+										{TechnicalSessions[0].chair}
+									</p>
 									<p className="paragraph">
 										{TechnicalSessions[0].description}
 									</p>
@@ -39,7 +41,9 @@ function RouteComponent() {
 								</h2>
 								<div className="mt-4">
 									<strong>Session Chair:</strong> <br />
-									{TechnicalSessions[1].chair}
+									<p className="line-clamp-2 h-[2.8em]">
+										{TechnicalSessions[1].chair}
+									</p>
 									<p className="paragraph">
 										{TechnicalSessions[1].description}
 									</p>
@@ -55,7 +59,9 @@ function RouteComponent() {
 								</h2>
 								<div className="mt-4">
 									<strong>Session Chair:</strong> <br />
-									{TechnicalSessions[2].chair}
+									<p className="line-clamp-2 h-[2.8em]">
+										{TechnicalSessions[2].chair}
+									</p>
 									<p className="paragraph">
 										{TechnicalSessions[2].description}
 									</p>
@@ -69,7 +75,9 @@ function RouteComponent() {
 								</h2>
 								<div className="mt-4">
 									<strong>Session Chair:</strong> <br />
-									{TechnicalSessions[3].chair}
+									<p className="line-clamp-2 h-[2.8em] ">
+										{TechnicalSessions[3].chair}
+									</p>
 									<p className="paragraph">
 										{TechnicalSessions[3].description}
 									</p>
@@ -85,7 +93,9 @@ function RouteComponent() {
 								</h2>
 								<div className="mt-4">
 									<strong>Session Chair:</strong> <br />
-									{TechnicalSessions[4].chair}
+									<p className="line-clamp-2 h-[2.8em]">
+										{TechnicalSessions[4].chair}
+									</p>
 									<p className="paragraph">
 										{TechnicalSessions[4].description}
 									</p>
@@ -99,7 +109,9 @@ function RouteComponent() {
 								</h2>
 								<div className="mt-4">
 									<strong>Session Chair:</strong> <br />
-									{TechnicalSessions[5].chair}
+									<p className="line-clamp-2 h-[2.8em]">
+										{TechnicalSessions[5].chair}
+									</p>
 									<p className="paragraph">
 										{TechnicalSessions[5].description}
 									</p>
@@ -115,7 +127,9 @@ function RouteComponent() {
 								</h2>
 								<div className="mt-4">
 									<strong>Session Chair:</strong> <br />
-									{TechnicalSessions[6].chair}
+									<p className="line-clamp-2 h-[2.8em]">
+										{TechnicalSessions[6].chair}
+									</p>
 									<p className="paragraph">
 										{TechnicalSessions[6].description}
 									</p>
@@ -129,7 +143,9 @@ function RouteComponent() {
 								</h2>
 								<div className="mt-4">
 									<strong>Session Chair:</strong> <br />
-									{TechnicalSessions[7].chair}
+									<p className="line-clamp-2 h-[2.8em]">
+										{TechnicalSessions[7].chair}
+									</p>
 									<p className="paragraph">
 										{TechnicalSessions[7].description}
 									</p>

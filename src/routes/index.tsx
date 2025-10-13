@@ -28,10 +28,22 @@ function App() {
 				<strong>RUDN University</strong>.
 			</p>
 			<p className="paragraph">
+				<strong>Partner (African region)</strong>: <br /> Skylinks
+				International Holdings Ltd, Nairobi Kenya. <br /> Tel.: +254
+				717410544, +254 721406821.
+				<br /> Email:{" "}
+				<a href="mailto:catherine@skylinksinternational.co.ke">
+					catherine@skylinksinternational.co.ke
+				</a>
+				.
+			</p>
+			<p className="paragraph">
 				The <strong>Hybrid format (on-site and online)</strong> is
 				supposed. We encourage researchers to take part in face-to-face
 				activities, but as for the willing of the participants, it is
 				possible an online experience as well.{" "}
+			</p>
+			<p className="paragraph">
 				<strong>Working languages</strong>: Russian and English
 				(simultaneous translation).
 			</p>
