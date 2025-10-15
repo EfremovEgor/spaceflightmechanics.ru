@@ -37,8 +37,8 @@ function RouteComponent() {
 				Committee).
 			</p>
 			<p className="paragraph">
-				<strong>Manuscripts</strong> could be prepared in English, or
-				Russian languages using the following{" "}
+				<strong>Manuscripts</strong> could be prepared in English or
+				Russian languages, using the following{" "}
 				<DownloadLink
 					path="/files/manuscript_template.docx"
 					text="Manuscript template"
