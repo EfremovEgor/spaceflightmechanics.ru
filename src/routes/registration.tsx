@@ -1,5 +1,3 @@
-import DownloadLink from "@/components/common/DownloadLink";
-import ExternalLink from "@/components/common/ExternalLink";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import { Routes } from "@/lib/routes";
 import { createFileRoute } from "@tanstack/react-router";
