@@ -6,7 +6,7 @@ const resources = {
 		translation: {
 			"Welcome to React": "Welcome to React and react-i18next",
 			routes: {
-				home: "Home",
+				home: "About",
 				committee: "Committee",
 				sessions_and_highlights: "Sessions & Highlights",
 				submission: "Submission",

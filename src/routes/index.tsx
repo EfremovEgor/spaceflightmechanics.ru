@@ -32,7 +32,7 @@ function App() {
 			</p>
 
 			<p className="paragraph">
-				<strong>Partner (African region)</strong>:{" "}
+				<strong>Partner in African region</strong>:{" "}
 				<strong>Skylinks International Holdings Ltd</strong>, Nairobi,
 				Kenya. <br /> Phone: +254717410544, +254721406821, email:{" "}
 				<a href="mailto:catherine@skylinksinternational.co.ke">
@@ -41,15 +41,21 @@ function App() {
 				.
 			</p>
 			<p className="paragraph">
-				The <strong>Hybrid format (on-site and online)</strong> is
-				supposed. We encourage researchers to take part in face-to-face
-				activities, but as for the willing of the participants, it is
-				possible an online experience as well.{" "}
+				The participation in the Forum is free. The{" "}
+				<strong>Hybrid format (on-site and online)</strong> is supposed.
+				The online format is supported only for participants outside
+				Moscow region. Participants can attend the Forum on-site and
+				online with or without presentation. To participate with
+				presentation it is necessary to go through the submission and
+				registration. To participate without presentation to go through
+				only registration.
 			</p>
+
 			<p className="paragraph">
-				<strong>Working languages</strong>: Russian and English
+				<strong>Working languages</strong>: English and Russian
 				(simultaneous translation).
 			</p>
+
 			<p className="paragraph">
 				<strong>Venue:</strong>{" "}
 				<ExternalLink
@@ -60,19 +66,21 @@ function App() {
 				<br />
 				<strong>Abstract Submission Deadline:</strong> November 15, 2025{" "}
 				<br />
-				<strong>
-					Paper and Presentation Submission Deadline:
-				</strong>{" "}
-				November 20, 2025
+				<strong>Presentation Submission deadline:</strong> November 20,
+				2025 <br />
+				<strong>Manuscript Submission deadline:</strong> January 20,
+				2026
 			</p>
 			<p className="paragraph">
 				Papers for the Forum shall be selected basing on the quality of
 				500 word abstracts. For accepted papers presentations and
-				complete manuscripts are to be submitted. Forum proceedings will
-				be published as special volume in{" "}
-				<strong>Advances in Mechanics and Control</strong> by RUDN
-				University. The best papers will be recommended for publication
-				in special issue of{" "}
+				complete manuscripts are to be submitted in accordance with the
+				deadlines.
+			</p>
+			<p className="paragraph">
+				Manuscripts will be published as special volume in Advances in
+				Mechanics and Control. The best papers will be recommended for
+				publication in special issue of{" "}
 				<ExternalLink
 					text=" Acta Astronautica"
 					to="https://www.sciencedirect.com/journal/acta-astronautica"
@@ -89,6 +97,20 @@ function App() {
 						<li>{s.name}</li>
 					))}
 				</ul>
+			</p>
+			<p className="paragraph">
+				The on-site participants of the Forum, who present technical
+				papers or/and Highlight Lectures are provided with full support
+				of Local Organising Committee: lunch during the dates of the
+				Forum, accommodation support in Moscow for participants outside
+				Moscow region. All the participants are welcomed by coffebreaks
+				and our warm reception.
+			</p>
+
+			<p className="paragraph">
+				The professional and cultural tours are provided for on-site
+				participants, presenting technical papers and highlight lecture
+				(by invitation only).
 			</p>
 		</BasePageLayout>
 	);

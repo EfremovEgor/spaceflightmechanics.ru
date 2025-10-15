@@ -14,7 +14,7 @@ export const Route = createFileRoute("/registration")({
 function RouteComponent() {
 	return (
 		<BasePageLayout name="Registration">
-			<p className="paragraph">Be sure to register early and save!</p>
+			{/* <p className="paragraph">Be sure to register early and save!</p>
 			<p className="paragraph">
 				Registration payment is provided in Chinese Yuan (500 CNY), or
 				Russian Ruble (5000 RUB). The payment could be done by bank
@@ -38,7 +38,14 @@ function RouteComponent() {
 					to="https://offers.rudn.ru/offer/MzIwMTI3MDAwMDAxMg=="
 				/>
 				, or press the Register Now button below.
-			</p>
+			</p> */}
+
+			<a
+				className="button-promo uppercase mx-auto block w-fit"
+				href="https://offers.rudn.ru/offer/MzIwMTI3MDAwMDAxMg=="
+			>
+				Register now
+			</a>
 			<p className="paragraph">
 				If you require assistance during this process, or you have any
 				other queries, please, contact organization committee via{" "}
@@ -46,12 +53,6 @@ function RouteComponent() {
 					orgcom@spacescitech.com
 				</a>
 			</p>
-			<a
-				className="button-promo uppercase mx-auto block w-fit mt-8"
-				href="https://offers.rudn.ru/offer/MzIwMTI3MDAwMDAxMg=="
-			>
-				Register now
-			</a>
 		</BasePageLayout>
 	);
 }

@@ -21,17 +21,20 @@ function RouteComponent() {
 				clearances of their papers.
 			</p>
 			<p className="paragraph">
-				Papers are selected basing on the quality of 500 word abstracts.
-				For accepted papers presentations and complete manuscripts are
-				to be submitted.
-			</p>
-			<p className="paragraph">
 				<strong>Abstracts</strong> are submitted in English language via{" "}
 				<ExternalLink
 					to="https://confchair.org/call_for_papers/issf2025/submit?lang=en"
 					text="web-based submission system"
-				/>{" "}
-				not later than November 15, 2025.
+				/>
+				.
+			</p>
+
+			<p className="paragraph">
+				<strong>Presentations</strong> are prepared in English language
+				only and submitted in .pptx format (16x9 aspect ratio). The
+				report is made in English (Russian Language is possible for
+				special presentations after coordination with Local Organizing
+				Committee).
 			</p>
 			<p className="paragraph">
 				<strong>Manuscripts</strong> could be prepared in English, or
@@ -40,14 +43,7 @@ function RouteComponent() {
 					path="/files/manuscript_template.docx"
 					text="Manuscript template"
 				/>
-				, and submitted in .docx format not later than November 20,
-				2025.
-			</p>
-			<p className="paragraph">
-				<strong>Presentations</strong> are prepared in English language
-				and submitted in .pptx format (16x9 aspect ratio) not later than
-				November 20, 2025. The report could be made in English or
-				Russian.
+				, and submitted in .docx format.
 			</p>
 			<p className="paragraph">
 				If you require assistance during the submission process, please

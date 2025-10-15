@@ -32,6 +32,8 @@ function RouteComponent() {
 						<strong>Local Organizing Committee:</strong>
 						<br />
 						Email: orgcom@spacescitech.com
+						<br />
+						Phone +79336677352
 					</p>
 				</div>
 			</div>
