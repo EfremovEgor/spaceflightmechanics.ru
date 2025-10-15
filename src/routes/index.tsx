@@ -57,11 +57,11 @@ function App() {
 				online with or without presentation. To participate with
 				presentation it is necessary to go through the{" "}
 				<Link className="link" to="/abstract-submission">
-					submission
+					Submission
 				</Link>{" "}
 				and{" "}
 				<Link className="link" to="/registration">
-					registration
+					Registration
 				</Link>{" "}
 				processes. Participation without presentation requires only
 				registration.
