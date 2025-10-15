@@ -117,7 +117,7 @@ function App() {
 			<p className="paragraph">
 				The on-site participants of the Forum with presentations or
 				highlight lectures are provided with full support of Local
-				Organising Committee, including: lunch during the dates of the
+				Organizing Committee, including: lunch during the dates of the
 				Forum, accommodation support, professional and cultural tours
 				(by invitation only). All the participants are welcomed by
 				coffebreaks and our warm reception.
