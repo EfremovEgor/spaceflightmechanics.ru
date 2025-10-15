@@ -22,8 +22,8 @@ function App() {
 					6<sup>th</sup> SciTech Forum on Space Engineering and
 					Operations Support
 				</strong>{" "}
-				is taking place on December 2-4, 2025 in Moscow, Russia. The
-				Forum is organized by{" "}
+				is taking place on December 2-4, 2025 in Moscow, Russian
+				Federation. The Forum is organized by{" "}
 				<strong>Russian Academy of Sciences</strong> and{" "}
 				<strong>RUDN University</strong>.
 				<br />
@@ -52,7 +52,7 @@ function App() {
 			<p className="paragraph">
 				The participation in the Forum is free. The{" "}
 				<strong>Hybrid format (on-site and online)</strong> is supposed.
-				The online format is supported only for participants outside
+				The online format is supposed only for participants outside
 				Moscow region. Participants can attend the Forum on-site and
 				online with or without presentation. To participate with
 				presentation it is necessary to go through the{" "}
