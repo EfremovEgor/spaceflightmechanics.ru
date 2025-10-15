@@ -2,7 +2,7 @@ import ExternalLink from "@/components/common/ExternalLink";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import { Routes } from "@/lib/routes";
 import { TechnicalSessions } from "@/lib/sessions";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
 export const Route = createFileRoute("/")({
@@ -27,15 +27,24 @@ function App() {
 				<strong>Russian Academy of Sciences</strong> and{" "}
 				<strong>RUDN University</strong>.
 				<br />
-				Phone: +79336677352, email: orgcom@spacescitech.com (Local
-				Organizing Committee).
+				Phone: +79336677352, email:{" "}
+				<a
+					className="hover:underline"
+					href="mailto:orgcom@spacescitech.com."
+				>
+					orgcom@spacescitech.com
+				</a>{" "}
+				(Local Organizing Committee).
 			</p>
 
 			<p className="paragraph">
 				<strong>Partner in African region</strong>:{" "}
 				<strong>Skylinks International Holdings Ltd</strong>, Nairobi,
 				Kenya. <br /> Phone: +254717410544, +254721406821, email:{" "}
-				<a href="mailto:catherine@skylinksinternational.co.ke">
+				<a
+					className="hover:underline"
+					href="mailto:catherine@skylinksinternational.co.ke"
+				>
 					catherine@skylinksinternational.co.ke
 				</a>
 				.
@@ -46,9 +55,16 @@ function App() {
 				The online format is supported only for participants outside
 				Moscow region. Participants can attend the Forum on-site and
 				online with or without presentation. To participate with
-				presentation it is necessary to go through the submission and
-				registration. To participate without presentation to go through
-				only registration.
+				presentation it is necessary to go through the{" "}
+				<Link className="link" to="/abstract-submission">
+					submission
+				</Link>{" "}
+				and{" "}
+				<Link className="link" to="/registration">
+					registration
+				</Link>{" "}
+				processes. Participation without presentation requires only
+				registration.
 			</p>
 
 			<p className="paragraph">
@@ -78,9 +94,9 @@ function App() {
 				deadlines.
 			</p>
 			<p className="paragraph">
-				Manuscripts will be published as special volume in Advances in
-				Mechanics and Control. The best papers will be recommended for
-				publication in special issue of{" "}
+				Manuscripts will be published in the special volume in Advances
+				in Mechanics and Control. The best papers will be recommended
+				for publication in special issue of{" "}
 				<ExternalLink
 					text=" Acta Astronautica"
 					to="https://www.sciencedirect.com/journal/acta-astronautica"
@@ -99,12 +115,12 @@ function App() {
 				</ul>
 			</p>
 			<p className="paragraph">
-				The on-site participants of the Forum, who present technical
-				papers or/and Highlight Lectures are provided with full support
-				of Local Organising Committee: lunch during the dates of the
-				Forum, accommodation support in Moscow for participants outside
-				Moscow region. All the participants are welcomed by coffebreaks
-				and our warm reception.
+				The on-site participants of the Forum with presentations /
+				highlight lectures are provided with full support of Local
+				Organising Committee, including: lunch during the dates of the
+				Forum, accommodation support, professional and cultural tours(by
+				invitation only). All the participants are welcomed by
+				coffebreaks and our warm reception.
 			</p>
 
 			<p className="paragraph">

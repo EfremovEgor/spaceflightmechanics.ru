@@ -39,7 +39,7 @@ function RouteComponent() {
 			</p> */}
 
 			<a
-				className="button-promo uppercase mx-auto block w-fit"
+				className="button-promo uppercase mx-auto block w-fit my-16"
 				href="https://offers.rudn.ru/offer/MzIwMTI3MDAwMDAxMg=="
 			>
 				Register now

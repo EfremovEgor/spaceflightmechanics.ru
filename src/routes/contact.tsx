@@ -23,7 +23,7 @@ function RouteComponent() {
 				<div>
 					<p className="paragraph">
 						<strong>Venue address:</strong> <br />
-						6, Miklukho-Maklaya str.
+						6, Miklukho-Maklaya Str.
 						<br /> 117198, Moscow
 						<br /> Russian Federation
 					</p>
@@ -31,9 +31,18 @@ function RouteComponent() {
 					<p className="paragraph">
 						<strong>Local Organizing Committee:</strong>
 						<br />
-						Email: orgcom@spacescitech.com
+						Email:{" "}
+						<a
+							className="hover:underline"
+							href="mailto:orgcom@spacescitech.com"
+						>
+							orgcom@spacescitech.com
+						</a>
 						<br />
-						Phone +79336677352
+						Phone:{" "}
+						<a className="hover:underline" href="tel:+79336677352">
+							+79336677352
+						</a>
 					</p>
 				</div>
 			</div>
