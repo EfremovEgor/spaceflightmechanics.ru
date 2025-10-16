@@ -22,8 +22,7 @@ function App() {
 					6<sup>th</sup> SciTech Forum on Space Engineering and
 					Operations Support
 				</strong>{" "}
-				is taking place on December 2-4, 2025 in Moscow, Russian
-				Federation.{" "}
+				is taking place on December 2-4, 2025 in Moscow, Russia.{" "}
 			</p>
 			<p className="paragraph">
 				The Forum is organized by{" "}
