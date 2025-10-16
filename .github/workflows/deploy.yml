@@ -25,7 +25,7 @@ jobs:
                   echo "Starting deployment..."
 
                   cd /var/www/spacescitech.com/backend/
-                  git pull origin master
+                  git pull origin backend
 
                   echo "Running docker compose"
                   docker compose up --build -d
