@@ -13,7 +13,7 @@ export const Route = createFileRoute("/abstract-submission")({
 
 function RouteComponent() {
 	return (
-		<BasePageLayout name="Submission Guidelines">
+		<BasePageLayout name="Submission">
 			<p className="paragraph">
 				All papers must be original and not simultaneously submitted to
 				another journal or conference. Authors are responsible to obtain
