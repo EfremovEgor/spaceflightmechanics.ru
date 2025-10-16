@@ -55,3 +55,27 @@ html {
 .sessions-table-full td:last-child {
     border-right: none;
 }
+
+.form {
+    @apply space-y-4
+}
+
+.form-field {
+    @apply flex flex-col
+}
+
+.form-input {
+    @apply px-2 py-1 border rounded
+}
+
+.form-error {
+    @apply text-red-500 text-sm
+}
+
+.form-label {
+    @apply text-lg flex flex-row gap-2 items-center
+}
+
+.form-checkbox {
+    @apply w-5 h-5
+}

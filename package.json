@@ -11,21 +11,27 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
+		"@hookform/resolvers": "^5.2.2",
 		"@tailwindcss/vite": "^4.1.13",
 		"@tanstack/react-devtools": "^0.2.2",
 		"@tanstack/react-router": "^1.132.0",
 		"@tanstack/react-router-devtools": "^1.132.0",
 		"@tanstack/router-plugin": "^1.132.0",
+		"axios": "^1.12.2",
+		"country-list": "^2.4.1",
 		"i18next": "^25.5.2",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
+		"react-hook-form": "^7.65.0",
 		"react-i18next": "^16.0.0",
-		"tailwindcss": "^4.1.13"
+		"tailwindcss": "^4.1.13",
+		"zod": "^4.1.12"
 	},
 	"devDependencies": {
 		"@iconify/react": "^6.0.2",
 		"@testing-library/dom": "^10.4.0",
 		"@testing-library/react": "^16.2.0",
+		"@types/country-list": "^2.1.4",
 		"@types/node": "^22.10.2",
 		"@types/react": "^19.0.8",
 		"@types/react-dom": "^19.0.3",
