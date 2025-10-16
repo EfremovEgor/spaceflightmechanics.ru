@@ -23,7 +23,10 @@ function App() {
 					Operations Support
 				</strong>{" "}
 				is taking place on December 2-4, 2025 in Moscow, Russian
-				Federation. The Forum is organized by{" "}
+				Federation.{" "}
+			</p>
+			<p className="paragraph">
+				The Forum is organized by{" "}
 				<strong>Russian Academy of Sciences</strong> and{" "}
 				<strong>RUDN University</strong>.
 				<br />
@@ -50,12 +53,12 @@ function App() {
 				.
 			</p>
 			<p className="paragraph">
-				The participation in the Forum is free. The{" "}
-				<strong>Hybrid format (on-site and online)</strong> is supposed.
-				The online format is supposed only for participants outside
-				Moscow region. Participants can attend the Forum on-site and
-				online with or without presentation. To participate with
-				presentation it is necessary to go through the{" "}
+				<strong>Hybrid format (on-site and online)</strong> is supposed
+				(the online format is supported for participants outside Moscow
+				region). The participation in the Forum is free. Participants
+				can attend the Forum with or without presentation at technical
+				session. To participate with presentation it is necessary to go
+				through the{" "}
 				<Link className="link" to="/abstract-submission">
 					Submission
 				</Link>{" "}
@@ -68,11 +71,6 @@ function App() {
 			</p>
 
 			<p className="paragraph">
-				<strong>Working languages</strong>: English and Russian
-				(simultaneous translation).
-			</p>
-
-			<p className="paragraph">
 				<strong>Venue:</strong>{" "}
 				<ExternalLink
 					text="RUDN University"
@@ -80,6 +78,11 @@ function App() {
 				/>
 				, 6 Miklukho-Maklaya Str., Moscow, 117198, Russia
 				<br />
+				<strong>Working languages</strong>: English and Russian
+				(simultaneous translation).
+			</p>
+
+			<p className="paragraph">
 				<strong>Abstract Submission Deadline:</strong> November 15, 2025{" "}
 				<br />
 				<strong>Presentation Submission deadline:</strong> November 20,
@@ -117,10 +120,10 @@ function App() {
 			<p className="paragraph">
 				The on-site participants of the Forum with presentations or
 				highlight lectures are provided with full support of Local
-				Organizing Committee, including: lunch during the dates of the
-				Forum, accommodation support, professional and cultural tours
-				(by invitation only). All the participants are welcomed by
-				coffebreaks and our warm reception.
+				Organizing Committee, including lunch during the dates of the
+				Forum, accommodation support, as well as professional and
+				cultural tours (by invitation only). All the participants are
+				welcomed by warm reception (coffee breaks and etc.).
 			</p>
 		</BasePageLayout>
 	);

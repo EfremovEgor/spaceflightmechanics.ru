@@ -32,8 +32,8 @@ function RouteComponent() {
 			<p className="paragraph">
 				<strong>Presentations</strong> are prepared in English language
 				only and submitted in .pptx format (16x9 aspect ratio). The
-				report is made in English (Russian language is possible for
-				certain presentations after coordination with Local Organizing
+				reports are made in English (Russian language is possible for
+				certain reports after coordination with Local Organizing
 				Committee).
 			</p>
 			<p className="paragraph">

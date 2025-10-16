@@ -31,17 +31,17 @@ function RouteComponent() {
 					<p className="paragraph">
 						<strong>Local Organizing Committee:</strong>
 						<br />
+						Phone:{" "}
+						<a className="hover:underline" href="tel:+79336677352">
+							+79336677352
+						</a>
+						<br />
 						Email:{" "}
 						<a
 							className="hover:underline"
 							href="mailto:orgcom@spacescitech.com"
 						>
 							orgcom@spacescitech.com
-						</a>
-						<br />
-						Phone:{" "}
-						<a className="hover:underline" href="tel:+79336677352">
-							+79336677352
 						</a>
 					</p>
 				</div>
