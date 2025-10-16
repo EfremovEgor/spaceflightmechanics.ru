@@ -27,7 +27,7 @@ jobs:
                   set -e
                   echo "Starting deployment..."
 
-                  cd /var/www/spaceflightmechanics.com
+                  cd /var/www/spacescitech.com/frontend/
                   git pull origin master
 
                   export PATH="$HOME/.nvm/versions/node/v24.9.0/bin:$PATH"
