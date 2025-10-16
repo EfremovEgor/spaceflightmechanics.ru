@@ -96,7 +96,7 @@ function App() {
 				deadlines.
 			</p>
 			<p className="paragraph">
-				Manuscripts will be published in the special volume in Advances
+				Manuscripts will be published in the special volume of Advances
 				in Mechanics and Control. The best papers will be recommended
 				for publication in special issue of{" "}
 				<ExternalLink
