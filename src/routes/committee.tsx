@@ -37,68 +37,8 @@ const committee: {
 		role: "Co-Chair",
 	},
 	{
-		fullName: "Brij Agrawal",
-		affiliation: "Naval Postgraduate School Monterey, USA",
-		role: "Member",
-	},
-	{
-		fullName: "Valery Bondur",
-		affiliation: "Russian Academy of Sciences, Russia",
-		role: "Member",
-	},
-	{
-		fullName: "Christophe Bonnal",
-		affiliation: "CNES, France",
-		role: "Member",
-	},
-	{
-		fullName: "Fabio Celani",
-		affiliation: "Sapienza University of Rome, Italy",
-		role: "Member",
-	},
-	{
-		fullName: "Rock Jeng-hing ChernS",
-		affiliation: "Ryerson University, Canada",
-		role: "Member",
-	},
-	{
-		fullName: "Sergey Chernyshev",
-		affiliation: "Russian Academy of Sciences, Russia",
-		role: "Member",
-	},
-	{
-		fullName: "Pini Gurfil",
-		affiliation: "Technion - Israel Institute of Technology, Israel",
-		role: "Member",
-	},
-	{
-		fullName: "Djojodihardjo Harijono",
-		affiliation: "University Putra, Malaysia",
-		role: "Member",
-	},
-	{
-		fullName: "Ketan Kotecha",
-		affiliation: "Symbiosis Institute of Technology, India",
-		role: "Member",
-	},
-	{
-		fullName: "Bok Jik Lee",
-		affiliation: "Seoul National University, Korea",
-		role: "Member",
-	},
-	{
-		fullName: "Emmanuel Mashonjowa",
-		affiliation: "University of Zimbabwe, Zimbabve",
-		role: "Member",
-	},
-	{
-		fullName: "Felix Mora-Camino",
-		affiliation: "French Civil Aviation University, France",
-		role: "Member",
-	},
-	{
-		fullName: "Robert Melton",
-		affiliation: "Penn State University, USA",
+		fullName: "Antonio Prado",
+		affiliation: "National Institute for Space Research, Brasil",
 		role: "Member",
 	},
 	{
@@ -107,33 +47,18 @@ const committee: {
 		role: "Member",
 	},
 	{
-		fullName: "Daniele Mortari",
-		affiliation: "University of Arizona, USA",
+		fullName: "Bok Jik Lee",
+		affiliation: "Seoul National University, Korea",
 		role: "Member",
 	},
 	{
-		fullName: "Peter Jan Pahl",
-		affiliation: "Freie Universitaet Berlin, Germany",
+		fullName: "Brij Agrawal",
+		affiliation: "Naval Postgraduate School Monterey, USA",
 		role: "Member",
 	},
 	{
-		fullName: "Giovanni Palmerini",
-		affiliation: "Sapienza University of Rome, Italy",
-		role: "Member",
-	},
-	{
-		fullName: "Vyacheslav Petukhov",
-		affiliation: "Moscow Aviation Institute, Russia",
-		role: "Member",
-	},
-	{
-		fullName: "Antonio Prado",
-		affiliation: "National Institute for Space Research, Brasil",
-		role: "Member",
-	},
-	{
-		fullName: "Sergey Reshmin",
-		affiliation: "Russian Academy of Sciences, Russia",
+		fullName: "Christophe Bonnal",
+		affiliation: "CNES, France",
 		role: "Member",
 	},
 	{
@@ -142,13 +67,43 @@ const committee: {
 		role: "Member",
 	},
 	{
-		fullName: "Tarun Singh",
-		affiliation: "Symbiosis Institute of Geo-Informatics, India",
+		fullName: "Daniele Mortari",
+		affiliation: "University of Arizona, USA",
 		role: "Member",
 	},
 	{
 		fullName: "David B. Spencer",
 		affiliation: "Penn State University, USA",
+		role: "Member",
+	},
+	{
+		fullName: "Djojodihardjo Harijono",
+		affiliation: "University Putra, Malaysia",
+		role: "Member",
+	},
+	{
+		fullName: "Emmanuel Mashonjowa",
+		affiliation: "University of Zimbabwe, Zimbabve",
+		role: "Member",
+	},
+	{
+		fullName: "Fabio Celani",
+		affiliation: "Sapienza University of Rome, Italy",
+		role: "Member",
+	},
+	{
+		fullName: "Felix Mora-Camino",
+		affiliation: "French Civil Aviation University, France",
+		role: "Member",
+	},
+	{
+		fullName: "Giovanni Palmerini",
+		affiliation: "Sapienza University of Rome, Italy",
+		role: "Member",
+	},
+	{
+		fullName: "Ketan Kotecha",
+		affiliation: "Symbiosis Institute of Technology, India",
 		role: "Member",
 	},
 	{
@@ -162,8 +117,53 @@ const committee: {
 		role: "Member",
 	},
 	{
+		fullName: "Peter Jan Pahl",
+		affiliation: "Freie Universitaet Berlin, Germany",
+		role: "Member",
+	},
+	{
+		fullName: "Pini Gurfil",
+		affiliation: "Technion - Israel Institute of Technology, Israel",
+		role: "Member",
+	},
+	{
+		fullName: "Robert Melton",
+		affiliation: "Penn State University, USA",
+		role: "Member",
+	},
+	{
+		fullName: "Rock Jeng-hing ChernS",
+		affiliation: "Ryerson University, Canada",
+		role: "Member",
+	},
+	{
+		fullName: "Sergey Chernyshev",
+		affiliation: "Russian Academy of Sciences, Russia",
+		role: "Member",
+	},
+	{
+		fullName: "Sergey Reshmin",
+		affiliation: "Russian Academy of Sciences, Russia",
+		role: "Member",
+	},
+	{
+		fullName: "Tarun Singh",
+		affiliation: "Symbiosis Institute of Geo-Informatics, India",
+		role: "Member",
+	},
+	{
 		fullName: "Tetsuo Yasaka",
 		affiliation: "Kyushu University, Japan",
+		role: "Member",
+	},
+	{
+		fullName: "Valery Bondur",
+		affiliation: "Russian Academy of Sciences, Russia",
+		role: "Member",
+	},
+	{
+		fullName: "Vyacheslav Petukhov",
+		affiliation: "Moscow Aviation Institute, Russia",
 		role: "Member",
 	},
 	{
