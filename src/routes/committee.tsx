@@ -37,23 +37,13 @@ const committee: {
 		role: "Co-Chair",
 	},
 	{
-		fullName: "Antonio Prado",
-		affiliation: "National Institute for Space Research, Brasil",
-		role: "Member",
-	},
-	{
-		fullName: "Arun Misra",
-		affiliation: "McGill University, Canada",
-		role: "Member",
-	},
-	{
-		fullName: "Bok Jik Lee",
-		affiliation: "Seoul National University, Korea",
-		role: "Member",
-	},
-	{
 		fullName: "Brij Agrawal",
 		affiliation: "Naval Postgraduate School Monterey, USA",
+		role: "Member",
+	},
+	{
+		fullName: "Valery Bondur",
+		affiliation: "Russian Academy of Sciences, Russia",
 		role: "Member",
 	},
 	{
@@ -62,73 +52,8 @@ const committee: {
 		role: "Member",
 	},
 	{
-		fullName: "Daniel Scheeres",
-		affiliation: "University of Colorado Boulder, USA",
-		role: "Member",
-	},
-	{
-		fullName: "Daniele Mortari",
-		affiliation: "University of Arizona, USA",
-		role: "Member",
-	},
-	{
-		fullName: "David B. Spencer",
-		affiliation: "Penn State University, USA",
-		role: "Member",
-	},
-	{
-		fullName: "Djojodihardjo Harijono",
-		affiliation: "University Putra, Malaysia",
-		role: "Member",
-	},
-	{
-		fullName: "Emmanuel Mashonjowa",
-		affiliation: "University of Zimbabwe, Zimbabve",
-		role: "Member",
-	},
-	{
 		fullName: "Fabio Celani",
 		affiliation: "Sapienza University of Rome, Italy",
-		role: "Member",
-	},
-	{
-		fullName: "Felix Mora-Camino",
-		affiliation: "French Civil Aviation University, France",
-		role: "Member",
-	},
-	{
-		fullName: "Giovanni Palmerini",
-		affiliation: "Sapienza University of Rome, Italy",
-		role: "Member",
-	},
-	{
-		fullName: "Ketan Kotecha",
-		affiliation: "Symbiosis Institute of Technology, India",
-		role: "Member",
-	},
-	{
-		fullName: "Leslie I. Tennen",
-		affiliation: "Private Practice Sterns and Tennen, USA",
-		role: "Member",
-	},
-	{
-		fullName: "Paolo Teofilatto",
-		affiliation: "Sapienza University of Rome, Italy",
-		role: "Member",
-	},
-	{
-		fullName: "Peter Jan Pahl",
-		affiliation: "Freie Universitaet Berlin, Germany",
-		role: "Member",
-	},
-	{
-		fullName: "Pini Gurfil",
-		affiliation: "Technion - Israel Institute of Technology, Israel",
-		role: "Member",
-	},
-	{
-		fullName: "Robert Melton",
-		affiliation: "Penn State University, USA",
 		role: "Member",
 	},
 	{
@@ -142,8 +67,78 @@ const committee: {
 		role: "Member",
 	},
 	{
+		fullName: "Pini Gurfil",
+		affiliation: "Technion - Israel Institute of Technology, Israel",
+		role: "Member",
+	},
+	{
+		fullName: "Djojodihardjo Harijono",
+		affiliation: "University Putra, Malaysia",
+		role: "Member",
+	},
+	{
+		fullName: "Ketan Kotecha",
+		affiliation: "Symbiosis Institute of Technology, India",
+		role: "Member",
+	},
+	{
+		fullName: "Bok Jik Lee",
+		affiliation: "Seoul National University, Korea",
+		role: "Member",
+	},
+	{
+		fullName: "Emmanuel Mashonjowa",
+		affiliation: "University of Zimbabwe, Zimbabve",
+		role: "Member",
+	},
+	{
+		fullName: "Felix Mora-Camino",
+		affiliation: "French Civil Aviation University, France",
+		role: "Member",
+	},
+	{
+		fullName: "Robert Melton",
+		affiliation: "Penn State University, USA",
+		role: "Member",
+	},
+	{
+		fullName: "Arun Misra",
+		affiliation: "McGill University, Canada",
+		role: "Member",
+	},
+	{
+		fullName: "Daniele Mortari",
+		affiliation: "University of Arizona, USA",
+		role: "Member",
+	},
+	{
+		fullName: "Peter Jan Pahl",
+		affiliation: "Freie Universitaet Berlin, Germany",
+		role: "Member",
+	},
+	{
+		fullName: "Giovanni Palmerini",
+		affiliation: "Sapienza University of Rome, Italy",
+		role: "Member",
+	},
+	{
+		fullName: "Vyacheslav Petukhov",
+		affiliation: "Moscow Aviation Institute, Russia",
+		role: "Member",
+	},
+	{
+		fullName: "Antonio Prado",
+		affiliation: "National Institute for Space Research, Brasil",
+		role: "Member",
+	},
+	{
 		fullName: "Sergey Reshmin",
 		affiliation: "Russian Academy of Sciences, Russia",
+		role: "Member",
+	},
+	{
+		fullName: "Daniel Scheeres",
+		affiliation: "University of Colorado Boulder, USA",
 		role: "Member",
 	},
 	{
@@ -152,18 +147,23 @@ const committee: {
 		role: "Member",
 	},
 	{
+		fullName: "David B. Spencer",
+		affiliation: "Penn State University, USA",
+		role: "Member",
+	},
+	{
+		fullName: "Leslie I. Tennen",
+		affiliation: "Private Practice Sterns and Tennen, USA",
+		role: "Member",
+	},
+	{
+		fullName: "Paolo Teofilatto",
+		affiliation: "Sapienza University of Rome, Italy",
+		role: "Member",
+	},
+	{
 		fullName: "Tetsuo Yasaka",
 		affiliation: "Kyushu University, Japan",
-		role: "Member",
-	},
-	{
-		fullName: "Valery Bondur",
-		affiliation: "Russian Academy of Sciences, Russia",
-		role: "Member",
-	},
-	{
-		fullName: "Vyacheslav Petukhov",
-		affiliation: "Moscow Aviation Institute, Russia",
 		role: "Member",
 	},
 	{
