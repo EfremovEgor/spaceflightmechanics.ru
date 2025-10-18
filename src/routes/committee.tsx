@@ -87,6 +87,16 @@ const committee: {
 		role: "Member",
 	},
 	{
+		fullName: "Emmanuel Mashonjowa",
+		affiliation: "University of Zimbabwe, Zimbabve",
+		role: "Member",
+	},
+	{
+		fullName: "Felix Mora-Camino",
+		affiliation: "French Civil Aviation University, France",
+		role: "Member",
+	},
+	{
 		fullName: "Robert Melton",
 		affiliation: "Penn State University, USA",
 		role: "Member",
@@ -139,6 +149,11 @@ const committee: {
 	{
 		fullName: "David B. Spencer",
 		affiliation: "Penn State University, USA",
+		role: "Member",
+	},
+	{
+		fullName: "Leslie I. Tennen",
+		affiliation: "Private Practice Sterns and Tennen, USA",
 		role: "Member",
 	},
 	{
