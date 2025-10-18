@@ -12,18 +12,18 @@ const committee: {
 		role: "Chair",
 	},
 	{
-		fullName: "Meena Laad",
-		affiliation: "Symbiosis Institute of Technology, India",
-		role: "Co-Chair",
-	},
-	{
 		fullName: "Antonio Prado",
 		affiliation: "National Institute for Space Research, Brazil",
 		role: "Co-Chair",
 	},
 	{
-		fullName: "Shufan Wu",
-		affiliation: "Shanghai Jiao Tong University, China",
+		fullName: "Elena Fantino",
+		affiliation: "Khalifa University of Science and Technology, UAE",
+		role: "Co-Chair",
+	},
+	{
+		fullName: "Meena Laad",
+		affiliation: "Symbiosis Institute of Technology, India",
 		role: "Co-Chair",
 	},
 	{
@@ -32,8 +32,8 @@ const committee: {
 		role: "Co-Chair",
 	},
 	{
-		fullName: "Elena Fantino",
-		affiliation: "Khalifa University of Science and Technology, UAE",
+		fullName: "Shufan Wu",
+		affiliation: "Shanghai Jiao Tong University, China",
 		role: "Co-Chair",
 	},
 	{

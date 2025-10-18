@@ -74,7 +74,7 @@ function RouteComponent() {
 				Register now
 			</button>
 			<p className="paragraph">
-				f you require assistance during this process, or you have any
+				If you require assistance during this process, or you have any
 				other queries, please, contact Local Organizing Committee via{" "}
 				<a className="link" href="mailto:orgcom@spacescitech.com.">
 					orgcom@spacescitech.com
