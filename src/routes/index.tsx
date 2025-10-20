@@ -121,8 +121,8 @@ function App() {
 				highlight lectures are provided with full support of Local
 				Organizing Committee, including lunch during the dates of the
 				Forum, accommodation support, as well as professional and
-				cultural tours (by invitation only). All the participants are
-				welcomed by warm reception (coffee breaks and etc.).
+				cultural tours (by invitation only). All the participants will
+				receive warm welcome (coffee break, etc.).
 			</p>
 		</BasePageLayout>
 	);
