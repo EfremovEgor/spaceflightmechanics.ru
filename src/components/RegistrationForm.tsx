@@ -21,12 +21,7 @@ const RegistrationSchema = z
 	.refine(
 		(data) => {
 			if (data.isPresenter) {
-				return (
-					data.confChairPaperID &&
-					data.confChairPaperID.trim().length > 0 &&
-					data.paperTitle &&
-					data.paperTitle.trim().length > 0
-				);
+				return data.paperTitle && data.paperTitle.trim().length > 0;
 			}
 			return true;
 		},
