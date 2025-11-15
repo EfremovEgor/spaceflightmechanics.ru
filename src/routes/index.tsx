@@ -82,10 +82,10 @@ function App() {
 			</p>
 
 			<p className="paragraph">
-				<strong>Abstract Submission Deadline:</strong> November 15, 2025{" "}
-				<br />
-				<strong>Presentation Submission deadline:</strong> November 20,
-				2025 <br />
+				<strong>Abstract Submission Deadline:</strong> November 25, 2025
+				(extended) <br />
+				<strong>Presentation Submission deadline:</strong> November 30,
+				2025 (extended) <br />
 				<strong>Manuscript Submission deadline:</strong> January 20,
 				2026
 			</p>
