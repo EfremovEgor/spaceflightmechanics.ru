@@ -23,7 +23,7 @@ export const TechnicalSessions: {
 	},
 	{
 		name: "Deep Space Exploration",
-		chair: "Elena Fomina, Institute of Basic Biological Problems RAS, Russia",
+		chair: "Elena Fomina, Institute of Biomedical Problems of RAS, Russia",
 		description:
 			"This session covers deep space exploration strategies and architectures, as well as technology roadmaps. The session will address current and future missions to the Moon, planets, and asteroids, including orbital missions, robotic surface missions, as well as life sciences, resource utilisation and preparatory activities for future solar system exploration.",
 	},
