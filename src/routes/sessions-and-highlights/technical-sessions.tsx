@@ -153,6 +153,24 @@ function RouteComponent() {
 							</div>
 						</td>
 					</tr>
+					<tr>
+						<td>
+							<div>
+								<h2 className="font-bold uppercase">
+									{TechnicalSessions[8].name}
+								</h2>
+								<div className="mt-4">
+									<strong>Session Chair:</strong> <br />
+									<p className="line-clamp-2 h-[2.8em]">
+										{TechnicalSessions[8].chair}
+									</p>
+									<p className="paragraph">
+										{TechnicalSessions[8].description}
+									</p>
+								</div>
+							</div>
+						</td>
+					</tr>
 				</tbody>
 			</table>
 
