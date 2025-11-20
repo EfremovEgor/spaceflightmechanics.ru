@@ -22,6 +22,12 @@ export const TechnicalSessions: {
 			"The session is focused on recent advances in small satellite class missions such as microsatellites, nanosatellites, CubeSats, as well as small satellites mega-constellations enabling valuable results for the mission end-user. The session also covers important lessons-learned topics, description of past and perspective space missions, different applications of small satellites and their constellations.",
 	},
 	{
+		name: "Deep Space Exploration",
+		chair: "Elena Fomina, Institute of Basic Biological Problems RAS, Russia",
+		description:
+			"This session covers deep space exploration strategies and architectures, as well as technology roadmaps. The session will address current and future missions to the Moon, planets, and asteroids, including orbital missions, robotic surface missions, as well as life sciences, resource utilisation and preparatory activities for future solar system exploration.",
+	},
+	{
 		name: "Earth Observations",
 		chair: "Tarun Singh, Symbiosis International (Deemed University), India",
 		description:
