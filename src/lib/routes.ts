@@ -74,7 +74,7 @@ export const Routes: TRoutes = {
 						title: makeMetaTitle("Highlight Lectures"),
 					},
 				],
-				disabled: true,
+				disabled: false,
 			},
 		},
 	},

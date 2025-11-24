@@ -62,31 +62,119 @@ export const TechnicalSessions: {
 export const HighlightLectures: {
 	name: string;
 	speaker: string;
-	abstract: string;
-	bio: string;
+	abstract?: string;
+	bio?: string;
 }[] = [
 	{
-		name: "PERSPECTIVES OF PRIVATE SPACE EXPLORATION",
-		speaker: "Giancarlo Genta (online), Politecnico di Torino, Italy",
-		abstract:
-			"In the last years, the number of private actors engaged in space missions has grown, and their importance has increased. This trend is usually referred to as New Space. While this trend has started with economic activities in LEO and in supplying transportation services to Space Agencies, now these activities are expanding to deep space (or BLEO: Beyond Earth Orbit) and to space exploration with missions designed and implemented by private industries, and space agencies buying tickets to send their astronauts on exploration missions. The overall advantages of this approach to exploration will be the decrease of costs and times of exploration missions, which will lead to start a spacefaring civilization without waiting long times. In particular, the recent statements by Elon Musk, of SpaceX, about performing a sample return mission to Mars in the 2026 launch opportunity as a test to proceed with a human mission in 2028 are very interesting. Even if there will be a delay, the timeframe for Mars human exploration will be greatly reduced.",
-		bio: "Giancarlo Genta obtained degrees in Aeronautical Engineering in 1971 and Aerospace Engineering in 1972. Taught courses in Astronautical Propulsion, Motor Vehicle Mechanics, Design of Aircraft Engines and Space robotics at Politecnico di Torino. Full Professor in Machine Design, head of the Department of Mechanics from 1989 to 1995, now is Professor Emeritus, member of the Academy of Sciences of Torino and of the International Academy of Astronautics, where since 2012 heads the Study Group on Human Mars Exploration. Member of the Advisory Board of the Starshot Project. Author of more than 390 scientific papers, 5 patents and 40 textbooks, research monographies and popular science books. Author of 6 science fiction novels, published in Italian and English.",
+		name: "Prospects of BRICS Countries in Creating a Surveillance System for Near-Earth Objects",
+		speaker:
+			"Boris Shustov, Institute of Astronomy of Russian Academy of Sciences, Russia",
 	},
 	{
-		name: "NEAR EARTH SPACE FOR SCIENCE AND SUSTAINABLE DEVELOPMENT",
+		name: "Interstellar Journeys: Will Ever Become Possible or Are Just a Science Fiction Topic?",
 		speaker:
-			"Anatoli Petrukovich, Space Research Institute of Russian Academy of Sciences, Russia",
-		abstract:
-			"Low Earth orbits are increasingly populated now by hundreds and thousands of satellites monitoring Earth, providing communications as well as scientific investigations. New technical advances in creating small spacecraft allow substantial increase in scientific and practical return of space assets. Modern Earth observation missions allowed to monitor properties of ecosystems, carbon dioxide balance, and thus provide key independent uniform data on a nation scale. Recent launch of Russian mission “Ionosphere” will. allow numerous studies with ground facilities of radio wave propagation and navigation signal deterioration.",
-		bio: "Prof. Anatoli Petrukovich is director of Space Research Institute (IKI) of Russian Academy of Sciences. The mission of the institute is to conduct spacecraft experiments as well as to advance knowledge and exploration of space. Dr. Anatoli Petrukovich received a honours degree in Physics and Applied Math from the Moscow Institute of Physics and Technology in 1990 (equivalent of Master degree). In 1990 he joined Space Research Institute as researcher and later worked as the head of space plasma physics department. He received a COSPAR Zeldovich medal for young scientists in 2002. In 2018 he was elected as the IKI director. He received a Candidate of Sciences degree (equivalent of PhD) in 1994 and Doctor of Sciences degree in 2003. Since 2011 he is corresponding member of Russian Academy of Sciences. Dr. Petrukovich scientific interests are related with dynamics of the magnetosphere and substorms, space weather forecasts, plasma wave analysis, energetic particle measurements is space. He is the author of over 200 publications with more than 3900 citations in Web of Science. Dr. Petrukovich is professor in University “Higher school of economics” and is chairing the department of physics of space there.",
+			"Giancarlo Genta, Polytechnic University of Turin, Italy (online)",
 	},
 	{
-		name: "RESEARCH DIRECTIONS OF AI IN PREDICTIVE MAINTENANCE",
+		name: "Industrial Revolution: New Era of AI Driven Transformations in Space Technologies",
+		speaker: "Ketan Kotecha, Symbiosis Institute of Technology, India",
+	},
+	{
+		name: "Mission Design to Triple Asteroids",
+		speaker: "Antonio Prado, Institute of Space Research (INPE), Brazil",
+	},
+	{
+		name: "The Nigerian Space Policy and Programme",
 		speaker:
-			"Ketan Kotecha, Symbiosis International (Deemed University), India",
-		abstract:
-			"Research in predictive maintenance is increasingly focused on leveraging advanced data analytics, machine learning, and Internet of Things (IoT) technologies to predict equipment failures and optimize maintenance schedules. Key directions include the development of more accurate and scalable predictive models that integrate real-time sensor data, historical maintenance records, and operational conditions. Additionally, there is growing interest in enhancing anomaly detection techniques, improving the interpretability of machine learning models for maintenance decisions, and incorporating predictive insights into automated decision-making systems. Researchers are also exploring the integration of digital twins, edge computing, and AI-driven optimization algorithms to create adaptive, real-time predictive maintenance frameworks that can reduce downtime, extend asset lifespan, and improve overall system efficiency. Talk will throw some lights on addressing these challenges.",
-		bio: "Dr. Ketan Kotecha is a distinguished researcher and educator specializing in deep learning, artificial intelligence, computer algorithms, and machine learning. Passionate about fostering critical thinking skills, he has mentored 25 PhD students to successful outcomes. With over 30 years of experience at the forefront of AI and deep learning, Dr. Kotecha is globally recognized, ranking among the top 2% scientists worldwide, a distinction conferred by Stanford University. He boasts a prolific publication record, with over 450 Scopus-indexed papers and 12 patents to his name. His work, cited over 11,000 times, reflects his profound impact on the field. Dr. Kotecha's expertise extends to securing prestigious research funding for Applied AI projects. Notable grants include a PURSE grant from DST worth INR 5.2 crores in AI for affordable Healthcare and a Ministry of Electronics and Information Technology grant worth INR 199.04 lakhs on Human Computer Interface, highlighting his leadership in impactful research. Recognized for his contributions, Dr. Kotecha has received grants such as the Indo-Canada Shastri grant SSTSG 2023-24 and SPARC projects worth INR 166 lakhs from MHRD. His accolades also include Erasmus Plus Faculty Mobility Grant, DUO-India Professors Fellowship, grants from the Royal Academy of Engineering and DST under Indo-Italy and Indo-Serbia schemes. He was also selected by MHRD Govt of India for a prestigious LEAP grant for leadership program at Cambridge University UK. He also received 3 projects from DRDO worth INR 30 lacs and 4 projects from UAEU university under 'AI for Sustainability' grant. He has also received grant from RUDN university for AI for predictive maintenance. Dr. Kotecha has led consultancy projects with industry giants Philips, Avegen, ArcOne & Dassault Systems demonstrating his ability to bridge academia and industry. His leadership at SIT Pune has secured significant CSR grants and government funding for initiatives such as the Bajaj Engineering Skills Training Centre(worth INR 30 crores) and a 5G use case lab in AI+telemedicine (worth INR 50 lacs). As an Adjunct Professor at Swinburne University, Australia, Honorary Professor at Aston University UK and a visiting professor at UCSI University Malaysia, Dr. Kotecha continues to expand his global footprint in academia.",
+			"Francis Chizea, National Agency for Space Research and Development (Nigerian Space Agency), Nigeria (online)",
+	},
+	{
+		name: "Perspectives of AI Implementations in Space Science and Technology",
+		speaker:
+			"Narendra S. Chaudhari, Assan Science and Technology University, India",
+	},
+	{
+		name: "The Policy and Legal Roadmap for Competitive and Sovereign Space Markets in the 2030s",
+		speaker:
+			"Narkhanim Orujova, Space Agency of the Republic of Azerbaijan (Azercosmos), Azerbaijan",
+	},
+	{
+		name: "Space for National Development – Explore Innovate Succeed",
+		speaker:
+			"Anoop Kumar Srivastava, Indian Space Research Organization, India",
+	},
+	{
+		name: "Solar Sail Trajectory Optimization for Interplanetary Mission",
+		speaker: "Renuganth Varatharajoo, Universiti Putra Malaysia, Malaysia",
+	},
+	{
+		name: "Optical Space Situational Awareness as the Basis of Sustainable LEO Operations",
+		speaker: "Andrey Klimov, Astronomical Research Center, Russia",
+	},
+	{
+		name: "Indian Space Policy: Economical Effect",
+		speaker: "Tarun P. Singh, Symbiosis Institute of Geoinformatics, India",
+	},
+	{
+		name: "Venus: Investigation of Mysterious Planet",
+		speaker:
+			"Lev Zeleny, Institute of Space Research of Russian Academy of Sciences, Russia",
+	},
+	{
+		name: "Space Reforms in India: Vision, Framework and Impact",
+		speaker:
+			"Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre (IN-SPACe), India (online)",
+	},
+	{
+		name: "Remote Sensing Data Analysis for Crop and Land Cover Change in Thailand",
+		speaker:
+			"Sarawut Ninsawat, Asian Institute of Technology, Thailand (online)",
+	},
+	{
+		name: "Spacecraft Orbital Stability Under Total Solar Irradiance",
+		speaker: "Aleksandr Yefremov, RUDN University, Russia",
+	},
+	{
+		name: "Unlocking the Full Potential of Satellite Technology in Sub-Saharan Africa (SSA) through Training, Capacity Building, and Regional and International Cooperation",
+		speaker:
+			"Emmanuel Mashonjowa, University of Zimbabwe, Zimbabwe (online)",
+	},
+	{
+		name: "Axisymmetric Supersonic Intake Buzz Characteristics and its Alleviation Adopting Plasma",
+		speaker: "Sudip Das, Birla Institute of Technology, India",
+	},
+	{
+		name: "Space Monitoring Legal and Illegal (Galamesay) Mining Industrial Contaminants in Ghana",
+		speaker:
+			"Manfred Quarshie, Space Science Systems Research Institute, Ghana (online)",
+	},
+	{
+		name: "Hybrid Carbon Nanotube–Graphite Reinforced PVDF Composites: A Novel Approach for Space-Grade Lightweight Materials",
+		speaker: "Meena Laad, Symbiosis Institute of Technology, India",
+	},
+	{
+		name: "Navigating the New Space Era: Coordination, Sustainability, and Orbital Stewardship",
+		speaker:
+			"Bocar Ba, World Space Sustainability Association, President, UAE (online)",
+	},
+	{
+		name: "Space4Water: an UN Proposed Remote Sensing Satellite Mission",
+		speaker: "Shufan Wu, Shanghai Jiao Tong University, China",
+	},
+	{
+		name: "Leveraging Earth Observation to Advance Zimbabwe's Socio-Economic Development",
+		speaker:
+			"Shekede Davis, Zimbabwe National Geospatial and Space Agency, Zimbabwe (online)",
+	},
+	{
+		name: "Success Story Related to Acta Astronautica Journal",
+		speaker:
+			"Rock Chern, Ryerson University, Canada, Editor-in-Chief of Acta Astronautica Journal",
+	},
+	{
+		name: "Ethiopian Way to Space: Projects and Programs",
+		speaker:
+			"Yeshurun Alemayehu, Space Science and Geospatial Institute (Ethiopian Space Agency), Ethiopia (online)",
 	},
 ];
 
