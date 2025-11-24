@@ -268,6 +268,7 @@ export const RoundtableMeetings: {
 	participants: {
 		fullName: string;
 		affiliation: string;
+		country: string;
 	}[];
 }[] = [
 	{
@@ -281,59 +282,71 @@ export const RoundtableMeetings: {
 			{
 				fullName: "Irina Abramova",
 				affiliation:
-					"Institute for African Studies of the Russian Academy of Sciences, Russia",
+					"Institute for African Studies of the Russian Academy of Sciences",
+				country: "Russia",
 			},
 			{
 				fullName: "Yury Razoumny",
-				affiliation: "RUDN University, Russia",
+				affiliation: "RUDN University",
+				country: "Russia",
 			},
 			{
 				fullName: "Antonio Prado",
-				affiliation: "Institute of Space Research (INPE), Brazil",
+				affiliation: "Institute of Space Research (INPE)",
+				country: "Brazil",
 			},
 			{
 				fullName: "Tarun P. Singh",
-				affiliation: "Symbiosis Institute of Geoinformatics, India",
+				affiliation: "Symbiosis Institute of Geoinformatics",
+				country: "India",
 			},
 			{
 				fullName: "Shufan Wu",
-				affiliation: "Shanghai Jiao Tong University, China",
+				affiliation: "Shanghai Jiao Tong University",
+				country: "China",
 			},
 			{
 				fullName: "Francis Chizea",
 				affiliation:
-					"National Agency for Space Research and Development (Nigerian Space Agency), Nigeria",
+					"National Agency for Space Research and Development (Nigerian Space Agency)",
+				country: "Nigeria",
 			},
 			{
 				fullName: "Bocar Ba",
 				affiliation:
-					"World Space Sustainability Association, President, UAE",
+					"World Space Sustainability Association, President",
+				country: "UAE",
 			},
 			{
 				fullName: "Kuria Catherine Wangari",
-				affiliation: "Skylinks International Holdings, Kenya",
+				affiliation: "Skylinks International Holdings",
+				country: "Kenya",
 			},
 			{
-				fullName: "Emmanuel Mashonjowa",
-				affiliation: "University of Zimbabwe, Zimbabwe",
+				fullName: "Emmanuel Chipo Mashonjowa",
+				affiliation: "University of Zimbabwe",
+				country: "Zimbabwe",
 			},
 			{
 				fullName: "Manfred Quarshie",
-				affiliation: "Space Science Systems Research Institute, Ghana",
+				affiliation: "Space Science Systems Research Institute",
+				country: "Ghana",
 			},
 			{
 				fullName: "Doreen Agaba",
-				affiliation:
-					"Ministry for Science, Technology and Innovation, Uganda",
+				affiliation: "Ministry for Science, Technology and Innovation",
+				country: "Uganda",
 			},
 			{
-				fullName: "Petro Peisha",
-				affiliation: "Dar es Salaam Institute of Technology, Tanzania",
+				fullName: "Petro Ernest Pesha",
+				affiliation: "Dar es Salaam Institute of Technology",
+				country: "Tanzania",
 			},
 			{
 				fullName: "Yeshurun Alemayehu",
 				affiliation:
-					"Space Science and Geospatial Institute (Ethiopian Space Agency), Ethiopia",
+					"Space Science and Geospatial Institute (Ethiopian Space Agency)",
+				country: "Ethiopia",
 			},
 		],
 	},
@@ -348,11 +361,13 @@ export const RoundtableMeetings: {
 			{
 				fullName: "Narkhanim Orujova",
 				affiliation:
-					"Space Agency of the Republic of Azerbaijan (Azercosmos), Azerbaijan",
+					"Space Agency of the Republic of Azerbaijan (Azercosmos)",
+				country: "Azerbaijan",
 			},
 			{
 				fullName: "Irina Chernyh",
-				affiliation: "RUDN University, Russia",
+				affiliation: "RUDN University",
+				country: "Russia",
 			},
 		],
 	},
@@ -367,33 +382,39 @@ export const RoundtableMeetings: {
 			{
 				fullName: "Boris Shustov",
 				affiliation:
-					"Institute of Astronomy of Russian Academy of Sciences, Russia",
+					"Institute of Astronomy of Russian Academy of Sciences",
+				country: "Russia",
 			},
 			{
 				fullName: "Bocar Ba",
-				affiliation: "World Space Sustainability Association, UAE",
+				affiliation: "World Space Sustainability Association",
+				country: "UAE",
 			},
 			{
 				fullName: "Giancarlo Genta",
-				affiliation: "Polytechnic University of Turin, Italy",
+				affiliation: "Polytechnic University of Turin",
+				country: "Italy",
 			},
 			{
 				fullName: "Anoop Kumar Srivastava",
-				affiliation: "Indian Space Research Organization, India",
+				affiliation: "Indian Space Research Organization",
+				country: "India",
 			},
 			{
 				fullName: "Andrey Klimov",
-				affiliation: "Astronomical Research Center, Russia",
+				affiliation: "Astronomical Research Center",
+				country: "Russia",
 			},
 			{
 				fullName: "Francis Chizea",
 				affiliation:
-					"National Agency for Space Research and Development (Nigerian Space Agency), Nigeria",
+					"National Agency for Space Research and Development (Nigerian Space Agency)",
+				country: "Nigeria",
 			},
 			{
 				fullName: "Shekede Davis",
-				affiliation:
-					"Zimbabwe National Geospatial and Space Agency, Zimbabwe",
+				affiliation: "Zimbabwe National Geospatial and Space Agency",
+				country: "Zimbabwe",
 			},
 		],
 	},

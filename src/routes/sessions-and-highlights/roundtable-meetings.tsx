@@ -31,13 +31,37 @@ function RouteComponent() {
 									{
 										content: (
 											<div className="text-sm grid grid-cols-2 gap-4">
-												{s.participants.map((p) => (
-													<p>
-														{p.fullName}
-														<br />
-														{p.affiliation}
-													</p>
-												))}
+												{s.participants.map((p) => {
+													const shouldBreakSeparately =
+														p.affiliation.length <
+														70;
+													return (
+														<p>
+															<span className="font-bold">
+																{p.fullName}
+															</span>
+															<br />
+															{shouldBreakSeparately ? (
+																<>
+																	{
+																		p.affiliation
+																	}
+
+																	<br />
+																	{p.country}
+																</>
+															) : (
+																<>
+																	{
+																		p.affiliation
+																	}
+																	{", "}
+																	{p.country}
+																</>
+															)}
+														</p>
+													);
+												})}
 											</div>
 										),
 										title: "Participants",
