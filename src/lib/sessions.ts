@@ -313,8 +313,7 @@ export const RoundtableMeetings: {
 			},
 			{
 				fullName: "Bocar Ba",
-				affiliation:
-					"World Space Sustainability Association, President",
+				affiliation: "World Space Sustainability Association",
 				country: "UAE",
 			},
 			{
