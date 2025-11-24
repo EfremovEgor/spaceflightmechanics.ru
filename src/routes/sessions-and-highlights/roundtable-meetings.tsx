@@ -46,7 +46,7 @@ function RouteComponent() {
 																	{
 																		p.affiliation
 																	}
-
+																	{","}
 																	<br />
 																	{p.country}
 																</>
