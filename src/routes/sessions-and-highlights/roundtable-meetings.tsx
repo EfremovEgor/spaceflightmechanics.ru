@@ -19,7 +19,7 @@ function RouteComponent() {
 			<div className="mt-4">
 				{RoundtableMeetings.map((s) => (
 					<>
-						<h2 className="font-bold mt-4">{s.name}</h2>
+						<h2 className="font-bold mt-4 uppercase">{s.name}</h2>
 						<div className="mt-4">
 							<strong>Moderator:</strong>
 							<br />
