@@ -72,8 +72,7 @@ export const HighlightLectures: {
 	},
 	{
 		name: "Interstellar Journeys: Will Ever Become Possible or Are Just a Science Fiction Topic?",
-		speaker:
-			"Giancarlo Genta, Polytechnic University of Turin, Italy (online)",
+		speaker: "Giancarlo Genta, Polytechnic University of Turin, Italy",
 	},
 	{
 		name: "Industrial Revolution: New Era of AI Driven Transformations in Space Technologies",
@@ -86,7 +85,7 @@ export const HighlightLectures: {
 	{
 		name: "The Nigerian Space Policy and Programme",
 		speaker:
-			"Francis Chizea, National Agency for Space Research and Development (Nigerian Space Agency), Nigeria (online)",
+			"Francis Chizea, National Agency for Space Research and Development (Nigerian Space Agency), Nigeria",
 	},
 	{
 		name: "Perspectives of AI Implementations in Space Science and Technology",
@@ -123,12 +122,11 @@ export const HighlightLectures: {
 	{
 		name: "Space Reforms in India: Vision, Framework and Impact",
 		speaker:
-			"Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre (IN-SPACe), India (online)",
+			"Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre (IN-SPACe), India",
 	},
 	{
 		name: "Remote Sensing Data Analysis for Crop and Land Cover Change in Thailand",
-		speaker:
-			"Sarawut Ninsawat, Asian Institute of Technology, Thailand (online)",
+		speaker: "Sarawut Ninsawat, Asian Institute of Technology, Thailand",
 	},
 	{
 		name: "Spacecraft Orbital Stability Under Total Solar Irradiance",
@@ -136,8 +134,7 @@ export const HighlightLectures: {
 	},
 	{
 		name: "Unlocking the Full Potential of Satellite Technology in Sub-Saharan Africa (SSA) through Training, Capacity Building, and Regional and International Cooperation",
-		speaker:
-			"Emmanuel Mashonjowa, University of Zimbabwe, Zimbabwe (online)",
+		speaker: "Emmanuel Mashonjowa, University of Zimbabwe, Zimbabwe",
 	},
 	{
 		name: "Axisymmetric Supersonic Intake Buzz Characteristics and its Alleviation Adopting Plasma",
@@ -146,7 +143,7 @@ export const HighlightLectures: {
 	{
 		name: "Space Monitoring Legal and Illegal (Galamesay) Mining Industrial Contaminants in Ghana",
 		speaker:
-			"Manfred Quarshie, Space Science Systems Research Institute, Ghana (online)",
+			"Manfred Quarshie, Space Science Systems Research Institute, Ghana",
 	},
 	{
 		name: "Hybrid Carbon Nanotube–Graphite Reinforced PVDF Composites: A Novel Approach for Space-Grade Lightweight Materials",
@@ -155,7 +152,7 @@ export const HighlightLectures: {
 	{
 		name: "Navigating the New Space Era: Coordination, Sustainability, and Orbital Stewardship",
 		speaker:
-			"Bocar Ba, World Space Sustainability Association, President, UAE (online)",
+			"Bocar Ba, World Space Sustainability Association, President, UAE",
 	},
 	{
 		name: "Space4Water: an UN Proposed Remote Sensing Satellite Mission",
@@ -164,7 +161,7 @@ export const HighlightLectures: {
 	{
 		name: "Leveraging Earth Observation to Advance Zimbabwe's Socio-Economic Development",
 		speaker:
-			"Shekede Davis, Zimbabwe National Geospatial and Space Agency, Zimbabwe (online)",
+			"Shekede Davis, Zimbabwe National Geospatial and Space Agency, Zimbabwe",
 	},
 	{
 		name: "Success Story Related to Acta Astronautica Journal",
@@ -174,7 +171,7 @@ export const HighlightLectures: {
 	{
 		name: "Ethiopian Way to Space: Projects and Programs",
 		speaker:
-			"Yeshurun Alemayehu, Space Science and Geospatial Institute (Ethiopian Space Agency), Ethiopia (online)",
+			"Yeshurun Alemayehu, Space Science and Geospatial Institute (Ethiopian Space Agency), Ethiopia",
 	},
 ];
 
