@@ -16,6 +16,7 @@ const resources = {
 				plenary_sessions: "Plenary Sessions (TBC)",
 				technical_sessions: "Technical Sessions",
 				highlight_lectures: "Highlight Lectures (TBC)",
+				roundtable_meetings: "Roundtable Meetings",
 			},
 			home: {
 				About: "About",

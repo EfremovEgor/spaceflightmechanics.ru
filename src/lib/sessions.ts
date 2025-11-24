@@ -257,3 +257,144 @@ export const PlenarySessions: {
 		],
 	},
 ];
+
+export const RoundtableMeetings: {
+	name: string;
+	moderator: {
+		fullName: string;
+		affiliation: string;
+	};
+	description: string;
+	participants: {
+		fullName: string;
+		affiliation: string;
+	}[];
+}[] = [
+	{
+		name: "BRICS and Africa International Space Research and Education Cooperation",
+		moderator: {
+			fullName: "Ravinder Rena",
+			affiliation: "Durban University of Technology, South Africa",
+		},
+		description: "",
+		participants: [
+			{
+				fullName: "Irina Abramova",
+				affiliation:
+					"Institute for African Studies of the Russian Academy of Sciences, Russia",
+			},
+			{
+				fullName: "Yury Razoumny",
+				affiliation: "RUDN University, Russia",
+			},
+			{
+				fullName: "Antonio Prado",
+				affiliation: "Institute of Space Research (INPE), Brazil",
+			},
+			{
+				fullName: "Tarun P. Singh",
+				affiliation: "Symbiosis Institute of Geoinformatics, India",
+			},
+			{
+				fullName: "Shufan Wu",
+				affiliation: "Shanghai Jiao Tong University, China",
+			},
+			{
+				fullName: "Francis Chizea",
+				affiliation:
+					"National Agency for Space Research and Development (Nigerian Space Agency), Nigeria",
+			},
+			{
+				fullName: "Bocar Ba",
+				affiliation:
+					"World Space Sustainability Association, President, UAE",
+			},
+			{
+				fullName: "Kuria Catherine Wangari",
+				affiliation: "Skylinks International Holdings, Kenya",
+			},
+			{
+				fullName: "Emmanuel Mashonjowa",
+				affiliation: "University of Zimbabwe, Zimbabwe",
+			},
+			{
+				fullName: "Manfred Quarshie",
+				affiliation: "Space Science Systems Research Institute, Ghana",
+			},
+			{
+				fullName: "Doreen Agaba",
+				affiliation:
+					"Ministry for Science, Technology and Innovation, Uganda",
+			},
+			{
+				fullName: "Petro Peisha",
+				affiliation: "Dar es Salaam Institute of Technology, Tanzania",
+			},
+			{
+				fullName: "Yeshurun Alemayehu",
+				affiliation:
+					"Space Science and Geospatial Institute (Ethiopian Space Agency), Ethiopia",
+			},
+		],
+	},
+	{
+		name: "Lunar Resources: Technical, Commercial and Legal Challenges",
+		moderator: {
+			fullName: "Leslie I. Tennen",
+			affiliation: "Private Practice Sterns and Tennen, USA",
+		},
+		description: "",
+		participants: [
+			{
+				fullName: "Narkhanim Orujova",
+				affiliation:
+					"Space Agency of the Republic of Azerbaijan (Azercosmos), Azerbaijan",
+			},
+			{
+				fullName: "Irina Chernyh",
+				affiliation: "RUDN University, Russia",
+			},
+		],
+	},
+	{
+		name: "The Sustainability of Outer Space as a Significant Challenge for the Space Ecosystem as a Whole",
+		moderator: {
+			fullName: "Antonio Prado",
+			affiliation: "Institute of Space Research (INPE), Brazil",
+		},
+		description: "",
+		participants: [
+			{
+				fullName: "Boris Shustov",
+				affiliation:
+					"Institute of Astronomy of Russian Academy of Sciences, Russia",
+			},
+			{
+				fullName: "Bocar Ba",
+				affiliation: "World Space Sustainability Association, UAE",
+			},
+			{
+				fullName: "Giancarlo Genta",
+				affiliation: "Polytechnic University of Turin, Italy",
+			},
+			{
+				fullName: "Anoop Kumar Srivastava",
+				affiliation: "Indian Space Research Organization, India",
+			},
+			{
+				fullName: "Andrey Klimov",
+				affiliation: "Astronomical Research Center, Russia",
+			},
+			{
+				fullName: "Francis Chizea",
+				affiliation:
+					"National Agency for Space Research and Development (Nigerian Space Agency), Nigeria",
+			},
+			{
+				fullName: "Shekede Davis",
+				affiliation:
+					"Zimbabwe National Geospatial and Space Agency, Zimbabwe",
+			},
+		],
+	},
+];

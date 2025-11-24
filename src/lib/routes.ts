@@ -44,16 +44,16 @@ export const Routes: TRoutes = {
 		showInNav: true,
 
 		routes: {
-			plenary_sessions: {
-				name: "plenary_sessions",
-				path: "plenary-sessions",
+			roundtable_meetings: {
+				name: "roundtable_meetings",
+				path: "roundtable-meetings",
 				showInNav: true,
 				meta: [
 					{
-						title: makeMetaTitle("Plenary Sessions"),
+						title: makeMetaTitle("Roundtable meetings"),
 					},
 				],
-				disabled: true,
+				disabled: false,
 			},
 			technical_sessions: {
 				name: "technical_sessions",
