@@ -29,7 +29,7 @@ export const TechnicalSessions: {
 	},
 	{
 		name: "Earth Observations",
-		chair: "Aleksander Kotelnikov, RUDN University, Russia",
+		chair: "Tarun Singh, Symbiosis Institute of Geoinformatics, India",
 		description:
 			"The session covers technological aspects of Earth observations from space in favor of different industries and rational nature management, including implementation of AIML for analyzing massive amounts of data collected by Earth observation missions, revealing insights through geospatial analytics that are crucial for resource managements, urban planning, oceanographic, atmospheric, geological, geophysical, societal, security, and more. ",
 	},
@@ -41,7 +41,7 @@ export const TechnicalSessions: {
 	},
 	{
 		name: "Space Materials & Structures",
-		chair: "Vera Galishnikova, Moscow State University of Civil Engineering, Russia",
+		chair: "Meena Laad, Symbiosis Institute of Technology, India",
 		description:
 			"The session is devoted to the latest achievements and future directions in materials science for space applications, as well as covers exploration of innovative approaches, challenges, and advancements in the design and construction of structures in extraterrestrial environments. The session is focused to discuss showcase research, technologies, and methodologies involved in creating habitable and functional spaces beyond the Earth.",
 	},
@@ -374,12 +374,24 @@ export const RoundtableMeetings: {
 	{
 		name: "BRICS AND AFRICA INTERNATIONAL SPACE RESEARCH AND EDUCATION COOPERATION",
 		moderator: {
-			fullName: "Ravinder Rena",
+			fullName: "Francis Chizea",
 			affiliation:
-				"Professor, Durban University of Technology, South Africa",
+				"Deputy Director General, National Space Research and Development Agency (NASRDA), Nigeria",
 		},
 		description: "",
 		participants: [
+			{
+				fullName: "Irina Abramova",
+				affiliation:
+					"Director of Institute for African Studies of the Russian Academy of Sciences",
+				country: "Russia",
+			},
+			{
+				fullName: "Yury Razoumny",
+				affiliation:
+					"Director of Academy of Engineering, RUDN University",
+				country: "Russia",
+			},
 			{
 				fullName: "Bocar Ba",
 				affiliation:
@@ -393,10 +405,10 @@ export const RoundtableMeetings: {
 				country: "Ethiopia",
 			},
 			{
-				fullName: "Francis Chizea",
+				fullName: "Manfred Quarshie",
 				affiliation:
-					"Deputy Director General, National Space Research and Development Agency (NASRDA)",
-				country: "Nigeria",
+					"President, Space Science Systems Research Institute",
+				country: "Ghana",
 			},
 			{
 				fullName: "Anoop Kumar Srivastava",
@@ -411,10 +423,10 @@ export const RoundtableMeetings: {
 				country: "Tanzania",
 			},
 			{
-				fullName: "Yury Razoumny",
+				fullName: "Narkhanim Orujova",
 				affiliation:
-					"Director of Academy of Engineering, RUDN University",
-				country: "Russia",
+					"In-house Counsel, Space Agency of the Republic of Azerbaijan (Azercosmos)",
+				country: "Azerbaijan",
 			},
 			{
 				fullName: "Shufan Wu",
@@ -446,10 +458,9 @@ export const RoundtableMeetings: {
 				country: "Brazil",
 			},
 			{
-				fullName: "Manfred Quarshie",
-				affiliation:
-					"President, Space Science Systems Research Institute",
-				country: "Ghana",
+				fullName: "Ravinder Rena",
+				affiliation: "Professor, Durban University of Technology",
+				country: "South Africa",
 			},
 			{
 				fullName: "Renuganth Varatharajoo",
@@ -460,12 +471,6 @@ export const RoundtableMeetings: {
 				fullName: "Sarawut Ninsawat",
 				affiliation: "Professor, Asian Institute of Technology",
 				country: "Thailand",
-			},
-			{
-				fullName: "Narkhanim Orujova",
-				affiliation:
-					"In-house Counsel, Space Agency of the Republic of Azerbaijan (Azercosmos)",
-				country: "Azerbaijan",
 			},
 		],
 	},
