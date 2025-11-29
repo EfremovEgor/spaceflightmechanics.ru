@@ -9,18 +9,18 @@ export const TechnicalSessions: {
 		description:
 			"The session addresses advances in orbital mechanics, attitude dynamics, guidance, navigation and control of single or multi-spacecraft systems as well as space robotics, including applications related to the guidance, navigation and control of Earth-orbiting and interplanetary spacecraft, formation flying, rendezvous and docking. The session also covers topics on natural orbital dynamics of spacecraft in the Solar System and orbit determination.",
 	},
-	{
-		name: "Space Operations",
-		chair: "Renuganth Varatharajoo, University of Putra Malaysia, Malaysia",
-		description:
-			"The session is dedicated to the intricate processes involved in designing and executing spacecraft missions in near and deep space, including planetary defense and near-Earth objects. This topic covers a variety of innovative approaches crucial for ensuring the success of space missions, from conceptual design through launch, operation, and post-mission evaluation. The focus of the topic is on operational strategies and optimization techniques to maximize mission performance.",
-	},
-	{
-		name: "Small Satellite Missions",
-		chair: "Shufan Wu, Shanghai Jiao Tong University, China",
-		description:
-			"The session is focused on recent advances in small satellite class missions such as microsatellites, nanosatellites, CubeSats, as well as small satellites mega-constellations enabling valuable results for the mission end-user. The session also covers important lessons-learned topics, description of past and perspective space missions, different applications of small satellites and their constellations.",
-	},
+	// {
+	// 	name: "Space Operations",
+	// 	chair: "Renuganth Varatharajoo, University of Putra Malaysia, Malaysia",
+	// 	description:
+	// 		"The session is dedicated to the intricate processes involved in designing and executing spacecraft missions in near and deep space, including planetary defense and near-Earth objects. This topic covers a variety of innovative approaches crucial for ensuring the success of space missions, from conceptual design through launch, operation, and post-mission evaluation. The focus of the topic is on operational strategies and optimization techniques to maximize mission performance.",
+	// },
+	// {
+	// 	name: "Small Satellite Missions",
+	// 	chair: "Shufan Wu, Shanghai Jiao Tong University, China",
+	// 	description:
+	// 		"The session is focused on recent advances in small satellite class missions such as microsatellites, nanosatellites, CubeSats, as well as small satellites mega-constellations enabling valuable results for the mission end-user. The session also covers important lessons-learned topics, description of past and perspective space missions, different applications of small satellites and their constellations.",
+	// },
 	{
 		name: "Deep Space Exploration",
 		chair: "Elena Fomina, Institute of Biomedical Problems of RAS, Russia",
@@ -29,21 +29,31 @@ export const TechnicalSessions: {
 	},
 	{
 		name: "Earth Observations",
-		chair: "Tarun Singh, Symbiosis International (Deemed University), India",
+		chair: "Aleksander Kotelnikov, RUDN University, Russia",
 		description:
 			"The session covers technological aspects of Earth observations from space in favor of different industries and rational nature management, including implementation of AIML for analyzing massive amounts of data collected by Earth observation missions, revealing insights through geospatial analytics that are crucial for resource managements, urban planning, oceanographic, atmospheric, geological, geophysical, societal, security, and more. ",
 	},
 	{
 		name: "Space Sensors & Actuators",
-		chair: "Emmanuel Mashonjowa, University of Zimbabwe, Zimbabve",
+		chair: " Svetlana Agasieva, RUDN University, Russia",
 		description:
 			"The session addresses essential components that enable spacecraft to perceive their environment, execute control commands, and perform scientific and operational tasks, technological improvements. The session is focused on new developments in sensor technologies and actuator systems, like MEMS-based sensors and piezoelectric actuators, and other crucial on-board equipment that make sensors and actuators smaller and more functional, and contribute to the success of space missions.",
 	},
 	{
 		name: "Space Materials & Structures",
-		chair: "Meena Laad, Symbiosis International (Deemed University), India",
+		chair: "Vera Galishnikova, Moscow State University of Civil Engineering, Russia",
 		description:
 			"The session is devoted to the latest achievements and future directions in materials science for space applications, as well as covers exploration of innovative approaches, challenges, and advancements in the design and construction of structures in extraterrestrial environments. The session is focused to discuss showcase research, technologies, and methodologies involved in creating habitable and functional spaces beyond the Earth.",
+	},
+	{
+		name: "Space Architecture",
+		chair: "Ivan Khalil, RUDN University, Russia",
+		description: "",
+	},
+	{
+		name: "AIML In Space Applications",
+		chair: "Ketan Kotecha, Symbiosis Institute of Technology, India",
+		description: "",
 	},
 	{
 		name: "Space Power & Propulsion",
@@ -53,7 +63,7 @@ export const TechnicalSessions: {
 	},
 	{
 		name: "Space Policy, Law & Economics",
-		chair: "Leslie I. Tennen, Private Practice Sterns and Tennen, USA",
+		chair: "Narkhanim Orujova, Space Agency of the Republic of Azerbaijan, Azerbaijan",
 		description:
 			"The session is devoted to the discussion of the complex and increasingly critical intersection of technical policy development, legal frameworks, and economic considerations that govern space activities. The session is also focused on governance, regulation, and sustainable economic growth in the space sector, commercialization of space exploration activities, current initiatives for commercial space access and their technological developments.",
 	},
@@ -75,12 +85,14 @@ export const HighlightLectures: {
 		speaker: "Giancarlo Genta, Polytechnic University of Turin, Italy",
 	},
 	{
-		name: "Industrial Revolution: New Era of AI Driven Transformations in Space Technologies",
-		speaker: "Ketan Kotecha, Symbiosis Institute of Technology, India",
+		name: "The Policy and Legal Roadmap for Competitive and Sovereign Space Markets in the 2030s",
+		speaker:
+			"Narkhanim Orujova, Space Agency of the Republic of Azerbaijan (Azercosmos), Azerbaijan",
 	},
 	{
-		name: "Mission Design to Triple Asteroids",
-		speaker: "Antonio Prado, Institute of Space Research (INPE), Brazil",
+		name: "Space for National Development – Explore Innovate Succeed",
+		speaker:
+			"Anoop Kumar Srivastava, Indian Space Research Organization, India",
 	},
 	{
 		name: "The Nigerian Space Policy and Programme",
@@ -93,14 +105,12 @@ export const HighlightLectures: {
 			"Narendra S. Chaudhari, Assan Science and Technology University, India",
 	},
 	{
-		name: "The Policy and Legal Roadmap for Competitive and Sovereign Space Markets in the 2030s",
-		speaker:
-			"Narkhanim Orujova, Space Agency of the Republic of Azerbaijan (Azercosmos), Azerbaijan",
+		name: "Industrial Revolution: New Era of AI Driven Transformations in Space Technologies",
+		speaker: "Ketan Kotecha, Symbiosis Institute of Technology, India",
 	},
 	{
-		name: "Space for National Development – Explore Innovate Succeed",
-		speaker:
-			"Anoop Kumar Srivastava, Indian Space Research Organization, India",
+		name: "Filling critical environmental data gaps over the Tropics with the 'Equatorial Sentinels for Environment' remote sensing constellation: From classical North-South cooperation paradigm to disruptive South-South and South-North cooperations",
+		speaker: "Erick Lansard, Nanyang Technological University, Singapore",
 	},
 	{
 		name: "Solar Sail Trajectory Optimization for Interplanetary Mission",
@@ -129,11 +139,16 @@ export const HighlightLectures: {
 		speaker: "Sarawut Ninsawat, Asian Institute of Technology, Thailand",
 	},
 	{
+		name: "Ethiopian Way to Space: Projects and Programs",
+		speaker:
+			"Yeshurun Alemayehu, Space Science and Geospatial Institute (Ethiopian Space Agency), Ethiopia",
+	},
+	{
 		name: "Spacecraft Orbital Stability Under Total Solar Irradiance",
 		speaker: "Aleksandr Yefremov, RUDN University, Russia",
 	},
 	{
-		name: "Unlocking the Full Potential of Satellite Technology in Sub-Saharan Africa (SSA) through Training, Capacity Building, and Regional and International Cooperation",
+		name: "Unlocking the Full Potential of Satellite Technology in Sub-Saharan Africa through Training, Capacity Building, and Regional and International Cooperation",
 		speaker: "Emmanuel Mashonjowa, University of Zimbabwe, Zimbabwe",
 	},
 	{
@@ -146,8 +161,8 @@ export const HighlightLectures: {
 			"Manfred Quarshie, Space Science Systems Research Institute, Ghana",
 	},
 	{
-		name: "Hybrid Carbon Nanotube–Graphite Reinforced PVDF Composites: A Novel Approach for Space-Grade Lightweight Materials",
-		speaker: "Meena Laad, Symbiosis Institute of Technology, India",
+		name: "Space4Water: an UN Proposed Remote Sensing Satellite Mission",
+		speaker: "Shufan Wu, Shanghai Jiao Tong University, China",
 	},
 	{
 		name: "Navigating the New Space Era: Coordination, Sustainability, and Orbital Stewardship",
@@ -155,8 +170,13 @@ export const HighlightLectures: {
 			"Bocar Ba, World Space Sustainability Association, President, UAE",
 	},
 	{
-		name: "Space4Water: an UN Proposed Remote Sensing Satellite Mission",
-		speaker: "Shufan Wu, Shanghai Jiao Tong University, China",
+		name: "Hybrid Carbon Nanotube – Graphite Reinforced PVDF Composites: A Novel Approach for Space-Grade Lightweight Materials",
+		speaker: "Meena Laad, Symbiosis Institute of Technology, India",
+	},
+	{
+		name: "Mission Design to Triple Asteroids",
+		speaker:
+			"Antonio Prado, National Institute of Space Research (INPE), Brazil",
 	},
 	{
 		name: "Leveraging Earth Observation to Advance Zimbabwe's Socio-Economic Development",
@@ -167,11 +187,6 @@ export const HighlightLectures: {
 		name: "Success Story Related to Acta Astronautica Journal",
 		speaker:
 			"Rock Chern, Ryerson University, Canada, Editor-in-Chief of Acta Astronautica Journal",
-	},
-	{
-		name: "Ethiopian Way to Space: Projects and Programs",
-		speaker:
-			"Yeshurun Alemayehu, Space Science and Geospatial Institute (Ethiopian Space Agency), Ethiopia",
 	},
 ];
 
@@ -357,87 +372,107 @@ export const RoundtableMeetings: {
 	}[];
 }[] = [
 	{
-		name: "BRICS and Africa International Space Research and Education Cooperation",
+		name: "BRICS AND AFRICA INTERNATIONAL SPACE RESEARCH AND EDUCATION COOPERATION",
 		moderator: {
 			fullName: "Ravinder Rena",
-			affiliation: "Durban University of Technology, South Africa",
+			affiliation:
+				"Professor, Durban University of Technology, South Africa",
 		},
 		description: "",
 		participants: [
 			{
-				fullName: "Irina Abramova",
-				affiliation:
-					"Institute for African Studies of the Russian Academy of Sciences",
-				country: "Russia",
-			},
-			{
-				fullName: "Yury Razoumny",
-				affiliation: "RUDN University",
-				country: "Russia",
-			},
-			{
-				fullName: "Antonio Prado",
-				affiliation: "Institute of Space Research (INPE)",
-				country: "Brazil",
-			},
-			{
-				fullName: "Tarun P. Singh",
-				affiliation: "Symbiosis Institute of Geoinformatics",
-				country: "India",
-			},
-			{
-				fullName: "Shufan Wu",
-				affiliation: "Shanghai Jiao Tong University",
-				country: "China",
-			},
-			{
-				fullName: "Francis Chizea",
-				affiliation:
-					"National Agency for Space Research and Development (Nigerian Space Agency)",
-				country: "Nigeria",
-			},
-			{
 				fullName: "Bocar Ba",
-				affiliation: "World Space Sustainability Association",
+				affiliation:
+					"President, World Space Sustainability Association",
 				country: "UAE",
-			},
-			{
-				fullName: "Kuria Catherine Wangari",
-				affiliation: "Skylinks International Holdings",
-				country: "Kenya",
-			},
-			{
-				fullName: "Emmanuel Chipo Mashonjowa",
-				affiliation: "University of Zimbabwe",
-				country: "Zimbabwe",
-			},
-			{
-				fullName: "Manfred Quarshie",
-				affiliation: "Space Science Systems Research Institute",
-				country: "Ghana",
-			},
-			{
-				fullName: "Doreen Agaba",
-				affiliation: "Ministry for Science, Technology and Innovation",
-				country: "Uganda",
-			},
-			{
-				fullName: "Petro Ernest Pesha",
-				affiliation: "Dar es Salaam Institute of Technology",
-				country: "Tanzania",
 			},
 			{
 				fullName: "Yeshurun Alemayehu",
 				affiliation:
-					"Space Science and Geospatial Institute (Ethiopian Space Agency)",
+					"Deputy Minister, Ministry of Innovation and Technology",
 				country: "Ethiopia",
+			},
+			{
+				fullName: "Francis Chizea",
+				affiliation:
+					"Deputy Director General, National Space Research and Development Agency (NASRDA)",
+				country: "Nigeria",
+			},
+			{
+				fullName: "Anoop Kumar Srivastava",
+				affiliation:
+					"Technical Liaison Officer, Indian Space Research Organization",
+				country: "India",
+			},
+			{
+				fullName: "Petro Ernest Pesha",
+				affiliation:
+					"Director of Academics, Dar es Salaam Institute of Technology",
+				country: "Tanzania",
+			},
+			{
+				fullName: "Yury Razoumny",
+				affiliation:
+					"Director of Academy of Engineering, RUDN University",
+				country: "Russia",
+			},
+			{
+				fullName: "Shufan Wu",
+				affiliation:
+					"Director of Smart Satellite Technology Centre, Shanghai Jiao Tong University",
+				country: "China",
+			},
+			{
+				fullName: "Agaba Doreen",
+				affiliation:
+					"Head of Uganda Space Program, Ministry of Science, Technology and Innovation",
+				country: "Uganda",
+			},
+			{
+				fullName: "Kuria Catherine Wangari",
+				affiliation: "General Manager, Skylinks International Holdings",
+				country: "Kenya",
+			},
+			{
+				fullName: "Emmanuel Chipo Mashonjowa",
+				affiliation:
+					"Head of Department of Physics, University of Zimbabwe",
+				country: "Zimbabwe",
+			},
+			{
+				fullName: "Antonio Prado",
+				affiliation:
+					"Pro-Rector of the Graduate School, National Institute of Space Research (INPE)",
+				country: "Brazil",
+			},
+			{
+				fullName: "Manfred Quarshie",
+				affiliation:
+					"President, Space Science Systems Research Institute",
+				country: "Ghana",
+			},
+			{
+				fullName: "Renuganth Varatharajoo",
+				affiliation: "Professor, Universiti Putra Malaysia",
+				country: "Malaysia",
+			},
+			{
+				fullName: "Sarawut Ninsawat",
+				affiliation: "Professor, Asian Institute of Technology",
+				country: "Thailand",
+			},
+			{
+				fullName: "Narkhanim Orujova",
+				affiliation:
+					"In-house Counsel, Space Agency of the Republic of Azerbaijan (Azercosmos)",
+				country: "Azerbaijan",
 			},
 		],
 	},
 	{
-		name: "Lunar Resources: Technical, Commercial and Legal Challenges",
+		name: "LUNAR RESOURCES: TECHNICAL, COMMERCIAL AND LEGAL CHALLENGES",
 		moderator: {
-			fullName: "Leslie I. Tennen",
+			fullName: "Leslie Tennen",
 			affiliation: "Private Practice Sterns and Tennen, USA",
 		},
 		description: "",
@@ -445,55 +480,88 @@ export const RoundtableMeetings: {
 			{
 				fullName: "Narkhanim Orujova",
 				affiliation:
-					"Space Agency of the Republic of Azerbaijan (Azercosmos)",
+					"In-house Counsel, Space Agency of the Republic of Azerbaijan (Azercosmos)",
 				country: "Azerbaijan",
 			},
 			{
-				fullName: "Irina Chernyh",
-				affiliation: "RUDN University",
+				fullName: "Deen Sanders",
+				affiliation: "Special Counsel, Deloitte Access Economics",
+				country: "Australia",
+			},
+			{
+				fullName: "Irina Chernych",
+				affiliation: "Associate Professor, RUDN University",
 				country: "Russia",
+			},
+			{
+				fullName: "Elina Morozova",
+				affiliation:
+					"Executive Director, Intersputnik International Organization for Space Communications",
+				country: "Russia",
+			},
+			{
+				fullName: "Tarun Singh",
+				affiliation:
+					"Director Symbiosis Institute of Geoinformatics, Symbiosis International (Deemed University)",
+				country: "India",
+			},
+			{
+				fullName: "Giancarlo Genta",
+				affiliation: "Professor, Polytechnic University of Turin",
+				country: "Italy",
+			},
+			{
+				fullName: "Bocar Ba",
+				affiliation:
+					"President, World Space Sustainability Association",
+				country: "UAE",
+			},
+			{
+				fullName: "Manfred Quarshie",
+				affiliation:
+					"President, Space Science Systems Research Institute",
+				country: "Ghana",
 			},
 		],
 	},
 	{
-		name: "The Sustainability of Outer Space as a Significant Challenge for the Space Ecosystem as a Whole",
+		name: "THE SUSTAINABILITY OF OUTER SPACE AS A SIGNIFICANT CHALLENGE FOR THE SPACE ECOSYSTEM AS A WHOLE",
 		moderator: {
 			fullName: "Antonio Prado",
-			affiliation: "Institute of Space Research (INPE), Brazil",
+			affiliation:
+				"Pro-Rector of the Graduate School, National Institute of Space Research (INPE), Brazil",
 		},
 		description: "",
 		participants: [
 			{
 				fullName: "Boris Shustov",
 				affiliation:
-					"Institute of Astronomy of Russian Academy of Sciences",
+					"Science Supervisor, Institute of Astronomy of Russian Academy of Sciences",
 				country: "Russia",
-			},
-			{
-				fullName: "Bocar Ba",
-				affiliation: "World Space Sustainability Association",
-				country: "UAE",
-			},
-			{
-				fullName: "Giancarlo Genta",
-				affiliation: "Polytechnic University of Turin",
-				country: "Italy",
 			},
 			{
 				fullName: "Anoop Kumar Srivastava",
-				affiliation: "Indian Space Research Organization",
+				affiliation:
+					"Technical Liaison Officer, Indian Space Research Organization",
 				country: "India",
-			},
-			{
-				fullName: "Andrey Klimov",
-				affiliation: "Astronomical Research Center",
-				country: "Russia",
 			},
 			{
 				fullName: "Francis Chizea",
 				affiliation:
-					"National Agency for Space Research and Development (Nigerian Space Agency)",
+					"Deputy Director General, National Space Research and Development Agency (NASRDA)",
 				country: "Nigeria",
+			},
+			{
+				fullName: "Bocar Ba",
+				affiliation:
+					"President, World Space Sustainability Association",
+				country: "UAE",
+			},
+			{
+				fullName: "Andrey Klimov",
+				affiliation:
+					"Chief Design Officer, Astronomical Research Center",
+				country: "Russia",
 			},
 			{
 				fullName: "Shekede Davis",
