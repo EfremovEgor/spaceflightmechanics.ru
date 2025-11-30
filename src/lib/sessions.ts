@@ -137,6 +137,9 @@ export const HighlightLectures: {
 	{
 		name: "Remote Sensing Data Analysis for Crop and Land Cover Change in Thailand",
 		speaker: "Sarawut Ninsawat, Asian Institute of Technology, Thailand",
+		abstract:
+			"The integration of diverse datasets in agriculture marks a transformative shift in managing the complexities of modern farming systems. This presentation highlights the potential of remote-sensing–driven methodologies to enhance agricultural management, particularly in addressing critical challenges related to water scarcity and climate impacts. Advanced computational models derived from remote sensing enable the detection of spatial–temporal patterns, yield forecasting, and early identification of crop stress. In addition, real-time information from satellite and UAV observations provides rapid decision-support mechanisms that improve farm productivity, sustainability, and resilience. These practical applications demonstrate the tangible benefits of leveraging Big Earth Data and remote sensing in advancing modern agriculture.",
+		bio: "Dr. Sarawut Ninsawat received the Doctoral degree at Osaka City University (OCU), Japan. He was a Postdoctoral researcher at National Institute of Advanced Industrial Science and Technology (AIST), Tsukuba, Japan. Currently, he is Associate Professor in Remote Sensing program, Department of ICT, School of Engineering and technology, Asian Institute of Technology. His research interests are application of Remote Sensing and GIS for natural resource management, developing Web Mapping Application especially focus on the implementation of standard OGC Web services (OWS) framework such as WCS, WFS, WPS and SOS using Open Source Software solutions. Additionally, the various Location-Based Service applications were developed to utilize the location information for agriculture, environment and logistic purpose.",
 	},
 	{
 		name: "Ethiopian Way to Space: Projects and Programs",
