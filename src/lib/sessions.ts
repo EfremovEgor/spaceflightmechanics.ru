@@ -394,21 +394,9 @@ export const RoundtableMeetings: {
 				country: "Russia",
 			},
 			{
-				fullName: "Yury Razoumny",
-				affiliation:
-					"Director of Academy of Engineering, RUDN University",
-				country: "Russia",
-			},
-			{
-				fullName: "Bocar Ba",
-				affiliation:
-					"President, World Space Sustainability Association",
-				country: "UAE",
-			},
-			{
 				fullName: "Yeshurun Alemayehu",
 				affiliation:
-					"Deputy Minister, Ministry of Innovation and Technology",
+					"Deputy Director General, Ethiopian Space Science & Geospatial Institute",
 				country: "Ethiopia",
 			},
 			{
@@ -424,10 +412,9 @@ export const RoundtableMeetings: {
 				country: "India",
 			},
 			{
-				fullName: "Petro Ernest Pesha",
-				affiliation:
-					"Director of Academics, Dar es Salaam Institute of Technology",
-				country: "Tanzania",
+				fullName: "Ketan Kotecha",
+				affiliation: "Director, Symbiosis Institute of Technology",
+				country: "India",
 			},
 			{
 				fullName: "Sarawut Ninsawat",
@@ -435,10 +422,10 @@ export const RoundtableMeetings: {
 				country: "Thailand",
 			},
 			{
-				fullName: "Shufan Wu",
+				fullName: "Petro Ernest Pesha",
 				affiliation:
-					"Director of Smart Satellite Technology Centre, Shanghai Jiao Tong University",
-				country: "China",
+					"Director of Academics, Dar es Salaam Institute of Technology",
+				country: "Tanzania",
 			},
 			{
 				fullName: "Agaba Doreen",
@@ -447,9 +434,10 @@ export const RoundtableMeetings: {
 				country: "Uganda",
 			},
 			{
-				fullName: "Kuria Catherine Wangari",
-				affiliation: "General Manager, Skylinks International Holdings",
-				country: "Kenya",
+				fullName: "Shufan Wu",
+				affiliation:
+					"Director of Smart Satellite Technology Centre, Shanghai Jiao Tong University",
+				country: "China",
 			},
 			{
 				fullName: "Emmanuel Chipo Mashonjowa",
@@ -458,15 +446,20 @@ export const RoundtableMeetings: {
 				country: "Zimbabwe",
 			},
 			{
-				fullName: "Antonio Prado",
-				affiliation:
-					"Pro-Rector of the Graduate School, National Institute of Space Research (INPE)",
-				country: "Brazil",
+				fullName: "Kuria Catherine Wangari",
+				affiliation: "General Manager, Skylinks International Holdings",
+				country: "Kenya",
 			},
 			{
 				fullName: "Renuganth Varatharajoo",
 				affiliation: "Professor, Universiti Putra Malaysia",
 				country: "Malaysia",
+			},
+			{
+				fullName: "Antonio Prado",
+				affiliation:
+					"Pro-Rector of the Graduate School, National Institute of Space Research (INPE)",
+				country: "Brazil",
 			},
 		],
 	},
@@ -481,15 +474,16 @@ export const RoundtableMeetings: {
 		description: "",
 		participants: [
 			{
+				fullName: "Lev Zeleny",
+				affiliation:
+					"Science Supervisor, Institute of Space Research of Russian Academy of Sciences",
+				country: "Russia",
+			},
+			{
 				fullName: "Narkhanim Orujova",
 				affiliation:
 					"In-house Counsel, Space Agency of the Republic of Azerbaijan (Azercosmos)",
 				country: "Azerbaijan",
-			},
-			{
-				fullName: "Deen Sanders",
-				affiliation: "Special Counsel, Deloitte Access Economics",
-				country: "Australia",
 			},
 			{
 				fullName: "Irina Chernych",
@@ -497,10 +491,9 @@ export const RoundtableMeetings: {
 				country: "Russia",
 			},
 			{
-				fullName: "Elina Morozova",
-				affiliation:
-					"Executive Director, Intersputnik International Organization for Space Communications",
-				country: "Russia",
+				fullName: "Deen Sanders",
+				affiliation: "Special Counsel, Deloitte Access Economics",
+				country: "Australia",
 			},
 			{
 				fullName: "Tarun Singh",
@@ -509,21 +502,27 @@ export const RoundtableMeetings: {
 				country: "India",
 			},
 			{
-				fullName: "Giancarlo Genta",
-				affiliation: "Professor, Polytechnic University of Turin",
-				country: "Italy",
-			},
-			{
-				fullName: "Bocar Ba",
+				fullName: "Elina Morozova",
 				affiliation:
-					"President, World Space Sustainability Association",
-				country: "UAE",
+					"Executive Director, Intersputnik International Organization for Space Communications",
+				country: "Russia",
 			},
 			{
 				fullName: "Manfred Quarshie",
 				affiliation:
 					"President, Space Science Systems Research Institute",
 				country: "Ghana",
+			},
+			{
+				fullName: "Giancarlo Genta",
+				affiliation: "Professor, Polytechnic University of Turin",
+				country: "Italy",
+			},
+			{
+				fullName: "Shufan Wu",
+				affiliation:
+					"Director of Smart Satellite Technology Centre, Shanghai Jiao Tong University",
+				country: "China",
 			},
 		],
 	},
@@ -572,6 +571,12 @@ export const RoundtableMeetings: {
 				fullName: "Shekede Davis",
 				affiliation: "Zimbabwe National Geospatial and Space Agency",
 				country: "Zimbabwe",
+			},
+			{
+				fullName: "Yeshurun Alemayehu",
+				affiliation:
+					"Deputy Director General, Ethiopian Space Science & Geospatial Institute",
+				country: "Ethiopia",
 			},
 		],
 	},
