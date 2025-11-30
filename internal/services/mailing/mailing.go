@@ -42,8 +42,9 @@ func Init(credentials MailCredential) *Mailer {
 				if err := gomail.Send(s, m); err != nil {
 					log.Print(err)
 				}
+				log.Print("Sent email")
 
-			case <-time.After(30 * time.Second):
+			case <-time.After(1 * time.Second):
 				if open {
 					if err := s.Close(); err != nil {
 						panic(err)
@@ -65,7 +66,7 @@ func (m *Mailer) SendEmail(subject string, to string, body string) {
 	msg.SetHeader("From", m.credentials.From)
 	msg.SetHeader("To", to)
 	msg.SetHeader("Subject", subject)
-	msg.SetBody("text/plain", body)
+	msg.SetBody("text/html", body)
 	m.ch <- msg
 }
 
