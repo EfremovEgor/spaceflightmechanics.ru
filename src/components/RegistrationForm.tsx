@@ -124,7 +124,7 @@ export default function RegistrationForm({
 				>
 					<option value="">Select format</option>
 					<option value="online">Online</option>
-					<option value="offline">Offline</option>
+					<option value="offline">On-sight</option>
 				</select>
 				{errors.participationFormat && (
 					<span className="form-error">
