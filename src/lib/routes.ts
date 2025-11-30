@@ -44,6 +44,17 @@ export const Routes: TRoutes = {
 		showInNav: true,
 
 		routes: {
+			highlight_lectures: {
+				name: "highlight_lectures",
+				path: "highlight-lectures",
+				showInNav: true,
+				meta: [
+					{
+						title: makeMetaTitle("Highlight Lectures"),
+					},
+				],
+				disabled: false,
+			},
 			roundtable_meetings: {
 				name: "roundtable_meetings",
 				path: "roundtable-meetings",
@@ -64,17 +75,6 @@ export const Routes: TRoutes = {
 						title: makeMetaTitle("Technical Sessions"),
 					},
 				],
-			},
-			highlight_lectures: {
-				name: "highlight_lectures",
-				path: "highlight-lectures",
-				showInNav: true,
-				meta: [
-					{
-						title: makeMetaTitle("Highlight Lectures"),
-					},
-				],
-				disabled: false,
 			},
 		},
 	},

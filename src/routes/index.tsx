@@ -98,7 +98,7 @@ function App() {
 			<p className="paragraph">
 				Manuscripts will be published in the special volume of Advances
 				in Mechanics and Control. The best papers will be recommended
-				for publication in special issue of{" "}
+				for publication in the special issue of{" "}
 				<ExternalLink
 					text=" Acta Astronautica"
 					to="https://www.sciencedirect.com/journal/acta-astronautica"
