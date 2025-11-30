@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"html/template"
 	"io"
+	"log"
 	"slices"
 )
 
@@ -24,5 +25,8 @@ func ExecuteStringTemplate(templateName string, data interface{}) string {
 	var buf bytes.Buffer
 
 	ExecuteTemplate(templateName, data, &buf)
-	return buf.String()
+	s := buf.String()
+	log.Println("Executed template " + templateName + ".html")
+	log.Println(s)
+	return s
 }

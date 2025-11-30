@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -61,7 +62,7 @@ func (h *SciTech2025Handler) Register(c *gin.Context) {
 		CreatedAt:           registration.CreatedAt,
 	}
 	utils.SuccessJSON(c, http.StatusCreated, response)
-
+	log.Println("Trying to send email to " + registration.Email)
 	h.mailer.SendEmail("Registration for the 6th SciTech Forum",
 		registration.Email,
 		mailing.ExecuteStringTemplate("registration_complete",
