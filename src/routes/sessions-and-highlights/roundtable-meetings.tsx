@@ -21,9 +21,15 @@ function RouteComponent() {
 					<>
 						<h2 className="font-bold mt-4 uppercase">{s.name}</h2>
 						<div className="mt-4">
-							<strong>Moderator:</strong>
+							<strong>
+								Moderator{s.moderators.length > 1 ? "s" : ""}:
+							</strong>
 							<br />
-							{s.moderator.fullName}, {s.moderator.affiliation}
+							{s.moderators.map((m) => (
+								<p>
+									{m.fullName}, {m.affiliation}
+								</p>
+							))}
 						</div>
 						<div className="mt-4 ml-4">
 							<Accordion

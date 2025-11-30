@@ -63,7 +63,7 @@ export const TechnicalSessions: {
 	},
 	{
 		name: "Space Policy, Law & Economics",
-		chair: "Narkhanim Orujova, Space Agency of the Republic of Azerbaijan, Azerbaijan",
+		chair: "Irina Chernych, RUDN University, Russia",
 		description:
 			"The session is devoted to the discussion of the complex and increasingly critical intersection of technical policy development, legal frameworks, and economic considerations that govern space activities. The session is also focused on governance, regulation, and sustainable economic growth in the space sector, commercialization of space exploration activities, current initiatives for commercial space access and their technological developments.",
 	},
@@ -360,10 +360,10 @@ export const PlenarySessions: {
 
 export const RoundtableMeetings: {
 	name: string;
-	moderator: {
+	moderators: {
 		fullName: string;
 		affiliation: string;
-	};
+	}[];
 	description: string;
 	participants: {
 		fullName: string;
@@ -373,11 +373,18 @@ export const RoundtableMeetings: {
 }[] = [
 	{
 		name: "BRICS AND AFRICA INTERNATIONAL SPACE RESEARCH AND EDUCATION COOPERATION",
-		moderator: {
-			fullName: "Francis Chizea",
-			affiliation:
-				"Deputy Director General, National Space Research and Development Agency (NASRDA), Nigeria",
-		},
+		moderators: [
+			{
+				fullName: "Francis Chizea",
+				affiliation:
+					"Deputy Director General, National Space Research and Development Agency (NASRDA), Nigeria",
+			},
+			{
+				fullName: "Ravinder Rena",
+				affiliation:
+					"Professor, Durban University of Technology, South Africa",
+			},
+		],
 		description: "",
 		participants: [
 			{
@@ -423,10 +430,9 @@ export const RoundtableMeetings: {
 				country: "Tanzania",
 			},
 			{
-				fullName: "Narkhanim Orujova",
-				affiliation:
-					"In-house Counsel, Space Agency of the Republic of Azerbaijan (Azercosmos)",
-				country: "Azerbaijan",
+				fullName: "Sarawut Ninsawat",
+				affiliation: "Professor, Asian Institute of Technology",
+				country: "Thailand",
 			},
 			{
 				fullName: "Shufan Wu",
@@ -458,28 +464,20 @@ export const RoundtableMeetings: {
 				country: "Brazil",
 			},
 			{
-				fullName: "Ravinder Rena",
-				affiliation: "Professor, Durban University of Technology",
-				country: "South Africa",
-			},
-			{
 				fullName: "Renuganth Varatharajoo",
 				affiliation: "Professor, Universiti Putra Malaysia",
 				country: "Malaysia",
-			},
-			{
-				fullName: "Sarawut Ninsawat",
-				affiliation: "Professor, Asian Institute of Technology",
-				country: "Thailand",
 			},
 		],
 	},
 	{
 		name: "LUNAR RESOURCES: TECHNICAL, COMMERCIAL AND LEGAL CHALLENGES",
-		moderator: {
-			fullName: "Leslie Tennen",
-			affiliation: "Private Practice Sterns and Tennen, USA",
-		},
+		moderators: [
+			{
+				fullName: "Leslie Tennen",
+				affiliation: "Private Practice Sterns and Tennen, USA",
+			},
+		],
 		description: "",
 		participants: [
 			{
@@ -531,11 +529,13 @@ export const RoundtableMeetings: {
 	},
 	{
 		name: "THE SUSTAINABILITY OF OUTER SPACE AS A SIGNIFICANT CHALLENGE FOR THE SPACE ECOSYSTEM AS A WHOLE",
-		moderator: {
-			fullName: "Antonio Prado",
-			affiliation:
-				"Pro-Rector of the Graduate School, National Institute of Space Research (INPE), Brazil",
-		},
+		moderators: [
+			{
+				fullName: "Antonio Prado",
+				affiliation:
+					"Pro-Rector of the Graduate School, National Institute of Space Research (INPE), Brazil",
+			},
+		],
 		description: "",
 		participants: [
 			{
