@@ -8,6 +8,7 @@ import (
 type Config struct {
 	Server   ServerConfig
 	Database DatabaseConfig
+	Mailing  MailingConfig
 }
 
 type ServerConfig struct {
@@ -22,6 +23,13 @@ type DatabaseConfig struct {
 	Password string
 	DBName   string
 	SSLMode  string
+}
+
+type MailingConfig struct {
+	From     string
+	Password string
+	Port     int
+	Host     string
 }
 
 func Load() *Config {
@@ -48,6 +56,12 @@ func Load() *Config {
 			Password: viper.GetString("DB_PASSWORD"),
 			DBName:   viper.GetString("DB_NAME"),
 			SSLMode:  viper.GetString("DB_SSL_MODE"),
+		},
+		Mailing: MailingConfig{
+			From:     viper.GetString("EMAIL"),
+			Password: viper.GetString("EMAIL_PASSWORD"),
+			Port:     viper.GetInt("EMAIL_PORT"),
+			Host:     viper.GetString("EMAIL_HOST"),
 		},
 	}
 

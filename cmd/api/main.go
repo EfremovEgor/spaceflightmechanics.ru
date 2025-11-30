@@ -8,6 +8,7 @@ import (
 	"spacescitech.com/internal/config"
 	"spacescitech.com/internal/database"
 	"spacescitech.com/internal/handlers"
+	"spacescitech.com/internal/services/mailing"
 )
 
 func main() {
@@ -20,9 +21,17 @@ func main() {
 		log.Fatal("Cannot connect to database:", err)
 	}
 
+	log.Println("Running migrations")
 	database.Migrate(db)
-
-	sciTech2025Handler := handlers.NewSciTech2025Handler(db)
+	mailer := mailing.Init(
+		mailing.MailCredential{
+			From:     cfg.Mailing.From,
+			Password: cfg.Mailing.Password,
+			Port:     cfg.Mailing.Port,
+			Host:     cfg.Mailing.Host,
+		},
+	)
+	sciTech2025Handler := handlers.NewSciTech2025Handler(db, mailer)
 
 	r := gin.Default()
 	r.Use(cors.Default())
@@ -35,5 +44,6 @@ func main() {
 		}
 	}
 
+	log.Println("Running server")
 	r.Run(cfg.Server.Host + ":" + cfg.Server.Port)
 }

@@ -7,15 +7,18 @@ import (
 	"gorm.io/gorm"
 	"spacescitech.com/internal/dto"
 	"spacescitech.com/internal/models"
+	"spacescitech.com/internal/services/mailing"
 	"spacescitech.com/internal/utils"
 )
 
 type SciTech2025Handler struct {
-	db *gorm.DB
+	db     *gorm.DB
+	mailer *mailing.Mailer
 }
 
-func NewSciTech2025Handler(db *gorm.DB) *SciTech2025Handler {
-	return &SciTech2025Handler{db: db}
+func NewSciTech2025Handler(db *gorm.DB, mailer *mailing.Mailer) *SciTech2025Handler {
+
+	return &SciTech2025Handler{db: db, mailer: mailer}
 }
 
 func (h *SciTech2025Handler) Register(c *gin.Context) {
@@ -57,6 +60,15 @@ func (h *SciTech2025Handler) Register(c *gin.Context) {
 		Country:             registration.Country,
 		CreatedAt:           registration.CreatedAt,
 	}
-
 	utils.SuccessJSON(c, http.StatusCreated, response)
+
+	h.mailer.SendEmail("Registration for the 6th SciTech Forum",
+		registration.Email,
+		mailing.ExecuteStringTemplate("registration_complete",
+			struct {
+				FullName string
+			}{
+				FullName: registration.FullName,
+			},
+		))
 }
