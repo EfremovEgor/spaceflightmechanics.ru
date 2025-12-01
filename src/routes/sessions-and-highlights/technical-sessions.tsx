@@ -175,6 +175,7 @@ function RouteComponent() {
 								</div>
 							</div>
 						</td>
+						<td></td>
 					</tr>
 				</tbody>
 			</table>
