@@ -331,7 +331,7 @@ export const program: {
 			{
 				type: "item",
 				time: "13:00 - 15:00",
-				title: "Lunch (MOON VILLAGE HALL)",
+				title: "Lunch",
 			},
 			{
 				type: "plenary",
