@@ -79,7 +79,7 @@ export const Routes: TRoutes = {
 			program: {
 				name: "program",
 				path: "program",
-				showInNav: true,
+				showInNav: false,
 				meta: [
 					{
 						title: makeMetaTitle("Technical Program"),

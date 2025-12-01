@@ -42,31 +42,12 @@ function RouteComponent() {
 					</p>
 				</div>
 			</Modal>
-			{/* <p className="paragraph">Be sure to register early and save!</p>
 			<p className="paragraph">
-				Registration payment is provided in Chinese Yuan (500 CNY), or
-				Russian Ruble (5000 RUB). The payment could be done by bank
-				transfer using the following bank details:{" "}
-				<DownloadLink
-					path="/files/cny_bank_details.docx"
-					text="Chinese Yuan"
-				/>
-				,{" "}
-				<DownloadLink
-					path="/files/rub_bank_details.docx"
-					text="Russian Ruble"
-				/>
-				.
+				All categories of participants need to register to the 6th
+				SciTech Forum using the application below. After registration
+				the confirmation email with Zoom link will be sent.
 			</p>
-			<p className="paragraph">
-				For payment in Russian Ruble, you can also use MIR bank card by
-				the following{" "}
-				<ExternalLink
-					text="link"
-					to="https://offers.rudn.ru/offer/MzIwMTI3MDAwMDAxMg=="
-				/>
-				, or press the Register Now button below.
-			</p> */}
+
 			<button
 				onClick={() => setModalState("submission")}
 				className="button-promo uppercase mx-auto block w-fit my-16"
