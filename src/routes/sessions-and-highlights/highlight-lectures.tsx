@@ -19,7 +19,7 @@ function RouteComponent() {
 	return (
 		<BasePageLayout name="Highlight Lectures">
 			<div className="mt-4">
-				{HighlightLectures.map((l) => (
+				{HighlightLectures.map((l, i) => (
 					<div>
 						<h2 className="font-bold mt-4 uppercase">{l.name}</h2>
 						<div className="mt-4">
@@ -57,7 +57,9 @@ function RouteComponent() {
 								/>
 							</div>
 						)}
-						<hr className="my-6" />
+						{HighlightLectures.length - 1 != i && (
+							<hr className="my-6" />
+						)}
 					</div>
 				))}
 			</div>
