@@ -79,3 +79,30 @@ html {
 .form-checkbox {
     @apply w-5 h-5
 }
+
+.program__table {}
+
+.program__table .program-time__cell {
+    @apply whitespace-nowrap text-center
+}
+
+.program__table td {
+    @apply py-2 px-8 border border-gray-300
+}
+
+.program__table tr:first-child td {
+    border-top: none;
+}
+
+.program__table td {
+    border-left: none;
+    border-right: none;
+}
+
+.program__table td:last-child {
+    border-right: none;
+}
+
+.program__table tr:last-child td {
+    border-bottom: none;
+}

@@ -46,7 +46,8 @@ export const program: {
 			},
 			{
 				type: "plenary",
-				moderator: "Yury Razoumny, RUDN University, Russia",
+				moderator:
+					"Meena Laad, Symbiosis Institute of Technology, India",
 				title: "Plenary Session 1",
 				items: [
 					{
@@ -55,6 +56,13 @@ export const program: {
 						title: "Opening Ceremony",
 						welcome_speeches: [
 							"Gennady Krasnikov, President, Russian Academy of Sciences, Russia (TBC)",
+							"Oleg Yastrebov, Rector of RUDN University, Russia",
+							"Sergey Krikalev, Deputy General Director, State Corporation “ROSCOSMOS”, Cosmonaut, Russia",
+							"Christian Feichtinger, Executive Director, International Astronautical Federation, France",
+							"Aarti Holla-Maini, Director of UNOSSA, Austria",
+							"Olivier Contant, Executive Director, International Academy of Astronautics, France",
+							"Tatyana Titova, Daughter of the Second World Cosmonaut German Titov",
+							"Yury Razoumny, Chair of International Program Committee of SciTech Forum, Director of Engineering Academy of RUDN University",
 						],
 					},
 					{

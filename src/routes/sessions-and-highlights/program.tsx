@@ -11,14 +11,17 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 			return (
 				<tr>
 					<td className="program-time__cell">{item.time}</td>
-					<td>{item.title}</td>
+					<td className="font-semibold">{item.title}</td>
 				</tr>
 			);
 		case "plenary":
 			return (
 				<>
 					<tr>
-						<td className="text-center" colSpan={2}>
+						<td
+							className="text-center text-lg font-semibold"
+							colSpan={2}
+						>
 							<p>{item.title}</p>
 							<p>Moderator – {item.moderator}</p>
 						</td>
@@ -33,8 +36,8 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 						<p>{item.time}</p>
 					</td>
 					<td>
-						<p>{item.title}</p>
-						<p>{item.paperTitle}</p>
+						<p className="font-semibold">{item.title}</p>
+						<p className="italic">{item.paperTitle}</p>
 						<p>{item.presenter}</p>
 					</td>
 				</tr>
@@ -46,7 +49,7 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 						<p>{item.time}</p>
 					</td>
 					<td>
-						<p>{item.title}</p>
+						<p className="font-semibold">{item.title}</p>
 						<p>{item.topic}</p>
 						<div className="flex flex-row gap-2">
 							<p>Moderators: </p>
@@ -65,14 +68,14 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 				<tr>
 					<td className="program-time__cell">{item.time}</td>
 					<td>
-						<p>{item.title}</p>
-						<p>Welcome speeches</p>
-						<ul>
+						<p className="font-semibold">{item.title}</p>
+						{/* <p>Welcome speeches:</p>
+						<ul className="ml-2 italic">
 							{item.welcome_speeches.map((s) => (
 								<li>{s}</li>
 							))}
 						</ul>
-						<p>Concert</p>
+						<p>Concert</p> */}
 					</td>
 				</tr>
 			);
@@ -81,13 +84,15 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 function RouteComponent() {
 	return (
 		<BasePageLayout name="Technical Program">
-			<table className="table border program">
+			<table className="table  program__table">
 				<tbody>
 					{program.map((p) => (
 						<>
 							<tr>
 								<td className="text-center" colSpan={2}>
-									{p.time}
+									<h1 className="text-xl font-semibold">
+										{p.time}
+									</h1>
 								</td>
 							</tr>
 							{p.items.map((i) => makeProgramComponent(i))}
