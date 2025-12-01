@@ -52,7 +52,10 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 						<p className="font-semibold">{item.title}</p>
 						<p>{item.topic}</p>
 						<div className="flex flex-row gap-2">
-							<p>Moderators: </p>
+							<p>
+								Moderator{item.moderators.length > 1 ? "s" : ""}
+								:{" "}
+							</p>
 							<ul>
 								{item.moderators.map((s) => (
 									<li>{s}</li>

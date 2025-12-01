@@ -34,10 +34,10 @@ export type AnyProgramItem =
 
 export const program: {
 	time: string;
-	items: (ProgramItem | PlenarySession)[];
+	items: (ProgramItem | PlenarySession | OpeningCeremony)[];
 }[] = [
 	{
-		time: "Tuesday, December 2",
+		time: "Tuesday, December 2, 2025",
 		items: [
 			{
 				type: "item",
@@ -45,26 +45,26 @@ export const program: {
 				title: "Registration (6, Miklukho-Maklaya Str. Moscow, RUDN University, main building)",
 			},
 			{
+				type: "opening_ceremony",
+				time: "10:00 - 12:00",
+				title: "Opening Ceremony",
+				welcome_speeches: [
+					"Gennady Krasnikov, President, Russian Academy of Sciences, Russia (TBC)",
+					"Oleg Yastrebov, Rector of RUDN University, Russia",
+					"Sergey Krikalev, Deputy General Director, State Corporation “ROSCOSMOS”, Cosmonaut, Russia",
+					"Christian Feichtinger, Executive Director, International Astronautical Federation, France",
+					"Aarti Holla-Maini, Director of UNOSSA, Austria",
+					"Olivier Contant, Executive Director, International Academy of Astronautics, France",
+					"Tatyana Titova, Daughter of the Second World Cosmonaut German Titov",
+					"Yury Razoumny, Chair of International Program Committee of SciTech Forum, Director of Engineering Academy of RUDN University",
+				],
+			},
+			{
 				type: "plenary",
 				moderator:
 					"Meena Laad, Symbiosis Institute of Technology, India",
 				title: "Plenary Session 1",
 				items: [
-					{
-						type: "opening_ceremony",
-						time: "10:00 - 12:00",
-						title: "Opening Ceremony",
-						welcome_speeches: [
-							"Gennady Krasnikov, President, Russian Academy of Sciences, Russia (TBC)",
-							"Oleg Yastrebov, Rector of RUDN University, Russia",
-							"Sergey Krikalev, Deputy General Director, State Corporation “ROSCOSMOS”, Cosmonaut, Russia",
-							"Christian Feichtinger, Executive Director, International Astronautical Federation, France",
-							"Aarti Holla-Maini, Director of UNOSSA, Austria",
-							"Olivier Contant, Executive Director, International Academy of Astronautics, France",
-							"Tatyana Titova, Daughter of the Second World Cosmonaut German Titov",
-							"Yury Razoumny, Chair of International Program Committee of SciTech Forum, Director of Engineering Academy of RUDN University",
-						],
-					},
 					{
 						type: "highlight_lecture",
 						presenter:
@@ -150,7 +150,7 @@ export const program: {
 	},
 
 	{
-		time: "Wednesday, December 3",
+		time: "Wednesday, December 3, 2025",
 		items: [
 			{
 				type: "plenary",
@@ -225,7 +225,7 @@ export const program: {
 					{
 						type: "roundtable_meeting",
 						time: "15:00 - 16:00",
-						title: "Roundtable Meeting ",
+						title: "Roundtable Meeting 2",
 						topic: "Lunar Resources: Technical, Commercial and Legal Challenges",
 						moderators: [
 							"Leslie I. Tennen, Private Practice Sterns and Tennen, USA",
@@ -265,7 +265,7 @@ export const program: {
 	},
 
 	{
-		time: "Thursday, December 4",
+		time: "Thursday, December 4, 2025",
 		items: [
 			{
 				type: "plenary",
@@ -342,7 +342,7 @@ export const program: {
 					{
 						type: "roundtable_meeting",
 						time: "15:00 - 16:00",
-						title: "Roundtable Meeting ",
+						title: "Roundtable Meeting 3",
 						topic: "The Sustainability of Outer Space as a Significant Challenge for the Space Ecosystem as a Whole",
 						moderators: [
 							"Antonio Prado, Institute of Space Research (INPE), Brazil",
