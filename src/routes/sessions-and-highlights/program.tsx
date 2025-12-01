@@ -10,7 +10,7 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 		case "item":
 			return (
 				<tr>
-					<td>{item.time}</td>
+					<td className="program-time__cell">{item.time}</td>
 					<td>{item.title}</td>
 				</tr>
 			);
@@ -29,7 +29,7 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 		case "highlight_lecture":
 			return (
 				<tr>
-					<td>
+					<td className="program-time__cell">
 						<p>{item.time}</p>
 					</td>
 					<td>
@@ -42,7 +42,7 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 		case "roundtable_meeting":
 			return (
 				<tr>
-					<td>
+					<td className="program-time__cell">
 						<p>{item.time}</p>
 					</td>
 					<td>
@@ -63,7 +63,7 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 		case "opening_ceremony":
 			return (
 				<tr>
-					<td>{item.time}</td>
+					<td className="program-time__cell">{item.time}</td>
 					<td>
 						<p>{item.title}</p>
 						<p>Welcome speeches</p>
@@ -81,7 +81,7 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 function RouteComponent() {
 	return (
 		<BasePageLayout name="Technical Program">
-			<table className="table border">
+			<table className="table border program">
 				<tbody>
 					{program.map((p) => (
 						<>

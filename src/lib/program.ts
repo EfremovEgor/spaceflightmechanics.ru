@@ -146,49 +146,60 @@ export const program: {
 		items: [
 			{
 				type: "plenary",
-				moderator: "",
-				title: "Plenary Session ",
+				moderator:
+					"Renuganth Varatharajoo, Universiti Putra Malaysia, Malaysia",
+				title: "Plenary Session 3",
 				items: [
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Ketan Kotecha, Symbiosis Institute of Technology, India",
 						time: "10:00 - 10:30",
-						paperTitle: "",
+						paperTitle:
+							"Industrial Revolution: New Era of AI Driven Transformations in Space Technologies",
 						title: "Highlight Lecture 7",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Erick Lansard, Nanyang Technological University, Singapore",
 						time: "10:30 - 11:00",
-						paperTitle: "",
+						paperTitle:
+							"Filling critical environmental data gaps over the Tropics with the “Equatorial Sentinels for Environment” remote sensing constellation: From classical North-South cooperation paradigm to disruptive South-South and South-North cooperations",
 						title: "Highlight Lecture 8",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Renuganth Varatharajoo, Universiti Putra Malaysia, Malaysia",
 						time: "11:00 - 11:30",
-						paperTitle: "",
+						paperTitle:
+							"Solar Sail Trajectory Optimization for Interplanetary Mission",
 						title: "Highlight Lecture 9",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Andrey Klimov, Astronomical Research Center, Russia",
 						time: "11:30 - 12:00",
-						paperTitle: "",
+						paperTitle:
+							"Optical Space Situational Awareness as the Basis of Sustainable LEO Operations",
 						title: "Highlight Lecture 10",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Tarun P. Singh, Symbiosis Institute of Geoinformatics, India",
 						time: "12:00 - 12:30",
-						paperTitle: "",
+						paperTitle: "Indian Space Policy: Economical Effect",
 						title: "Highlight Lecture 11",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Lev Zeleny, Institute of Space Research of Russian Academy of Sciences, Russia",
 						time: "12:30 - 13:00",
-						paperTitle: "",
+						paperTitle: "Venus: Investigation of Mysterious Planet",
 						title: "Highlight Lecture 12",
 					},
 				],
@@ -200,45 +211,45 @@ export const program: {
 			},
 			{
 				type: "plenary",
-				moderator: "",
-				title: "Plenary Session ",
+				moderator: "Vera Galishnikova, RUDN University, Russia",
+				title: "Plenary Session 4",
 				items: [
 					{
 						type: "roundtable_meeting",
 						time: "15:00 - 16:00",
 						title: "Roundtable Meeting ",
-						topic: "",
-						moderators: [""],
+						topic: "Lunar Resources: Technical, Commercial and Legal Challenges",
+						moderators: [
+							"Leslie I. Tennen, Private Practice Sterns and Tennen, USA",
+						],
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre (IN-SPACe), India",
 						time: "16:00 - 16:30",
-						paperTitle: "",
+						paperTitle:
+							"Space Reforms in India: Vision, Framework and Impact",
 						title: "Highlight Lecture 13",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Sarawut Ninsawat, Asian Institute of Technology, Thailand",
 						time: "16:30 - 17:00",
-						paperTitle: "",
+						paperTitle:
+							"Remote Sensing Data Analysis for Crop and Land Cover Change in Thailand",
 						title: "Highlight Lecture 14",
 					},
 
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Yeshurun Alemayehu, Space Science and Geospatial Institute (Ethiopian Space Agency), Ethiopia",
 						time: "17:00 - 17:30",
-						paperTitle: "",
+						paperTitle:
+							"Ethiopian Way to Space: Projects and Programs",
 						title: "Highlight Lecture 15",
-					},
-
-					{
-						type: "highlight_lecture",
-						presenter: "",
-						time: "17:30 - 18:00",
-						paperTitle: "",
-						title: "Highlight Lecture 6",
 					},
 				],
 			},
@@ -250,50 +261,62 @@ export const program: {
 		items: [
 			{
 				type: "plenary",
-				moderator: "",
-				title: "Plenary Session ",
+				moderator: "Shufan Wu, Shanghai Jiao Tong University, China",
+				title: "Plenary Session 5",
 				items: [
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Aleksandr Yefremov, RUDN University, Russia",
 						time: "10:00 - 10:30",
-						paperTitle: "",
-						title: "Highlight Lecture 7",
+						paperTitle:
+							"Spacecraft Orbital Stability Under Total Solar Irradiance",
+						title: "Highlight Lecture 16",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Emmanuel Mashonjowa, University of Zimbabwe, Zimbabwe",
 						time: "10:30 - 11:00",
-						paperTitle: "",
-						title: "Highlight Lecture 8",
+						paperTitle:
+							"Unlocking the Full Potential of Satellite Technology in Sub-Saharan Africa through Training, Capacity Building, and Regional and International Cooperation",
+						title: "Highlight Lecture 17",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Sudip Das, Birla Institute of Technology, India",
 						time: "11:00 - 11:30",
-						paperTitle: "",
-						title: "Highlight Lecture 9",
+						paperTitle:
+							"Axisymmetric Supersonic Intake Buzz Characteristics and its Alleviation Adopting Plasma",
+						title: "Highlight Lecture 18",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Manfred Quarshie, Space Science Systems Research Institute, Ghana",
 						time: "11:30 - 12:00",
-						paperTitle: "",
-						title: "Highlight Lecture 10",
+						paperTitle:
+							"Space Monitoring Legal and Illegal (Galamesay) Mining Industrial Contaminants in Ghana",
+						title: "Highlight Lecture 19",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Shufan Wu, Shanghai Jiao Tong University, China",
 						time: "12:00 - 12:30",
-						paperTitle: "",
-						title: "Highlight Lecture 11",
+						paperTitle:
+							"Space4Water: an UN Proposed Remote Sensing Satellite Mission",
+						title: "Highlight Lecture 20",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Bocar Ba, World Space Sustainability Association, President, UAE",
 						time: "12:30 - 13:00",
-						paperTitle: "",
-						title: "Highlight Lecture 12",
+						paperTitle:
+							"Navigating the New Space Era: Coordination, Sustainability, and Orbital Stewardship",
+						title: "Highlight Lecture 21",
 					},
 				],
 			},
@@ -304,45 +327,55 @@ export const program: {
 			},
 			{
 				type: "plenary",
-				moderator: "",
-				title: "Plenary Session ",
+				moderator:
+					"Antonio Prado, National Institute of Space Research (INPE), Brazil",
+				title: "Plenary Session 6",
 				items: [
 					{
 						type: "roundtable_meeting",
 						time: "15:00 - 16:00",
 						title: "Roundtable Meeting ",
-						topic: "",
-						moderators: [""],
+						topic: "The Sustainability of Outer Space as a Significant Challenge for the Space Ecosystem as a Whole",
+						moderators: [
+							"Antonio Prado, Institute of Space Research (INPE), Brazil",
+						],
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Meena Laad, Symbiosis Institute of Technology, India",
 						time: "16:00 - 16:30",
-						paperTitle: "",
-						title: "Highlight Lecture 13",
+						paperTitle:
+							"Hybrid Carbon Nanotube – Graphite Reinforced PVDF Composites: A Novel Approach for Space-Grade Lightweight Materials",
+						title: "Highlight Lecture 22",
 					},
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Antonio Prado, National Institute of Space Research (INPE), Brazil",
 						time: "16:30 - 17:00",
-						paperTitle: "",
-						title: "Highlight Lecture 14",
+						paperTitle: "Mission Design to Triple Asteroids",
+						title: "Highlight Lecture 23",
 					},
 
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Shekede Davis, Zimbabwe National Geospatial and Space Agency, Zimbabwe",
 						time: "17:00 - 17:30",
-						paperTitle: "",
-						title: "Highlight Lecture 15",
+						paperTitle:
+							"Leveraging Earth Observation to Advance Zimbabwe's Socio-Economic Development",
+						title: "Highlight Lecture 24",
 					},
 
 					{
 						type: "highlight_lecture",
-						presenter: "",
+						presenter:
+							"Rock Chern, Ryerson University, Canada, Editor-in-Chief of Acta Astronautica Journal",
 						time: "17:30 - 18:00",
-						paperTitle: "",
-						title: "Highlight Lecture 6",
+						paperTitle:
+							"“Success Story” Related to Acta Astronautica Journal",
+						title: "Highlight Lecture 25",
 					},
 				],
 			},
