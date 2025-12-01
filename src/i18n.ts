@@ -17,6 +17,7 @@ const resources = {
 				technical_sessions: "Technical Sessions",
 				highlight_lectures: "Highlight Lectures",
 				roundtable_meetings: "Roundtable Meetings",
+				program: "Technical Program",
 			},
 			home: {
 				About: "About",

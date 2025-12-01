@@ -16,6 +16,7 @@ import { Route as AbstractSubmissionRouteImport } from './routes/abstract-submis
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SessionsAndHighlightsTechnicalSessionsRouteImport } from './routes/sessions-and-highlights/technical-sessions'
 import { Route as SessionsAndHighlightsRoundtableMeetingsRouteImport } from './routes/sessions-and-highlights/roundtable-meetings'
+import { Route as SessionsAndHighlightsProgramRouteImport } from './routes/sessions-and-highlights/program'
 import { Route as SessionsAndHighlightsPlenarySessionsRouteImport } from './routes/sessions-and-highlights/plenary-sessions'
 import { Route as SessionsAndHighlightsHighlightLecturesRouteImport } from './routes/sessions-and-highlights/highlight-lectures'
 
@@ -56,6 +57,12 @@ const SessionsAndHighlightsRoundtableMeetingsRoute =
     path: '/sessions-and-highlights/roundtable-meetings',
     getParentRoute: () => rootRouteImport,
   } as any)
+const SessionsAndHighlightsProgramRoute =
+  SessionsAndHighlightsProgramRouteImport.update({
+    id: '/sessions-and-highlights/program',
+    path: '/sessions-and-highlights/program',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SessionsAndHighlightsPlenarySessionsRoute =
   SessionsAndHighlightsPlenarySessionsRouteImport.update({
     id: '/sessions-and-highlights/plenary-sessions',
@@ -77,6 +84,7 @@ export interface FileRoutesByFullPath {
   '/registration': typeof RegistrationRoute
   '/sessions-and-highlights/highlight-lectures': typeof SessionsAndHighlightsHighlightLecturesRoute
   '/sessions-and-highlights/plenary-sessions': typeof SessionsAndHighlightsPlenarySessionsRoute
+  '/sessions-and-highlights/program': typeof SessionsAndHighlightsProgramRoute
   '/sessions-and-highlights/roundtable-meetings': typeof SessionsAndHighlightsRoundtableMeetingsRoute
   '/sessions-and-highlights/technical-sessions': typeof SessionsAndHighlightsTechnicalSessionsRoute
 }
@@ -88,6 +96,7 @@ export interface FileRoutesByTo {
   '/registration': typeof RegistrationRoute
   '/sessions-and-highlights/highlight-lectures': typeof SessionsAndHighlightsHighlightLecturesRoute
   '/sessions-and-highlights/plenary-sessions': typeof SessionsAndHighlightsPlenarySessionsRoute
+  '/sessions-and-highlights/program': typeof SessionsAndHighlightsProgramRoute
   '/sessions-and-highlights/roundtable-meetings': typeof SessionsAndHighlightsRoundtableMeetingsRoute
   '/sessions-and-highlights/technical-sessions': typeof SessionsAndHighlightsTechnicalSessionsRoute
 }
@@ -100,6 +109,7 @@ export interface FileRoutesById {
   '/registration': typeof RegistrationRoute
   '/sessions-and-highlights/highlight-lectures': typeof SessionsAndHighlightsHighlightLecturesRoute
   '/sessions-and-highlights/plenary-sessions': typeof SessionsAndHighlightsPlenarySessionsRoute
+  '/sessions-and-highlights/program': typeof SessionsAndHighlightsProgramRoute
   '/sessions-and-highlights/roundtable-meetings': typeof SessionsAndHighlightsRoundtableMeetingsRoute
   '/sessions-and-highlights/technical-sessions': typeof SessionsAndHighlightsTechnicalSessionsRoute
 }
@@ -113,6 +123,7 @@ export interface FileRouteTypes {
     | '/registration'
     | '/sessions-and-highlights/highlight-lectures'
     | '/sessions-and-highlights/plenary-sessions'
+    | '/sessions-and-highlights/program'
     | '/sessions-and-highlights/roundtable-meetings'
     | '/sessions-and-highlights/technical-sessions'
   fileRoutesByTo: FileRoutesByTo
@@ -124,6 +135,7 @@ export interface FileRouteTypes {
     | '/registration'
     | '/sessions-and-highlights/highlight-lectures'
     | '/sessions-and-highlights/plenary-sessions'
+    | '/sessions-and-highlights/program'
     | '/sessions-and-highlights/roundtable-meetings'
     | '/sessions-and-highlights/technical-sessions'
   id:
@@ -135,6 +147,7 @@ export interface FileRouteTypes {
     | '/registration'
     | '/sessions-and-highlights/highlight-lectures'
     | '/sessions-and-highlights/plenary-sessions'
+    | '/sessions-and-highlights/program'
     | '/sessions-and-highlights/roundtable-meetings'
     | '/sessions-and-highlights/technical-sessions'
   fileRoutesById: FileRoutesById
@@ -147,6 +160,7 @@ export interface RootRouteChildren {
   RegistrationRoute: typeof RegistrationRoute
   SessionsAndHighlightsHighlightLecturesRoute: typeof SessionsAndHighlightsHighlightLecturesRoute
   SessionsAndHighlightsPlenarySessionsRoute: typeof SessionsAndHighlightsPlenarySessionsRoute
+  SessionsAndHighlightsProgramRoute: typeof SessionsAndHighlightsProgramRoute
   SessionsAndHighlightsRoundtableMeetingsRoute: typeof SessionsAndHighlightsRoundtableMeetingsRoute
   SessionsAndHighlightsTechnicalSessionsRoute: typeof SessionsAndHighlightsTechnicalSessionsRoute
 }
@@ -202,6 +216,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SessionsAndHighlightsRoundtableMeetingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sessions-and-highlights/program': {
+      id: '/sessions-and-highlights/program'
+      path: '/sessions-and-highlights/program'
+      fullPath: '/sessions-and-highlights/program'
+      preLoaderRoute: typeof SessionsAndHighlightsProgramRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sessions-and-highlights/plenary-sessions': {
       id: '/sessions-and-highlights/plenary-sessions'
       path: '/sessions-and-highlights/plenary-sessions'
@@ -229,6 +250,7 @@ const rootRouteChildren: RootRouteChildren = {
     SessionsAndHighlightsHighlightLecturesRoute,
   SessionsAndHighlightsPlenarySessionsRoute:
     SessionsAndHighlightsPlenarySessionsRoute,
+  SessionsAndHighlightsProgramRoute: SessionsAndHighlightsProgramRoute,
   SessionsAndHighlightsRoundtableMeetingsRoute:
     SessionsAndHighlightsRoundtableMeetingsRoute,
   SessionsAndHighlightsTechnicalSessionsRoute:

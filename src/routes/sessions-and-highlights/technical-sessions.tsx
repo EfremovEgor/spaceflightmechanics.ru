@@ -1,3 +1,4 @@
+import DownloadLink from "@/components/common/DownloadLink";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import { Routes } from "@/lib/routes";
 import { TechnicalSessions } from "@/lib/sessions";
@@ -15,6 +16,10 @@ export const Route = createFileRoute(
 function RouteComponent() {
 	return (
 		<BasePageLayout name="Technical Sessions">
+			<DownloadLink
+				path="/files/Technical Sessions – Presentation List.pdf"
+				text="Technical Sessions – Presentation List"
+			/>
 			<table className="sessions-table-full hidden md:table">
 				<tbody>
 					<tr>

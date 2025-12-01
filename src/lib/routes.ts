@@ -76,6 +76,16 @@ export const Routes: TRoutes = {
 					},
 				],
 			},
+			program: {
+				name: "program",
+				path: "program",
+				showInNav: true,
+				meta: [
+					{
+						title: makeMetaTitle("Technical Program"),
+					},
+				],
+			},
 		},
 	},
 	submission: {
