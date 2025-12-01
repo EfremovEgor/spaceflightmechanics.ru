@@ -74,9 +74,9 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 					<td>
 						<p className="font-semibold">{item.title}</p>
 						<p>Welcome speeches:</p>
-						<ul className="ml-2 italic">
+						<ul className={`ml-2 italic`}>
 							{item.welcome_speeches.map((s) => (
-								<li>{s}</li>
+								<li>– {s}</li>
 							))}
 						</ul>
 						<p>Concert</p>
