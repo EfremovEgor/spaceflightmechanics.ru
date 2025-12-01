@@ -385,11 +385,6 @@ export const PlenarySessions: {
 			"Space technical policy and law at the international level originated in resolutions of general principles adopted by the United Nations General Assembly in the early 1960’s. These initial statements consisted of a handful of principles considered to be essential for the peaceful movement of mankind into outer space, including activities on the Moon and other celestial bodies. Within a few years these resolutions were incorporated and elaborated upon in the Outer Space Treaty of 1967, followed by the Rescue and Return Agreement, the Liability Convention, and the Registration Convention, all of which were drafted by the United Nations Committee on the Peaceful Uses of Outer Space. A fifth treaty, the Moon Agreement, was drafted by COPUOS in 1979, and since then the COPUOS has adopted “soft law” statements of principles, which are more aspirational than binding international law. Several states have implemented national space laws to govern the activities of their citizens in space. The development of space law has expanded into a wide range of issues but has lagged activities conducted at both the national and international levels. As such effective and comprehensive regulations of technical policy and law are lacking in several areas of endeavor. The participants in this plenary will identify and discuss emerging issues in space technical policy and law that are of critical importance for resolution.",
 		participants: [
 			{
-				fullName: "Elina Morozova",
-				affiliation:
-					"Intersputnik International Organization for Space Communications, Russia",
-			},
-			{
 				fullName: "George Anthony Long (online)",
 				affiliation:
 					"Consulting Firm Legal Parallax, LLC in Fountain Hills, USA",
@@ -528,6 +523,11 @@ export const RoundtableMeetings: {
 				fullName: "Leslie Tennen",
 				affiliation: "Private Practice Sterns and Tennen, USA",
 			},
+			{
+				fullName: "Narkhanim Orujova",
+				affiliation:
+					"In-house Counsel, Space Agency of the Republic of Azerbaijan (Azercosmos), Azerbaijan",
+			},
 		],
 		description: "",
 		participants: [
@@ -536,12 +536,6 @@ export const RoundtableMeetings: {
 				affiliation:
 					"Science Supervisor, Institute of Space Research of Russian Academy of Sciences",
 				country: "Russia",
-			},
-			{
-				fullName: "Narkhanim Orujova",
-				affiliation:
-					"In-house Counsel, Space Agency of the Republic of Azerbaijan (Azercosmos)",
-				country: "Azerbaijan",
 			},
 			{
 				fullName: "Irina Chernych",
@@ -558,12 +552,6 @@ export const RoundtableMeetings: {
 				affiliation:
 					"Director Symbiosis Institute of Geoinformatics, Symbiosis International (Deemed University)",
 				country: "India",
-			},
-			{
-				fullName: "Elina Morozova",
-				affiliation:
-					"Executive Director, Intersputnik International Organization for Space Communications",
-				country: "Russia",
 			},
 			{
 				fullName: "Manfred Quarshie",
