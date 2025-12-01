@@ -44,6 +44,16 @@ export const Routes: TRoutes = {
 		showInNav: true,
 
 		routes: {
+			program: {
+				name: "program",
+				path: "program",
+				showInNav: true,
+				meta: [
+					{
+						title: makeMetaTitle("Technical Program"),
+					},
+				],
+			},
 			highlight_lectures: {
 				name: "highlight_lectures",
 				path: "highlight-lectures",
@@ -76,18 +86,9 @@ export const Routes: TRoutes = {
 					},
 				],
 			},
-			program: {
-				name: "program",
-				path: "program",
-				showInNav: false,
-				meta: [
-					{
-						title: makeMetaTitle("Technical Program"),
-					},
-				],
-			},
 		},
 	},
+
 	submission: {
 		name: "submission",
 		path: "/abstract-submission",
