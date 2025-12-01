@@ -72,13 +72,13 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 					<td className="program-time__cell">{item.time}</td>
 					<td>
 						<p className="font-semibold">{item.title}</p>
-						{/* <p>Welcome speeches:</p>
+						<p>Welcome speeches:</p>
 						<ul className="ml-2 italic">
 							{item.welcome_speeches.map((s) => (
 								<li>{s}</li>
 							))}
 						</ul>
-						<p>Concert</p> */}
+						<p>Concert</p>
 					</td>
 				</tr>
 			);

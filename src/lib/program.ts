@@ -49,7 +49,7 @@ export const program: {
 				time: "10:00 - 12:00",
 				title: "Opening Ceremony",
 				welcome_speeches: [
-					"Gennady Krasnikov, President, Russian Academy of Sciences, Russia (TBC)",
+					"Sergey Chernyshev, Vice President, Russian Academy of Sciences, Russia",
 					"Oleg Yastrebov, Rector of RUDN University, Russia",
 					"Sergey Krikalev, Deputy General Director, State Corporation “ROSCOSMOS”, Cosmonaut, Russia",
 					"Christian Feichtinger, Executive Director, International Astronautical Federation, France",
