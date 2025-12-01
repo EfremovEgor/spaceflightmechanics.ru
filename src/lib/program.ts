@@ -229,6 +229,7 @@ export const program: {
 						topic: "Lunar Resources: Technical, Commercial and Legal Challenges",
 						moderators: [
 							"Leslie I. Tennen, Private Practice Sterns and Tennen, USA",
+							"Narkhanim Orujova, Space Agency of the Republic of Azerbaijan (Azercosmos), Azerbaijan",
 						],
 					},
 					{
