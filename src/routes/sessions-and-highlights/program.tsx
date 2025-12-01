@@ -1,3 +1,4 @@
+import DownloadLink from "@/components/common/DownloadLink";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import { program, type AnyProgramItem } from "@/lib/program";
 import { createFileRoute } from "@tanstack/react-router";
@@ -87,6 +88,10 @@ function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 function RouteComponent() {
 	return (
 		<BasePageLayout name="Technical Program">
+			<DownloadLink
+				path="/files/SciTech Forum Technical Program.pdf"
+				text="SciTech Forum Technical Program"
+			/>
 			<table className="table  program__table">
 				<tbody>
 					{program.map((p) => (
