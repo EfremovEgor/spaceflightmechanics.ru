@@ -37,7 +37,7 @@ export const program: {
 	items: (ProgramItem | PlenarySession | OpeningCeremony)[];
 }[] = [
 	{
-		time: "Tuesday, December 2, 2025",
+		time: "Tuesday, December 2, 2026",
 		items: [
 			{
 				type: "item",
@@ -150,7 +150,7 @@ export const program: {
 	},
 
 	{
-		time: "Wednesday, December 3, 2025",
+		time: "Wednesday, December 3, 2026",
 		items: [
 			{
 				type: "plenary",
@@ -266,7 +266,7 @@ export const program: {
 	},
 
 	{
-		time: "Thursday, December 4, 2025",
+		time: "Thursday, December 4, 2026",
 		items: [
 			{
 				type: "plenary",

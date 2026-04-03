@@ -30,11 +30,11 @@ const Header = () => {
 								/>
 							</div>
 							<h1 className="text-white text-2xl font-bold">
-								6<sup>th</sup> SciTech Forum <br /> on Space
+								7<sup>th</sup> SciTech Forum <br /> on Space
 								Engineering and Operations Support
 							</h1>
 							<p className=" text-white">
-								December 2-4, 2025 <br /> RUDN University,
+								December 2-4, 2026 <br /> RUDN University,
 								Moscow, Russia
 							</p>
 						</div>

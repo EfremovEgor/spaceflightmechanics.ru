@@ -14,7 +14,7 @@ export interface Route {
 export type TRoutes = { [key: string]: Route };
 
 export const makeMetaTitle = (title: string) => {
-	return `6th SciTech Forum on Space Engineering and Operations Support | ${title}`;
+	return `7th SciTech Forum on Space Engineering and Operations Support | ${title}`;
 };
 
 export const Routes: TRoutes = {

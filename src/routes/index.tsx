@@ -19,10 +19,10 @@ function App() {
 		<BasePageLayout name={t("home.About")}>
 			<p className="paragraph">
 				<strong>
-					6<sup>th</sup> SciTech Forum on Space Engineering and
+					7<sup>th</sup> SciTech Forum on Space Engineering and
 					Operations Support
 				</strong>{" "}
-				is taking place on December 2-4, 2025 in Moscow, Russia.{" "}
+				is taking place on December 2-4, 2026 in Moscow, Russia.{" "}
 			</p>
 			<p className="paragraph">
 				The Forum is organized by{" "}
@@ -82,12 +82,12 @@ function App() {
 			</p>
 
 			<p className="paragraph">
-				<strong>Abstract Submission Deadline:</strong> November 25, 2025
+				<strong>Abstract Submission Deadline:</strong> November 25, 2026
 				(extended) <br />
 				<strong>Presentation Submission deadline:</strong> November 30,
-				2025 (extended) <br />
+				2026 (extended) <br />
 				<strong>Manuscript Submission deadline:</strong> January 20,
-				2026
+				2027
 			</p>
 			<p className="paragraph">
 				Papers for the Forum shall be selected basing on the quality of

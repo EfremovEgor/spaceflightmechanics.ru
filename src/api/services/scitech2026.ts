@@ -2,7 +2,7 @@ import axios from "axios";
 import type { BaseAPIResponse } from "../types";
 
 const apiInstance = axios.create({
-	baseURL: `${import.meta.env.VITE_API_URL}/scitech2025`,
+	baseURL: `${import.meta.env.VITE_API_URL}/scitech2026`,
 	timeout: 1000,
 	headers: {
 		"Content-Type": "application/json",
@@ -23,7 +23,7 @@ export interface RegistrationResponse extends RegistrationRequest {
 	id: string;
 	updated_at: string;
 }
-export const SciTech2025Service = {
+export const SciTech2026Service = {
 	async register(data: RegistrationRequest) {
 		const res = await apiInstance.post<
 			BaseAPIResponse<RegistrationResponse>

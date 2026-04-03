@@ -37,13 +37,13 @@ function RouteComponent() {
 						icon="line-md:circle-twotone-to-confirm-circle-transition"
 					/>
 					<p>
-						You have successfully registered to the 6<sup>th</sup>{" "}
+						You have successfully registered to the 7<sup>th</sup>{" "}
 						SciTech Forum!
 					</p>
 				</div>
 			</Modal>
 			<p className="paragraph">
-				All categories of participants need to register to the 6th
+				All categories of participants need to register to the 7th
 				SciTech Forum using the application below. After registration
 				the confirmation email with Zoom link will be sent.
 			</p>
