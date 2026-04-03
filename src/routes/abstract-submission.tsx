@@ -36,7 +36,7 @@ function RouteComponent() {
 				/>
 			</p>
 			<a
-				href="https://confchair.org/call_for_papers/scitech2026/submit?lang=en"
+				href="https://submission.spacescitech.com/call_for_papers/scitech2026/submit?lang=en"
 				target="_blank"
 				className="button-promo uppercase mx-auto block w-fit my-8"
 			>
