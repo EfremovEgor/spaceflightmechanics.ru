@@ -1,8 +1,6 @@
-import DownloadLink from "@/components/common/DownloadLink";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import ToBeDiscussed from "@/components/layout/ToBeDiscussed";
 import { Routes } from "@/lib/routes";
-import { TechnicalSessions } from "@/lib/sessions";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute(

@@ -1,9 +1,7 @@
 // import Accordion from "@/components/common/Accordion";
-import Accordion from "@/components/common/Accordion";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import ToBeDiscussed from "@/components/layout/ToBeDiscussed";
 import { Routes } from "@/lib/routes";
-import { HighlightLectures } from "@/lib/sessions";
 // import { HighlightLectures } from "@/lib/sessions";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -58,7 +56,7 @@ function RouteComponent() {
           </div>
         ))}
       </div> */}
-			<ToBeDiscussed />
+      <ToBeDiscussed />
     </BasePageLayout>
   );
 }
