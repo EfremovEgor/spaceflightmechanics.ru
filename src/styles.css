@@ -12,18 +12,6 @@ html {
     @apply text-text-primary
 }
 
-.container {
-    max-width: 980px;
-
-
-
-
-}
-
-.paragraph {
-    @apply mt-4 text-justify
-}
-
 .link {
     @apply text-link hover:text-link-hover hover:underline
 }

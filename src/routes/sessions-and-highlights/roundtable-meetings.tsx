@@ -1,22 +1,23 @@
 import Accordion from "@/components/common/Accordion";
 import BasePageLayout from "@/components/layout/BasePageLayout";
+import ToBeDiscussed from "@/components/layout/ToBeDiscussed";
 import { Routes } from "@/lib/routes";
 import { RoundtableMeetings } from "@/lib/sessions";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute(
-	"/sessions-and-highlights/roundtable-meetings"
+  "/sessions-and-highlights/roundtable-meetings",
 )({
-	component: RouteComponent,
-	head: () => ({
-		meta: Routes.sessions_and_highlights.routes!.roundtable_meetings.meta,
-	}),
+  component: RouteComponent,
+  head: () => ({
+    meta: Routes.sessions_and_highlights.routes!.roundtable_meetings.meta,
+  }),
 });
 
 function RouteComponent() {
-	return (
-		<BasePageLayout name="Roundtable Meetings">
-			<div className="mt-4">
+  return (
+    <BasePageLayout name="Roundtable Meetings">
+      {/* <div className="mt-4">
 				{RoundtableMeetings.map((s) => (
 					<>
 						<h2 className="font-bold mt-4 uppercase">{s.name}</h2>
@@ -96,7 +97,8 @@ function RouteComponent() {
 						<hr className="my-2" />
 					</>
 				))}
-			</div>
-		</BasePageLayout>
-	);
+			</div> */}
+      <ToBeDiscussed />
+    </BasePageLayout>
+  );
 }
