@@ -1,11 +1,15 @@
 // import DownloadLink from "@/components/common/DownloadLink";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import ToBeDiscussed from "@/components/layout/ToBeDiscussed";
+import { Routes } from "@/lib/routes";
 // import { program, type AnyProgramItem } from "@/lib/program";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/sessions-and-highlights/program")({
   component: RouteComponent,
+  head: () => ({
+    meta: Routes.sessions_and_highlights.routes!.program.meta,
+  }),
 });
 // function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 //   switch (item.type) {
