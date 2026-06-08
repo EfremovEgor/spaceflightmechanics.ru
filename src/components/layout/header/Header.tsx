@@ -24,11 +24,11 @@ const Header = () => {
 									src="/images/ras-logo.png"
 									alt=""
 								/>
-								{/* <img
-                  className="w-[120px] sm:w-[200px] h-auto"
-                  src="/images/rudn-logo.png"
-                  alt=""
-                /> */}
+								<img
+									className="w-[120px] sm:w-[200px] h-auto"
+									src="/images/rudn-logo.png"
+									alt=""
+								/>
 							</div>
 							<h1 className="text-white text-2xl font-bold">
 								7<sup>th</sup> SciTech Forum <br /> on Space
