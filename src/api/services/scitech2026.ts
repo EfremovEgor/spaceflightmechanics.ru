@@ -3,7 +3,7 @@ import type { BaseAPIResponse } from "../types";
 
 const apiInstance = axios.create({
 	baseURL: `${import.meta.env.VITE_API_URL}/scitech2026`,
-	timeout: 1000,
+	timeout: 15000,
 	headers: {
 		"Content-Type": "application/json",
 	},

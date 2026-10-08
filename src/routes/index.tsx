@@ -29,7 +29,7 @@ function App() {
         and <strong>RUDN University</strong>.
         <br />
         Phone: +79336677352, email:{" "}
-        <a className="hover:underline" href="mailto:orgcom@spacescitech.com.">
+        <a className="hover:underline" href="mailto:orgcom@spacescitech.com">
           orgcom@spacescitech.com
         </a>{" "}
         (Local Organizing Committee).

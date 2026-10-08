@@ -65,7 +65,7 @@ const NavDropdown = () => {
                       <div className="flex flex-col ml-4">
                         {Object.values(r.routes).map((s) =>
                           s.disabled ? (
-                            <p className="text-gray-300">
+                            <p key={s.name} className="text-gray-300">
                               {t(`routes.${s.name}`)}
                             </p>
                           ) : (
@@ -83,7 +83,9 @@ const NavDropdown = () => {
                     </div>
                   );
                 return r.disabled ? (
-                  <p className="text-gray-400">{t(`routes.${r.name}`)}</p>
+                  <p key={r.name} className="text-gray-400">
+                    {t(`routes.${r.name}`)}
+                  </p>
                 ) : (
                   <Link
                     onClick={handleClose}

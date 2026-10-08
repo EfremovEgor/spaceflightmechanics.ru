@@ -55,7 +55,7 @@ function RouteComponent() {
       <p>
         If you require assistance during the submission process, please contact
         us via{" "}
-        <a className="link" href="mailto:orgcom@spacescitech.com.">
+        <a className="link" href="mailto:orgcom@spacescitech.com">
           orgcom@spacescitech.com
         </a>
         .

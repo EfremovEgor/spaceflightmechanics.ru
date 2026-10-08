@@ -42,6 +42,7 @@ export default function RegistrationForm({
 		register,
 		handleSubmit,
 		watch,
+		setError,
 
 		formState: { errors, isSubmitting },
 	} = useForm<RegistrationFormData>({
@@ -54,17 +55,28 @@ export default function RegistrationForm({
 	const isPresenter = watch("isPresenter");
 
 	const onSubmit = async (data: RegistrationFormData) => {
-		await SciTech2025Service.register({
-			full_name: data.fullName,
-			email: data.email,
-			country: data.country,
-			organization: data.organization,
-			participation_format: data.participationFormat,
-			is_presenter: data.isPresenter,
-			confchair_paper_id: data.confChairPaperID,
-			full_name_ru: data.fullNameRU,
-			paper_title: data.paperTitle,
-		});
+		try {
+			await SciTech2025Service.register({
+				full_name: data.fullName,
+				email: data.email,
+				country: data.country,
+				organization: data.organization,
+				participation_format: data.participationFormat,
+				is_presenter: data.isPresenter,
+				// Paper fields stay in form state after unticking "presenter"; don't send them.
+				confchair_paper_id: data.isPresenter
+					? data.confChairPaperID
+					: undefined,
+				full_name_ru: data.fullNameRU,
+				paper_title: data.isPresenter ? data.paperTitle : undefined,
+			});
+		} catch {
+			setError("root", {
+				message:
+					"Registration failed. Please try again later or contact orgcom@spacescitech.com",
+			});
+			return;
+		}
 		onSuccess();
 	};
 
@@ -99,7 +111,9 @@ export default function RegistrationForm({
 				<select className="form-input" {...register("country")}>
 					<option value="">Select country</option>
 					{getNames().map((c) => (
-						<option value={c}>{c}</option>
+						<option key={c} value={c}>
+							{c}
+						</option>
 					))}
 				</select>
 				{errors.country && (
@@ -181,6 +195,9 @@ export default function RegistrationForm({
 						)}
 					</div>
 				</>
+			)}
+			{errors.root && (
+				<p className="form-error text-center">{errors.root.message}</p>
 			)}
 			<div className="flex">
 				<button

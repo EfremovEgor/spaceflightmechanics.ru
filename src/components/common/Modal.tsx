@@ -16,16 +16,16 @@ const Modal = ({
 	return (
 		open && (
 			<div
-				className="fixed w-full backdrop-blur top-0 bg-black/40 h-full left-0 flex content-center justify-center items-center"
+				className="fixed z-50 w-full backdrop-blur top-0 bg-black/40 h-full left-0 flex content-center justify-center items-center overflow-y-auto p-4"
 				onClick={onClose}
 			>
 				<div
-					className="bg-white rounded-xl"
+					className="bg-white rounded-xl max-h-full overflow-y-auto max-w-full"
 					onClick={(e) => e.stopPropagation()}
 				>
 					<div className="text-white flex rounded-t-xl flex-row justify-between items-center gap-8  bg-primary p-4">
 						<h1 className="text-xl">{name}</h1>
-						{noCloseButton && (
+						{!noCloseButton && (
 							<button onClick={onClose} className="text-xl">
 								Close
 							</button>
