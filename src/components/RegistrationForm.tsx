@@ -2,7 +2,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { getNames } from "country-list";
-import { SciTech2025Service } from "@/api/services/scitech2025";
+import { isAxiosError } from "axios";
+import { SciTech2026Service } from "@/api/services/scitech2026";
 
 const RegistrationSchema = z
 	.object({
@@ -56,7 +57,7 @@ export default function RegistrationForm({
 
 	const onSubmit = async (data: RegistrationFormData) => {
 		try {
-			await SciTech2025Service.register({
+			await SciTech2026Service.register({
 				full_name: data.fullName,
 				email: data.email,
 				country: data.country,
@@ -70,10 +71,12 @@ export default function RegistrationForm({
 				full_name_ru: data.fullNameRU,
 				paper_title: data.isPresenter ? data.paperTitle : undefined,
 			});
-		} catch {
+		} catch (e) {
 			setError("root", {
 				message:
-					"Registration failed. Please try again later or contact orgcom@spacescitech.com",
+					isAxiosError(e) && e.response?.status == 409
+						? "This email is already registered for the Forum"
+						: "Registration failed. Please try again later or contact orgcom@spacescitech.com",
 			});
 			return;
 		}
