@@ -32,6 +32,7 @@ func main() {
 		},
 	)
 	sciTech2025Handler := handlers.NewSciTech2025Handler(db, mailer)
+	sciTech2026Handler := handlers.NewSciTech2026Handler(db, mailer)
 
 	r := gin.Default()
 	r.Use(cors.Default())
@@ -41,6 +42,10 @@ func main() {
 		scitech2025 := api.Group("/scitech2025")
 		{
 			scitech2025.POST("/register", sciTech2025Handler.Register)
+		}
+		scitech2026 := api.Group("/scitech2026")
+		{
+			scitech2026.POST("/register", sciTech2026Handler.Register)
 		}
 	}
 

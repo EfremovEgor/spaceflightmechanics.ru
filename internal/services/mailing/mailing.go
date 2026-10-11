@@ -33,21 +33,25 @@ func Init(credentials MailCredential) *Mailer {
 				if !ok {
 					return
 				}
+				// SMTP failures are logged, never panicked on: a panic here kills the
+				// whole API right after a registration has been saved.
 				if !open {
 					if s, err = d.Dial(); err != nil {
-						panic(err)
+						log.Print("Cannot connect to SMTP server: ", err)
+						continue
 					}
 					open = true
 				}
 				if err := gomail.Send(s, m); err != nil {
 					log.Print(err)
+					continue
 				}
 				log.Print("Sent email")
 
 			case <-time.After(1 * time.Second):
 				if open {
 					if err := s.Close(); err != nil {
-						panic(err)
+						log.Print("Cannot close SMTP connection: ", err)
 					}
 					open = false
 				}

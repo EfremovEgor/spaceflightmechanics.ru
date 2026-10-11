@@ -26,5 +26,6 @@ func NewConnection(cfg *config.DatabaseConfig) (*gorm.DB, error) {
 func Migrate(db *gorm.DB) {
 	db.AutoMigrate(
 		&models.SciTech2025Registration{},
+		&models.SciTech2026Registration{},
 	)
 }

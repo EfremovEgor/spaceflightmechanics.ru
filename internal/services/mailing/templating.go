@@ -13,7 +13,7 @@ import (
 //go:embed templates/*.html
 var templateFS embed.FS
 
-var templates = []string{"registration_complete"}
+var templates = []string{"registration_complete", "registration_complete_2026"}
 
 // Pre-compile templates at startup
 var compiledTemplates = make(map[string]*template.Template)
