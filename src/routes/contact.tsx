@@ -32,8 +32,8 @@ function RouteComponent() {
             <strong>Local Organizing Committee:</strong>
             <br />
             Phone:{" "}
-            <a className="hover:underline" href="tel:+79336677352">
-              +79336677352
+            <a className="hover:underline" href="tel:+79197727658">
+              +79197727658
             </a>
             <br />
             Email:{" "}

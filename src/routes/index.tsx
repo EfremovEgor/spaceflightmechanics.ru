@@ -28,25 +28,13 @@ function App() {
         The Forum is organized by <strong>Russian Academy of Sciences</strong>{" "}
         and <strong>RUDN University</strong>.
         <br />
-        Phone: +79336677352, email:{" "}
+        Phone: +79197727658, email:{" "}
         <a className="hover:underline" href="mailto:orgcom@spacescitech.com">
           orgcom@spacescitech.com
         </a>{" "}
         (Local Organizing Committee).
       </p>
 
-      <p>
-        <strong>Partner in African region</strong>:{" "}
-        <strong>Skylinks International Holdings Ltd</strong>, Nairobi, Kenya.{" "}
-        <br /> Phone: +254717410544, +254721406821, email:{" "}
-        <a
-          className="hover:underline"
-          href="mailto:catherine@skylinksinternational.co.ke"
-        >
-          catherine@skylinksinternational.co.ke
-        </a>
-        .
-      </p>
       <p>
         <strong>Hybrid format (on-site and online)</strong> is supposed (the
         online format is supported for participants outside Moscow region). The
@@ -74,11 +62,10 @@ function App() {
       </p>
 
       <p>
-        <strong>Abstract Submission Deadline:</strong> November 25, 2026
-        (extended) <br />
-        <strong>Presentation Submission deadline:</strong> November 30, 2026
-        (extended) <br />
-        <strong>Manuscript Submission deadline:</strong> January 20, 2027
+        <strong>Abstract Submission Deadline:</strong> November 15, 2026 <br />
+        <strong>Presentation Submission Deadline:</strong> November 22, 2026{" "}
+        <br />
+        <strong>Manuscript Submission Deadline:</strong> January 31, 2027
       </p>
       <p>
         Papers for the Forum shall be selected basing on the quality of 500 word
