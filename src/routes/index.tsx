@@ -82,7 +82,7 @@ function Hero() {
 			</Container>
 
 			<motion.div
-				className="absolute right-8 bottom-10 hidden md:block"
+				className="absolute right-8 bottom-10 hidden lg:block"
 				initial={{ opacity: 0, x: 20 }}
 				animate={booted ? { opacity: 1, x: 0 } : undefined}
 				transition={{ duration: 1, ease: EASE, delay: 1.4 }}

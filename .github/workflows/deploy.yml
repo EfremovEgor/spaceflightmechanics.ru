@@ -6,6 +6,17 @@ on:
         paths:
             - "src/**"
             - "public/**"
+            - "previous/**"
+            - "scripts/**"
+            - "index.html"
+            - "package.json"
+            - "yarn.lock"
+            - "vite.config.ts"
+
+# Shares the checkout on the server with the backend deploy; run one at a time.
+concurrency:
+    group: deploy-server
+    cancel-in-progress: false
 
 jobs:
     deploy:

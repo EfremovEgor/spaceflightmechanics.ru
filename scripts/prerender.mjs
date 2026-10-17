@@ -43,9 +43,7 @@ function page(html, { head, app, url, lang, extraHead = "" }) {
 		)
 		.replace("<!--ssr-outlet-->", app);
 	if (lang === "ru") {
-		out = out
-			.replace('<html lang="en">', '<html lang="ru">')
-			.replace('<div class="boot-title">7<sup>th</sup> SciTech Forum</div>', '<div class="boot-title">7-й форум SciTech</div>');
+		out = out.replace('<html lang="en">', '<html lang="ru">');
 	}
 	return out;
 }

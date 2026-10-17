@@ -1,5 +1,6 @@
 import Container from "@/components/layout/Container";
 import { Logos } from "@/components/layout/header/Header";
+import { PREVIOUS_FORUMS } from "@/lib/previousForums";
 import { Routes } from "@/lib/routes";
 import { Icon } from "@iconify/react";
 import { LocalLink, useT } from "@/lib/lang";
@@ -39,6 +40,19 @@ const Footer = () => {
 						<br />
 						{t("forum.venue")}
 					</p>
+					<div className="mt-8">
+						<p className="font-mono text-[0.7rem] tracking-widest text-dim uppercase">{t("common.previousForums")}</p>
+						<ul className="mt-3 grid gap-2 text-sm">
+							{PREVIOUS_FORUMS.map((f) => (
+								// A separate site, so a plain link rather than a router Link.
+								<li key={f.slug}>
+									<a href={f.path} className="link">
+										{f.title} · {f.year}
+									</a>
+								</li>
+							))}
+						</ul>
+					</div>
 				</div>
 
 				<nav aria-label="Footer" className="md:col-span-3">

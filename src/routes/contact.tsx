@@ -88,7 +88,7 @@ function RouteComponent() {
 										<CopyButton value="+79197727658" />
 									</div>
 									<div className="mt-3 flex items-center justify-between gap-3 border-t border-line pt-3">
-										<p className="min-w-0 break-words">
+										<p className="min-w-0 [overflow-wrap:anywhere]">
 											{t("common.email")}:{" "}
 											<a className="link" href="mailto:orgcom@spacescitech.com">
 												orgcom@spacescitech.com

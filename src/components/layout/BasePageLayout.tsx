@@ -38,7 +38,7 @@ const BasePageLayout = ({ name, section, aside, contentClassName = "", children 
 							</>
 						)}
 					</motion.p>
-					<h1 className="mt-5 max-w-4xl font-display text-[2.1rem] leading-[1.08] font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
+					<h1 className="mt-5 max-w-4xl font-display text-[clamp(1.5rem,7.6vw,2.1rem)] leading-[1.08] font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
 						<SplitWords text={name} delay={0.1} />
 					</h1>
 					{aside}

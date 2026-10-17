@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "vite --port 3000",
 		"start": "vite --port 3000",
-		"build": "tsc && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+		"build": "tsc && vite build && node scripts/build-previous.mjs && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
 		"serve": "vite preview",
 		"test": "tsc --noEmit --skipLibCheck",
 		"prepare": "husky"

@@ -251,6 +251,13 @@ html.is-dragging * {
 			border-color 0.3s,
 			color 0.3s;
 	}
+	@media (max-width: 639px) {
+		.btn {
+			padding: 0.9rem 1.4rem;
+			font-size: 0.74rem;
+			letter-spacing: 0.06em;
+		}
+	}
 	.btn:disabled {
 		opacity: 0.6;
 		cursor: progress;

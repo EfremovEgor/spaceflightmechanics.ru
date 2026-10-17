@@ -1,0 +1,80 @@
+{% extends 'admin/base.html' %}
+{% load i18n unfold %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+    {% include "unfold/helpers/site_branding.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="flex flex-col gap-6">
+    {% if edition %}
+        <div class="flex flex-col gap-1">
+            {% component "unfold/components/title.html" %}{{ edition.title_en }}{% endcomponent %}
+            {% component "unfold/components/text.html" %}
+                {{ edition.start_date|date:"d.m.Y" }} – {{ edition.end_date|date:"d.m.Y" }} ·
+                регистрация {% if edition.accepts_registrations %}открыта{% else %}закрыта{% endif %}
+            {% endcomponent %}
+        </div>
+
+        {% if failed_emails %}
+            <a href="{{ failed_emails_url }}" class="border border-red-200 bg-red-50 text-red-700 rounded-default px-4 py-3 text-sm font-semibold dark:bg-red-500/20 dark:border-red-500/30 dark:text-red-300">
+                Не отправлено писем за неделю: {{ failed_emails }}. Проверьте настройки SMTP и журнал отправки.
+            </a>
+        {% endif %}
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {% for kpi in kpis %}
+                {% component "unfold/components/card.html" with href=kpi.href footer=kpi.footer %}
+                    {% component "unfold/components/text.html" %}{{ kpi.title }}{% endcomponent %}
+                    {% component "unfold/components/title.html" %}{{ kpi.value }}{% endcomponent %}
+                {% endcomponent %}
+            {% endfor %}
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-2">
+            {% component "unfold/components/card.html" with title="Новые регистрации" %}
+                <div class="flex flex-col">
+                    {% for r in recent %}
+                        <a href="{% url 'admin:registrations_registration_change' r.pk %}" class="flex flex-row items-center justify-between gap-4 py-2 border-b border-base-200 last:border-b-0 dark:border-base-800 hover:text-primary-600">
+                            <span class="flex flex-col min-w-0">
+                                <span class="font-semibold text-font-important-light dark:text-font-important-dark truncate">{{ r.full_name }}</span>
+                                <span class="text-xs truncate">{{ r.organization }} · {{ r.country }}</span>
+                            </span>
+                            <span class="text-xs whitespace-nowrap">{{ r.created_at|date:"d.m H:i" }}</span>
+                        </a>
+                    {% empty %}
+                        {% component "unfold/components/text.html" %}Пока никто не зарегистрировался.{% endcomponent %}
+                    {% endfor %}
+                </div>
+            {% endcomponent %}
+
+            {% component "unfold/components/card.html" with title="Страны" %}
+                <div class="flex flex-col gap-4">
+                    {% for c in countries %}
+                        {% component "unfold/components/progress.html" with title=c.title description=c.value value=c.percent %}{% endcomponent %}
+                    {% empty %}
+                        {% component "unfold/components/text.html" %}Нет данных.{% endcomponent %}
+                    {% endfor %}
+                </div>
+            {% endcomponent %}
+        </div>
+    {% endif %}
+
+    {% component "unfold/components/card.html" with title="Все годы" %}
+        <div class="flex flex-col">
+            {% for e in editions %}
+                <div class="flex flex-row items-center justify-between gap-4 py-2 border-b border-base-200 last:border-b-0 dark:border-base-800">
+                    <a href="{% url 'admin:editions_edition_change' e.pk %}" class="font-semibold text-font-important-light dark:text-font-important-dark hover:text-primary-600">
+                        {{ e.year }} · {{ e.title_en }}
+                    </a>
+                    <a href="{{ registrations_url }}?edition__id__exact={{ e.pk }}" class="text-sm whitespace-nowrap hover:text-primary-600">
+                        {{ e.total }} регистраций, {{ e.presenters }} с докладом
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    {% endcomponent %}
+</div>
+{% endblock %}

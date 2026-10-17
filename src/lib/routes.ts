@@ -30,7 +30,7 @@ export const absoluteUrl = (path: string) =>
 
 const OG_ALT = {
   en: "7th SciTech Forum on Space Engineering and Operations Support, November 24-26, 2026, RUDN University, Moscow, Russia",
-  ru: "7-й форум SciTech по космической технике и обеспечению космических операций, 24–26 ноября 2026 г., РУДН, Москва",
+  ru: "7th SciTech Forum on Space Engineering and Operations Support, 24–26 ноября 2026 г., РУДН, Москва",
 };
 
 /** Defaults shared by every page; route heads override them by name/property. */
@@ -55,14 +55,14 @@ const RU_KEYWORDS =
   "космос, космические полёты, механика космического полёта, космическая техника, форум, SciTech, РУДН, РАН, конференция";
 
 export const makeMetaTitleRu = (title: string) =>
-  `7-й форум SciTech по космической технике и обеспечению космических операций | ${title}`;
+  `7th SciTech Forum on Space Engineering and Operations Support | ${title}`;
 
 /** Russian titles and descriptions, keyed by route name. */
 const RU_META: Record<string, { title: string; description: string }> = {
   home: {
     title: "Главная",
     description:
-      "7-й форум SciTech по космической технике и обеспечению космических операций пройдёт 24–26 ноября 2026 г. в РУДН, Москва, Россия",
+      "7th SciTech Forum on Space Engineering and Operations Support пройдёт 24–26 ноября 2026 г. в РУДН, Москва, Россия",
   },
   committee: {
     title: "Программный комитет",
@@ -91,7 +91,7 @@ const RU_META: Record<string, { title: string; description: string }> = {
   },
   plenary_sessions: {
     title: "Пленарные заседания",
-    description: "Пленарные заседания 7-го форума SciTech по космической технике и обеспечению космических операций",
+    description: "Пленарные заседания 7th SciTech Forum on Space Engineering and Operations Support",
   },
   submission: {
     title: "Правила подачи",

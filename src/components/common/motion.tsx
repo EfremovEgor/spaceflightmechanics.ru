@@ -20,10 +20,12 @@ type RevealProps = HTMLMotionProps<"div"> & {
 };
 
 /** Fades and lifts its content in the first time it scrolls into view. */
-export function Reveal({ delay = 0, y = 28, as = "div", children, ...rest }: RevealProps) {
+export function Reveal({ delay = 0, y = 28, as = "div", children, className, ...rest }: RevealProps) {
 	const Comp = motion[as] as typeof motion.div;
 	return (
 		<Comp
+			// Grid/flex items may shrink below their longest word so text wraps inside cards.
+			className={`min-w-0 ${className ?? ""}`}
 			initial={{ opacity: 0, y, filter: "blur(8px)" }}
 			whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
 			viewport={{ once: true, margin: "0px 0px -8% 0px" }}

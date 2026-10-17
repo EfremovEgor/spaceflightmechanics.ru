@@ -18,6 +18,8 @@ export interface RegistrationRequest {
 	full_name_ru?: string | undefined;
 	confchair_paper_id?: string | undefined;
 	paper_title?: string | undefined;
+	/** Language of the confirmation email. */
+	language?: "en" | "ru";
 }
 export interface RegistrationResponse extends RegistrationRequest {
 	id: string;

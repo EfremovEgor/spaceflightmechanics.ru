@@ -1,4 +1,3 @@
-import Container from "@/components/layout/Container";
 import { useRouterState } from "@tanstack/react-router";
 import { Trans } from "react-i18next";
 import { LangSwitch, LocalLink, useT } from "@/lib/lang";
@@ -49,7 +48,7 @@ const Header = () => {
 						: "border-transparent bg-transparent"
 				}`}
 			>
-				<Container className="flex h-[68px] items-center justify-between gap-6 sm:h-[76px]">
+				<div className="mx-auto flex h-[68px] w-full max-w-[1440px] items-center justify-between gap-6 px-5 sm:h-[76px] sm:px-8">
 					<LocalLink to="/" className="group flex items-center gap-4" aria-label={`${t("forum.shortPlain")} — ${t("routes.home")}`}>
 						<Logos />
 						<span className="hidden font-display text-[0.7rem] leading-tight tracking-wide whitespace-nowrap text-muted transition-colors group-hover:text-white 2xl:block">
@@ -61,7 +60,7 @@ const Header = () => {
 						<LangSwitch className="hidden sm:flex" />
 						<NavDropdown open={menuOpen} onToggle={() => setMenuOpen((v) => !v)} />
 					</div>
-				</Container>
+				</div>
 			</div>
 		</motion.header>
 	);

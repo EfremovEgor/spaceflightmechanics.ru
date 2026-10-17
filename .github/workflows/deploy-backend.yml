@@ -1,0 +1,38 @@
+name: Deploy backend
+
+on:
+    push:
+        branches: [master]
+        paths:
+            - "backend/**"
+
+# Shares the checkout on the server with the frontend deploy; run one at a time.
+concurrency:
+    group: deploy-server
+    cancel-in-progress: false
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Setup SSH
+              run: |
+                  sudo apt-get update
+                  sudo apt-get install -y sshpass
+
+            - name: Deploy to server
+              run: |
+                  sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no \
+                  ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
+                  set -e
+                  echo "Starting backend deployment..."
+
+                  cd /var/www/spacescitech.com/frontend/
+                  git pull origin master
+
+                  cd backend
+                  docker compose up --build -d
+
+                  echo "Backend deployment completed successfully!"
+                  '

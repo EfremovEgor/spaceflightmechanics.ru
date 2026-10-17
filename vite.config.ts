@@ -15,6 +15,11 @@ export default defineConfig({
 		viteReact(),
 	],
 
+	server: {
+		// The Django backend (with its virtualenv) and archived sites are separate projects.
+		watch: { ignored: ["**/backend/**", "**/previous/**"] },
+	},
+
 	resolve: {
 		alias: {
 			"@": resolve(__dirname, "./src"),

@@ -89,13 +89,16 @@ export default function RegistrationForm({
 					: undefined,
 				full_name_ru: data.fullNameRU,
 				paper_title: data.isPresenter ? data.paperTitle : undefined,
+				language: lang,
 			});
 		} catch (e) {
 			setError("root", {
 				message:
 					isAxiosError(e) && e.response?.status == 409
 						? t("form.errDuplicate")
-						: t("form.errFailed"),
+						: isAxiosError(e) && e.response?.status == 403
+							? t("form.errClosed")
+							: t("form.errFailed"),
 			});
 			return;
 		}

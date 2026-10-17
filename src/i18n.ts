@@ -6,8 +6,8 @@ export type Lang = (typeof LANGS)[number];
 
 /*
  * Rich strings use <b>, <sup>, <br/> and named link tags; they are rendered with <Trans>.
- * Russian wording follows the English site; the forum's official Russian title is not
- * published anywhere yet, so `forum.*` below is our translation.
+ * Russian wording follows the English site. The forum's name stays in English in both
+ * languages (`forum.*`).
  */
 const en = {
 	routes: {
@@ -64,6 +64,7 @@ const en = {
 		dragHint: "drag · hover",
 		mapTitle: "RUDN University on the map",
 		gagarin: "Yuri Gagarin monument, Moscow",
+		previousForums: "Previous forums",
 	},
 	home: {
 		About: "About",
@@ -128,6 +129,7 @@ const en = {
 		errCountry: "Country is required",
 		errFormat: "Participation format is required",
 		errDuplicate: "This email is already registered for the Forum",
+		errClosed: "Registration for the Forum is closed",
 		errFailed: "Registration failed. Please try again later or contact orgcom@spacescitech.com",
 	},
 	submission: {
@@ -191,10 +193,10 @@ const ru: Dict = {
 		program: "Техническая программа",
 	},
 	forum: {
-		short: "7-й форум SciTech",
-		shortPlain: "7-й форум SciTech",
-		full: "7-й форум SciTech по космической технике и обеспечению космических операций",
-		tagline: "по космической технике и обеспечению космических операций",
+		short: "7<sup>th</sup> SciTech Forum",
+		shortPlain: "7th SciTech Forum",
+		full: "7<sup>th</sup> SciTech Forum on Space Engineering and Operations Support",
+		tagline: "on Space Engineering and Operations Support",
 		dates: "24–26 ноября 2026 г.",
 		venue: "РУДН, Москва, Россия",
 		organizers: "Российская академия наук",
@@ -230,10 +232,11 @@ const ru: Dict = {
 		dragHint: "вращайте · наводите",
 		mapTitle: "РУДН на карте",
 		gagarin: "Памятник Юрию Гагарину, Москва",
+		previousForums: "Прошлые форумы",
 	},
 	home: {
 		About: "О форуме",
-		intro: "<b>7-й форум SciTech по космической технике и обеспечению космических операций</b> пройдёт <hl>24–26 ноября 2026 г.</hl> в Москве.",
+		intro: "<b>7<sup>th</sup> SciTech Forum on Space Engineering and Operations Support</b> пройдёт <hl>24–26 ноября 2026 г.</hl> в Москве.",
 		organized:
 			"Организаторы форума — <b>Российская академия наук</b> и <b>РУДН</b>.<br/>Телефон: <phone>+79197727658</phone>, эл. почта: <mail>orgcom@spacescitech.com</mail> (местный организационный комитет).",
 		format:
@@ -268,10 +271,10 @@ const ru: Dict = {
 	registration: {
 		title: "Регистрация",
 		intro:
-			"Всем категориям участников необходимо зарегистрироваться на 7-й форум SciTech через форму ниже. После регистрации придёт письмо с подтверждением и ссылкой на Zoom.",
+			"Всем категориям участников необходимо зарегистрироваться на 7th SciTech Forum через форму ниже. После регистрации придёт письмо с подтверждением и ссылкой на Zoom.",
 		help: "Если вам нужна помощь с регистрацией или у вас есть другие вопросы, напишите в местный организационный комитет: <mail>orgcom@spacescitech.com</mail>",
 		modal: "Форма регистрации",
-		success: "Вы успешно зарегистрировались на 7-й форум SciTech!",
+		success: "Вы успешно зарегистрировались на 7<sup>th</sup> SciTech Forum!",
 	},
 	form: {
 		fullName: "Имя и фамилия*",
@@ -294,6 +297,7 @@ const ru: Dict = {
 		errCountry: "Укажите страну",
 		errFormat: "Укажите формат участия",
 		errDuplicate: "Этот адрес уже зарегистрирован на форум",
+		errClosed: "Регистрация на форум закрыта",
 		errFailed: "Не удалось зарегистрироваться. Попробуйте позже или напишите на orgcom@spacescitech.com",
 	},
 	submission: {
@@ -360,7 +364,7 @@ const ru: Dict = {
 		geo: { name: "ГСО", info: "h = 35 786 км · i = 0° · T = 23 ч 56 мин" },
 	},
 	meta: {
-		suffix: "7-й форум SciTech по космической технике и обеспечению космических операций",
+		suffix: "7th SciTech Forum on Space Engineering and Operations Support",
 		keywords:
 			"космос, космические полёты, механика космического полёта, космическая техника, форум, SciTech, РУДН, РАН, конференция",
 	},
