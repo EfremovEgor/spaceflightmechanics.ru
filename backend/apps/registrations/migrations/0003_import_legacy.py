@@ -11,7 +11,7 @@ def forwards(apps, schema_editor):
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("registrations", "0001_initial"),
+        ("registrations", "0002_long_paper_fields"),
         ("editions", "0002_seed_editions"),
     ]
 

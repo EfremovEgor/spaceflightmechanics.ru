@@ -23,8 +23,8 @@ class RegistrationSerializer(serializers.ModelSerializer):
     """Request and response fields match the previous Go API."""
 
     full_name_ru = NullableCharField(max_length=255)
-    confchair_paper_id = NullableCharField(max_length=64)
-    paper_title = NullableCharField(max_length=500)
+    confchair_paper_id = NullableCharField(max_length=5000)
+    paper_title = NullableCharField(max_length=5000)
     language = serializers.ChoiceField(choices=Registration.Language.choices, required=False)
 
     class Meta:

@@ -25,8 +25,9 @@ class Registration(models.Model):
     participation_format = models.CharField("Формат участия", max_length=16, choices=Format.choices)
     full_name_ru = models.CharField("ФИО на русском", max_length=255, blank=True)
     is_presenter = models.BooleanField("С докладом", default=False)
-    confchair_paper_id = models.CharField("ID доклада в ConfChair", max_length=64, blank=True)
-    paper_title = models.CharField("Название доклада", max_length=500, blank=True)
+    # Free text in the old form: some people pasted a whole abstract here, so no length limit.
+    confchair_paper_id = models.TextField("ID доклада в ConfChair", blank=True)
+    paper_title = models.TextField("Название доклада", blank=True)
     language = models.CharField(
         "Язык сайта",
         max_length=2,
