@@ -1,16 +1,19 @@
 import { Icon } from "@iconify/react";
+import type { ReactNode } from "react";
 interface Props {
 	to: string;
-	text: string;
+	text?: string;
+	children?: ReactNode;
 	className?: string;
 }
-const ExternalLink = ({ to, text, className }: Props) => {
+const ExternalLink = ({ to, text, children, className = "" }: Props) => {
 	return (
-		<a
-			className={`inline-flex flex-row items-center link ${className}`}
-			href={to}
-		>
-			{text} <Icon className="inline" icon="ri:external-link-fill" />
+		<a className={`group inline-flex flex-row items-center gap-1 link ${className}`} href={to}>
+			{text ?? children}
+			<Icon
+				className="inline transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+				icon="ri:external-link-fill"
+			/>
 		</a>
 	);
 };

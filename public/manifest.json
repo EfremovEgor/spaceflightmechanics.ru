@@ -1,6 +1,6 @@
 {
-	"short_name": "scitech",
-	"name": "SciTech2026",
+	"short_name": "SciTech 2026",
+	"name": "7th SciTech Forum on Space Engineering and Operations Support",
 	"icons": [
 		{
 			"src": "favicon.png",
@@ -8,8 +8,8 @@
 			"type": "image/png"
 		}
 	],
-	"start_url": ".",
+	"start_url": "/",
 	"display": "standalone",
-	"theme_color": "#000000",
-	"background_color": "#ffffff"
+	"theme_color": "#02040b",
+	"background_color": "#02040b"
 }

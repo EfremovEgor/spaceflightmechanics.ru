@@ -1,51 +1,52 @@
 import { Icon } from "@iconify/react";
-import { useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
+import { useId, useState } from "react";
 
 interface AccordionProps {
-  items: { title: string; content: React.ReactNode }[];
+	items: { title: string; content: React.ReactNode }[];
 }
 
 const Accordion = ({ items }: AccordionProps) => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+	const [openIndex, setOpenIndex] = useState<number | null>(null);
+	const id = useId();
 
-  const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
-  return (
-    <div className="w-full space-y-2">
-      {items.map((item, index) => {
-        const isOpen = openIndex === index;
-        return (
-          <div key={item.title}>
-            <button
-              className="cursor-pointer w-full text-left flex justify-between items-center transition-colors"
-              onClick={() => toggle(index)}
-            >
-              <span
-                className={`font-bold transition-all border-b-2 hover:border-primary ${openIndex == index ? "border-primary" : "border-transparent"}`}
-              >
-                {item.title}
-              </span>
-              <Icon
-                icon="mdi:chevron-down"
-                className={`text-2xl transition-transform duration-300 ${
-                  isOpen ? "rotate-180" : ""
-                }`}
-              />
-            </button>
-
-            <div
-              className={`transition-[max-height] duration-300 overflow-hidden`}
-              style={{ maxHeight: isOpen ? "1000px" : "0px" }}
-            >
-              <div className="mt-4">{item.content}</div>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
+	return (
+		<div className="w-full divide-y divide-line overflow-hidden rounded-xl border border-line">
+			{items.map((item, index) => {
+				const isOpen = openIndex === index;
+				return (
+					<div key={item.title} className={`transition-colors ${isOpen ? "bg-white/[0.03]" : ""}`}>
+						<button
+							type="button"
+							aria-expanded={isOpen}
+							aria-controls={`${id}-${index}`}
+							className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left font-semibold transition-colors hover:text-cyan"
+							onClick={() => setOpenIndex(isOpen ? null : index)}
+						>
+							<span>{item.title}</span>
+							<motion.span animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
+								<Icon icon="mdi:chevron-down" className="text-2xl" />
+							</motion.span>
+						</button>
+						<AnimatePresence initial={false}>
+							{isOpen && (
+								<motion.div
+									id={`${id}-${index}`}
+									initial={{ height: 0, opacity: 0 }}
+									animate={{ height: "auto", opacity: 1 }}
+									exit={{ height: 0, opacity: 0 }}
+									transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+									className="overflow-hidden"
+								>
+									<div className="px-4 pb-4 text-muted">{item.content}</div>
+								</motion.div>
+							)}
+						</AnimatePresence>
+					</div>
+				);
+			})}
+		</div>
+	);
 };
 
 export default Accordion;

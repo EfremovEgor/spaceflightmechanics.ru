@@ -1,51 +1,57 @@
 import Accordion from "@/components/common/Accordion";
+import { Reveal } from "@/components/common/motion";
 import BasePageLayout from "@/components/layout/BasePageLayout";
-import { Routes } from "@/lib/routes";
+import { makeMetaTitle, pageHead, type Route as SiteRoute } from "@/lib/routes";
 import { PlenarySessions } from "@/lib/sessions";
 import { createFileRoute } from "@tanstack/react-router";
+import { useT } from "@/lib/lang";
+
+// Not listed in Routes (the page is hidden from navigation), so it carries its own head.
+export const plenaryRoute: SiteRoute = {
+  name: "plenary_sessions",
+  path: "/sessions-and-highlights/plenary-sessions",
+  meta: [{ title: makeMetaTitle("Plenary Sessions") }],
+};
 
 export const Route = createFileRoute(
   "/sessions-and-highlights/plenary-sessions",
 )({
   component: RouteComponent,
-  head: () => ({
-    meta: Routes.sessions_and_highlights.routes!.plenary_sessions.meta,
-  }),
+  head: () => pageHead(plenaryRoute),
 });
 
 function RouteComponent() {
+  const { t } = useT();
   return (
-    <BasePageLayout name="Plenary Sessions">
-      <div className="mt-4">
+    <BasePageLayout name={t("sessions.plenary")} section={t("sessions.section")}>
+      <div className="flex max-w-4xl flex-col gap-4">
         {PlenarySessions.map((s) => (
-          <>
-            <h2 className="font-bold mt-4">{s.name}</h2>
-            <div className="mt-4">
-              <strong>Moderator:</strong>
-              <br />
-              {s.moderator.fullName}, {s.moderator.affiliation}
-            </div>
-            <div className="mt-4 ml-4">
+          <Reveal key={s.name}>
+            <article className="panel hud-corners flex flex-col gap-5 p-6 sm:p-8">
+              <h2 className="font-display text-lg leading-snug text-white sm:text-xl">{s.name}</h2>
+              <div className="text-muted">
+                <strong className="text-white">{t("sessions.moderator")}</strong>
+                <br />
+                {s.moderator.fullName}, {s.moderator.affiliation}
+              </div>
               <Accordion
                 items={[
                   {
                     content: (
-                      <div className="text-sm grid grid-cols-2 gap-4">
+                      <div className="grid gap-4 text-sm sm:grid-cols-2">
                         {s.participants.map((p) => (
                           <p key={p.fullName + p.affiliation}>
-                            {p.fullName}
+                            <span className="text-white">{p.fullName}</span>
                             <br />
                             {p.affiliation}
                           </p>
                         ))}
                       </div>
                     ),
-                    title: "Participants",
+                    title: t("sessions.participants"),
                   },
                 ]}
               />
-            </div>
-            <div className="mt-4 ml-4">
               <Accordion
                 items={[
                   {
@@ -54,13 +60,12 @@ function RouteComponent() {
                         <p className="text-justify">{s.description}</p>
                       </div>
                     ),
-                    title: "Description",
+                    title: t("sessions.description"),
                   },
                 ]}
               />
-            </div>
-            <hr className="my-2" />
-          </>
+            </article>
+          </Reveal>
         ))}
       </div>
     </BasePageLayout>

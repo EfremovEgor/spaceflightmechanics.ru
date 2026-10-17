@@ -1,22 +1,26 @@
 // import Accordion from "@/components/common/Accordion";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import ToBeDiscussed from "@/components/layout/ToBeDiscussed";
-import { Routes } from "@/lib/routes";
+import { pageHead, Routes } from "@/lib/routes";
 // import { HighlightLectures } from "@/lib/sessions";
 import { createFileRoute } from "@tanstack/react-router";
+import { useT } from "@/lib/lang";
 
 export const Route = createFileRoute(
   "/sessions-and-highlights/highlight-lectures",
 )({
   component: RouteComponent,
-  head: () => ({
-    meta: Routes.sessions_and_highlights.routes!.highlight_lectures.meta,
-  }),
+  head: () =>
+    pageHead(
+      Routes.sessions_and_highlights.routes!.highlight_lectures,
+      `${Routes.sessions_and_highlights.path}/${Routes.sessions_and_highlights.routes!.highlight_lectures.path}`,
+    ),
 });
 
 function RouteComponent() {
+  const { t } = useT();
   return (
-    <BasePageLayout name="Highlight Lectures">
+    <BasePageLayout name={t("sessions.highlight")} section={t("sessions.section")}>
       {/* <div className="mt-4">
         {HighlightLectures.map((l, i) => (
           <div>

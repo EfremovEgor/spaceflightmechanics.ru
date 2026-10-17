@@ -1,44 +1,63 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { getNames } from "country-list";
+import { getData } from "country-list";
+import type { TFunction } from "i18next";
+import { useMemo } from "react";
+import { useT } from "@/lib/lang";
 import { isAxiosError } from "axios";
+import { AnimatePresence, motion } from "motion/react";
 import { SciTech2026Service } from "@/api/services/scitech2026";
+import { Button } from "@/components/common/Button";
 
-const RegistrationSchema = z
-	.object({
-		fullName: z.string().min(1, "This field could not be empty"),
-		email: z.email("Invalid email address"),
-		country: z.string().min(1, "Country is required"),
-		organization: z.string().min(1, "This field could not be empty"),
-		participationFormat: z
-			.string()
-			.min(1, "Participation format is required"),
-		fullNameRU: z.string().optional(),
-		isPresenter: z.boolean(),
-		confChairPaperID: z.string().optional(),
-		paperTitle: z.string().optional(),
-	})
-	.refine(
-		(data) => {
-			if (data.isPresenter) {
-				return data.paperTitle && data.paperTitle.trim().length > 0;
-			}
-			return true;
-		},
-		{
-			message: "This field could not be empty",
-			path: ["paperTitle"],
-		}
-	);
+const makeSchema = (t: TFunction) =>
+	z
+		.object({
+			fullName: z.string().min(1, t("form.errRequired")),
+			email: z.email(t("form.errEmail")),
+			country: z.string().min(1, t("form.errCountry")),
+			organization: z.string().min(1, t("form.errRequired")),
+			participationFormat: z.string().min(1, t("form.errFormat")),
+			fullNameRU: z.string().optional(),
+			isPresenter: z.boolean(),
+			confChairPaperID: z.string().optional(),
+			paperTitle: z.string().optional(),
+		})
+		.refine(
+			(data) => {
+				if (data.isPresenter) {
+					return data.paperTitle && data.paperTitle.trim().length > 0;
+				}
+				return true;
+			},
+			{
+				message: t("form.errRequired"),
+				path: ["paperTitle"],
+			},
+		);
 
-type RegistrationFormData = z.infer<typeof RegistrationSchema>;
+type RegistrationFormData = z.infer<ReturnType<typeof makeSchema>>;
+
+/** English names are what the API stores; the label follows the page language. */
+function useCountries(lang: string) {
+	return useMemo(() => {
+		const list = getData().map((c) => ({ value: c.name, label: c.name }));
+		if (lang === "en" || typeof Intl.DisplayNames !== "function") return list.sort((a, b) => a.label.localeCompare(b.label));
+		const names = new Intl.DisplayNames([lang], { type: "region" });
+		return getData()
+			.map((c) => ({ value: c.name, label: names.of(c.code) ?? c.name }))
+			.sort((a, b) => a.label.localeCompare(b.label, lang));
+	}, [lang]);
+}
 
 export default function RegistrationForm({
 	onSuccess = () => {},
 }: {
 	onSuccess?: () => void;
 }) {
+	const { t, lang } = useT();
+	const schema = useMemo(() => makeSchema(t), [t]);
+	const countries = useCountries(lang);
 	const {
 		register,
 		handleSubmit,
@@ -47,7 +66,7 @@ export default function RegistrationForm({
 
 		formState: { errors, isSubmitting },
 	} = useForm<RegistrationFormData>({
-		resolver: zodResolver(RegistrationSchema),
+		resolver: zodResolver(schema),
 		defaultValues: {
 			isPresenter: false,
 		},
@@ -75,8 +94,8 @@ export default function RegistrationForm({
 			setError("root", {
 				message:
 					isAxiosError(e) && e.response?.status == 409
-						? "This email is already registered for the Forum"
-						: "Registration failed. Please try again later or contact orgcom@spacescitech.com",
+						? t("form.errDuplicate")
+						: t("form.errFailed"),
 			});
 			return;
 		}
@@ -84,13 +103,10 @@ export default function RegistrationForm({
 	};
 
 	return (
-		<form
-			className="form min-w-[300px] md:min-w-[600px] lg:min-w-[800px]"
-			onSubmit={handleSubmit(onSubmit)}
-		>
+		<form className="form w-full sm:grid-cols-2" onSubmit={handleSubmit(onSubmit)}>
 			<div className="form-field">
-				<label className="form-label">Name and Surname*</label>
-				<input className="form-input" {...register("fullName")} />
+				<label className="form-label" htmlFor="reg-fullName">{t("form.fullName")}</label>
+				<input id="reg-fullName" className="form-input" autoComplete="name" {...register("fullName")} />
 				{errors.fullName && (
 					<span className="form-error">
 						{errors.fullName.message}
@@ -99,23 +115,26 @@ export default function RegistrationForm({
 			</div>
 
 			<div className="form-field">
-				<label className="form-label">Email*</label>
+				<label className="form-label" htmlFor="reg-email">{t("form.email")}</label>
 				<input
+					id="reg-email"
 					className="form-input"
 					type="email"
+					autoComplete="email"
 					{...register("email")}
 				/>
 				{errors.email && (
 					<span className="form-error">{errors.email.message}</span>
 				)}
 			</div>
+
 			<div className="form-field">
-				<label className="form-label">Country*</label>
-				<select className="form-input" {...register("country")}>
-					<option value="">Select country</option>
-					{getNames().map((c) => (
-						<option key={c} value={c}>
-							{c}
+				<label className="form-label" htmlFor="reg-country">{t("form.country")}</label>
+				<select id="reg-country" className="form-input" autoComplete="country-name" {...register("country")}>
+					<option value="">{t("form.selectCountry")}</option>
+					{countries.map((c) => (
+						<option key={c.value} value={c.value}>
+							{c.label}
 						</option>
 					))}
 				</select>
@@ -123,9 +142,10 @@ export default function RegistrationForm({
 					<span className="form-error">{errors.country.message}</span>
 				)}
 			</div>
+
 			<div className="form-field">
-				<label className="form-label">Organization*</label>
-				<input className="form-input" {...register("organization")} />
+				<label className="form-label" htmlFor="reg-organization">{t("form.organization")}</label>
+				<input id="reg-organization" className="form-input" autoComplete="organization" {...register("organization")} />
 				{errors.organization && (
 					<span className="form-error">
 						{errors.organization.message}
@@ -134,14 +154,15 @@ export default function RegistrationForm({
 			</div>
 
 			<div className="form-field">
-				<label className="form-label">Participation Format*</label>
+				<label className="form-label" htmlFor="reg-format">{t("form.format")}</label>
 				<select
+					id="reg-format"
 					className="form-input"
 					{...register("participationFormat")}
 				>
-					<option value="">Select format</option>
-					<option value="online">Online</option>
-					<option value="offline">On-sight</option>
+					<option value="">{t("form.selectFormat")}</option>
+					<option value="online">{t("form.online")}</option>
+					<option value="offline">{t("form.offline")}</option>
 				</select>
 				{errors.participationFormat && (
 					<span className="form-error">
@@ -151,65 +172,74 @@ export default function RegistrationForm({
 			</div>
 
 			<div className="form-field">
-				<label className="form-label">
-					Full Name in Russian (if applicable)
+				<label className="form-label" htmlFor="reg-fullNameRU">
+					{t("form.fullNameRU")}
 				</label>
-				<input className="form-input" {...register("fullNameRU")} />
+				<input id="reg-fullNameRU" className="form-input" {...register("fullNameRU")} />
 			</div>
 
-			<div className="form-field">
-				<label className="form-label">
+			<div className="form-field sm:col-span-2">
+				<label className="form-label cursor-pointer rounded-xl border border-line bg-space-950/40 px-4 py-3.5 text-ink transition-colors hover:border-line-strong">
 					<input
 						className="form-checkbox"
 						type="checkbox"
 						{...register("isPresenter")}
 					/>
-					I'm going to present a paper at the Technical Session
+					{t("form.presenter")}
 				</label>
 			</div>
 
-			{isPresenter && (
-				<>
-					<div className="form-field">
-						<label className="form-label">
-							Paper ID (if already submitted)
-						</label>
-						<input
-							className="form-input"
-							{...register("confChairPaperID")}
-						/>
-						{errors.confChairPaperID && (
-							<span className="form-error">
-								{errors.confChairPaperID.message}
-							</span>
-						)}
-					</div>
+			<AnimatePresence initial={false}>
+				{isPresenter && (
+					<motion.div
+						className="grid gap-5 overflow-hidden sm:col-span-2 sm:grid-cols-2"
+						initial={{ height: 0, opacity: 0 }}
+						animate={{ height: "auto", opacity: 1 }}
+						exit={{ height: 0, opacity: 0 }}
+						transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+					>
+						<div className="form-field">
+							<label className="form-label" htmlFor="reg-paperId">
+								{t("form.paperId")}
+							</label>
+							<input
+								id="reg-paperId"
+								className="form-input"
+								{...register("confChairPaperID")}
+							/>
+							{errors.confChairPaperID && (
+								<span className="form-error">
+									{errors.confChairPaperID.message}
+								</span>
+							)}
+						</div>
 
-					<div className="form-field">
-						<label className="form-label">Paper Title*</label>
-						<input
-							className="form-input"
-							{...register("paperTitle")}
-						/>
-						{errors.paperTitle && (
-							<span className="form-error">
-								{errors.paperTitle.message}
-							</span>
-						)}
-					</div>
-				</>
-			)}
+						<div className="form-field">
+							<label className="form-label" htmlFor="reg-paperTitle">{t("form.paperTitle")}</label>
+							<input
+								id="reg-paperTitle"
+								className="form-input"
+								{...register("paperTitle")}
+							/>
+							{errors.paperTitle && (
+								<span className="form-error">
+									{errors.paperTitle.message}
+								</span>
+							)}
+						</div>
+					</motion.div>
+				)}
+			</AnimatePresence>
+
 			{errors.root && (
-				<p className="form-error text-center">{errors.root.message}</p>
+				<p className="form-error rounded-xl border border-rose/30 bg-rose/10 px-4 py-3 text-center sm:col-span-2" role="alert">
+					{errors.root.message}
+				</p>
 			)}
-			<div className="flex">
-				<button
-					type="submit"
-					className="button-promo mx-auto"
-					disabled={isSubmitting}
-				>
-					{isSubmitting ? "Submitting..." : "Register"}
-				</button>
+			<div className="flex justify-center pt-2 sm:col-span-2">
+				<Button type="submit" disabled={isSubmitting}>
+					{isSubmitting ? t("form.submitting") : t("form.submit")}
+				</Button>
 			</div>
 		</form>
 	);

@@ -1,52 +1,66 @@
 import { Icon } from "@iconify/react";
-import { useState, type PropsWithChildren } from "react";
+import { AnimatePresence, motion } from "motion/react";
+import { useRef, useState, type PropsWithChildren } from "react";
 
 interface Props {
 	title: string;
+	active?: boolean;
 }
 
-const Dropdown = ({ title, children }: PropsWithChildren<Props>) => {
+const Dropdown = ({ title, active = false, children }: PropsWithChildren<Props>) => {
 	const [open, setOpen] = useState(false);
-	let timeoutId: ReturnType<typeof setTimeout>;
+	const timeout = useRef<ReturnType<typeof setTimeout>>(undefined);
 
 	const handleEnter = () => {
-		clearTimeout(timeoutId);
+		clearTimeout(timeout.current);
 		setOpen(true);
 	};
-
 	const handleLeave = () => {
-		timeoutId = setTimeout(() => setOpen(false), 150);
+		timeout.current = setTimeout(() => setOpen(false), 150);
 	};
+
 	return (
 		<div
 			className="relative"
 			onMouseEnter={handleEnter}
 			onMouseLeave={handleLeave}
+			onFocus={handleEnter}
+			onBlur={(e) => {
+				if (!e.currentTarget.contains(e.relatedTarget as Node)) handleLeave();
+			}}
+			onKeyDown={(e) => e.key === "Escape" && setOpen(false)}
 		>
 			<button
 				type="button"
-				className="cursor-pointer text-white/50 hover:text-white inline-flex items-center transition-colors"
+				aria-expanded={open}
+				aria-haspopup="true"
+				onClick={() => setOpen((v) => !v)}
+				className={`inline-flex items-center gap-1 px-3 py-2 whitespace-nowrap transition-colors ${
+					active || open ? "text-white" : "text-muted hover:text-white"
+				}`}
 			>
 				{title}
-				<span className="ml-1 text-2xl transition-transform duration-200">
-					<Icon
-						icon="mdi:chevron-down"
-						className={`transition ${open ? "rotate-180" : ""}`}
-					/>
-				</span>
+				<Icon
+					icon="mdi:chevron-down"
+					className={`text-lg transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+				/>
 			</button>
 
-			<div
-				className={`absolute left-1/2 -translate-x-1/2 top-13 shadow bg-white
-                    w-fit transition-all duration-200 origin-top 
-                    ${
-						open
-							? "opacity-100 scale-100"
-							: "opacity-0 scale-95 pointer-events-none"
-					}`}
-			>
-				{children}
-			</div>
+			<AnimatePresence>
+				{open && (
+					<motion.div
+						initial={{ opacity: 0, y: -8, scale: 0.97, filter: "blur(6px)" }}
+						animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+						exit={{ opacity: 0, y: -6, scale: 0.98, filter: "blur(4px)" }}
+						transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+						className="absolute top-full left-1/2 z-50 -translate-x-1/2 pt-3"
+					>
+						<div className="glass hud-corners relative flex min-w-[260px] flex-col gap-0.5 rounded-2xl p-2 shadow-2xl shadow-black/50">
+							{children}
+						</div>
+					</motion.div>
+				)}
+			</AnimatePresence>
 		</div>
 	);
 };

@@ -1,6 +1,9 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
+import "@fontsource-variable/unbounded";
+import "@fontsource-variable/manrope";
+import "@fontsource-variable/jetbrains-mono";
 import "@/i18n.ts";
 
 import { routeTree } from "./routeTree.gen";
@@ -15,6 +18,8 @@ const router = createRouter({
 	scrollRestoration: true,
 	defaultStructuralSharing: true,
 	defaultPreloadStaleTime: 0,
+	// Pages are prerendered as directories (/committee/index.html), so URLs end with a slash.
+	trailingSlash: "always",
 });
 
 declare module "@tanstack/react-router" {
@@ -24,12 +29,15 @@ declare module "@tanstack/react-router" {
 }
 
 const rootElement = document.getElementById("app");
-if (rootElement && !rootElement.innerHTML) {
+if (rootElement) {
+	// Prerendered head tags are replaced by the ones the router renders.
+	document.querySelectorAll("[data-ssr-head]").forEach((n) => n.remove());
+	// The prerendered markup is for crawlers and first paint; React re-renders the page from scratch.
 	const root = ReactDOM.createRoot(rootElement);
 	root.render(
 		<StrictMode>
 			<RouterProvider router={router} />
-		</StrictMode>
+		</StrictMode>,
 	);
 }
 

@@ -1,15 +1,18 @@
 // import DownloadLink from "@/components/common/DownloadLink";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import ToBeDiscussed from "@/components/layout/ToBeDiscussed";
-import { Routes } from "@/lib/routes";
+import { pageHead, Routes } from "@/lib/routes";
 // import { program, type AnyProgramItem } from "@/lib/program";
 import { createFileRoute } from "@tanstack/react-router";
+import { useT } from "@/lib/lang";
 
 export const Route = createFileRoute("/sessions-and-highlights/program")({
   component: RouteComponent,
-  head: () => ({
-    meta: Routes.sessions_and_highlights.routes!.program.meta,
-  }),
+  head: () =>
+    pageHead(
+      Routes.sessions_and_highlights.routes!.program,
+      `${Routes.sessions_and_highlights.path}/${Routes.sessions_and_highlights.routes!.program.path}`,
+    ),
 });
 // function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
 //   switch (item.type) {
@@ -85,8 +88,9 @@ export const Route = createFileRoute("/sessions-and-highlights/program")({
 //   }
 // }
 function RouteComponent() {
+  const { t } = useT();
   return (
-    <BasePageLayout name="Technical Program">
+    <BasePageLayout name={t("sessions.program")} section={t("sessions.section")}>
       {/* <DownloadLink
         path="/files/SciTech Forum Technical Program.pdf"
         text="SciTech Forum Technical Program"

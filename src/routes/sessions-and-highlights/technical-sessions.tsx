@@ -1,20 +1,24 @@
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import ToBeDiscussed from "@/components/layout/ToBeDiscussed";
-import { Routes } from "@/lib/routes";
+import { pageHead, Routes } from "@/lib/routes";
 import { createFileRoute } from "@tanstack/react-router";
+import { useT } from "@/lib/lang";
 
 export const Route = createFileRoute(
   "/sessions-and-highlights/technical-sessions",
 )({
   component: RouteComponent,
-  head: () => ({
-    meta: Routes.sessions_and_highlights.routes!.technical_sessions.meta,
-  }),
+  head: () =>
+    pageHead(
+      Routes.sessions_and_highlights.routes!.technical_sessions,
+      `${Routes.sessions_and_highlights.path}/${Routes.sessions_and_highlights.routes!.technical_sessions.path}`,
+    ),
 });
 
 function RouteComponent() {
+  const { t } = useT();
   return (
-    <BasePageLayout name="Technical Sessions">
+    <BasePageLayout name={t("sessions.technical")} section={t("sessions.section")}>
       {/* <DownloadLink
         path="/files/Technical Sessions – Presentation List.pdf"
         text="Technical Sessions – Presentation List"
