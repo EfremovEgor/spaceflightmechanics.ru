@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import { AnimatePresence, motion } from "motion/react";
 import React, { useEffect } from "react";
 import { createPortal } from "react-dom";
+import { blur } from "@/components/common/motion";
 import { useT } from "@/lib/lang";
 
 export interface Props extends React.PropsWithChildren {
@@ -32,7 +33,7 @@ const Modal = ({ children, name, onClose = () => {}, open = false, noCloseButton
 		<AnimatePresence>
 			{open && (
 				<motion.div
-					className="fixed inset-0 z-[60] flex items-start justify-center overflow-y-auto bg-space-950/70 px-3 py-6 backdrop-blur-md sm:items-center sm:p-6"
+					className="fixed inset-0 z-[60] flex items-start justify-center overflow-y-auto bg-space-950/80 px-3 py-6 lg:backdrop-blur-md sm:items-center sm:p-6"
 					onClick={onClose}
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -47,9 +48,9 @@ const Modal = ({ children, name, onClose = () => {}, open = false, noCloseButton
 						// and only when the content is taller than the screen.
 						className="panel hud-corners relative flex w-full max-w-[min(48rem,100%)] flex-col sm:max-h-[calc(100svh-3rem)]"
 						onClick={(e) => e.stopPropagation()}
-						initial={{ opacity: 0, y: 40, scale: 0.96, filter: "blur(10px)" }}
+						initial={{ opacity: 0, y: 40, scale: 0.96, filter: blur(10) }}
 						animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-						exit={{ opacity: 0, y: 24, scale: 0.97, filter: "blur(8px)" }}
+						exit={{ opacity: 0, y: 24, scale: 0.97, filter: blur(8) }}
 						transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
 					>
 						<div className="flex shrink-0 items-center justify-between gap-4 rounded-t-[1.25rem] border-b border-line bg-space-900/95 px-5 py-4 sm:px-7">

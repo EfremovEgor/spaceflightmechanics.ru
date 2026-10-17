@@ -130,13 +130,13 @@ export default function SpaceScene({ lowPower }: { lowPower: boolean }) {
 			legacy
 			linear
 			flat
-			dpr={[1, lowPower ? 1.5 : 1.75]}
+			dpr={[1, lowPower ? 1.25 : 1.75]}
 			gl={{ antialias: !lowPower, alpha: false, powerPreference: "high-performance" }}
 			camera={{ fov: 35, near: 0.05, far: 600, position: [0, 0, 6] }}
 			style={{ position: "absolute", inset: 0 }}
 			onCreated={({ gl }) => gl.setClearColor(0x02040b, 1)}
 		>
-			<Backdrop />
+			<Backdrop lite={lowPower} />
 			<Starfield count={lowPower ? 1400 : 2600} />
 			<World />
 		</Canvas>

@@ -2,7 +2,7 @@ import { ButtonLink } from "@/components/common/Button";
 import Countdown from "@/components/common/Countdown";
 import ExternalLink from "@/components/common/ExternalLink";
 import Marquee from "@/components/common/Marquee";
-import { EASE, Magnetic, Reveal, SpotlightCard, SplitWords, Stagger, useBooted } from "@/components/common/motion";
+import { blur, EASE, Magnetic, Reveal, SpotlightCard, SplitWords, Stagger, useBooted } from "@/components/common/motion";
 import OrbitLegend from "@/components/home/OrbitLegend";
 import Telemetry from "@/components/home/Telemetry";
 import Timeline from "@/components/home/Timeline";
@@ -36,7 +36,7 @@ function Hero() {
 	const booted = useBooted();
 	const { t } = useT();
 	const appear = (delay: number) => ({
-		initial: { opacity: 0, y: 24, filter: "blur(8px)" },
+		initial: { opacity: 0, y: 24, filter: blur(8) },
 		animate: booted ? { opacity: 1, y: 0, filter: "blur(0px)" } : undefined,
 		transition: { duration: 1, ease: EASE, delay },
 	});

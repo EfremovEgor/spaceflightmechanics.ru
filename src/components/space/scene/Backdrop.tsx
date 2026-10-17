@@ -4,10 +4,12 @@ import * as THREE from "three";
 import { live, NOISE_GLSL } from "./shared";
 
 /** Full-screen nebula and the soft halo behind the globe. Drawn first, ignores the camera. */
-export default function Backdrop() {
+/** `lite`: two noise octaves instead of four, for phones (the shader covers the whole screen). */
+export default function Backdrop({ lite = false }: { lite?: boolean }) {
 	const material = useMemo(
 		() =>
 			new THREE.ShaderMaterial({
+				defines: lite ? { FBM_OCTAVES: 2 } : {},
 				depthTest: false,
 				depthWrite: false,
 				uniforms: {
@@ -48,7 +50,7 @@ export default function Backdrop() {
 					}
 				`,
 			}),
-		[],
+		[lite],
 	);
 
 	useFrame(({ gl }) => {

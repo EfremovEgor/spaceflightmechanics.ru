@@ -34,11 +34,11 @@ const NavDropdown = ({ open, onToggle }: { open: boolean; onToggle: () => void }
 			{open && (
 				<motion.div
 					id="mobile-menu"
-					className="fixed inset-0 z-40 overflow-y-auto bg-space-950/95 pt-[84px] backdrop-blur-xl xl:hidden"
+					className="fixed inset-0 z-40 overflow-y-auto bg-space-950 pt-[84px] xl:hidden"
 					initial={{ clipPath: "circle(0% at calc(100% - 40px) 38px)" }}
 					animate={{ clipPath: "circle(150% at calc(100% - 40px) 38px)" }}
 					exit={{ clipPath: "circle(0% at calc(100% - 40px) 38px)" }}
-					transition={{ duration: 0.7, ease: EASE }}
+					transition={{ duration: 0.45, ease: EASE }}
 				>
 					<div
 						aria-hidden
@@ -60,7 +60,7 @@ const NavDropdown = ({ open, onToggle }: { open: boolean; onToggle: () => void }
 											className="border-b border-line"
 											initial={{ opacity: 0, y: 30 }}
 											animate={{ opacity: 1, y: 0 }}
-											transition={{ duration: 0.6, ease: EASE, delay: 0.12 + idx * 0.05 }}
+											transition={{ duration: 0.45, ease: EASE, delay: 0.08 + idx * 0.04 }}
 										>
 											{r.routes ? (
 												<div className="py-4">

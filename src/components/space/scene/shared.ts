@@ -77,6 +77,9 @@ export function placeLabel(
 }
 
 export const NOISE_GLSL = /* glsl */ `
+#ifndef FBM_OCTAVES
+#define FBM_OCTAVES 4
+#endif
 float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
 float noise(vec2 p) {
 	vec2 i = floor(p);
@@ -88,7 +91,7 @@ float noise(vec2 p) {
 float fbm(vec2 p) {
 	float v = 0.0;
 	float a = 0.5;
-	for (int i = 0; i < 4; i++) { v += a * noise(p); p *= 2.03; a *= 0.5; }
+	for (int i = 0; i < FBM_OCTAVES; i++) { v += a * noise(p); p *= 2.03; a *= 0.5; }
 	return v;
 }
 `;

@@ -13,6 +13,13 @@ export const useBooted = () => useSceneValue((s) => s.booted);
 
 export const EASE = [0.16, 1, 0.3, 1] as const;
 
+/**
+ * Touch devices animate without blur: an animated filter over the live WebGL background is
+ * what makes reveals stutter on phones.
+ */
+const COARSE = typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches;
+export const blur = (px: number) => (COARSE ? "blur(0px)" : `blur(${px}px)`);
+
 type RevealProps = HTMLMotionProps<"div"> & {
 	delay?: number;
 	y?: number;
@@ -26,7 +33,7 @@ export function Reveal({ delay = 0, y = 28, as = "div", children, className, ...
 		<Comp
 			// Grid/flex items may shrink below their longest word so text wraps inside cards.
 			className={`min-w-0 ${className ?? ""}`}
-			initial={{ opacity: 0, y, filter: "blur(8px)" }}
+			initial={{ opacity: 0, y, filter: blur(8) }}
 			whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
 			viewport={{ once: true, margin: "0px 0px -8% 0px" }}
 			transition={{ duration: 0.9, ease: EASE, delay }}
@@ -61,7 +68,7 @@ export function Stagger({
 				child == null ? null : (
 					<motion.div
 						variants={{
-							hidden: { opacity: 0, y: 24, filter: "blur(6px)" },
+							hidden: { opacity: 0, y: 24, filter: blur(6) },
 							shown: { opacity: 1, y: 0, filter: "blur(0px)", transition: { duration: 0.8, ease: EASE } },
 						}}
 					>

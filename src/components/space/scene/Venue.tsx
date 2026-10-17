@@ -73,7 +73,10 @@ export default function Venue() {
 		const facing = _n.dot(_toCam);
 		_w.addScaledVector(_n, 0.12 * (0.8 + 0.25 * k));
 		const show =
-			(scene.preset === "contact" || scene.preset === "home") && facing > 0.25 && live.intro > 0.9;
+			size.width >= 1024 &&
+			(scene.preset === "contact" || scene.preset === "home") &&
+			facing > 0.25 &&
+			live.intro > 0.9;
 		placeLabel(el, show ? projectVisible(_w, camera, size.width, size.height) : null, show);
 	});
 

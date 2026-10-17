@@ -54,8 +54,14 @@ export default function SpaceBackground() {
 			scene.scrollY = window.scrollY;
 			updateVeil();
 		};
+		let lastWidth = 0;
 		const onResize = () => {
-			scene.viewportH = window.innerHeight;
+			// The mobile address bar changes innerHeight while scrolling; only a real resize
+			// (width or orientation) should move the scroll-linked framing.
+			if (window.innerWidth !== lastWidth || window.innerHeight > scene.viewportH) {
+				scene.viewportH = window.innerHeight;
+				lastWidth = window.innerWidth;
+			}
 			onScroll();
 		};
 		const html = document.documentElement;
@@ -114,7 +120,9 @@ export default function SpaceBackground() {
 	}, []);
 
 	return (
-		<div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-space-950">
+		// 100lvh: the height of the screen with the address bar hidden, so the WebGL canvas keeps
+		// its size (and the globe stays still) while the mobile address bar shows and hides.
+		<div aria-hidden="true" className="pointer-events-none fixed top-0 left-0 z-0 h-lvh w-full overflow-hidden bg-space-950">
 			{/* Static stand-in: shown before WebGL is ready and when it is unavailable. */}
 			<div
 				className={`absolute inset-0 transition-opacity duration-1000 ${ready ? "opacity-0" : "opacity-100"}`}

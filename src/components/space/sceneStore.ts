@@ -48,23 +48,29 @@ const base: Framing = {
 	marker: 1,
 };
 
+/**
+ * Phones: the globe keeps the same place, size and tilt on every page, so page changes only
+ * fade layers instead of flying the camera across a small screen.
+ */
+const MOBILE: Partial<Framing> = { fx: 0, fy: 0.29, rf: 0.13, pitch: 0.3, roll: -0.38 };
+
 export const PRESETS: Record<PresetKey, Preset> = {
 	home: {
 		desktop: base,
-		mobile: { fx: 0, fy: 0.25, rf: 0.17 },
+		mobile: MOBILE,
 		scrolled: { fx: 0.3, fy: 0.04, rf: 0.24, orbits: 0.55 },
-		scrolledMobile: { fx: 0, fy: 0.3, rf: 0.13, orbits: 0.4 },
+		scrolledMobile: { ...MOBILE, orbits: 0.4 },
 		veil: 0,
 	},
 	committee: {
 		desktop: { ...base, fx: 0.25, rf: 0.29, orbits: 0.12, arcs: 1, roll: 0 },
-		mobile: { fx: 0, fy: 0.27, rf: 0.16 },
+		mobile: MOBILE,
 		focus: { lat: 28, lon: 42 },
 		veil: 0.15,
 	},
 	sessions: {
 		desktop: { ...base, fx: 0.27, rf: 0.19, pitch: 0.62, roll: -0.25 },
-		mobile: { fx: 0, fy: 0.26, rf: 0.14 },
+		mobile: MOBILE,
 		veil: 0.2,
 	},
 	horizon: {
@@ -77,18 +83,18 @@ export const PRESETS: Record<PresetKey, Preset> = {
 			roll: -0.12,
 			orbits: 0.55,
 		},
-		mobile: { fy: -1.08, rf: 0.86 },
+		mobile: MOBILE,
 		veil: 0.1,
 	},
 	contact: {
 		desktop: { ...base, fx: 0.25, rf: 0.38, orbits: 0.2, marker: 1.6, roll: 0 },
-		mobile: { fx: 0, fy: 0.25, rf: 0.2 },
+		mobile: MOBILE,
 		focus: VENUE,
 		veil: 0.15,
 	},
 	lost: {
 		desktop: { ...base, fx: 0.3, fy: 0.2, rf: 0.07, pitch: 0.5 },
-		mobile: { fx: 0.18, fy: 0.3, rf: 0.06 },
+		mobile: MOBILE,
 		veil: 0,
 	},
 };

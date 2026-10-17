@@ -44,7 +44,7 @@ const Header = () => {
 			<div
 				className={`border-b transition-[background-color,border-color,backdrop-filter] duration-500 ${
 					scrolled || menuOpen
-						? "border-line bg-space-950/70 backdrop-blur-xl"
+						? "border-line bg-space-950/95 lg:bg-space-950/70 lg:backdrop-blur-xl"
 						: "border-transparent bg-transparent"
 				}`}
 			>
