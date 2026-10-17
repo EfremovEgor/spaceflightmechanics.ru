@@ -1,9 +1,11 @@
 name: Deploy to Server
 
 on:
+    workflow_dispatch:
     push:
         branches: [master]
         paths:
+            - ".github/workflows/deploy.yml"
             - "src/**"
             - "public/**"
             - "previous/**"
@@ -39,6 +41,8 @@ jobs:
                   echo "Starting deployment..."
 
                   cd /var/www/spacescitech.com/frontend/
+                  # yarn install on the server rewrites yarn.lock; drop that rewrite so the pull applies cleanly.
+                  git checkout -- yarn.lock
                   git pull origin master
 
                   export PATH="$HOME/.nvm/versions/node/v24.9.0/bin:$PATH"
