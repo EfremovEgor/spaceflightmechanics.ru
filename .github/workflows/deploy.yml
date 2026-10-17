@@ -14,8 +14,9 @@ on:
             - "package.json"
             - "yarn.lock"
             - "vite.config.ts"
+            - "tsconfig.json"
 
-# Shares the checkout on the server with the backend deploy; run one at a time.
+# Shares the server with the backend deploy; run one at a time.
 concurrency:
     group: deploy-server
     cancel-in-progress: false
@@ -28,30 +29,47 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4
 
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 24
+                  cache: yarn
+
+            # The site is built here, not on the server: the build (tsc, three.js bundle, prerender)
+            # needs more memory than the server has, and a long silent SSH session gets dropped.
+            - name: Build
+              env:
+                  # Same value as VITE_API_URL in the server's .env: the API is proxied under /api.
+                  VITE_API_URL: /api
+              run: |
+                  yarn install --frozen-lockfile
+                  yarn build
+
             - name: Setup SSH
               run: |
                   sudo apt-get update
                   sudo apt-get install -y sshpass
 
-            - name: Deploy to server
+            - name: Upload and switch
+              env:
+                  SSHPASS: ${{ secrets.SERVER_PASSWORD }}
+                  TARGET: ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}
               run: |
-                  sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no \
-                  ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
+                  SSH="sshpass -e ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=15 -o ServerAliveCountMax=8"
+
+                  # A build started by the old server-side deploy could still be running and would
+                  # overwrite dist when it finishes; stop it.
+                  $SSH "$TARGET" 'pkill -f "spacescitech.com/frontend/node_modules/(typescript|vite)/" || true'
+
+                  # Unpack next to the live folder, then swap: the site is never served half-written.
+                  tar -C dist -czf - . | $SSH "$TARGET" '
                   set -e
-                  echo "Starting deployment..."
-
-                  cd /var/www/spacescitech.com/frontend/
-                  # yarn install on the server rewrites yarn.lock; drop that rewrite so the pull applies cleanly.
-                  git checkout -- yarn.lock
-                  git pull origin master
-
-                  export PATH="$HOME/.nvm/versions/node/v24.9.0/bin:$PATH"
-
-                  echo "Running yarn install..."
-                  yarn install
-
-                  echo "Running yarn build..."
-                  yarn build
-
+                  cd /var/www/spacescitech.com/frontend
+                  rm -rf dist.new dist.old
+                  mkdir dist.new
+                  tar -C dist.new -xzf -
+                  if [ -d dist ]; then mv dist dist.old; fi
+                  mv dist.new dist
+                  rm -rf dist.old
                   echo "Deployment completed successfully!"
                   '

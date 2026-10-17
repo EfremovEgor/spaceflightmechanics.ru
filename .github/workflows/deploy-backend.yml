@@ -25,7 +25,7 @@ jobs:
 
             - name: Deploy to server
               run: |
-                  sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no \
+                  sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=15 -o ServerAliveCountMax=8 \
                   ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
                   set -e
                   echo "Starting backend deployment..."
