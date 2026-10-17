@@ -2,6 +2,12 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 export const LANGS = ["en", "ru"] as const;
+/**
+ * The Russian version is switched off for now: no EN/RU switch, no /ru/ pages in the build,
+ * sitemap or hreflang, and /ru/... opens the English page. Set to true to bring it back
+ * (and remove the /ru redirect from the nginx site config).
+ */
+export const RU_ENABLED = false;
 export type Lang = (typeof LANGS)[number];
 
 /*

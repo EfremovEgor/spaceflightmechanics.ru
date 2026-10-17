@@ -1,5 +1,5 @@
 import type { DetailedHTMLProps, MetaHTMLAttributes } from "react";
-import type { Lang } from "@/i18n";
+import { RU_ENABLED, type Lang } from "@/i18n";
 export interface Route {
   name: string;
   path: string;
@@ -146,7 +146,9 @@ export const pageHead = (route: Route, path = route.path, lang: Lang = "en") => 
       ...meta,
       { property: "og:url", content: urls[lang] },
       { property: "og:locale", content: lang === "ru" ? "ru_RU" : "en_US" },
-      { property: "og:locale:alternate", content: lang === "ru" ? "en_US" : "ru_RU" },
+      ...(RU_ENABLED
+        ? [{ property: "og:locale:alternate", content: lang === "ru" ? "en_US" : "ru_RU" }]
+        : []),
       { property: "og:image", content: OG_IMAGE[lang] },
       { property: "og:image:secure_url", content: OG_IMAGE[lang] },
       { property: "og:image:alt", content: OG_ALT[lang] },
@@ -167,9 +169,13 @@ export const pageHead = (route: Route, path = route.path, lang: Lang = "en") => 
     ],
     links: [
       { rel: "canonical", href: urls[lang] },
-      { rel: "alternate", hrefLang: "en", href: urls.en },
-      { rel: "alternate", hrefLang: "ru", href: urls.ru },
-      { rel: "alternate", hrefLang: "x-default", href: urls.en },
+      ...(RU_ENABLED
+        ? [
+            { rel: "alternate", hrefLang: "en", href: urls.en },
+            { rel: "alternate", hrefLang: "ru", href: urls.ru },
+            { rel: "alternate", hrefLang: "x-default", href: urls.en },
+          ]
+        : []),
       // VK and some older parsers read this instead of og:image.
       { rel: "image_src", href: OG_IMAGE[lang] },
     ],

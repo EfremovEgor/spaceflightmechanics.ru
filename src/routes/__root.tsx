@@ -7,12 +7,20 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/header/Header";
 import SpaceBackground from "@/components/space/SpaceBackground";
 import { Routes, siteHead } from "@/lib/routes";
-import { HeadContent, Outlet, createRootRoute, useRouterState } from "@tanstack/react-router";
+import { HeadContent, Outlet, createRootRoute, redirect, useRouterState } from "@tanstack/react-router";
+import { RU_ENABLED } from "@/i18n";
+import { langFromPath, stripLang } from "@/lib/lang";
 import { MotionConfig, motion } from "motion/react";
 import { useEffect } from "react";
 import { useT } from "@/lib/lang";
 
 export const Route = createRootRoute({
+	// While the Russian version is off, /ru/... opens the same page in English.
+	beforeLoad: ({ location }) => {
+		if (!RU_ENABLED && langFromPath(location.pathname) === "ru") {
+			throw redirect({ to: stripLang(location.pathname) as "/", replace: true });
+		}
+	},
 	head: () => siteHead,
 	notFoundComponent: NotFound,
 	component: RootComponent,

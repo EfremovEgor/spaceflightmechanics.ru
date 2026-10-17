@@ -1,4 +1,4 @@
-import i18n, { type Lang } from "@/i18n";
+import i18n, { RU_ENABLED, type Lang } from "@/i18n";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useMemo, type ComponentProps } from "react";
 
@@ -36,6 +36,7 @@ export function LocalLink({ to, ...rest }: LinkProps) {
 export function LangSwitch({ className = "" }: { className?: string }) {
 	const { t, lang } = useT();
 	const pathname = useRouterState({ select: (s) => s.location.pathname });
+	if (!RU_ENABLED) return null;
 	return (
 		<div
 			role="group"

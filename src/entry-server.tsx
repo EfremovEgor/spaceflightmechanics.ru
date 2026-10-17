@@ -7,6 +7,8 @@ import {
 	RouterProvider,
 } from "@tanstack/react-router";
 import "@/i18n.ts";
+
+export { RU_ENABLED } from "@/i18n";
 import { routeTree } from "./routeTree.gen";
 
 /**

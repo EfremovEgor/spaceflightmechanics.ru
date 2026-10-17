@@ -24,14 +24,15 @@ const PAGES = [
 ];
 // Reachable by direct link but hidden from navigation: prerendered, not listed in the sitemap.
 const HIDDEN_PAGES = ["/sessions-and-highlights/plenary-sessions/"];
-const LANGS = ["en", "ru"];
 const localize = (page, lang) => (lang === "en" ? page : page === "/" ? "/ru/" : `/ru${page}`);
 
 const template = await readFile(join(dist, "index.html"), "utf8");
 if (!template.includes("<!--ssr-head-->") || !template.includes("<!--ssr-outlet-->")) {
 	throw new Error("dist/index.html has no <!--ssr-head--> / <!--ssr-outlet--> markers");
 }
-const { render } = await import(pathToFileURL(join(ssrDir, "entry-server.js")).href);
+const { render, RU_ENABLED } = await import(pathToFileURL(join(ssrDir, "entry-server.js")).href);
+// The Russian version can be switched off in src/i18n.ts (RU_ENABLED).
+const LANGS = RU_ENABLED ? ["en", "ru"] : ["en"];
 
 // Tags written here are replaced by the live app; main.tsx removes [data-ssr-head] on start.
 const markHead = (html) =>
@@ -78,18 +79,19 @@ for (const lang of LANGS) {
 	);
 }
 
-// Sitemap with hreflang alternates for both languages.
+// Sitemap, with hreflang alternates when there is more than one language.
 const today = new Date().toISOString().slice(0, 10);
 const urls = LANGS.flatMap((lang) =>
 	PAGES.map((p) => {
-		const alts = LANGS.map(
-			(l) => `    <xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${localize(p, l)}"/>`,
-		).join("\n");
+		const alts = (LANGS.length > 1 ? [...LANGS, "x-default"] : [])
+			.map((l) => {
+				const href = `${SITE}${l === "x-default" ? p : localize(p, l)}`;
+				return `    <xhtml:link rel="alternate" hreflang="${l}" href="${href}"/>\n`;
+			})
+			.join("");
 		return `  <url>
     <loc>${SITE}${localize(p, lang)}</loc>
-${alts}
-    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${p}"/>
-    <lastmod>${today}</lastmod>
+${alts}    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${p === "/" ? "1.0" : "0.8"}</priority>
   </url>`;
