@@ -41,6 +41,9 @@ jobs:
               env:
                   # Same value as VITE_API_URL in the server's .env: the API is proxied under /api.
                   VITE_API_URL: /api
+                  # Russian version: repository variable VITE_RU_ENABLED ("true" turns it on).
+                  # After changing it, re-run this workflow (Actions → Deploy to Server → Run workflow).
+                  VITE_RU_ENABLED: ${{ vars.VITE_RU_ENABLED }}
               run: |
                   yarn install --frozen-lockfile
                   yarn build
@@ -54,6 +57,7 @@ jobs:
               env:
                   SSHPASS: ${{ secrets.SERVER_PASSWORD }}
                   TARGET: ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}
+                  RU_ENABLED: ${{ vars.VITE_RU_ENABLED == 'true' && 'true' || 'false' }}
               run: |
                   SSH="sshpass -e ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=15 -o ServerAliveCountMax=8"
 
@@ -73,3 +77,6 @@ jobs:
                   rm -rf dist.old
                   echo "Deployment completed successfully!"
                   '
+
+                  # Keep the nginx /ru redirect in line with the Russian version flag.
+                  $SSH "$TARGET" "sh -s -- $RU_ENABLED" < scripts/nginx-lang.sh

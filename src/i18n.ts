@@ -3,11 +3,12 @@ import { initReactI18next } from "react-i18next";
 
 export const LANGS = ["en", "ru"] as const;
 /**
- * The Russian version is switched off for now: no EN/RU switch, no /ru/ pages in the build,
- * sitemap or hreflang, and /ru/... opens the English page. Set to true to bring it back
- * (and remove the /ru redirect from the nginx site config).
+ * Russian version on/off, from VITE_RU_ENABLED at build time ("true" turns it on; off by default).
+ * When off: no EN/RU switch, no /ru/ pages in the build, sitemap or hreflang, and /ru/... opens
+ * the English page. Production takes the value from the repository variable VITE_RU_ENABLED,
+ * and the deploy adds or removes the matching /ru redirect in nginx.
  */
-export const RU_ENABLED = false;
+export const RU_ENABLED = import.meta.env.VITE_RU_ENABLED === "true";
 export type Lang = (typeof LANGS)[number];
 
 /*
