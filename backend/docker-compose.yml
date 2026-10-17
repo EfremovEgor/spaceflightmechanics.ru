@@ -1,3 +1,6 @@
+# Own project name: the old Go service also lives in a folder called "backend".
+name: spacescitech-api
+
 services:
     api:
         build: .
