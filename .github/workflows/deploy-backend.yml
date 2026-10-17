@@ -32,6 +32,12 @@ jobs:
                   git pull origin master
 
                   cd backend
+                  # Until the one-time switch from the Go service (backend/README.md) the old service
+                  # owns the port; do not start the new one before backend/.env exists.
+                  if [ ! -f .env ]; then
+                      echo "backend/.env not found: one-time setup not done yet, skipping backend start."
+                      exit 0
+                  fi
                   docker compose up --build -d
 
                   echo "Backend deployment completed successfully!"
