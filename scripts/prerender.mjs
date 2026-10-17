@@ -22,6 +22,8 @@ const PAGES = [
 	"/registration/",
 	"/contact/",
 ];
+// Reachable by direct link but hidden from navigation: prerendered, not listed in the sitemap.
+const HIDDEN_PAGES = ["/sessions-and-highlights/plenary-sessions/"];
 const LANGS = ["en", "ru"];
 const localize = (page, lang) => (lang === "en" ? page : page === "/" ? "/ru/" : `/ru${page}`);
 
@@ -50,7 +52,7 @@ function page(html, { head, app, url, lang, extraHead = "" }) {
 
 let count = 0;
 for (const lang of LANGS) {
-	for (const p of PAGES) {
+	for (const p of [...PAGES, ...HIDDEN_PAGES]) {
 		const url = localize(p, lang);
 		const { appHtml, headHtml } = await render(url);
 		if (!headHtml.includes('rel="canonical"')) throw new Error(`No canonical link rendered for ${url}`);

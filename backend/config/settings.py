@@ -145,12 +145,13 @@ REST_FRAMEWORK = {
 }
 
 # Initial SMTP values for the admin "SMTP settings" page (same names as the Go service).
+# The server's .env has values like "EMAIL= no-reply@…", so surrounding spaces are dropped.
 SMTP_DEFAULTS = {
-    "host": env("EMAIL_HOST", default=""),
-    "port": env.int("EMAIL_PORT", default=465),
-    "username": env("EMAIL", default=""),
-    "password": env("EMAIL_PASSWORD", default=""),
-    "from_email": env("EMAIL", default=""),
+    "host": env.str("EMAIL_HOST", default="").strip(),
+    "port": int(env.str("EMAIL_PORT", default="465").strip() or 465),
+    "username": env.str("EMAIL", default="").strip(),
+    "password": env.str("EMAIL_PASSWORD", default="").strip(),
+    "from_email": env.str("EMAIL", default="").strip(),
 }
 # Key for encrypting the SMTP password in the database; derived from SECRET_KEY when unset.
 FIELD_ENCRYPTION_KEY = env("FIELD_ENCRYPTION_KEY", default="")
