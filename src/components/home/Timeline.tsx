@@ -16,7 +16,7 @@ const t = (iso: string) => new Date(iso + "T23:59:59+03:00").getTime();
 
 /** Keys into the translation dictionary; `forum.*` keys render with <Trans>. */
 const MILESTONES: Milestone[] = [
-	{ label: "deadlines.abstract", date: "deadlines.abstractDate", at: t("2026-11-15") },
+	{ label: "deadlines.abstract", date: "deadlines.abstractDate", at: t("2026-11-08") },
 	{ label: "deadlines.presentation", date: "deadlines.presentationDate", at: t("2026-11-22") },
 	{ label: "forum.short", date: "forum.dates", at: t("2026-11-26"), highlight: true },
 	{ label: "deadlines.manuscript", date: "deadlines.manuscriptDate", at: t("2027-01-31") },
