@@ -149,24 +149,24 @@ function App() {
 					</Reveal>
 
 					<Reveal className="mt-12">
+						<SpotlightCard className="h-full p-6 sm:p-10" tilt={false}>
+							<p className="relative text-xl leading-relaxed text-ink sm:text-2xl">
+								<Trans t={t} i18nKey="home.intro" components={rich} />
+							</p>
+							<div className="relative mt-8 border-t border-line pt-6 leading-relaxed text-muted">
+								<p>
+									<Trans t={t} i18nKey="home.organized" components={rich} />
+								</p>
+							</div>
+						</SpotlightCard>
+					</Reveal>
+
+					<Reveal className="mt-4 sm:mt-5">
 						<Timeline />
 					</Reveal>
 
 					<div className="mt-4 grid gap-4 sm:mt-5 sm:gap-5 lg:grid-cols-12">
-						<Reveal className="lg:col-span-7">
-							<SpotlightCard className="h-full p-6 sm:p-10" tilt={false}>
-								<p className="relative text-xl leading-relaxed text-ink sm:text-2xl">
-									<Trans t={t} i18nKey="home.intro" components={rich} />
-								</p>
-								<div className="relative mt-8 border-t border-line pt-6 leading-relaxed text-muted">
-									<p>
-										<Trans t={t} i18nKey="home.organized" components={rich} />
-									</p>
-								</div>
-							</SpotlightCard>
-						</Reveal>
-
-						<Reveal className="lg:col-span-5 lg:row-span-2" delay={0.1}>
+						<Reveal className="lg:col-span-5" delay={0.1}>
 							<SpotlightCard className="flex h-full flex-col justify-between p-6 sm:p-8">
 								<div className="relative -mx-6 -mt-6 mb-2 flex h-64 justify-center overflow-hidden sm:-mx-8 sm:-mt-8 sm:h-80">
 									<div
