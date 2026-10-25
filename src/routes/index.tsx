@@ -148,7 +148,11 @@ function App() {
 						</div>
 					</Reveal>
 
-					<div className="mt-12 grid gap-4 sm:gap-5 lg:grid-cols-12">
+					<Reveal className="mt-12">
+						<Timeline />
+					</Reveal>
+
+					<div className="mt-4 grid gap-4 sm:mt-5 sm:gap-5 lg:grid-cols-12">
 						<Reveal className="lg:col-span-7">
 							<SpotlightCard className="h-full p-6 sm:p-10" tilt={false}>
 								<p className="relative text-xl leading-relaxed text-ink sm:text-2xl">
@@ -206,10 +210,6 @@ function App() {
 							</SpotlightCard>
 						</Reveal>
 					</div>
-
-					<Reveal className="mt-4 sm:mt-5">
-						<Timeline />
-					</Reveal>
 
 					<div className="mt-4 grid gap-4 sm:mt-5 sm:gap-5 md:grid-cols-2">
 						<Reveal>

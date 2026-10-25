@@ -39,6 +39,7 @@ const en = {
 		dates: "November 24-26, 2026",
 		venue: "RUDN University, Moscow, Russia",
 		organizers: "Russian Academy of Sciences",
+		iaa: "International Academy of Astronautics",
 		rudn: "RUDN University",
 	},
 	common: {
@@ -77,7 +78,7 @@ const en = {
 		About: "About",
 		intro: "<b>7<sup>th</sup> SciTech Forum on Space Engineering and Operations Support</b> is taking place on <hl>November 24-26, 2026</hl> in Moscow, Russia.",
 		organized:
-			"The Forum is organized by <b>Russian Academy of Sciences</b> and <b>RUDN University</b>.<br/>Phone: <phone>+79197727658</phone>, email: <mail>orgcom@spacescitech.com</mail> (Local Organizing Committee).",
+			"The Forum is organized by <b>Russian Academy of Sciences</b>, <b>International Academy of Astronautics</b> and <b>RUDN University</b>.<br/>Phone: <phone>+79197727658</phone>, email: <mail>orgcom@spacescitech.com</mail> (Local Organizing Committee).",
 		format:
 			"<b>Hybrid format (on-site and online)</b> is supposed (the online format is supported for participants outside Moscow region). The participation in the Forum is free. Participants can attend the Forum with or without presentation at technical session. To participate with presentation it is necessary to go through the <submission>Submission</submission> and <registration>Registration</registration> processes. Participation without presentation requires only registration.",
 		venue: "<b>Venue:</b> <ext>RUDN University</ext>, 6 Miklukho-Maklaya Str., Moscow, 117198, Russia",
@@ -207,6 +208,7 @@ const ru: Dict = {
 		dates: "24–26 ноября 2026 г.",
 		venue: "РУДН, Москва, Россия",
 		organizers: "Российская академия наук",
+		iaa: "Международная академия астронавтики",
 		rudn: "РУДН",
 	},
 	common: {
@@ -245,7 +247,7 @@ const ru: Dict = {
 		About: "О форуме",
 		intro: "<b>7<sup>th</sup> SciTech Forum on Space Engineering and Operations Support</b> пройдёт <hl>24–26 ноября 2026 г.</hl> в Москве.",
 		organized:
-			"Организаторы форума — <b>Российская академия наук</b> и <b>РУДН</b>.<br/>Телефон: <phone>+79197727658</phone>, эл. почта: <mail>orgcom@spacescitech.com</mail> (местный организационный комитет).",
+			"Организаторы форума — <b>Российская академия наук</b>, <b>Международная академия астронавтики</b> и <b>РУДН</b>.<br/>Телефон: <phone>+79197727658</phone>, эл. почта: <mail>orgcom@spacescitech.com</mail> (местный организационный комитет).",
 		format:
 			"Форум пройдёт в <b>гибридном формате (очно и онлайн)</b>: онлайн-участие доступно для участников за пределами Московского региона. Участие в форуме бесплатное. Участвовать можно с докладом на технической сессии или без него. Для участия с докладом нужно пройти <submission>подачу тезисов</submission> и <registration>регистрацию</registration>. Для участия без доклада достаточно регистрации.",
 		venue: "<b>Место проведения:</b> <ext>РУДН</ext>, ул. Миклухо-Маклая, д. 6, Москва, 117198, Россия",

@@ -6,15 +6,17 @@ import { useEffect, useState } from "react";
 import Nav from "./Nav";
 import NavDropdown from "./NavDropdown";
 
-/** Both organizer logos at one height so their emblems match. */
+/** Organizer emblems (RAS, IAA, RUDN) at one height so they match. */
 export const Logos = ({ className = "", size = "md" }: { className?: string; size?: "md" | "lg" }) => {
 	const { t } = useT();
 	const h = size === "lg" ? "h-9 sm:h-10" : "h-7 sm:h-8";
 	return (
 		<span className={`flex shrink-0 items-center gap-3 sm:gap-4 ${className}`}>
-			<img className={`${h} w-auto`} src="/images/ras-logo.webp" width={533} height={128} alt={t("forum.organizers")} />
+			<img className={`${h} w-auto`} src="/images/ras-logo.webp" width={265} height={128} alt={t("forum.organizers")} />
 			<span className="h-6 w-px shrink-0 bg-line-strong" />
-			<img className={`${h} w-auto`} src="/images/rudn-logo.webp" width={430} height={128} alt={t("forum.rudn")} />
+			<img className={`${h} w-auto`} src="/images/iaa-logo.webp" width={128} height={128} alt={t("forum.iaa")} />
+			<span className="h-6 w-px shrink-0 bg-line-strong" />
+			<img className={`${h} w-auto`} src="/images/rudn-logo.webp" width={151} height={128} alt={t("forum.rudn")} />
 		</span>
 	);
 };
