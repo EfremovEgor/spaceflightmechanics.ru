@@ -148,25 +148,26 @@ function App() {
 						</div>
 					</Reveal>
 
-					<Reveal className="mt-12">
-						<SpotlightCard className="h-full p-6 sm:p-10" tilt={false}>
-							<p className="relative text-xl leading-relaxed text-ink sm:text-2xl">
-								<Trans t={t} i18nKey="home.intro" components={rich} />
-							</p>
-							<div className="relative mt-8 border-t border-line pt-6 leading-relaxed text-muted">
-								<p>
-									<Trans t={t} i18nKey="home.organized" components={rich} />
+					{/* Narrow screens read in source order: intro, deadlines, venue, format. Wide screens put the deadlines on top and the venue card beside the text. */}
+					<div className="mt-12 grid gap-4 sm:gap-5 lg:grid-cols-12">
+						<Reveal className="lg:col-span-7 lg:col-start-1 lg:row-start-2">
+							<SpotlightCard className="h-full p-6 sm:p-10" tilt={false}>
+								<p className="relative text-xl leading-relaxed text-ink sm:text-2xl">
+									<Trans t={t} i18nKey="home.intro" components={rich} />
 								</p>
-							</div>
-						</SpotlightCard>
-					</Reveal>
+								<div className="relative mt-8 border-t border-line pt-6 leading-relaxed text-muted">
+									<p>
+										<Trans t={t} i18nKey="home.organized" components={rich} />
+									</p>
+								</div>
+							</SpotlightCard>
+						</Reveal>
 
-					<Reveal className="mt-4 sm:mt-5">
-						<Timeline />
-					</Reveal>
+						<Reveal className="lg:col-span-12 lg:row-start-1">
+							<Timeline />
+						</Reveal>
 
-					<div className="mt-4 grid gap-4 sm:mt-5 sm:gap-5 lg:grid-cols-12">
-						<Reveal className="lg:col-span-5" delay={0.1}>
+						<Reveal className="lg:col-span-5 lg:col-start-8 lg:row-span-2 lg:row-start-2" delay={0.1}>
 							<SpotlightCard className="flex h-full flex-col justify-between p-6 sm:p-8">
 								<div className="relative -mx-6 -mt-6 mb-2 flex h-64 justify-center overflow-hidden sm:-mx-8 sm:-mt-8 sm:h-80">
 									<div
@@ -197,7 +198,7 @@ function App() {
 							</SpotlightCard>
 						</Reveal>
 
-						<Reveal className="lg:col-span-7" delay={0.05}>
+						<Reveal className="lg:col-span-7 lg:col-start-1 lg:row-start-3" delay={0.05}>
 							<SpotlightCard className="h-full p-6 sm:p-10" tilt={false}>
 								<div className="relative flex gap-5">
 									<span className="hidden size-12 shrink-0 items-center justify-center rounded-2xl border border-line-strong bg-primary/30 text-2xl text-cyan sm:flex">
