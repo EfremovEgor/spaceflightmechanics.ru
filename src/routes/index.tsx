@@ -21,13 +21,13 @@ export const Route = createFileRoute("/")({
 });
 
 const TOPIC_ICONS: Record<string, string> = {
-	"Space Flight Mechanics": "mdi:orbit",
-	"Deep Space Exploration": "mdi:telescope",
-	"Earth Observations": "mdi:earth",
+	"Space Flight Mechanics & Mission Design": "mdi:orbit",
+	"Lunar & Planetary Exploration": "mdi:telescope",
+	"Earth Observation & Remote Sensing Applications": "mdi:earth",
 	"Space Sensors & Actuators": "mdi:radar",
-	"Space Materials & Structures": "mdi:cube-scan",
-	"Space Architecture": "mdi:space-station",
-	"AIML In Space Applications": "mdi:brain",
+	"Spacecraft Materials & Structures": "mdi:cube-scan",
+	"Space Architecture & Habitats": "mdi:space-station",
+	"AI & Digital Technologies in Space": "mdi:brain",
 	"Space Power & Propulsion": "mdi:rocket-launch",
 	"Space Policy, Law & Economics": "mdi:scale-balance",
 };
