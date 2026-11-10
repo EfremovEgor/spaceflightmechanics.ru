@@ -93,7 +93,7 @@ const en = {
 	},
 	deadlines: {
 		abstract: "Abstract Submission Deadline:",
-		abstractDate: "November 8, 2026",
+		abstractDate: "November 15, 2026",
 		presentation: "Presentation Submission Deadline:",
 		presentationDate: "November 22, 2026",
 		manuscript: "Manuscript Submission Deadline:",
@@ -262,7 +262,7 @@ const ru: Dict = {
 	},
 	deadlines: {
 		abstract: "Срок подачи тезисов:",
-		abstractDate: "8 ноября 2026 г.",
+		abstractDate: "15 ноября 2026 г.",
 		presentation: "Срок подачи презентаций:",
 		presentationDate: "22 ноября 2026 г.",
 		manuscript: "Срок подачи рукописей:",
