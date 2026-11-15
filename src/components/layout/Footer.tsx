@@ -37,8 +37,6 @@ const Footer = () => {
 					</p>
 					<p className="mt-4 font-mono text-xs tracking-widest text-muted uppercase">
 						<span className="text-flare">{t("forum.dates")}</span>
-						<br />
-						{t("forum.venue")}
 					</p>
 					<div className="mt-8">
 						<p className="font-mono text-[0.7rem] tracking-widest text-dim uppercase">{t("common.previousForums")}</p>

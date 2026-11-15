@@ -52,7 +52,6 @@ function Hero() {
 							<span className="size-1.5 rounded-full bg-flare" />
 							{t("forum.dates")}
 						</span>
-						<span className="chip">{t("forum.venue")}</span>
 					</motion.div>
 
 					<h1 className="mt-6 font-display font-medium tracking-tight text-white sm:mt-8">
@@ -120,8 +119,6 @@ function App() {
 	const rich = {
 		b: <strong className="text-white" />,
 		hl: <span className="text-flare" />,
-		phone: <a className="link" href="tel:+79197727658" />,
-		mail: <a className="link" href="mailto:orgcom@spacescitech.com" />,
 		submission: <LocalLink className="link" to="/abstract-submission/" />,
 		registration: <LocalLink className="link" to="/registration/" />,
 	};
@@ -148,9 +145,9 @@ function App() {
 						</div>
 					</Reveal>
 
-					{/* Narrow screens read in source order: intro, deadlines, venue, format. Wide screens put the deadlines on top and the venue card beside the text. */}
+					{/* Narrow screens read in source order: intro, venue, format, deadlines. Wide screens put the venue card beside the text and the deadlines below both. */}
 					<div className="mt-12 grid gap-4 sm:gap-5 lg:grid-cols-12">
-						<Reveal className="lg:col-span-7 lg:col-start-1 lg:row-start-2">
+						<Reveal className="lg:col-span-7 lg:col-start-1 lg:row-start-1">
 							<SpotlightCard className="h-full p-6 sm:p-10" tilt={false}>
 								<p className="relative text-xl leading-relaxed text-ink sm:text-2xl">
 									<Trans t={t} i18nKey="home.intro" components={rich} />
@@ -163,11 +160,7 @@ function App() {
 							</SpotlightCard>
 						</Reveal>
 
-						<Reveal className="lg:col-span-12 lg:row-start-1">
-							<Timeline />
-						</Reveal>
-
-						<Reveal className="lg:col-span-5 lg:col-start-8 lg:row-span-2 lg:row-start-2" delay={0.1}>
+						<Reveal className="lg:col-span-5 lg:col-start-8 lg:row-span-2 lg:row-start-1" delay={0.1}>
 							<SpotlightCard className="flex h-full flex-col justify-between p-6 sm:p-8">
 								<div className="relative -mx-6 -mt-6 mb-2 flex h-64 justify-center overflow-hidden sm:-mx-8 sm:-mt-8 sm:h-80">
 									<div
@@ -198,7 +191,7 @@ function App() {
 							</SpotlightCard>
 						</Reveal>
 
-						<Reveal className="lg:col-span-7 lg:col-start-1 lg:row-start-3" delay={0.05}>
+						<Reveal className="lg:col-span-7 lg:col-start-1 lg:row-start-2" delay={0.05}>
 							<SpotlightCard className="h-full p-6 sm:p-10" tilt={false}>
 								<div className="relative flex gap-5">
 									<span className="hidden size-12 shrink-0 items-center justify-center rounded-2xl border border-line-strong bg-primary/30 text-2xl text-cyan sm:flex">
@@ -209,6 +202,10 @@ function App() {
 									</p>
 								</div>
 							</SpotlightCard>
+						</Reveal>
+
+						<Reveal className="lg:col-span-12 lg:row-start-3">
+							<Timeline />
 						</Reveal>
 					</div>
 
@@ -228,12 +225,34 @@ function App() {
 									<Trans
 										t={t}
 										i18nKey="home.publication"
-										components={{ ext: <ExternalLink to="https://www.sciencedirect.com/journal/acta-astronautica" /> }}
+										components={{
+											iaa: <ExternalLink to="https://iaaspace.org" />,
+											ext: <ExternalLink to="https://www.sciencedirect.com/journal/acta-astronautica" />,
+										}}
 									/>
 								</p>
 							</SpotlightCard>
 						</Reveal>
 					</div>
+					<Reveal className="mt-4 sm:mt-5">
+						<SpotlightCard className="p-6 sm:p-10" tilt={false}>
+							<div className="relative flex flex-col gap-6 md:flex-row md:items-center md:gap-10">
+								<Stagger className="flex shrink-0 gap-3 text-2xl text-flare" gap={0.1}>
+									{["mdi:silverware-fork-knife", "mdi:bed-outline", "mdi:bus-side", "mdi:coffee-outline"].map((ic) => (
+										<span
+											key={ic}
+											className="flex size-12 items-center justify-center rounded-2xl border border-flare/25 bg-flare/10"
+										>
+											<Icon icon={ic} />
+										</span>
+									))}
+								</Stagger>
+								<p className="leading-relaxed text-muted">
+									{t("home.support")}
+								</p>
+							</div>
+						</SpotlightCard>
+					</Reveal>
 				</Container>
 			</section>
 
@@ -265,25 +284,6 @@ function App() {
 						))}
 					</ul>
 
-					<Reveal className="mt-4 sm:mt-5">
-						<SpotlightCard className="p-6 sm:p-10" tilt={false}>
-							<div className="relative flex flex-col gap-6 md:flex-row md:items-center md:gap-10">
-								<Stagger className="flex shrink-0 gap-3 text-2xl text-flare" gap={0.1}>
-									{["mdi:silverware-fork-knife", "mdi:bed-outline", "mdi:bus-side", "mdi:coffee-outline"].map((ic) => (
-										<span
-											key={ic}
-											className="flex size-12 items-center justify-center rounded-2xl border border-flare/25 bg-flare/10"
-										>
-											<Icon icon={ic} />
-										</span>
-									))}
-								</Stagger>
-								<p className="leading-relaxed text-muted">
-									{t("home.support")}
-								</p>
-							</div>
-						</SpotlightCard>
-					</Reveal>
 				</Container>
 			</section>
 		</>

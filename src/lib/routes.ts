@@ -214,7 +214,7 @@ export const Routes: TRoutes = {
       {
         name: "description",
         content:
-          "International program committee is consisted of the chair Yury N. Razoumny, 7 co-chairs and 14 members. The Forum is taking place in the main building of RUDN university",
+          "International program committee is consisted of the chair Yury N. Razoumny, 7 co-chairs and 16 members. The Forum is taking place in the main building of RUDN university",
       },
       keywords,
     ],

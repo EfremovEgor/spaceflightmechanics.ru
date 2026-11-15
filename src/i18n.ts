@@ -60,7 +60,7 @@ const en = {
 		address1: "6, Miklukho-Maklaya Str.",
 		address2: "117198, Moscow",
 		address3: "Russian Federation",
-		addressInline: "6, Miklukho-Maklaya Str., 117198, Moscow, Russian Federation",
+		addressInline: "RUDN University, 6 Miklukho-Maklaya Str., Moscow, 117198, Russia",
 		language: "Language",
 		days: "days",
 		hrs: "hrs",
@@ -78,16 +78,16 @@ const en = {
 		About: "About",
 		intro: "<b>7<sup>th</sup> SciTech Forum on Space Engineering and Operations Support</b> is taking place on <hl>November 24-26, 2026</hl> in Moscow, Russia.",
 		organized:
-			"The Forum is organized by <b>Russian Academy of Sciences</b>, <b>International Academy of Astronautics</b> and <b>RUDN University</b>.<br/>Phone: <phone>+79197727658</phone>, email: <mail>orgcom@spacescitech.com</mail> (Local Organizing Committee).",
+			"The Forum is organized by <b>Russian Academy of Sciences</b>, <b>International Academy of Astronautics</b> and <b>RUDN University</b>.",
 		format:
-			"<b>Hybrid format (on-site and online)</b> is supposed (the online format is supported for participants outside Moscow region). The participation in the Forum is free. Participants can attend the Forum with or without presentation at technical session. To participate with presentation it is necessary to go through the <submission>Submission</submission> and <registration>Registration</registration> processes. Participation without presentation requires only registration.",
+			"<b>Hybrid format (on-site and online)</b> is supposed (the online format is supported for participants outside Moscow region). The participation in the Forum is free. Participants can attend the Forum with or without paper presentation. Paper presentation needs the <submission>Submission</submission> and <registration>Registration</registration> processes. Participation without presentation requires only registration.",
 		venue: "<b>Venue:</b> <ext>RUDN University</ext>, 6 Miklukho-Maklaya Str., Moscow, 117198, Russia",
 		languages: "<b>Working languages</b>: English and Russian (simultaneous translation).",
 		selection:
 			"Papers for the Forum shall be selected basing on the quality of 500 word abstracts. For accepted papers presentations and complete manuscripts are to be submitted in accordance with the deadlines.",
 		publication:
-			"Manuscripts will be published in the special volume of Advances in Mechanics and Control. The best papers will be recommended for publication in the special issue of <ext>Acta Astronautica</ext>.",
-		topicsTitle: "The following topics are supposed for presentations:",
+			"Conference Proceedings will be published by <iaa>International Academy of Astronautics</iaa>. The best papers will be recommended for publication in the special issue of <ext>Acta Astronautica</ext>.",
+		topicsTitle: "Topics for presentations",
 		support:
 			"The on-site participants of the Forum with presentations or highlight lectures are provided with full support of Local Organizing Committee, including lunch during the dates of the Forum, accommodation support, as well as professional and cultural tours (by invitation only). All the participants will receive warm welcome (coffee break, etc.).",
 	},
@@ -229,7 +229,7 @@ const ru: Dict = {
 		address1: "ул. Миклухо-Маклая, д. 6",
 		address2: "117198, Москва",
 		address3: "Российская Федерация",
-		addressInline: "ул. Миклухо-Маклая, д. 6, 117198, Москва, Российская Федерация",
+		addressInline: "РУДН, ул. Миклухо-Маклая, д. 6, Москва, 117198, Россия",
 		language: "Язык",
 		days: "дн",
 		hrs: "ч",
@@ -247,16 +247,16 @@ const ru: Dict = {
 		About: "О форуме",
 		intro: "<b>7<sup>th</sup> SciTech Forum on Space Engineering and Operations Support</b> пройдёт <hl>24–26 ноября 2026 г.</hl> в Москве.",
 		organized:
-			"Организаторы форума — <b>Российская академия наук</b>, <b>Международная академия астронавтики</b> и <b>РУДН</b>.<br/>Телефон: <phone>+79197727658</phone>, эл. почта: <mail>orgcom@spacescitech.com</mail> (местный организационный комитет).",
+			"Организаторы форума — <b>Российская академия наук</b>, <b>Международная академия астронавтики</b> и <b>РУДН</b>.",
 		format:
-			"Форум пройдёт в <b>гибридном формате (очно и онлайн)</b>: онлайн-участие доступно для участников за пределами Московского региона. Участие в форуме бесплатное. Участвовать можно с докладом на технической сессии или без него. Для участия с докладом нужно пройти <submission>подачу тезисов</submission> и <registration>регистрацию</registration>. Для участия без доклада достаточно регистрации.",
+			"Форум пройдёт в <b>гибридном формате (очно и онлайн)</b>: онлайн-участие доступно для участников за пределами Московского региона. Участие в форуме бесплатное. Участвовать можно с докладом или без него. Для участия с докладом нужно пройти <submission>подачу тезисов</submission> и <registration>регистрацию</registration>. Для участия без доклада достаточно регистрации.",
 		venue: "<b>Место проведения:</b> <ext>РУДН</ext>, ул. Миклухо-Маклая, д. 6, Москва, 117198, Россия",
 		languages: "<b>Рабочие языки</b>: английский и русский (синхронный перевод).",
 		selection:
 			"Доклады на форум отбираются по качеству тезисов объёмом 500 слов. По принятым докладам презентации и полные тексты рукописей подаются в установленные сроки.",
 		publication:
-			"Рукописи будут опубликованы в специальном томе Advances in Mechanics and Control. Лучшие работы будут рекомендованы к публикации в специальном выпуске журнала <ext>Acta Astronautica</ext>.",
-		topicsTitle: "Тематика докладов:",
+			"Труды конференции будут изданы <iaa>Международной академией астронавтики</iaa>. Лучшие работы будут рекомендованы к публикации в специальном выпуске журнала <ext>Acta Astronautica</ext>.",
+		topicsTitle: "Тематика докладов",
 		support:
 			"Очные участники форума с докладами или ключевыми лекциями получают полную поддержку местного организационного комитета: обеды в дни форума, помощь с размещением, а также профессиональные и культурные экскурсии (только по приглашению). Всех участников ждёт тёплый приём (кофе-брейки и т. д.).",
 	},

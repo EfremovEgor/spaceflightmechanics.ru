@@ -34,7 +34,6 @@ function MemberCard({ m, index }: { m: CommitteeMember; index: number }) {
 			animate={{ opacity: 1, y: 0, scale: 1 }}
 			exit={{ opacity: 0, scale: 0.96, transition: { duration: 0.2 } }}
 			transition={{ duration: 0.6, ease: EASE, delay: Math.min(index, 12) * 0.035 }}
-			className={chair ? "sm:col-span-2" : ""}
 		>
 			<button
 				type="button"
@@ -47,7 +46,7 @@ function MemberCard({ m, index }: { m: CommitteeMember; index: number }) {
 					focused
 						? "border-flare/50 shadow-[0_0_40px_-12px_rgb(255_138_61_/_0.55)]"
 						: "hover:border-line-strong"
-				} ${chair ? "sm:p-8" : ""}`}
+				}`}
 			>
 				<span
 					aria-hidden
@@ -67,7 +66,7 @@ function MemberCard({ m, index }: { m: CommitteeMember; index: number }) {
 					/>
 				</span>
 				<span
-					className={`relative font-display leading-snug text-white ${chair ? "text-2xl sm:text-3xl" : "text-[1.05rem]"}`}
+					className="relative font-display text-[1.05rem] leading-snug text-white"
 				>
 					{ru ? (NAME_RU[m.fullName] ?? m.fullName) : m.fullName}
 				</span>

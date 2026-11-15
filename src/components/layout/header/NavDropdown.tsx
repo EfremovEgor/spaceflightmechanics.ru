@@ -112,7 +112,6 @@ const NavDropdown = ({ open, onToggle }: { open: boolean; onToggle: () => void }
 						>
 							<LangSwitch className="mb-6 w-fit sm:hidden" />
 							<p className="text-flare">{t("forum.dates")}</p>
-							<p>{t("forum.venue")}</p>
 							<a className="mt-3 block normal-case text-accent" href="mailto:orgcom@spacescitech.com">
 								orgcom@spacescitech.com
 							</a>

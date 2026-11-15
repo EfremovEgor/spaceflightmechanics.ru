@@ -51,23 +51,33 @@ export const committee: CommitteeMember[] = [
     role: "Member",
   },
   {
-    fullName: "Filippo Graziani",
-    affiliation: "University of Pisa, Italy",
-    role: "Member",
-  },
-  {
     fullName: "Rock Jeng-Shing Chern",
     affiliation: "Ryerson University, Canada",
     role: "Member",
   },
   {
-    fullName: "Pini Gurfil",
-    affiliation: "Technion, Israel Institute of Technology, Israel",
+    fullName: "Sergei Chernyshev",
+    affiliation: "Russian Academy of Sciences, Russia",
     role: "Member",
   },
   {
     fullName: "Djojodihardjo Harijono",
     affiliation: "University Putra, Malaysia",
+    role: "Member",
+  },
+  {
+    fullName: "Giancarlo Genta",
+    affiliation: "Polytechnic University of Turin, Italy",
+    role: "Member",
+  },
+  {
+    fullName: "Filippo Graziani",
+    affiliation: "University of Pisa, Italy",
+    role: "Member",
+  },
+  {
+    fullName: "Pini Gurfil",
+    affiliation: "Technion, Israel Institute of Technology, Israel",
     role: "Member",
   },
   {
@@ -101,18 +111,18 @@ export const committee: CommitteeMember[] = [
     role: "Member",
   },
   {
-    fullName: "Giancarlo Genta",
-    affiliation: "Polytechnic University of Turin, Italy",
-    role: "Member",
-  },
-  {
     fullName: "Maria Antonietta Perino",
     affiliation: "Polytechnic University of Turin, Italy",
     role: "Member",
   },
   {
-    fullName: "Sergei Chernyshev",
-    affiliation: "Russian Academy of Sciences, Russia",
+    fullName: "Anatoli Petrukovich",
+    affiliation: "Space Research Institute of Russian Academy of Sciences, Russia",
+    role: "Member",
+  },
+  {
+    fullName: "Boris Shustov",
+    affiliation: "Institute of Astronomy of Russian Academy of Sciences, Russia",
     role: "Member",
   },
 ];
@@ -121,6 +131,8 @@ export const committee: CommitteeMember[] = [
 export const NAME_RU: Record<string, string> = {
 	"Yury N. Razoumny": "Юрий Н. Разумный",
 	"Sergei Chernyshev": "Сергей Чернышёв",
+	"Anatoli Petrukovich": "Анатолий Петрукович",
+	"Boris Shustov": "Борис Шустов",
 };
 
 export const AFFILIATION_RU: Record<string, string> = {
@@ -145,4 +157,6 @@ export const AFFILIATION_RU: Record<string, string> = {
 	"Freie Universitaet Berlin, Germany": "Свободный университет Берлина, Германия",
 	"Polytechnic University of Turin, Italy": "Туринский политехнический университет, Италия",
 	"Russian Academy of Sciences, Russia": "Российская академия наук, Россия",
+	"Space Research Institute of Russian Academy of Sciences, Russia": "Институт космических исследований РАН, Россия",
+	"Institute of Astronomy of Russian Academy of Sciences, Russia": "Институт астрономии РАН, Россия",
 };
