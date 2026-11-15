@@ -21,15 +21,15 @@ export const Route = createFileRoute("/")({
 });
 
 const TOPIC_ICONS: Record<string, string> = {
-	"Space Flight Mechanics & Mission Design": "mdi:orbit",
-	"Lunar & Planetary Exploration": "mdi:telescope",
-	"Earth Observation & Remote Sensing Applications": "mdi:earth",
-	"Space Sensors & Actuators": "mdi:radar",
-	"Spacecraft Materials & Structures": "mdi:cube-scan",
+	"Earth Observations": "mdi:earth",
+	"Small Satellites, Space Sensors & Actuators": "mdi:radar",
+	"Solar System Exploration": "mdi:telescope",
 	"Space Architecture & Habitats": "mdi:space-station",
-	"AI & Digital Technologies in Space": "mdi:brain",
-	"Space Power & Propulsion": "mdi:rocket-launch",
+	"Space Flight Mechanics": "mdi:orbit",
 	"Space Policy, Law & Economics": "mdi:scale-balance",
+	"Space Power & Propulsion": "mdi:rocket-launch",
+	"Spacecraft Materials & Structures": "mdi:cube-scan",
+	"Spaceports, Ground Infrastructure & Operations": "mdi:rocket-launch-outline",
 };
 
 function Hero() {

@@ -4,10 +4,58 @@ export const TechnicalSessions: {
 	description: string;
 }[] = [
 	{
-		name: "Space Flight Mechanics & Mission Design",
+		name: "Earth Observations",
+		chair: "Tarun Singh, Symbiosis Institute of Geoinformatics, India",
+		description:
+			"The session covers technological aspects of Earth observations from space in favor of different industries and rational nature management, including implementation of AIML for analyzing massive amounts of data collected by Earth observation missions, revealing insights through geospatial analytics that are crucial for resource managements, urban planning, oceanographic, atmospheric, geological, geophysical, societal, security, and more. ",
+	},
+	{
+		name: "Small Satellites, Space Sensors & Actuators",
+		chair: " Svetlana Agasieva, RUDN University, Russia",
+		description:
+			"The session addresses essential components that enable spacecraft to perceive their environment, execute control commands, and perform scientific and operational tasks, technological improvements. The session is focused on new developments in sensor technologies and actuator systems, like MEMS-based sensors and piezoelectric actuators, and other crucial on-board equipment that make sensors and actuators smaller and more functional, and contribute to the success of space missions.",
+	},
+	{
+		name: "Solar System Exploration",
+		chair: "Elena Fomina, Institute of Biomedical Problems of RAS, Russia",
+		description:
+			"This session covers deep space exploration strategies and architectures, as well as technology roadmaps. The session will address current and future missions to the Moon, planets, and asteroids, including orbital missions, robotic surface missions, as well as life sciences, resource utilisation and preparatory activities for future solar system exploration.",
+	},
+	{
+		name: "Space Architecture & Habitats",
+		chair: "Ivan Khalil, RUDN University, Russia",
+		description:
+			"This session explores the multidisciplinary field of space architecture, focusing on the design of orbital stations and planetary habitats, examination of key challenges like radiation shielding, life support systems, and in-situ resource utilization. The discussion will also cover human-centered design for confined environments, addressing crew safety, psychological well-being, and operational efficiency.",
+	},
+	{
+		name: "Space Flight Mechanics",
 		chair: "Antonio Prado, National Institute for Space Research (INPE), Brazil",
 		description:
 			"The session addresses advances in orbital mechanics, attitude dynamics, guidance, navigation and control of single or multi-spacecraft systems as well as space robotics, including applications related to the guidance, navigation and control of Earth-orbiting and interplanetary spacecraft, formation flying, rendezvous and docking. The session also covers topics on natural orbital dynamics of spacecraft in the Solar System and orbit determination.",
+	},
+	{
+		name: "Space Policy, Law & Economics",
+		chair: "Irina Chernych, RUDN University, Russia",
+		description:
+			"The session is devoted to the discussion of the complex and increasingly critical intersection of technical policy development, legal frameworks, and economic considerations that govern space activities. The session is also focused on governance, regulation, and sustainable economic growth in the space sector, commercialization of space exploration activities, current initiatives for commercial space access and their technological developments.",
+	},
+	{
+		name: "Space Power & Propulsion",
+		chair: "Felix Mora-Camino, French Civil Aviation University, France",
+		description:
+			"The session addresses sub-orbital, Earth to orbit and in-space propulsion, including both chemical and non-chemical rocket propulsion, air-breathing propulsion, and combined air-breathing and rocket systems. The session welcomes advanced solar and nuclear systems for spacecraft power and propulsion, novel power generation and energy harvesting, and examine the prospects for using space-based power plants to provide energy remotely to the Earth or other planets.",
+	},
+	{
+		name: "Spacecraft Materials & Structures",
+		chair: "Meena Laad, Symbiosis Institute of Technology, India",
+		description:
+			"The session is devoted to the latest achievements and future directions in materials science for space applications, as well as covers exploration of innovative approaches, challenges, and advancements in the design and construction of structures in extraterrestrial environments. The session is focused to discuss showcase research, technologies, and methodologies involved in creating habitable and functional spaces beyond the Earth.",
+	},
+	{
+		name: "Spaceports, Ground Infrastructure & Operations",
+		chair: "",
+		description:
+			"The session covers the design, construction and operation of spaceports and launch complexes, ground infrastructure for launch, testing and mission support, as well as materials and structures for ground facilities, including those on the Moon and planets. The session also addresses ground segment operations and the planning and support of space missions from launch to post-mission evaluation.",
 	},
 	// {
 	// 	name: "Space Operations & Ground Infrastructure",
@@ -21,54 +69,6 @@ export const TechnicalSessions: {
 	// 	description:
 	// 		"The session is focused on recent advances in small satellite class missions such as microsatellites, nanosatellites, CubeSats, as well as small satellites mega-constellations enabling valuable results for the mission end-user. The session also covers important lessons-learned topics, description of past and perspective space missions, different applications of small satellites and their constellations.",
 	// },
-	{
-		name: "Lunar & Planetary Exploration",
-		chair: "Elena Fomina, Institute of Biomedical Problems of RAS, Russia",
-		description:
-			"This session covers deep space exploration strategies and architectures, as well as technology roadmaps. The session will address current and future missions to the Moon, planets, and asteroids, including orbital missions, robotic surface missions, as well as life sciences, resource utilisation and preparatory activities for future solar system exploration.",
-	},
-	{
-		name: "Earth Observation & Remote Sensing Applications",
-		chair: "Tarun Singh, Symbiosis Institute of Geoinformatics, India",
-		description:
-			"The session covers technological aspects of Earth observations from space in favor of different industries and rational nature management, including implementation of AIML for analyzing massive amounts of data collected by Earth observation missions, revealing insights through geospatial analytics that are crucial for resource managements, urban planning, oceanographic, atmospheric, geological, geophysical, societal, security, and more. ",
-	},
-	{
-		name: "Space Sensors & Actuators",
-		chair: " Svetlana Agasieva, RUDN University, Russia",
-		description:
-			"The session addresses essential components that enable spacecraft to perceive their environment, execute control commands, and perform scientific and operational tasks, technological improvements. The session is focused on new developments in sensor technologies and actuator systems, like MEMS-based sensors and piezoelectric actuators, and other crucial on-board equipment that make sensors and actuators smaller and more functional, and contribute to the success of space missions.",
-	},
-	{
-		name: "Spacecraft Materials & Structures",
-		chair: "Meena Laad, Symbiosis Institute of Technology, India",
-		description:
-			"The session is devoted to the latest achievements and future directions in materials science for space applications, as well as covers exploration of innovative approaches, challenges, and advancements in the design and construction of structures in extraterrestrial environments. The session is focused to discuss showcase research, technologies, and methodologies involved in creating habitable and functional spaces beyond the Earth.",
-	},
-	{
-		name: "Space Architecture & Habitats",
-		chair: "Ivan Khalil, RUDN University, Russia",
-		description:
-			"This session explores the multidisciplinary field of space architecture, focusing on the design of orbital stations and planetary habitats, examination of key challenges like radiation shielding, life support systems, and in-situ resource utilization. The discussion will also cover human-centered design for confined environments, addressing crew safety, psychological well-being, and operational efficiency.",
-	},
-	{
-		name: "AI & Digital Technologies in Space",
-		chair: "Ketan Kotecha, Symbiosis Institute of Technology, India",
-		description:
-			"This session explores the transformative role of artificial intelligence and machine learning in modern space programs. We will examine the application of AIML for autonomous spacecraft navigation, intelligent data analysis, and predictive maintenance of orbital systems. Furthermore, the discussion will address the critical legal and ethical questions this technology raises, from regulatory frameworks for AI-driven missions to liability for autonomous actions in orbit.",
-	},
-	{
-		name: "Space Power & Propulsion",
-		chair: "Felix Mora-Camino, French Civil Aviation University, France",
-		description:
-			"The session addresses sub-orbital, Earth to orbit and in-space propulsion, including both chemical and non-chemical rocket propulsion, air-breathing propulsion, and combined air-breathing and rocket systems. The session welcomes advanced solar and nuclear systems for spacecraft power and propulsion, novel power generation and energy harvesting, and examine the prospects for using space-based power plants to provide energy remotely to the Earth or other planets.",
-	},
-	{
-		name: "Space Policy, Law & Economics",
-		chair: "Irina Chernych, RUDN University, Russia",
-		description:
-			"The session is devoted to the discussion of the complex and increasingly critical intersection of technical policy development, legal frameworks, and economic considerations that govern space activities. The session is also focused on governance, regulation, and sustainable economic growth in the space sector, commercialization of space exploration activities, current initiatives for commercial space access and their technological developments.",
-	},
 ];
 
 export const HighlightLectures: {
