@@ -1,4 +1,5 @@
 import { ButtonLink } from "@/components/common/Button";
+import SubmissionClosedButton from "@/components/common/SubmissionClosedButton";
 import Countdown from "@/components/common/Countdown";
 import ExternalLink from "@/components/common/ExternalLink";
 import Marquee from "@/components/common/Marquee";
@@ -65,7 +66,7 @@ function Hero() {
 
 					<motion.div className="mt-8 flex flex-wrap items-center gap-3 sm:mt-10 sm:gap-4" {...appear(0.7)}>
 						<Magnetic>
-							<ButtonLink to="/abstract-submission/">{t("common.submitNow")}</ButtonLink>
+							<SubmissionClosedButton />
 						</Magnetic>
 						<Magnetic>
 							<ButtonLink to="/registration/" variant="ghost">

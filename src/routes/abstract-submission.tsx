@@ -1,4 +1,4 @@
-import { ButtonAnchor } from "@/components/common/Button";
+import SubmissionClosedButton from "@/components/common/SubmissionClosedButton";
 import DownloadLink from "@/components/common/DownloadLink";
 import { Reveal, SpotlightCard } from "@/components/common/motion";
 import BasePageLayout from "@/components/layout/BasePageLayout";
@@ -29,12 +29,7 @@ function RouteComponent() {
 								{t("submission.original")}
 							</p>
 							<div>
-								<ButtonAnchor
-									href="https://submission.spacescitech.com/call_for_papers/scitech2026/submit?lang=en"
-									target="_blank"
-								>
-									{t("common.submitNow")}
-								</ButtonAnchor>
+								<SubmissionClosedButton />
 							</div>
 						</div>
 					</SpotlightCard>

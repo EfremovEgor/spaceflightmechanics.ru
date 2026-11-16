@@ -571,28 +571,20 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 		},
 		participants: [
 			{
-				name: "Sergey Chernyshev",
-				affiliation: "Vice President of Russian Academy of Sciences, Academician of Russian Academy of Sciences, Russia"
-			},
-			{
 				name: "Sergei Belousko",
 				affiliation: "Ministry of Foreign Affairs of Russian Federation, Head of Russian Delegation at UNOOSA, Russia"
 			},
 			{
-				name: "Vasily Gudnov",
-				affiliation: "Head of Department, State Corporation “Roscosmos”, Russia"
-			},
-			{
-				name: "Aleksey Petrukovich",
-				affiliation: "Director of Institute of Space Research of Russian Academy of Sciences, Academician of Russian Academy of Sciences, Russia"
-			},
-			{
-				name: "Antonio Prado",
-				affiliation: "Deputy Director of Institute of Space Research (INPE), Republic of Brazil"
+				name: "Sergey Chernyshev",
+				affiliation: "Vice President of Russian Academy of Sciences, Academician of Russian Academy of Sciences, Russia"
 			},
 			{
 				name: "Francis Chizea",
 				affiliation: "Deputy Director of National Space Research and Development Agency, Federal Republic of Nigeria"
+			},
+			{
+				name: "Vasily Gudnov",
+				affiliation: "Head of Department, State Corporation “Roscosmos”, Russia"
 			},
 			{
 				name: "Painos Gweme",
@@ -603,9 +595,17 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 				affiliation: "Space Agency of the Republic of Azerbaijan (Azercosmos), Republic of Azerbaijan"
 			},
 			{
+				name: "Aleksey Petrukovich",
+				affiliation: "Director of Institute of Space Research of Russian Academy of Sciences, Academician of Russian Academy of Sciences, Russia"
+			},
+			{
+				name: "Antonio Prado",
+				affiliation: "Deputy Director of Institute of Space Research (INPE), Republic of Brazil"
+			},
+			{
 				name: "Yury Razoumny",
 				affiliation: "Director of Engineering Academy of RUDN University, Chair of International Research Cooperation at Space Council of Russian Academy of Sciences, Chair of International Program Committee of SciTech Forum, Russia"
-			}
+			},
 		],
 		description: "The roundtable discusses the evolution of global space governance in the context of the current agenda of the United Nations Committee on the Peaceful Uses of Outer Space (COPUOS). The rapid growth of satellite mega-constellations, the entry of new spacefaring nations and private operators, and the return to the Moon challenge the international community to keep outer space safe, secure and sustainable. Participants will address the implementation of the Guidelines for the Long-term Sustainability of Outer Space Activities, space debris mitigation and space traffic coordination, frameworks for space resource activities and the role of national space legislation. Special attention will be paid to capacity building and access to space for developing countries, cooperation within BRICS and with African space agencies, and ways to strengthen the dialogue between governments, space agencies, academia and industry in shaping the rules of the new space age."
 	},
@@ -620,45 +620,45 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 		},
 		participants: [
 			{
-				name: "Lorant Czaran",
-				affiliation: "Chief of Space Application Section, UNOOSA, Austria"
+				name: "Agaba Doreen",
+				affiliation: "Head of Space Office, Ministry of Science, Republic of Uganda"
 			},
 			{
 				name: "Svetlana Agasieva",
 				affiliation: "Deputy Director of Engineering Academy of RUDN University, Russia"
 			},
 			{
-				name: "Agaba Doreen",
-				affiliation: "Head of Space Office, Ministry of Science, Republic of Uganda"
+				name: "Lorant Czaran",
+				affiliation: "Chief of Space Application Section, UNOOSA, Austria"
 			},
 			{
-				name: "Adolf Mkenda",
-				affiliation: "Minister of Education, Science and Technology, Republic of Tanzania"
-			},
-			{
-				name: "Tarun P. Singh",
-				affiliation: "Symbiosis Institute of Geoinformatics, India"
+				name: "Kuria Catherine Wangari",
+				affiliation: "General Manager of Skylinks International Holdings, Republic of Kenya"
 			},
 			{
 				name: "Oleg Malkov",
 				affiliation: "Institute of Astronomy of Russian Academy of Sciences, Russia"
 			},
 			{
+				name: "Emmanuel Mashonjowa",
+				affiliation: "University of Zimbabwe, Zimbabwe"
+			},
+			{
+				name: "Adolf Mkenda",
+				affiliation: "Minister of Education, Science and Technology, Republic of Tanzania"
+			},
+			{
 				name: "Antonio Prado",
 				affiliation: "Deputy Director of National Institute for Space Research (INPE), Brazil"
 			},
 			{
-				name: "Emmanuel Mashonjowa",
-				affiliation: "University of Zimbabwe, Zimbabwe"
+				name: "Tarun P. Singh",
+				affiliation: "Symbiosis Institute of Geoinformatics, India"
 			},
 			{
 				name: "Uwakwe Augustine Amadikwa",
 				affiliation: "Vice Chancellor, Gregory University Uturu, Federal Republic of Nigeria"
 			},
-			{
-				name: "Kuria Catherine Wangari",
-				affiliation: "General Manager of Skylinks International Holdings, Republic of Kenya"
-			}
 		],
 		description: "The roundtable focuses on how international cooperation in space research and education can respond to the challenges of a rapidly changing space sector. The growing number of emerging space nations, the demand for qualified engineers and scientists, and the expanding use of space data for sustainable development call for new models of academic partnership. Participants will discuss joint educational programmes and double degrees, student satellite and CubeSat projects, shared ground infrastructure and open access to space data, as well as the role of universities, space agencies and international organizations in capacity building. Attention will be given to the contribution of space technologies to raising living standards and economic development in developing countries: satellite services for agriculture, food and water security, disaster risk reduction, telemedicine and distance education in remote areas, digital connectivity, and the creation of high-tech jobs and national space industries through education and research partnerships."
 	},
@@ -673,20 +673,36 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 		},
 		participants: [
 			{
-				name: "Vladislav Panchenko",
-				affiliation: "Vice-President of Russian Academy of Sciences, Academician of Russian Academy of Sciences, Russia"
+				name: "Nikolay Evtikhiev",
+				affiliation: "President of VPG LaserONE, Russia"
 			},
 			{
-				name: "Alexandr Sigov",
-				affiliation: "President of MIREA – Russian Technological University, Academician of Russian Academy of Sciences, Russia"
+				name: "Ketan Kotecha",
+				affiliation: "Dean of Faculty of Engineering, Symbiosis Institute of Technology, India"
 			},
 			{
 				name: "John Mankins",
 				affiliation: "President of Artemis Innovation Management Solutions, USA"
 			},
 			{
+				name: "Vladislav Panchenko",
+				affiliation: "Vice-President of Russian Academy of Sciences, Academician of Russian Academy of Sciences, Russia"
+			},
+			{
 				name: "Yury Razoumny",
 				affiliation: "Director of Engineering Academy of RUDN University, Russia"
+			},
+			{
+				name: "Igor Shahray",
+				affiliation: "General Director of Unigreen Energy, Russia"
+			},
+			{
+				name: "Alexandr Sigov",
+				affiliation: "President of MIREA – Russian Technological University, Academician of Russian Academy of Sciences, Russia"
+			},
+			{
+				name: "Eugeniy Teryukov",
+				affiliation: "Ioffe Physical-Technical Institute of Russian Academy of Sciences, Russia"
 			},
 			{
 				name: "Renuganth Varatharajoo",
@@ -696,22 +712,6 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 				name: "Shufan Wu",
 				affiliation: "Dean of the School of Aeronautics and Astronautics, Shanghai Jiao Tong University, China"
 			},
-			{
-				name: "Ketan Kotecha",
-				affiliation: "Dean of Faculty of Engineering, Symbiosis Institute of Technology, India"
-			},
-			{
-				name: "Igor Shahray",
-				affiliation: "General Director of Unigreen Energy, Russia"
-			},
-			{
-				name: "Eugeniy Teryukov",
-				affiliation: "Ioffe Physical-Technical Institute of Russian Academy of Sciences, Russia"
-			},
-			{
-				name: "Nikolay Evtikhiev",
-				affiliation: "President of VPG LaserONE, Russia"
-			}
 		],
 		description: "The roundtable addresses space-based solar power as a source of clean, continuous energy and the engineering and economic challenges of building an orbital power grid. Recent in-orbit demonstrations of wireless power transmission, progress in lightweight photovoltaics and falling launch costs have moved space solar energy from concept towards realistic national roadmaps. Participants will discuss architectures of large orbital power stations and their in-space assembly, microwave and laser power beaming, ground receiving infrastructure, safety and spectrum regulation, as well as life-cycle costs, investment models and public–private partnerships. The discussion will also consider power beaming for lunar bases, satellites and remote areas on Earth, and prospects for international cooperation in creating a global orbital energy infrastructure."
 	}

@@ -11,6 +11,21 @@ export const committee: CommitteeMember[] = [
     role: "Chair",
   },
   {
+    fullName: "Yeshurun Alemayehu",
+    affiliation: "Ministry of Innovation and Technology, Ethiopia",
+    role: "Co-Chair",
+  },
+  {
+    fullName: "Francis Chizea",
+    affiliation: "National Space Research and Development Agency, Nigeria",
+    role: "Co-Chair",
+  },
+  {
+    fullName: "Elena Fantino",
+    affiliation: "Khalifa University of Science and Technology, UAE",
+    role: "Co-Chair",
+  },
+  {
     fullName: "Ketan Kotecha",
     affiliation: "Symbiosis Institute of Technology, India",
     role: "Co-Chair",
@@ -21,28 +36,13 @@ export const committee: CommitteeMember[] = [
     role: "Co-Chair",
   },
   {
-    fullName: "Shufan Wu",
-    affiliation: "Shanghai Jiao Tong University, China",
-    role: "Co-Chair",
-  },
-  {
     fullName: "Renuganth Varatharajoo",
     affiliation: "Universiti Putra Malaysia, Malaysia",
     role: "Co-Chair",
   },
   {
-    fullName: "Elena Fantino",
-    affiliation: "Khalifa University of Science and Technology, UAE",
-    role: "Co-Chair",
-  },
-  {
-    fullName: "Francis Chizea",
-    affiliation: "National Space Research and Development Agency, Nigeria",
-    role: "Co-Chair",
-  },
-  {
-    fullName: "Yeshurun Alemayehu",
-    affiliation: "Ministry of Innovation and Technology, Ethiopia",
+    fullName: "Shufan Wu",
+    affiliation: "Shanghai Jiao Tong University, China",
     role: "Co-Chair",
   },
   {

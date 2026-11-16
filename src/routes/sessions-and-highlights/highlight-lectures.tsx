@@ -1,6 +1,7 @@
 import Accordion from "@/components/common/Accordion";
 import { Reveal } from "@/components/common/motion";
 import BasePageLayout from "@/components/layout/BasePageLayout";
+import ProgramInfo from "@/components/sessions/ProgramInfo";
 import { highlightLectures, PROGRAM_PLACE } from "@/lib/program";
 import { pageHead, Routes } from "@/lib/routes";
 import { createFileRoute } from "@tanstack/react-router";
@@ -24,6 +25,7 @@ function RouteComponent() {
   return (
     <BasePageLayout name={t("sessions.highlight")} section={t("sessions.section")}>
       <div className="flex max-w-4xl flex-col gap-12">
+        <ProgramInfo />
         {days.map((day) => (
           <div key={day}>
             <h2 className="eyebrow flex items-center gap-2">

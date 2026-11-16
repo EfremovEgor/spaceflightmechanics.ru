@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/common/motion";
 import BasePageLayout from "@/components/layout/BasePageLayout";
-import ExternalLink from "@/components/common/ExternalLink";
-import { program, PROGRAM_PLACE, ZOOM_REGISTRATION, type PlenaryEntry, type SessionEntry } from "@/lib/program";
+import ProgramInfo from "@/components/sessions/ProgramInfo";
+import { program, type PlenaryEntry, type SessionEntry } from "@/lib/program";
 import { pageHead, Routes } from "@/lib/routes";
 import { createFileRoute } from "@tanstack/react-router";
 import { LocalLink, useT } from "@/lib/lang";
@@ -94,14 +94,7 @@ function RouteComponent() {
   return (
     <BasePageLayout name={t("sessions.program")} section={t("sessions.section")}>
       <div className="flex max-w-4xl flex-col gap-12">
-        <Reveal>
-          <p className="leading-relaxed text-muted">
-            <strong className="text-white">{t("sessions.place")}</strong> {PROGRAM_PLACE} ·{" "}
-            <ExternalLink to={ZOOM_REGISTRATION}>{t("sessions.zoom")}</ExternalLink>
-            <br />
-            {t("sessions.timeZone")}
-          </p>
-        </Reveal>
+        <ProgramInfo />
         {program.map((day) => (
           <Reveal key={day.date}>
             <h2 className="eyebrow flex items-center gap-2">

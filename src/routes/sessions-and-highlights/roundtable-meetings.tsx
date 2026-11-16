@@ -1,8 +1,8 @@
 import Accordion from "@/components/common/Accordion";
-import ExternalLink from "@/components/common/ExternalLink";
 import { Reveal } from "@/components/common/motion";
 import BasePageLayout from "@/components/layout/BasePageLayout";
-import { PROGRAM_PLACE, roundtableMeetings, ZOOM_REGISTRATION } from "@/lib/program";
+import ProgramInfo from "@/components/sessions/ProgramInfo";
+import { PROGRAM_PLACE, roundtableMeetings } from "@/lib/program";
 import { pageHead, Routes } from "@/lib/routes";
 import { createFileRoute } from "@tanstack/react-router";
 import { useT } from "@/lib/lang";
@@ -23,6 +23,9 @@ function RouteComponent() {
   return (
     <BasePageLayout name={t("sessions.roundtable")} section={t("sessions.section")}>
       <div className="flex max-w-4xl flex-col gap-4">
+        <div className="mb-8">
+          <ProgramInfo />
+        </div>
         {roundtableMeetings.map((r) => (
           <Reveal key={r.number}>
             <article id={`roundtable-${r.number}`} className="panel hud-corners flex scroll-mt-28 flex-col gap-5 p-6 sm:p-8">
@@ -35,10 +38,6 @@ function RouteComponent() {
                   <span className="text-dim">{PROGRAM_PLACE}</span>
                 </p>
                 <h2 className="font-display text-lg leading-snug text-white sm:text-xl">{r.title}</h2>
-                <p className="text-sm text-muted">
-                  {t("sessions.timeZone")} ·{" "}
-                  <ExternalLink to={ZOOM_REGISTRATION}>{t("sessions.zoom")}</ExternalLink>
-                </p>
               </div>
               <div className="text-muted">
                 <strong className="text-white">{t("sessions.moderator")}</strong>
