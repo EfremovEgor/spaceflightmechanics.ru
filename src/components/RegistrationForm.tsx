@@ -10,10 +10,16 @@ import { AnimatePresence, motion } from "motion/react";
 import { SciTech2026Service } from "@/api/services/scitech2026";
 import { Button } from "@/components/common/Button";
 
+// Same rule as confchair: Latin letters, Greek (for symbols) and µ; no other scripts or diacritics.
+const NON_ENGLISH_LETTER = /[^\P{L}A-Za-z\u0370-\u03FF\u00B5]|\p{M}/u;
+
 const makeSchema = (t: TFunction) =>
 	z
 		.object({
-			fullName: z.string().min(1, t("form.errRequired")),
+			fullName: z
+				.string()
+				.min(1, t("form.errRequired"))
+				.refine((v) => !NON_ENGLISH_LETTER.test(v), t("form.errEnglishOnly")),
 			email: z.email(t("form.errEmail")),
 			country: z.string().min(1, t("form.errCountry")),
 			organization: z.string().min(1, t("form.errRequired")),

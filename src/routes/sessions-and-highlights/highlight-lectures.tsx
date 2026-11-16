@@ -1,8 +1,8 @@
-// import Accordion from "@/components/common/Accordion";
+import Accordion from "@/components/common/Accordion";
+import { Reveal } from "@/components/common/motion";
 import BasePageLayout from "@/components/layout/BasePageLayout";
-import ToBeDiscussed from "@/components/layout/ToBeDiscussed";
+import { highlightLectures, PROGRAM_PLACE } from "@/lib/program";
 import { pageHead, Routes } from "@/lib/routes";
-// import { HighlightLectures } from "@/lib/sessions";
 import { createFileRoute } from "@tanstack/react-router";
 import { useT } from "@/lib/lang";
 
@@ -17,50 +17,49 @@ export const Route = createFileRoute(
     ),
 });
 
+const days = [...new Set(highlightLectures.map((l) => l.date))];
+
 function RouteComponent() {
   const { t } = useT();
   return (
     <BasePageLayout name={t("sessions.highlight")} section={t("sessions.section")}>
-      {/* <div className="mt-4">
-        {HighlightLectures.map((l, i) => (
-          <div>
-            <h2 className="font-bold mt-4 uppercase">{l.name}</h2>
-            <div className="mt-4">
-              <strong>Speaker:</strong>
-              <br />
-              {l.speaker}
+      <div className="flex max-w-4xl flex-col gap-12">
+        {days.map((day) => (
+          <div key={day}>
+            <h2 className="eyebrow flex items-center gap-2">
+              <span className="h-px w-8 bg-accent" />
+              {day}
+            </h2>
+            <div className="mt-5 flex flex-col gap-4">
+              {highlightLectures
+                .filter((l) => l.date === day)
+                .map((l) => (
+                  <Reveal key={l.number}>
+                    <article id={`lecture-${l.number}`} className="panel hud-corners flex scroll-mt-28 flex-col gap-3 p-5 sm:p-7">
+                      <p className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs tracking-widest uppercase">
+                        <span className="text-flare">{t("sessions.highlightN", { n: l.number })}</span>
+                        <span className="text-cyan">{l.time}</span>
+                        <span className="text-dim">{PROGRAM_PLACE}</span>
+                      </p>
+                      <h3 className="font-display text-lg leading-snug text-white sm:text-xl">{l.title}</h3>
+                      <p className="text-muted">{l.speaker}</p>
+                      {l.abstract && (
+                        <Accordion
+                          items={[
+                            {
+                              title: t("sessions.abstract"),
+                              content: <p className="text-justify text-sm leading-relaxed text-muted">{l.abstract}</p>,
+                            },
+                          ]}
+                        />
+                      )}
+                    </article>
+                  </Reveal>
+                ))}
             </div>
-            {(l.abstract || l.bio) && (
-              <div className="mt-4 ml-4">
-                <Accordion
-                  items={[
-                    {
-                      content: (
-                        <div className="text-sm">
-                          <p className="text-justify">
-                            <strong>Abstract</strong>
-                            <br />
-                            {l.abstract}
-                          </p>
-
-                          <p className="text-justify mt-4">
-                            <strong>Short Bio</strong>
-                            <br />
-                            {l.bio}
-                          </p>
-                        </div>
-                      ),
-                      title: "Description",
-                    },
-                  ]}
-                />
-              </div>
-            )}
-            {HighlightLectures.length - 1 != i && <hr className="my-6" />}
           </div>
         ))}
-      </div> */}
-      <ToBeDiscussed />
+      </div>
     </BasePageLayout>
   );
 }

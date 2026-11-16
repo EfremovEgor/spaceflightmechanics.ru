@@ -1,3 +1,5 @@
+import unicodedata
+
 from rest_framework import serializers
 
 from .models import Registration
@@ -44,6 +46,16 @@ class RegistrationSerializer(serializers.ModelSerializer):
             "created_at",
         ]
         read_only_fields = ["id", "created_at"]
+
+    def validate_full_name(self, value):
+        # Same rule as the form and confchair: Latin letters, Greek and µ; no other scripts or diacritics.
+        for ch in value:
+            category = unicodedata.category(ch)
+            if category.startswith("M") or (
+                category.startswith("L") and not (ch.isascii() or "\u0370" <= ch <= "\u03ff" or ch == "\u00b5")
+            ):
+                raise serializers.ValidationError("Name must contain only English characters.")
+        return value
 
     def validate_email(self, value):
         return value.strip()

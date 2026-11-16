@@ -1,10 +1,10 @@
-// import DownloadLink from "@/components/common/DownloadLink";
+import { Reveal } from "@/components/common/motion";
 import BasePageLayout from "@/components/layout/BasePageLayout";
-import ToBeDiscussed from "@/components/layout/ToBeDiscussed";
+import ExternalLink from "@/components/common/ExternalLink";
+import { program, PROGRAM_PLACE, ZOOM_REGISTRATION, type PlenaryEntry, type SessionEntry } from "@/lib/program";
 import { pageHead, Routes } from "@/lib/routes";
-// import { program, type AnyProgramItem } from "@/lib/program";
 import { createFileRoute } from "@tanstack/react-router";
-import { useT } from "@/lib/lang";
+import { LocalLink, useT } from "@/lib/lang";
 
 export const Route = createFileRoute("/sessions-and-highlights/program")({
   component: RouteComponent,
@@ -14,104 +14,114 @@ export const Route = createFileRoute("/sessions-and-highlights/program")({
       `${Routes.sessions_and_highlights.path}/${Routes.sessions_and_highlights.routes!.program.path}`,
     ),
 });
-// function makeProgramComponent(item: AnyProgramItem): React.ReactElement | null {
-//   switch (item.type) {
-//     case "item":
-//       return (
-//         <tr>
-//           <td className="program-time__cell">{item.time}</td>
-//           <td className="font-semibold">{item.title}</td>
-//         </tr>
-//       );
-//     case "plenary":
-//       return (
-//         <>
-//           <tr>
-//             <td className="text-center text-lg font-semibold" colSpan={2}>
-//               <p>{item.title}</p>
-//               <p>Moderator – {item.moderator}</p>
-//             </td>
-//           </tr>
-//           {item.items.map((i) => makeProgramComponent(i))}
-//         </>
-//       );
-//     case "highlight_lecture":
-//       return (
-//         <tr>
-//           <td className="program-time__cell">
-//             <p>{item.time}</p>
-//           </td>
-//           <td>
-//             <p className="font-semibold">{item.title}</p>
-//             <p className="italic">{item.paperTitle}</p>
-//             <p>{item.presenter}</p>
-//           </td>
-//         </tr>
-//       );
-//     case "roundtable_meeting":
-//       return (
-//         <tr>
-//           <td className="program-time__cell">
-//             <p>{item.time}</p>
-//           </td>
-//           <td>
-//             <p className="font-semibold">{item.title}</p>
-//             <p>{item.topic}</p>
-//             <div className="flex flex-row gap-2">
-//               <p>Moderator{item.moderators.length > 1 ? "s" : ""}: </p>
-//               <ul>
-//                 {item.moderators.map((s) => (
-//                   <li>{s}</li>
-//                 ))}
-//               </ul>
-//             </div>
-//           </td>
-//         </tr>
-//       );
 
-//     case "opening_ceremony":
-//       return (
-//         <tr>
-//           <td className="program-time__cell">{item.time}</td>
-//           <td>
-//             <p className="font-semibold">{item.title}</p>
-//             <p>Welcome speeches:</p>
-//             <ul className={`ml-2 italic`}>
-//               {item.welcome_speeches.map((s) => (
-//                 <li>– {s}</li>
-//               ))}
-//             </ul>
-//             <p>Concert</p>
-//           </td>
-//         </tr>
-//       );
-//   }
-// }
+const Time = ({ children }: { children: string }) => (
+  <span className="font-mono text-xs tracking-wider whitespace-nowrap text-cyan sm:pt-0.5">{children}</span>
+);
+
+function Entry({ item }: { item: SessionEntry }) {
+  const { t } = useT();
+  return (
+    <li className="grid gap-1 py-4 sm:grid-cols-[8.5rem_1fr] sm:gap-6">
+      <Time>{item.time}</Time>
+      <div className="leading-relaxed">
+        {item.kind === "item" && <p className="text-white">{item.title}</p>}
+        {item.kind === "ceremony" && (
+          <>
+            <p className="text-white">{item.title}:</p>
+            <ul className="mt-2 grid gap-1 text-sm text-muted">
+              {item.speakers.map((s) => (
+                <li key={s} className="flex gap-2">
+                  <span className="text-dim">–</span>
+                  {s}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+        {item.kind === "lecture" && (
+          <>
+            <LocalLink
+              to="/sessions-and-highlights/highlight-lectures"
+              hash={`lecture-${item.number}`}
+              className="font-mono text-xs tracking-widest text-flare uppercase hover:text-white"
+            >
+              {t("sessions.highlightN", { n: item.number })}
+            </LocalLink>
+            <p className="mt-1 text-white">{item.title}</p>
+            <p className="text-sm text-muted">{item.speaker}</p>
+          </>
+        )}
+        {item.kind === "roundtable" && (
+          <>
+            <LocalLink
+              to="/sessions-and-highlights/roundtable-meetings"
+              hash={`roundtable-${item.number}`}
+              className="font-mono text-xs tracking-widest text-accent uppercase hover:text-white"
+            >
+              {t("sessions.roundtableN", { n: item.number })}
+            </LocalLink>
+            <p className="mt-1 text-white">{item.title}</p>
+            <p className="text-sm text-muted">
+              {t("sessions.moderator")} {item.moderator}
+            </p>
+          </>
+        )}
+      </div>
+    </li>
+  );
+}
+
+function Plenary({ session }: { session: PlenaryEntry }) {
+  const { t } = useT();
+  return (
+    <section className="panel hud-corners p-5 sm:p-7">
+      <h3 className="font-display text-lg text-white sm:text-xl">{session.title}</h3>
+      <p className="mt-1 text-sm text-muted">
+        {t("sessions.moderator")} {session.moderator}
+      </p>
+      <ul className="mt-2 divide-y divide-line">
+        {session.items.map((i) => (
+          <Entry key={i.time + i.title} item={i} />
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 function RouteComponent() {
   const { t } = useT();
   return (
     <BasePageLayout name={t("sessions.program")} section={t("sessions.section")}>
-      {/* <DownloadLink
-        path="/files/SciTech Forum Technical Program.pdf"
-        text="SciTech Forum Technical Program"
-      /> */}
-      {/* <table className="table  program__table">
-				<tbody>
-					{program.map((p) => (
-						<>
-							<tr>
-								<td className="text-center" colSpan={2}>
-									<h1 className="text-xl font-semibold">
-										{p.time}
-									</h1>
-								</td>
-							</tr>
-							{p.items.map((i) => makeProgramComponent(i))}
-						</>
-					))}
-				</tbody>
-			</table> */}
-      <ToBeDiscussed />
+      <div className="flex max-w-4xl flex-col gap-12">
+        <Reveal>
+          <p className="leading-relaxed text-muted">
+            <strong className="text-white">{t("sessions.place")}</strong> {PROGRAM_PLACE} ·{" "}
+            <ExternalLink to={ZOOM_REGISTRATION}>{t("sessions.zoom")}</ExternalLink>
+            <br />
+            {t("sessions.timeZone")}
+          </p>
+        </Reveal>
+        {program.map((day) => (
+          <Reveal key={day.date}>
+            <h2 className="eyebrow flex items-center gap-2">
+              <span className="h-px w-8 bg-accent" />
+              {day.date}
+            </h2>
+            <div className="mt-5 flex flex-col gap-4">
+              {day.items.map((item) =>
+                item.kind === "plenary" ? (
+                  <Plenary key={item.title} session={item} />
+                ) : (
+                  <ul key={item.time + item.title} className="panel px-5 sm:px-7">
+                    <Entry item={item} />
+                  </ul>
+                ),
+              )}
+            </div>
+          </Reveal>
+        ))}
+      </div>
     </BasePageLayout>
   );
 }
