@@ -11,11 +11,6 @@ export const committee: CommitteeMember[] = [
     role: "Chair",
   },
   {
-    fullName: "Yeshurun Alemayehu",
-    affiliation: "Ministry of Innovation and Technology, Ethiopia",
-    role: "Co-Chair",
-  },
-  {
     fullName: "Francis Chizea",
     affiliation: "National Space Research and Development Agency, Nigeria",
     role: "Co-Chair",
@@ -44,6 +39,11 @@ export const committee: CommitteeMember[] = [
     fullName: "Shufan Wu",
     affiliation: "Shanghai Jiao Tong University, China",
     role: "Co-Chair",
+  },
+  {
+    fullName: "Yeshurun Alemayehu",
+    affiliation: "Ministry of Innovation and Technology, Ethiopia",
+    role: "Member",
   },
   {
     fullName: "Christophe Bonnal",

@@ -81,16 +81,16 @@ const en = {
 		organized:
 			"The Forum is organized by <b>Russian Academy of Sciences</b>, <b>International Academy of Astronautics</b> and <b>RUDN University</b>.",
 		format:
-			"<b>Hybrid format (on-site and online)</b> is supposed (the online format is supported for participants outside Moscow region). The participation in the Forum is free. Participants can attend the Forum with or without paper presentation. Paper presentation needs the <submission>Submission</submission> and <registration>Registration</registration> processes. Participation without presentation requires only registration.",
+			"Hybrid format (on-site and online) is supposed (the online format is supported for participants outside Moscow region). The participation in the Forum is free. Participants can attend the Forum with or without paper presentation. Paper presentation needs the <submission>Submission</submission> and <registration>Registration</registration> processes. Participation without presentation requires only registration.",
 		venue: "<b>Venue:</b> <ext>RUDN University</ext>, 6 Miklukho-Maklaya Str., Moscow, 117198, Russia",
 		languages: "<b>Working languages</b>: English and Russian (simultaneous translation).",
 		selection:
 			"Papers for the Forum shall be selected basing on the quality of 500 word abstracts. For accepted papers presentations and complete manuscripts are to be submitted in accordance with the deadlines.",
 		publication:
-			"Conference Proceedings will be published by <iaa>International Academy of Astronautics</iaa>. The best papers will be recommended for publication in the special issue of <ext>Acta Astronautica</ext>.",
+			"Conference Proceedings will be published by <iaa>International Academy of Astronautics</iaa>.<br/>The best papers will be recommended for publication in the special issue of <ext>Acta Astronautica</ext>.",
 		topicsTitle: "Topics for presentations",
 		support:
-			"The on-site participants of the Forum with presentations or highlight lectures are provided with full support of Local Organizing Committee, including lunch during the dates of the Forum, accommodation support, as well as professional and cultural tours (by invitation only). All the participants will receive warm welcome (coffee break, etc.).",
+			"The on-site participants providing paper presentations and highlight lectures will receive warm welcome (lunch during the dates of the Forum, accommodation support, as well as professional and cultural tours, etc.).",
 	},
 	deadlines: {
 		abstract: "Abstract Submission Deadline:",
@@ -261,16 +261,16 @@ const ru: Dict = {
 		organized:
 			"Организаторы форума — <b>Российская академия наук</b>, <b>Международная академия астронавтики</b> и <b>РУДН</b>.",
 		format:
-			"Форум пройдёт в <b>гибридном формате (очно и онлайн)</b>: онлайн-участие доступно для участников за пределами Московского региона. Участие в форуме бесплатное. Участвовать можно с докладом или без него. Для участия с докладом нужно пройти <submission>подачу тезисов</submission> и <registration>регистрацию</registration>. Для участия без доклада достаточно регистрации.",
+			"Форум пройдёт в гибридном формате (очно и онлайн): онлайн-участие доступно для участников за пределами Московского региона. Участие в форуме бесплатное. Участвовать можно с докладом или без него. Для участия с докладом нужно пройти <submission>подачу тезисов</submission> и <registration>регистрацию</registration>. Для участия без доклада достаточно регистрации.",
 		venue: "<b>Место проведения:</b> <ext>РУДН</ext>, ул. Миклухо-Маклая, д. 6, Москва, 117198, Россия",
 		languages: "<b>Рабочие языки</b>: английский и русский (синхронный перевод).",
 		selection:
 			"Доклады на форум отбираются по качеству тезисов объёмом 500 слов. По принятым докладам презентации и полные тексты рукописей подаются в установленные сроки.",
 		publication:
-			"Труды конференции будут изданы <iaa>Международной академией астронавтики</iaa>. Лучшие работы будут рекомендованы к публикации в специальном выпуске журнала <ext>Acta Astronautica</ext>.",
+			"Труды конференции будут изданы <iaa>Международной академией астронавтики</iaa>.<br/>Лучшие работы будут рекомендованы к публикации в специальном выпуске журнала <ext>Acta Astronautica</ext>.",
 		topicsTitle: "Тематика докладов",
 		support:
-			"Очные участники форума с докладами или ключевыми лекциями получают полную поддержку местного организационного комитета: обеды в дни форума, помощь с размещением, а также профессиональные и культурные экскурсии (только по приглашению). Всех участников ждёт тёплый приём (кофе-брейки и т. д.).",
+			"Очных участников, выступающих с докладами и ключевыми лекциями, ждёт тёплый приём (обеды в дни форума, помощь с размещением, профессиональные и культурные экскурсии и т. д.).",
 	},
 	deadlines: {
 		abstract: "Срок подачи тезисов:",
