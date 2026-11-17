@@ -22,15 +22,15 @@ const Time = ({ children }: { children: string }) => (
 // Background tints follow the printed program: roundtables in amber, special meetings in green.
 const tint = (item: SessionEntry) =>
   item.kind === "roundtable"
-    ? "bg-amber-400/10 shadow-[inset_3px_0_0_var(--color-amber-400)]"
+    ? "bg-amber-400/10 before:bg-amber-400"
     : item.kind === "item" && item.special
-      ? "bg-success/10 shadow-[inset_3px_0_0_var(--color-success)]"
+      ? "bg-success/10 before:bg-success"
       : "";
 
 function Entry({ item }: { item: SessionEntry }) {
   const { t } = useT();
   return (
-    <li className={`-mx-5 grid gap-1 px-5 py-4 sm:-mx-7 sm:grid-cols-[8.5rem_1fr] sm:gap-6 sm:px-7 last:rounded-b-[1.25rem] ${tint(item)}`}>
+    <li className={`-mx-5 grid gap-1 px-5 py-4 sm:-mx-7 sm:grid-cols-[8.5rem_1fr] sm:gap-6 sm:px-7 ${tint(item) && `relative before:absolute before:inset-y-3 before:left-0 before:w-[3px] before:rounded-r-full ${tint(item)}`}`}>
       <Time>{item.time}</Time>
       <div className="leading-relaxed">
         {item.kind === "item" && (
@@ -93,7 +93,7 @@ function Plenary({ session }: { session: PlenaryEntry }) {
       <p className="mt-1 text-sm text-muted">
         {t("sessions.moderator")} {session.moderator}
       </p>
-      <ul className="mt-2 divide-y divide-line [&>li:last-child]:pb-5 sm:[&>li:last-child]:pb-7">
+      <ul className="mt-2 divide-y divide-line [&>li:last-child]:rounded-b-[1.25rem] [&>li:last-child]:pb-5 sm:[&>li:last-child]:pb-7">
         {session.items.map((i) => (
           <Entry key={i.time + i.title} item={i} />
         ))}
