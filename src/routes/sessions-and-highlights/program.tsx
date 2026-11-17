@@ -19,13 +19,26 @@ const Time = ({ children }: { children: string }) => (
   <span className="font-mono text-xs tracking-wider whitespace-nowrap text-cyan sm:pt-0.5">{children}</span>
 );
 
+// Background tints follow the printed program: roundtables in amber, special meetings in green.
+const tint = (item: SessionEntry) =>
+  item.kind === "roundtable"
+    ? "bg-amber-400/10 shadow-[inset_3px_0_0_var(--color-amber-400)]"
+    : item.kind === "item" && item.special
+      ? "bg-success/10 shadow-[inset_3px_0_0_var(--color-success)]"
+      : "";
+
 function Entry({ item }: { item: SessionEntry }) {
   const { t } = useT();
   return (
-    <li className="grid gap-1 py-4 sm:grid-cols-[8.5rem_1fr] sm:gap-6">
+    <li className={`-mx-5 grid gap-1 px-5 py-4 sm:-mx-7 sm:grid-cols-[8.5rem_1fr] sm:gap-6 sm:px-7 ${tint(item)}`}>
       <Time>{item.time}</Time>
       <div className="leading-relaxed">
-        {item.kind === "item" && <p className="text-white">{item.title}</p>}
+        {item.kind === "item" && (
+          <>
+            <p className="text-white">{item.title}</p>
+            {item.note && <p className="text-sm text-muted">{item.note}</p>}
+          </>
+        )}
         {item.kind === "ceremony" && (
           <>
             <p className="text-white">{item.title}:</p>
@@ -106,7 +119,7 @@ function RouteComponent() {
                 item.kind === "plenary" ? (
                   <Plenary key={item.title} session={item} />
                 ) : (
-                  <ul key={item.time + item.title} className="panel px-5 sm:px-7">
+                  <ul key={item.time + item.title} className="panel overflow-hidden px-5 sm:px-7">
                     <Entry item={item} />
                   </ul>
                 ),

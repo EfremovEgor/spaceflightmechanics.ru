@@ -557,7 +557,7 @@ export const technicalSessions: TechnicalSession[] = [
 			{
 				"time": "11:00 – 11:15",
 				"id": "SciTech2026-013",
-				"title": "Application of rubber-based concretes for the construction of gas- escape channels of the rocket launch pad at the cosmodrome",
+				"title": "Application of rubber-based concretes for the construction of gas-escape channels of the rocket launch pad at the cosmodrome",
 				"authors": [
 					"Galina E. Okolnikova, RUDN University, National Research University MGSU, Russia",
 					"Andrei A. Anisimov, RUDN University, Russia",

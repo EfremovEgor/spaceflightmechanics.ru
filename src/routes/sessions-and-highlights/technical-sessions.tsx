@@ -25,7 +25,7 @@ function RouteComponent() {
   return (
     <BasePageLayout name={t("sessions.technical")} section={t("sessions.section")}>
       <div className="flex max-w-4xl flex-col gap-12">
-        <ProgramInfo breakoutRooms />
+        <ProgramInfo hidePlace />
         {groups.map((group) => (
           <div key={group}>
             <h2 className="eyebrow flex items-center gap-2">

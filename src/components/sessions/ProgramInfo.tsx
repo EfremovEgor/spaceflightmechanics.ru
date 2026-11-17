@@ -1,23 +1,23 @@
-import ExternalLink from "@/components/common/ExternalLink";
+import DownloadLink from "@/components/common/DownloadLink";
 import { Reveal } from "@/components/common/motion";
-import { PROGRAM_PLACE, ZOOM_REGISTRATION } from "@/lib/program";
+import { PROGRAM_PDF, PROGRAM_PLACE } from "@/lib/program";
 import { useT } from "@/lib/lang";
 
-/** Place, Zoom link and time zone shown at the top of the program pages. */
-export default function ProgramInfo({ breakoutRooms = false }: { breakoutRooms?: boolean }) {
+/** Place, time zone and the printed program shown at the top of the program pages. */
+export default function ProgramInfo({ hidePlace = false }: { hidePlace?: boolean }) {
   const { t } = useT();
   return (
     <Reveal>
       <p className="leading-relaxed text-muted">
-        {!breakoutRooms && (
+        {!hidePlace && (
           <>
-            <strong className="text-white">{t("sessions.place")}</strong> {PROGRAM_PLACE} ·{" "}
+            <strong className="text-white">{t("sessions.place")}</strong> {PROGRAM_PLACE}
+            <br />
           </>
         )}
-        <ExternalLink to={ZOOM_REGISTRATION}>{t("sessions.zoom")}</ExternalLink>
-        {breakoutRooms && ` ${t("sessions.breakoutRooms")}`}
-        <br />
         {t("sessions.timeZone")}
+        <br />
+        <DownloadLink path={PROGRAM_PDF}>{t("sessions.downloadProgram")}</DownloadLink>
       </p>
     </Reveal>
   );
