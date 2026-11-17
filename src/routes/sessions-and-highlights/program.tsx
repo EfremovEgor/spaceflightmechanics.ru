@@ -30,7 +30,7 @@ const tint = (item: SessionEntry) =>
 function Entry({ item }: { item: SessionEntry }) {
   const { t } = useT();
   return (
-    <li className={`-mx-5 grid gap-1 px-5 py-4 sm:-mx-7 sm:grid-cols-[8.5rem_1fr] sm:gap-6 sm:px-7 ${tint(item)}`}>
+    <li className={`-mx-5 grid gap-1 px-5 py-4 sm:-mx-7 sm:grid-cols-[8.5rem_1fr] sm:gap-6 sm:px-7 last:rounded-b-[1.25rem] ${tint(item)}`}>
       <Time>{item.time}</Time>
       <div className="leading-relaxed">
         {item.kind === "item" && (
@@ -88,12 +88,12 @@ function Entry({ item }: { item: SessionEntry }) {
 function Plenary({ session }: { session: PlenaryEntry }) {
   const { t } = useT();
   return (
-    <section className="panel hud-corners p-5 sm:p-7">
+    <section className="panel hud-corners px-5 pt-5 sm:px-7 sm:pt-7">
       <h3 className="font-display text-lg text-white sm:text-xl">{session.title}</h3>
       <p className="mt-1 text-sm text-muted">
         {t("sessions.moderator")} {session.moderator}
       </p>
-      <ul className="mt-2 divide-y divide-line">
+      <ul className="mt-2 divide-y divide-line [&>li:last-child]:pb-5 sm:[&>li:last-child]:pb-7">
         {session.items.map((i) => (
           <Entry key={i.time + i.title} item={i} />
         ))}

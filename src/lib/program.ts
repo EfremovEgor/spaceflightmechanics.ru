@@ -73,14 +73,14 @@ export const program: ProgramDay[] = [
 							"Jean-Michel Contant, General Secretary of International Academy of Astronautics, France (online)",
 							"Yury Razoumny, Director of Engineering Academy of RUDN University, Chair of International Program Committee of SciTech Forum"
 						]
-					},
-					{
-						kind: "item",
-						time: "11:30 – 13:30",
-						title: "Meeting with Aarti Holla-Maini, Director of UNOOSA, Great Britain (by invitation only)",
-						special: true
 					}
 				]
+			},
+			{
+				kind: "item",
+				time: "11:30 – 13:30",
+				title: "Meeting with Aarti Holla-Maini, Director of UNOOSA, Great Britain (by invitation only)",
+				special: true
 			},
 			{
 				kind: "plenary",
