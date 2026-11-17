@@ -226,8 +226,8 @@ export const program: ProgramDay[] = [
 						kind: "lecture",
 						number: 14,
 						time: "16:00 – 16:30",
-						title: "The Foundation of International Space Law and the Challenge of Space Sustainability",
-						speaker: "Narkhanim Orujova, Space Agency of the Republic of Azerbaijan, Azerbaijan"
+						title: "Space Technology for Societal Benefits",
+						speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre (IN-SPACe), India"
 					},
 					{
 						kind: "lecture",
@@ -280,8 +280,8 @@ export const program: ProgramDay[] = [
 						kind: "lecture",
 						number: 20,
 						time: "12:00 – 12:30",
-						title: "Space Technology for Societal Benefits",
-						speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre (IN-SPACe), India"
+						title: "The Foundation of International Space Law and the Challenge of Space Sustainability",
+						speaker: "Narkhanim Orujova, Space Agency of the Republic of Azerbaijan, Azerbaijan"
 					},
 					{
 						kind: "lecture",
@@ -456,10 +456,10 @@ export const highlightLectures: HighlightLecture[] = [
 	{
 		number: 14,
 		time: "16:00 – 16:30",
-		title: "The Foundation of International Space Law and the Challenge of Space Sustainability",
-		speaker: "Narkhanim Orujova, Space Agency of the Republic of Azerbaijan, Azerbaijan",
+		title: "Space Technology for Societal Benefits",
+		speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre (IN-SPACe), India",
 		date: "Wednesday, November 25",
-		abstract: "This highlight lecture traces the path from the foundational rules of international space law to the practical challenge of keeping orbits usable. The first part outlines the institutional and treaty architecture: the UN Committee on the Peaceful Uses of Outer Space, the UN Office for Outer Space Affairs, the 1967 Outer Space Treaty and the four treaties that followed it. The second part examines how space debris mitigation and space traffic management are governed today through non-binding instruments, including the IADC and COPUOS guidelines, and where gaps between treaty obligations and operational practice remain."
+		abstract: "India's space programme has emphasized using space technology for national development and societal benefit. Over six decades ISRO has built indigenous capabilities in Earth observation, satellite communication and navigation. Remote sensing and geospatial technologies support agriculture, water management, environmental conservation, urban planning and disaster risk reduction, using satellites such as Resourcesat, RISAT-1A, NISAR and NavIC. Initiatives like the Bhuvan geoportal and the National Database for Emergency Management widen access to geospatial information. The talk highlights India's achievements and operational applications, discusses emerging opportunities from AI, cloud computing and high-resolution observation, and outlines directions towards an inclusive, resilient and sustainable India."
 	},
 	{
 		number: 15,
@@ -502,10 +502,10 @@ export const highlightLectures: HighlightLecture[] = [
 	{
 		number: 20,
 		time: "12:00 – 12:30",
-		title: "Space Technology for Societal Benefits",
-		speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre (IN-SPACe), India",
+		title: "The Foundation of International Space Law and the Challenge of Space Sustainability",
+		speaker: "Narkhanim Orujova, Space Agency of the Republic of Azerbaijan, Azerbaijan",
 		date: "Thursday, November 26",
-		abstract: "India's space programme has emphasized using space technology for national development and societal benefit. Over six decades ISRO has built indigenous capabilities in Earth observation, satellite communication and navigation. Remote sensing and geospatial technologies support agriculture, water management, environmental conservation, urban planning and disaster risk reduction, using satellites such as Resourcesat, RISAT-1A, NISAR and NavIC. Initiatives like the Bhuvan geoportal and the National Database for Emergency Management widen access to geospatial information. The talk highlights India's achievements and operational applications, discusses emerging opportunities from AI, cloud computing and high-resolution observation, and outlines directions towards an inclusive, resilient and sustainable India."
+		abstract: "This highlight lecture traces the path from the foundational rules of international space law to the practical challenge of keeping orbits usable. The first part outlines the institutional and treaty architecture: the UN Committee on the Peaceful Uses of Outer Space, the UN Office for Outer Space Affairs, the 1967 Outer Space Treaty and the four treaties that followed it. The second part examines how space debris mitigation and space traffic management are governed today through non-binding instruments, including the IADC and COPUOS guidelines, and where gaps between treaty obligations and operational practice remain."
 	},
 	{
 		number: 21,
