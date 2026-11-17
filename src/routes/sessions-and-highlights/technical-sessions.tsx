@@ -1,3 +1,4 @@
+import Accordion from "@/components/common/Accordion";
 import { Reveal } from "@/components/common/motion";
 import BasePageLayout from "@/components/layout/BasePageLayout";
 import ProgramInfo from "@/components/sessions/ProgramInfo";
@@ -60,6 +61,33 @@ function RouteComponent() {
                         </ul>
                       </div>
                       <p className="text-justify text-sm leading-relaxed text-muted">{s.description}</p>
+                      {s.papers.length > 0 && (
+                        <Accordion
+                          items={[
+                            {
+                              title: t("sessions.papers", { count: s.papers.length }),
+                              content: (
+                                <ol className="flex flex-col divide-y divide-line">
+                                  {s.papers.map((p) => (
+                                    <li key={p.id} className="flex flex-col gap-1 py-4 first:pt-1 last:pb-0">
+                                      <p className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs tracking-widest uppercase">
+                                        <span className="text-cyan">{p.time}</span>
+                                        <span className="text-dim">{p.id}</span>
+                                      </p>
+                                      <p className="leading-snug font-semibold text-white">{p.title}</p>
+                                      <div className="text-sm text-muted">
+                                        {p.authors.map((a) => (
+                                          <p key={a}>{a}</p>
+                                        ))}
+                                      </div>
+                                    </li>
+                                  ))}
+                                </ol>
+                              ),
+                            },
+                          ]}
+                        />
+                      )}
                     </article>
                   </Reveal>
                 ))}

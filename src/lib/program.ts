@@ -1,5 +1,5 @@
 // SciTech Forum 2026 technical program, plenary part ("7th SciTech Forum 2026 Technical Program.pdf").
-// Technical sessions are not published yet.
+// Technical sessions with papers live in technicalSessions.ts.
 
 export const PROGRAM_PLACE = "Hall Galaxy";
 export const ZOOM_REGISTRATION = "https://us06web.zoom.us/meeting/register/1cTsPyiGQ1SyQLnr18FLEA";
