@@ -245,7 +245,7 @@ export const program: ProgramDay[] = [
 						kind: "lecture",
 						number: 15,
 						time: "16:30 – 17:00",
-						title: "TBD",
+						title: "Tree Ensembles Outperform Deep Learning for Label-Scarce Winter Wheat Mapping: Evidence from Planet-NICFI Time Series in Zimbabwe",
 						speaker: "Davis Shekede, Zimbabwe National Geospatial and Space Agency, Zimbabwe"
 					}
 				]
@@ -410,7 +410,8 @@ export const highlightLectures: HighlightLecture[] = [
 		date: "Tuesday, November 24",
 		time: "16:30 – 17:00",
 		title: "Space at a Crossroads: Operating Sustainably in Space through Decisions, Cooperation, and Shared Responsibilities",
-		speaker: "Bocar Ba, World Space Sustainability Association, President, UAE"
+		speaker: "Bocar Ba, World Space Sustainability Association, President, UAE",
+		abstract: "Orbit is no longer an empty void but a finite, shared environment on which navigation, communications, finance and disaster response depend. In 2025 alone, more than 4,400 satellites were deployed, bringing the operational population above 14,000. This rapid industrialisation of low Earth orbit is colliding with governance frameworks designed for a slower era. Space sustainability extends beyond debris to re-entry impacts, interference with astronomy, spectrum and orbital resources, resilience of critical services and equitable access. The lecture makes the case for a multi-stakeholder platform, the World Space Sustainability Association, as a standing table for shared positions and collective action."
 	},
 	{
 		number: 7,
@@ -480,8 +481,9 @@ export const highlightLectures: HighlightLecture[] = [
 		number: 15,
 		date: "Wednesday, November 25",
 		time: "16:30 – 17:00",
-		title: "TBD",
-		speaker: "Davis Shekede, Zimbabwe National Geospatial and Space Agency, Zimbabwe"
+		title: "Tree Ensembles Outperform Deep Learning for Label-Scarce Winter Wheat Mapping: Evidence from Planet-NICFI Time Series in Zimbabwe",
+		speaker: "Davis Shekede, Zimbabwe National Geospatial and Space Agency, Zimbabwe",
+		abstract: "Mapping winter wheat in Zimbabwe is constrained by scarce labelled training data, and map accuracy is judged on held-out polygons. We compared two deep learning classifiers (BiLSTM and CNN-LSTM) with two tree ensembles (Random Forest and CatBoost) in Mashonaland West, using Planet-NICFI time series and label budgets from 5 polygons per class group to all 1,028. The tree ensembles matched or exceeded the networks at every budget. On 1,400 stratified random reference points, their maps reached user's accuracy of 0.90 and 0.82 against 0.53–0.57 for the networks. Polygon-based validation can hide large commission errors that only area-weighted reference samples reveal."
 	},
 	{
 		number: 16,
