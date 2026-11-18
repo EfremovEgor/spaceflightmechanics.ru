@@ -185,7 +185,7 @@ export const program: ProgramDay[] = [
 						kind: "lecture",
 						number: 9,
 						time: "12:30 – 13:00",
-						title: "Space-Based Technology Integration on Development Programs – Indian Scenarios",
+						title: "Space-Based Technology Integration on Indian Development Programmes",
 						speaker: "Tarun P. Singh, Symbiosis Institute of Geoinformatics, India"
 					}
 				]
@@ -433,8 +433,9 @@ export const highlightLectures: HighlightLecture[] = [
 		number: 9,
 		date: "Wednesday, November 25",
 		time: "12:30 – 13:00",
-		title: "Space-Based Technology Integration on Development Programs – Indian Scenarios",
-		speaker: "Tarun P. Singh, Symbiosis Institute of Geoinformatics, India"
+		title: "Space-Based Technology Integration on Indian Development Programmes",
+		speaker: "Tarun P. Singh, Symbiosis Institute of Geoinformatics, India",
+		abstract: "Space-based technologies, particularly satellite remote sensing, GIS and geospatial analytics, have become critical enablers of India's development planning, resource management and governance. The lecture examines how space-based information is integrated into major Government of India programmes such as PM Gati Shakti, SVAMITVA, NAKSHA, FASAL, PMAY-G and watershed development, supporting infrastructure, rural transformation, agriculture, urban planning, water resources and disaster management. Satellite imagery, drone mapping and GIS platforms enable spatial planning, asset geotagging, crop forecasting and land-record modernisation. Geospatial intelligence also improves public expenditure efficiency, transparency and climate resilience, supporting evidence-based policymaking for inclusive and sustainable development."
 	},
 	{
 		number: 10,

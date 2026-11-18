@@ -107,7 +107,7 @@ function RouteComponent() {
   return (
     <BasePageLayout name={t("sessions.program")} section={t("sessions.section")}>
       <div className="flex max-w-4xl flex-col gap-12">
-        <ProgramInfo />
+        <ProgramInfo showPdf />
         {program.map((day) => (
           <Reveal key={day.date}>
             <h2 className="eyebrow flex items-center gap-2">

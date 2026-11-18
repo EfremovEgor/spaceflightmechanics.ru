@@ -3,8 +3,8 @@ import { Reveal } from "@/components/common/motion";
 import { PROGRAM_PDF, PROGRAM_PLACE } from "@/lib/program";
 import { useT } from "@/lib/lang";
 
-/** Place, time zone and the printed program shown at the top of the program pages. */
-export default function ProgramInfo({ hidePlace = false }: { hidePlace?: boolean }) {
+/** Place and time zone shown at the top of the program pages; the printed program link only on the program page. */
+export default function ProgramInfo({ hidePlace = false, showPdf = false }: { hidePlace?: boolean; showPdf?: boolean }) {
   const { t } = useT();
   return (
     <Reveal>
@@ -16,8 +16,12 @@ export default function ProgramInfo({ hidePlace = false }: { hidePlace?: boolean
           </>
         )}
         {t("sessions.timeZone")}
-        <br />
-        <DownloadLink path={PROGRAM_PDF}>{t("sessions.downloadProgram")}</DownloadLink>
+        {showPdf && (
+          <>
+            <br />
+            <DownloadLink path={PROGRAM_PDF}>{t("sessions.downloadProgram")}</DownloadLink>
+          </>
+        )}
       </p>
     </Reveal>
   );
