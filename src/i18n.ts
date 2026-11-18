@@ -83,7 +83,7 @@ const en = {
 		format:
 			"Hybrid format (on-site and online) is supposed (the online format is supported for participants outside Moscow region). The participation in the Forum is free. Participants can attend the Forum with or without paper presentation. Paper presentation needs the <submission>Submission</submission> and <registration>Registration</registration> processes. Participation without presentation requires only registration.",
 		venue: "<b>Venue:</b> <ext>RUDN University</ext>, 6 Miklukho-Maklaya Str., Moscow, 117198, Russia",
-		languages: "<b>Working languages</b>: English and Russian (simultaneous translation).",
+		languages: "<b>Working languages</b>: English, Russian (simultaneous translation)",
 		selection:
 			"Papers for the Forum shall be selected basing on the quality of 500 word abstracts. For accepted papers presentations and complete manuscripts are to be submitted in accordance with the deadlines.",
 		publication:
@@ -263,7 +263,7 @@ const ru: Dict = {
 		format:
 			"Форум пройдёт в гибридном формате (очно и онлайн): онлайн-участие доступно для участников за пределами Московского региона. Участие в форуме бесплатное. Участвовать можно с докладом или без него. Для участия с докладом нужно пройти <submission>подачу тезисов</submission> и <registration>регистрацию</registration>. Для участия без доклада достаточно регистрации.",
 		venue: "<b>Место проведения:</b> <ext>РУДН</ext>, ул. Миклухо-Маклая, д. 6, Москва, 117198, Россия",
-		languages: "<b>Рабочие языки</b>: английский и русский (синхронный перевод).",
+		languages: "<b>Рабочие языки</b>: английский, русский (синхронный перевод)",
 		selection:
 			"Доклады на форум отбираются по качеству тезисов объёмом 500 слов. По принятым докладам презентации и полные тексты рукописей подаются в установленные сроки.",
 		publication:

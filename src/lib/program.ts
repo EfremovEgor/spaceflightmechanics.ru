@@ -70,7 +70,6 @@ export const program: ProgramDay[] = [
 							"Sergey Chernyshev, Vice President of Russian Academy of Sciences, Russia",
 							"Sergey Ryabkov, Deputy Minister, Ministry for Foreign Affairs of the Russian Federation, Russia",
 							"Sergey Saveliev, Deputy General Director of State Corporation “ROSCOSMOS”, Russia",
-							"Jean-Michel Contant, General Secretary of International Academy of Astronautics, France (online)",
 							"Yury Razoumny, Director of Engineering Academy of RUDN University, Chair of International Program Committee of SciTech Forum"
 						]
 					}
