@@ -66,10 +66,10 @@ export const program: ProgramDay[] = [
 						title: "Opening Ceremony",
 						speakers: [
 							"Yulia Ebzeeva, First Vice-Rector – Vice-Rector for Education, Acting Rector of RUDN University, Russia",
-							"Aarti Holla-Maini, Director of UNOOSA, Great Britain",
-							"Sergey Chernyshev, Vice President of Russian Academy of Sciences, Russia",
-							"Sergey Ryabkov, Deputy Minister, Ministry for Foreign Affairs of the Russian Federation, Russia",
-							"Sergey Saveliev, Deputy General Director of State Corporation “ROSCOSMOS”, Russia",
+							"Aarti Holla-Maini, Director of UNOOSA, Austria",
+							"Sergey Chernyshev, Vice President of the Russian Academy of Sciences, Russia",
+							"Sergey Ryabkov, Deputy Minister, Ministry of Foreign Affairs of the Russian Federation, Russia",
+							"Sergey Saveliev, Deputy General Director of State Corporation “Roscosmos”, Russia",
 							"Yury Razoumny, Director of Engineering Academy of RUDN University, Chair of International Program Committee of SciTech Forum"
 						]
 					}
@@ -78,7 +78,7 @@ export const program: ProgramDay[] = [
 			{
 				kind: "item",
 				time: "11:30 – 13:30",
-				title: "Meeting with Aarti Holla-Maini, Director of UNOOSA, Great Britain (by invitation only)",
+				title: "Meeting with Aarti Holla-Maini, Director of UNOOSA, Austria (by invitation only)",
 				special: true
 			},
 			{
@@ -112,7 +112,7 @@ export const program: ProgramDay[] = [
 				number: 1,
 				time: "13:30 – 15:00",
 				title: "Global Governance of Outer-Space Activities: COPUOS Agenda",
-				moderator: "Aarti Holla-Maini, Director of UNOOSA, Great Britain"
+				moderator: "Aarti Holla-Maini, Director of UNOOSA, Austria"
 			},
 			{
 				kind: "plenary",
@@ -131,7 +131,7 @@ export const program: ProgramDay[] = [
 						number: 4,
 						time: "15:30 – 16:00",
 						title: "Design and Optimization of Small Satellite Constellations for Different Applications",
-						speaker: "Antonio Prado, National Institute for Space Research (INPE), Brazil"
+						speaker: "Antonio Prado, National Institute for Space Research, Brazil"
 					},
 					{
 						kind: "lecture",
@@ -232,7 +232,7 @@ export const program: ProgramDay[] = [
 						number: 13,
 						time: "15:30 – 16:00",
 						title: "Space Technology for Societal Benefits",
-						speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre (IN-SPACe), India"
+						speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre, India"
 					},
 					{
 						kind: "lecture",
@@ -258,7 +258,7 @@ export const program: ProgramDay[] = [
 			{
 				kind: "plenary",
 				title: "Plenary Session 6",
-				moderator: "Antonio Prado, National Institute for Space Research (INPE), Brazil",
+				moderator: "Antonio Prado, National Institute for Space Research, Brazil",
 				items: [
 					{
 						kind: "lecture",
@@ -286,7 +286,7 @@ export const program: ProgramDay[] = [
 						number: 19,
 						time: "11:30 – 12:00",
 						title: "International Virtual Observatory",
-						speaker: "Oleg Malkov, Institute of Astronomy of Russian Academy of Sciences, Russia"
+						speaker: "Oleg Malkov, Institute of Astronomy of the Russian Academy of Sciences, Russia"
 					},
 					{
 						kind: "lecture",
@@ -326,7 +326,7 @@ export const program: ProgramDay[] = [
 						number: 23,
 						time: "14:30 – 15:00",
 						title: "Legacy of “Intercosmos” Association and Modern International Cooperation in Space Science",
-						speaker: "Anatoli Petrukovich, Space Research Institute of Russian Academy of Sciences, Russia"
+						speaker: "Anatoli Petrukovich, Space Research Institute of the Russian Academy of Sciences, Russia"
 					},
 					{
 						kind: "lecture",
@@ -394,7 +394,7 @@ export const highlightLectures: HighlightLecture[] = [
 		date: "Tuesday, November 24",
 		time: "15:30 – 16:00",
 		title: "Design and Optimization of Small Satellite Constellations for Different Applications",
-		speaker: "Antonio Prado, National Institute for Space Research (INPE), Brazil",
+		speaker: "Antonio Prado, National Institute for Space Research, Brazil",
 		abstract: "Small satellite constellations offer flexible, cost-effective solutions for Earth observation, communication and monitoring. This presentation explores the design, orbital dynamics and optimization of constellations for various mission objectives. Particular attention is given to regional coverage of the Brazilian Amazon, the entire Brazilian territory and Colombia, involving challenges in orbit selection, satellite distribution, revisit times and coverage optimization. Constellations supporting air traffic monitoring and control, which require continuous coverage and reliable communication, are also investigated. The relationship between the number of satellites, orbital parameters, coverage performance and mission cost is discussed, showing how constellation design can meet diverse operational needs."
 	},
 	{
@@ -466,7 +466,7 @@ export const highlightLectures: HighlightLecture[] = [
 		date: "Wednesday, November 25",
 		time: "15:30 – 16:00",
 		title: "Space Technology for Societal Benefits",
-		speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre (IN-SPACe), India",
+		speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre, India",
 		abstract: "India's space programme has emphasized using space technology for national development and societal benefit. Over six decades ISRO has built indigenous capabilities in Earth observation, satellite communication and navigation. Remote sensing and geospatial technologies support agriculture, water management, environmental conservation, urban planning and disaster risk reduction, using satellites such as Resourcesat, RISAT-1A, NISAR and NavIC. Initiatives like the Bhuvan geoportal and the National Database for Emergency Management widen access to geospatial information. The talk highlights India's achievements and operational applications, discusses emerging opportunities from AI, cloud computing and high-resolution observation, and outlines directions towards an inclusive, resilient and sustainable India."
 	},
 	{
@@ -514,7 +514,7 @@ export const highlightLectures: HighlightLecture[] = [
 		date: "Thursday, November 26",
 		time: "11:30 – 12:00",
 		title: "International Virtual Observatory",
-		speaker: "Oleg Malkov, Institute of Astronomy of Russian Academy of Sciences, Russia",
+		speaker: "Oleg Malkov, Institute of Astronomy of the Russian Academy of Sciences, Russia",
 		abstract: "The talk deals with the implementation of an international astronomy project, the Virtual Observatory (VO), whose principal idea is to make all the world's astronomical data transparently available from one's desktop. VO standards are now mature and underpin data discovery, usage and interoperability at most major observatories; new facilities are being built with these standards fully integrated. The VO enables excellence through interoperability of services and data exchange. The talk gives an overview of the importance of the VO to the modern observatory, highlighting its successes and discussing upcoming challenges."
 	},
 	{
@@ -546,7 +546,7 @@ export const highlightLectures: HighlightLecture[] = [
 		date: "Thursday, November 26",
 		time: "14:30 – 15:00",
 		title: "Legacy of “Intercosmos” Association and Modern International Cooperation in Space Science",
-		speaker: "Anatoli Petrukovich, Space Research Institute of Russian Academy of Sciences, Russia",
+		speaker: "Anatoli Petrukovich, Space Research Institute of the Russian Academy of Sciences, Russia",
 		abstract: "The development of exploration programs opens new horizons for international cooperation in space. 2026 marks the 60th anniversary of “Intercosmos”, the special Council of the USSR Academy of Sciences, a unique milestone in cooperation and the peaceful use of outer space. More than 100 robotic spacecraft carried scientific payloads designed by many countries, and cosmonauts from more than ten countries flew in international crews to the Salyut and Mir orbital stations. Scientists built instruments for missions to the Moon, Mars, Venus and Halley's Comet. The lecture reviews modern international cooperation of Russian institutions in space science."
 	},
 	{
@@ -589,16 +589,16 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 		title: "Global Governance of Outer-Space Activities: COPUOS Agenda",
 		moderator: {
 			name: "Aarti Holla-Maini",
-			affiliation: "Director of UNOOSA, Great Britain"
+			affiliation: "Director of UNOOSA, Austria"
 		},
 		participants: [
 			{
 				name: "Sergey Chernyshev",
-				affiliation: "Vice President of Russian Academy of Sciences, Academician of Russian Academy of Sciences, Russia"
+				affiliation: "Vice President of the Russian Academy of Sciences, Academician of the Russian Academy of Sciences, Russia"
 			},
 			{
 				name: "Sergei Belousko",
-				affiliation: "Ministry of Foreign Affairs of Russian Federation, Head of Russian Delegation at UNOOSA, Russia"
+				affiliation: "Ministry of Foreign Affairs of the Russian Federation, Head of Russian Delegation at UNOOSA, Russia"
 			},
 			{
 				name: "Vasily Gudnov",
@@ -606,11 +606,11 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 			},
 			{
 				name: "Anatoli Petrukovich",
-				affiliation: "Director of Institute of Space Research of Russian Academy of Sciences, Academician of Russian Academy of Sciences, Russia"
+				affiliation: "Director of Space Research Institute of the Russian Academy of Sciences, Academician of the Russian Academy of Sciences, Russia"
 			},
 			{
 				name: "Antonio Prado",
-				affiliation: "Deputy Director of Institute of Space Research (INPE), Republic of Brazil"
+				affiliation: "Deputy Director of National Institute for Space Research, Republic of Brazil"
 			},
 			{
 				name: "Francis Chizea",
@@ -618,15 +618,15 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 			},
 			{
 				name: "Painos Gweme",
-				affiliation: "Director of Space Agency, Republic of Zimbabwe"
+				affiliation: "Director of Zimbabwe National Geospatial and Space Agency, Republic of Zimbabwe"
 			},
 			{
 				name: "Narkhanim Orujova",
-				affiliation: "Space Agency of the Republic of Azerbaijan (Azercosmos), Republic of Azerbaijan"
+				affiliation: "Space Agency of the Republic of Azerbaijan, Republic of Azerbaijan"
 			},
 			{
 				name: "Yury Razoumny",
-				affiliation: "Director of Engineering Academy of RUDN University, Chair of International Research Cooperation at Space Council of Russian Academy of Sciences, Chair of International Program Committee of SciTech Forum, Russia"
+				affiliation: "Director of Engineering Academy of RUDN University, Chair of International Research Cooperation at Space Council of the Russian Academy of Sciences, Chair of International Program Committee of SciTech Forum, Russia"
 			}
 		],
 		description: "The roundtable discusses the evolution of global space governance in the context of the current agenda of the United Nations Committee on the Peaceful Uses of Outer Space (COPUOS). The rapid growth of satellite mega-constellations, the entry of new spacefaring nations and private operators, and the return to the Moon challenge the international community to keep outer space safe, secure and sustainable. Participants will address the implementation of the Guidelines for the Long-term Sustainability of Outer Space Activities, space debris mitigation and space traffic coordination, frameworks for space resource activities and the role of national space legislation. Special attention will be paid to capacity building and access to space for developing countries, cooperation within BRICS and with African space agencies, and ways to strengthen the dialogue between governments, space agencies, academia and industry in shaping the rules of the new space age."
@@ -646,8 +646,8 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 				affiliation: "Chief of Space Application Section, UNOOSA, Austria"
 			},
 			{
-				name: "Svetlana Agasieva",
-				affiliation: "Deputy Director of Engineering Academy of RUDN University, Russia"
+				name: "Ekaterina Gosteva",
+				affiliation: "RUDN University, Russia"
 			},
 			{
 				name: "Doreen Agaba",
@@ -659,11 +659,11 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 			},
 			{
 				name: "Oleg Malkov",
-				affiliation: "Institute of Astronomy of Russian Academy of Sciences, Russia"
+				affiliation: "Institute of Astronomy of the Russian Academy of Sciences, Russia"
 			},
 			{
 				name: "Antonio Prado",
-				affiliation: "Deputy Director of National Institute for Space Research (INPE), Brazil"
+				affiliation: "Deputy Director of National Institute for Space Research, Brazil"
 			},
 			{
 				name: "Emmanuel Mashonjowa",
@@ -692,7 +692,7 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 		participants: [
 			{
 				name: "Alexandr Sigov",
-				affiliation: "President of MIREA – Russian Technological University, Academician of Russian Academy of Sciences, Russia"
+				affiliation: "President of MIREA – Russian Technological University, Academician of the Russian Academy of Sciences, Russia"
 			},
 			{
 				name: "John Mankins",
@@ -704,7 +704,7 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 			},
 			{
 				name: "Renuganth Varatharajoo",
-				affiliation: "Vice-Rector of University Putra Malaysia, Malaysia"
+				affiliation: "Vice-Rector of Universiti Putra Malaysia, Malaysia"
 			},
 			{
 				name: "Shufan Wu",
@@ -715,12 +715,12 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 				affiliation: "Dean of Faculty of Engineering, Symbiosis Institute of Technology, India"
 			},
 			{
-				name: "Igor Shahray",
+				name: "Igor Shakhray",
 				affiliation: "General Director of Unigreen Energy, Russia"
 			},
 			{
-				name: "Eugeniy Teryukov",
-				affiliation: "Ioffe Physical-Technical Institute of Russian Academy of Sciences, Russia"
+				name: "Eugeniy Terukov",
+				affiliation: "Ioffe Physical-Technical Institute of the Russian Academy of Sciences, Russia"
 			},
 			{
 				name: "Nikolay Evtikhiev",

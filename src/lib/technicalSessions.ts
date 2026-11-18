@@ -60,7 +60,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-142",
 				"title": "Nonlinear Attitude Control Analysis of an Orbital Insertion Stage with Cold-Gas Propulsion Using On-Off Control with Hysteresis, Deadband, and Maximum Actuation Time",
 				"authors": [
-					"Gabriel Silva, Waldemar Leite, National Institute for Space Research (INPE), Brazil"
+					"Gabriel Silva, Waldemar Leite, National Institute for Space Research, Brazil"
 				]
 			},
 			{
@@ -77,9 +77,9 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-191",
 				"title": "Singular Approaches in Control Moment Gyroscope Steering as Folds of the Time Map: Forecasting and Certified Switching Deadlines",
 				"authors": [
-					"Caio Fagonde, Federal University of ABC (UFABC), Brazil",
-					"Willer Santos, Aeronautics Institute of Technology (ITA), Brazil",
-					"Antonio Prado, National Institute for Space Research (INPE), Brazil"
+					"Caio Fagonde, Federal University of ABC, Brazil",
+					"Willer Santos, Aeronautics Institute of Technology, Brazil",
+					"Antonio Prado, National Institute for Space Research, Brazil"
 				]
 			},
 			{
@@ -89,7 +89,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"authors": [
 					"Sergei Kupreev, RUDN University, Russia",
 					"Ahmad Braje, RUDN University, Syria",
-					"Antonio Prado, National Institute for Space Research (INPE), Brazil"
+					"Antonio Prado, National Institute for Space Research, Brazil"
 				]
 			},
 			{
@@ -97,7 +97,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-151",
 				"title": "Analytical Study of Space Debris Deorbiting Using Electrodynamic Tethers",
 				"authors": [
-					"Jean Pablo Costa, Antonio Prado, National Institute for Space Research (INPE), Brazil"
+					"Jean Pablo Costa, Antonio Prado, National Institute for Space Research, Brazil"
 				]
 			},
 			{
@@ -123,9 +123,9 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-166",
 				"title": "Dynamics and Parametric Study of Electric Solar Wind Sails",
 				"authors": [
-					"Alejandro Reyes Alves de Abreu, Maria Cecilia Pereira, Federal University of Minas Gerais (UFMG), Brazil",
-					"Lucas Gouvea Meireles, São Paulo State University (UNESP), Brazil",
-					"Pedro Palma Maia Ornelas, Joao Gabriel Nicacio de Jesus, Federal University of Minas Gerais (UFMG), Brazil"
+					"Alejandro Reyes Alves de Abreu, Maria Cecilia Pereira, Federal University of Minas Gerais, Brazil",
+					"Lucas Gouvea Meireles, São Paulo State University, Brazil",
+					"Pedro Palma Maia Ornelas, Joao Gabriel Nicacio de Jesus, Federal University of Minas Gerais, Brazil"
 				]
 			},
 			{
@@ -133,8 +133,8 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-169",
 				"title": "A study on the challenges of Artificial Intelligence methods for solar sailing",
 				"authors": [
-					"Lucas Meireles, Othon Winter, São Paulo State University (UNESP), Brazil",
-					"Antonio Prado, National Institute for Space Research (INPE), Brazil"
+					"Lucas Meireles, Othon Winter, São Paulo State University, Brazil",
+					"Antonio Prado, National Institute for Space Research, Brazil"
 				]
 			},
 			{
@@ -469,7 +469,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-141",
 				"title": "Operational Planning of Critical Rocket Missions: Organizational Structure, Safety Protocols and Lessons from a Motor Static Firing and a Flight Operation",
 				"authors": [
-					"Lucas Miranda, Pablo Moura, Joao Vitor Macena, Gabriela Aragao, Laurent Janod, Denilson Junior, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Lucas Miranda, Pablo Moura, Joao Vitor Macena, Gabriela Aragao, Laurent Janod, Denilson Junior, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -477,7 +477,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-120",
 				"title": "Organizational Learning and Technological Capability Accumulation in University aerospace engineering research group: Member Turnover and Knowledge Transfer",
 				"authors": [
-					"Willian Rocha, Joao Vitor Macena, Fabio Krykhtine, Pablo Moura, Claudio Miceli, Thiago Cavalcante, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Willian Rocha, Joao Vitor Macena, Fabio Krykhtine, Pablo Moura, Claudio Miceli, Thiago Cavalcante, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -485,7 +485,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-133",
 				"title": "Current Opportunities for Space Exploration: Legal and Economic Aspects",
 				"authors": [
-					"Nelson Avakyan, MGIMO, Russia"
+					"Nelson Avakyan, MGIMO University, Russia"
 				]
 			},
 			{
@@ -509,7 +509,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"chairs": [
 			{
 				"name": "Francis Chizea",
-				"affiliation": "National Space Research and Development Agency (NASRDA), Federal Republic of Nigeria"
+				"affiliation": "National Space Research and Development Agency, Federal Republic of Nigeria"
 			},
 			{
 				"name": "Vera Galishnikova",
@@ -615,7 +615,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"chairs": [
 			{
 				"name": "Antonio Prado",
-				"affiliation": "National Institute for Space Research (INPE), Brazil"
+				"affiliation": "National Institute for Space Research, Brazil"
 			},
 			{
 				"name": "Olga Saltykova",
@@ -628,7 +628,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-143",
 				"title": "On detection strategy of dangerous asteroids",
 				"authors": [
-					"Boris Shustov, Andrey Shugarov, Institute of Astronomy of the Russian Academy of Sciences (INASAN), Russia"
+					"Boris Shustov, Andrey Shugarov, Institute of Astronomy of the Russian Academy of Sciences, Russia"
 				]
 			},
 			{
@@ -636,7 +636,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-140",
 				"title": "Synergy of space-born and ground-based systems to detect decameter size asteroid in near Earth space",
 				"authors": [
-					"Andrey Shugarov, Boris Shustov, Institute of Astronomy of the Russian Academy of Sciences (INASAN), Russia"
+					"Andrey Shugarov, Boris Shustov, Institute of Astronomy of the Russian Academy of Sciences, Russia"
 				]
 			},
 			{
@@ -644,7 +644,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-159",
 				"title": "Trajectory Design and Optimization for Asteroid-Based Planetary Defense Missions",
 				"authors": [
-					"Olga Chernenko, Natan Eismont, Vladislav Zubko, Maxim Pupkov, Space Research Institute of the Russian Academy of Sciences (IKI RAS), Russia"
+					"Olga Chernenko, Natan Eismont, Vladislav Zubko, Maxim Pupkov, Space Research Institute of the Russian Academy of Sciences, Russia"
 				]
 			},
 			{
@@ -652,7 +652,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-156",
 				"title": "Low-Energy Multi-Asteroid Missions Using Venus-Resonant Orbits and Split-Probe Deployment",
 				"authors": [
-					"Vladislav Zubko, Natan Eismont, Olga Chernenko, Maksim Pupkov, Space Research Institute of the Russian Academy of Sciences (IKI RAS), Russia"
+					"Vladislav Zubko, Natan Eismont, Olga Chernenko, Maksim Pupkov, Space Research Institute of the Russian Academy of Sciences, Russia"
 				]
 			},
 			{
@@ -661,10 +661,10 @@ export const technicalSessions: TechnicalSession[] = [
 				"title": "GravDyn: An Open-Source Framework for Gravitational Modeling and Orbital Dynamics Around Irregular Celestial Bodies",
 				"authors": [
 					"Safwan Aljbaae, Universidad de Atacama, Chile",
-					"Valerio Carruba, São Paulo State University (UNESP), Brazil",
+					"Valerio Carruba, São Paulo State University, Brazil",
 					"Allan de Almeida Jr, Universidade de Coimbra, Portugal",
-					"Gabriel Carita, São Paulo State University (UNESP), Brazil",
-					"Antonio Prado, National Institute for Space Research (INPE), Brazil",
+					"Gabriel Carita, São Paulo State University, Brazil",
+					"Antonio Prado, National Institute for Space Research, Brazil",
 					"Marcelo Mota, Instituto Federal de Hortolândia, Brazil",
 					"Carlos Lopes, Universidad de Atacama, Chile"
 				]
@@ -674,7 +674,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-147",
 				"title": "Derivative-Free Optimization of a Direct Earth-Mars Interplanetary Trajectory: A Comparative Study of Metaheuristic Algorithms",
 				"authors": [
-					"Gabriel Rocha Pinto, Antonio Prado, Nandamudi Lankalapalli Vijaykumar, National Institute for Space Research (INPE), Brazil"
+					"Gabriel Rocha Pinto, Antonio Prado, Nandamudi Lankalapalli Vijaykumar, National Institute for Space Research, Brazil"
 				]
 			},
 			{
@@ -691,8 +691,8 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-173",
 				"title": "Constellation Design Around Ganymede Using Hall-Effect Thrusters",
 				"authors": [
-					"Thamis Ferreira, São Paulo State University (UNESP), Brazil",
-					"Antonio Prado, National Institute for Space Research (INPE), Brazil"
+					"Thamis Ferreira, São Paulo State University, Brazil",
+					"Antonio Prado, National Institute for Space Research, Brazil"
 				]
 			},
 			{
@@ -726,7 +726,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"chairs": [
 			{
 				"name": "Felix Mora-Camino",
-				"affiliation": "French Civil Aviation University (ENAC), France"
+				"affiliation": "French Civil Aviation University, France"
 			},
 			{
 				"name": "Siamak Ghorbani",
@@ -747,7 +747,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-115",
 				"title": "Development and Validation of Solid Vulcan: Benchmarking an In-House Internal Ballistics Simulator Against Open-Source Software and Static Fire Data",
 				"authors": [
-					"Tiago Gomes, Joao Vitor Macena, Daniel Gudin, Pablo Moura, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Tiago Gomes, Joao Vitor Macena, Daniel Gudin, Pablo Moura, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -755,7 +755,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-118",
 				"title": "Computational Fluid Dynamics Study of Chamber Filling and Pressurization transient in Solid Rocket Motors",
 				"authors": [
-					"Joao Vitor Macena, Daniel Gudin, Pablo Moura, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Joao Vitor Macena, Daniel Gudin, Pablo Moura, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -763,7 +763,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-114",
 				"title": "Effect of Potassium Nitrate Particle Size on the Burn Rate of KNSB Solid Propellant",
 				"authors": [
-					"Ari Gabriel da Silva, Joao Vitor Macena, Daniel Gudin, Pablo Moura, Ines Castro, Keven Domingos, Igor Muzzi, Joao Khazrik, Tiago Gomes, Raissa Joyce, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Ari Gabriel da Silva, Joao Vitor Macena, Daniel Gudin, Pablo Moura, Ines Castro, Keven Domingos, Igor Muzzi, Joao Khazrik, Tiago Gomes, Raissa Joyce, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -771,7 +771,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-116",
 				"title": "Effect of SLES Surfactant on the Burn Rate of KNSB Solid Propellant: Preliminary Strand Tests",
 				"authors": [
-					"Ines Castro, Joao Vitor Macena, Daniel Gudin, Pablo Moura, Keven Domingos, Igor Muzzi, Joao Khazrik, Ari Gabriel da Silva, Tiago Gomes, Raissa Joyce, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Ines Castro, Joao Vitor Macena, Daniel Gudin, Pablo Moura, Keven Domingos, Igor Muzzi, Joao Khazrik, Ari Gabriel da Silva, Tiago Gomes, Raissa Joyce, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -779,7 +779,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-117",
 				"title": "Effects of Iron Oxide Primer on Ignition Delay and Linear Regression Rate of KNSB Propellant",
 				"authors": [
-					"Keven Domingos, Joao Vitor Macena, Daniel Gudin, Pablo Moura, Ines Castro, Igor Muzzi, Joao Khazrik, Ari Gabriel da Silva, Tiago Gomes, Raissa Joyce, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Keven Domingos, Joao Vitor Macena, Daniel Gudin, Pablo Moura, Ines Castro, Igor Muzzi, Joao Khazrik, Ari Gabriel da Silva, Tiago Gomes, Raissa Joyce, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -787,7 +787,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-119",
 				"title": "Solid Propellant Grain Density Optimization via Vibratory Compaction: Implications for Burn Uniformity",
 				"authors": [
-					"Daniel Gudin, Tiago Gomes, Igor Muzzi, Joao Vitor Macena, Pablo Moura, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Daniel Gudin, Tiago Gomes, Igor Muzzi, Joao Vitor Macena, Pablo Moura, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -795,7 +795,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-123",
 				"title": "Recrystallization and Preliminary Characterization of Potassium Nitrate from Commercial Fertilizer for Solid Propellants",
 				"authors": [
-					"Joao Khazrik, Daniel Gudin, Joao Vitor Macena, Pablo Moura, Ines Castro, Keven Domingos, Igor Muzzi, Ari Gabriel da Silva, Tiago Gomes, Raissa Joyce, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Joao Khazrik, Daniel Gudin, Joao Vitor Macena, Pablo Moura, Ines Castro, Keven Domingos, Igor Muzzi, Ari Gabriel da Silva, Tiago Gomes, Raissa Joyce, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -803,7 +803,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-107",
 				"title": "Analytical Assessment of Transonic Shock-Induced Structural Response in a Sounding Rocket",
 				"authors": [
-					"Ana Julia Machado, Pablo Moura, Beatriz Perecmanis, Joao Vitor Macena, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Ana Julia Machado, Pablo Moura, Beatriz Perecmanis, Joao Vitor Macena, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -811,7 +811,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-108",
 				"title": "Aeroelastic Fin Flutter Analysis of Sounding Rockets in the Transonic Regime",
 				"authors": [
-					"Bernardo Valerio, Pablo Moura, Beatriz Perecmanis, Joao Vitor Macena, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Bernardo Valerio, Pablo Moura, Beatriz Perecmanis, Joao Vitor Macena, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -819,7 +819,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-121",
 				"title": "Comparative Validation of Sounding Rocket Flight Trajectory Simulations Through Experimental Data and Uncertainty Analysis",
 				"authors": [
-					"Sofia Dias, Pablo Moura, Joao Vitor Macena, Fabio Krykhtine, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Sofia Dias, Pablo Moura, Joao Vitor Macena, Fabio Krykhtine, Federal University of Rio de Janeiro, Brazil"
 				]
 			}
 		]
@@ -937,7 +937,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"affiliation": "Universiti Putra Malaysia, Malaysia"
 			},
 			{
-				"name": "Svetlana Agasieva",
+				"name": "Ekaterina Gosteva",
 				"affiliation": "RUDN University, Russia"
 			}
 		],
@@ -972,7 +972,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-111",
 				"title": "Design, Manufacturing, and Validation of a Pitot Probe for a High-Subsonic Sounding Rocket",
 				"authors": [
-					"Pablo Moura, Fabio Krykhtine, Claudio Miceli, Beatriz Fonseca, Denilson Junior, Laurent Janod, Fernando Bezerra, Rafael Bernardino, Yasmin Araujo, Joao Vitor Macena, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Pablo Moura, Fabio Krykhtine, Claudio Miceli, Beatriz Fonseca, Denilson Junior, Laurent Janod, Fernando Bezerra, Rafael Bernardino, Yasmin Araujo, Joao Vitor Macena, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -989,7 +989,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-126",
 				"title": "Design of an Onboard Altimeter with Sensor Fusion for Event Detection in a Two-Stage Rocket",
 				"authors": [
-					"Fellipe Borges, Denilson Junior, Yasmin Araujo, Joao Vitor Macena, Pablo Moura, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Fellipe Borges, Denilson Junior, Yasmin Araujo, Joao Vitor Macena, Pablo Moura, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -997,7 +997,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-127",
 				"title": "Data Acquisition System for High-Rate Onboard Measurement of Parachute Opening Shock Force",
 				"authors": [
-					"Gustavo Daniel Cruz, Denilson Junior, Yasmin Araujo, Gabriela Aragao, Gabrielle Correa, Laurent Janod, Joao Vitor Macena, Pablo Moura, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Gustavo Daniel Cruz, Denilson Junior, Yasmin Araujo, Gabriela Aragao, Gabrielle Correa, Laurent Janod, Joao Vitor Macena, Pablo Moura, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -1005,7 +1005,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-128",
 				"title": "Modular Power Supply System for a Two-Stage Rocket Altimeter and Its Pyrotechnic Channels",
 				"authors": [
-					"Nathan Fernandes, Denilson Junior, Yasmin Araujo, Joao Vitor Macena, Pablo Moura, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Nathan Fernandes, Denilson Junior, Yasmin Araujo, Joao Vitor Macena, Pablo Moura, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -1013,7 +1013,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-129",
 				"title": "Onboard Guidance Navigation and Control Architecture for Trajectory Estimation in a Two-Stage Rocket",
 				"authors": [
-					"Gabrielle Mendonca, Denilson Junior, Yasmin Araujo, Joao Vitor Macena, Pablo Moura, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Gabrielle Mendonca, Denilson Junior, Yasmin Araujo, Joao Vitor Macena, Pablo Moura, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -1037,7 +1037,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"chairs": [
 			{
 				"name": "Francis Chizea",
-				"affiliation": "National Space Research and Development Agency (NASRDA), Federal Republic of Nigeria"
+				"affiliation": "National Space Research and Development Agency, Federal Republic of Nigeria"
 			},
 			{
 				"name": "Vera Galishnikova",
@@ -1150,7 +1150,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"title": "The Orbital Ferry as a Logistics Backbone for a Permanent Lunar Base",
 				"authors": [
 					"Sergei Kupreev, Fadi Ibrahim, RUDN University, Russia",
-					"Antonio Prado, National Institute for Space Research (INPE), Brazil"
+					"Antonio Prado, National Institute for Space Research, Brazil"
 				]
 			},
 			{
@@ -1158,8 +1158,8 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-152",
 				"title": "Orbital and Propulsion Sensitivities of Combined Low-Thrust Maneuvers for Small Satellites",
 				"authors": [
-					"Pedro Gonzalez, Antonio Prado, National Institute for Space Research (INPE), Brazil",
-					"Claudia Celeste, Federal University of ABC (UFABC), Brazil"
+					"Pedro Gonzalez, Antonio Prado, National Institute for Space Research, Brazil",
+					"Claudia Celeste, Federal University of ABC, Brazil"
 				]
 			},
 			{
@@ -1183,8 +1183,8 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-139",
 				"title": "Family-archive differential evolution (FADE) for two-impulse Earth–Moon transfers in the bicircular four-body problem",
 				"authors": [
-					"Gabriel Carita, São Paulo State University (UNESP), Brazil",
-					"Leticia Camila Silva de Souza, Antonio Prado, National Institute for Space Research (INPE), Brazil"
+					"Gabriel Carita, São Paulo State University, Brazil",
+					"Leticia Camila Silva de Souza, Antonio Prado, National Institute for Space Research, Brazil"
 				]
 			},
 			{
@@ -1192,9 +1192,9 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-144",
 				"title": "Dynamical Analysis and Metaheuristic Optimization of Bi-Impulsive Earth–Moon Escape Transfers",
 				"authors": [
-					"Victor Gaspar, National Institute for Space Research (INPE), Brazil",
-					"Gabriel Carita, São Paulo State University (UNESP), Brazil",
-					"Antonio Prado, National Institute for Space Research (INPE), Brazil"
+					"Victor Gaspar, National Institute for Space Research, Brazil",
+					"Gabriel Carita, São Paulo State University, Brazil",
+					"Antonio Prado, National Institute for Space Research, Brazil"
 				]
 			},
 			{
@@ -1202,9 +1202,9 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-138",
 				"title": "Initial populations from earlier solutions for transfers to distant retrograde and retrograde co-orbital orbits",
 				"authors": [
-					"Lucas Caprio Ribeiro, National Institute for Space Research (INPE), Brazil",
-					"Gabriel Carita, São Paulo State University (UNESP), Brazil",
-					"Antonio Prado, National Institute for Space Research (INPE), Brazil"
+					"Lucas Caprio Ribeiro, National Institute for Space Research, Brazil",
+					"Gabriel Carita, São Paulo State University, Brazil",
+					"Antonio Prado, National Institute for Space Research, Brazil"
 				]
 			},
 			{
@@ -1212,7 +1212,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-105",
 				"title": "GDOP Performance Analysis of Lunar Navigation Satellite Constellations Considering Orbital Perturbations",
 				"authors": [
-					"Ana Paula Chiaradia, São Paulo State University (UNESP), Brazil"
+					"Ana Paula Chiaradia, São Paulo State University, Brazil"
 				]
 			},
 			{
@@ -1220,7 +1220,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-124",
 				"title": "Analysis of Transfer Trajectories and Mission Architectures to Extreme Trans-Neptunian Objects",
 				"authors": [
-					"Vladislav Zubko, Space Research Institute of the Russian Academy of Sciences (IKI RAS), Russia"
+					"Vladislav Zubko, Space Research Institute of the Russian Academy of Sciences, Russia"
 				]
 			},
 			{
@@ -1317,7 +1317,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-110",
 				"title": "Finite Element Analysis and In-Flight Structural Validation of Thrust and Recovery Bulkheads for High-Power Rockets",
 				"authors": [
-					"Lucas Augusto, Pablo Moura, Beatriz Perecmanis, Joao Vitor Macena, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Lucas Augusto, Pablo Moura, Beatriz Perecmanis, Joao Vitor Macena, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -1325,7 +1325,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-122",
 				"title": "Manufacturing Quality and Mechanical Performance of Composite Rocket Airframes",
 				"authors": [
-					"Marcelo Lobo, Pablo Moura, Beatriz Perecmanis, Joao Vitor Macena, Fabio Krykhtine, Claudio Miceli, Minerva Rockets, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Marcelo Lobo, Pablo Moura, Beatriz Perecmanis, Joao Vitor Macena, Fabio Krykhtine, Claudio Miceli, Minerva Rockets, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -1333,7 +1333,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-112",
 				"title": "Toroidal and Semi-Ellipsoidal In-house Fabricated Parachutes: A Comparative Perspective on Sounding Rocket Recovery Systems",
 				"authors": [
-					"Luis Guilherme Nogueira Torres, Gabriela Aragao, Gabrielle Camargo, Pablo Moura, Joao Vitor Macena, Laurent Janod, Joao Pedro Martini Duarte, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Luis Guilherme Nogueira Torres, Gabriela Aragao, Gabrielle Camargo, Pablo Moura, Joao Vitor Macena, Laurent Janod, Joao Pedro Martini Duarte, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -1341,7 +1341,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-113",
 				"title": "Forebody-Wake Effects on Pilot Parachute Extraction: A Sizing Expression for a Sounding Rocket Recovery System",
 				"authors": [
-					"Joao Pedro Martini Duarte, Gabriela Aragao, Gabrielle Camargo, Pablo Moura, Luis Guilherme Nogueira Torres, Laurent Janod, Joao Vitor Macena, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Joao Pedro Martini Duarte, Gabriela Aragao, Gabrielle Camargo, Pablo Moura, Luis Guilherme Nogueira Torres, Laurent Janod, Joao Vitor Macena, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -1349,7 +1349,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-125",
 				"title": "In-Flight Performance Assessment of a Reefing Parachute for Experimental Rocket Recovery Systems",
 				"authors": [
-					"Gabrielle Correa de Camargo, Gabriela Aragao, Pablo Moura, Joao Vitor Macena, Laurent Janod, Luigi Bussadori, Joao Pedro Martini, Luis Guilherme Torres, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Gabrielle Correa de Camargo, Gabriela Aragao, Pablo Moura, Joao Vitor Macena, Laurent Janod, Luigi Bussadori, Joao Pedro Martini, Luis Guilherme Torres, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			}
 		]
@@ -1488,7 +1488,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"affiliation": "Universiti Putra Malaysia, Malaysia"
 			},
 			{
-				"name": "Svetlana Agasieva",
+				"name": "Ekaterina Gosteva",
 				"affiliation": "RUDN University, Russia"
 			}
 		],
@@ -1541,7 +1541,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-167",
 				"title": "From Mission-Specific Avionics to a Mission-Agnostic CubeSat On-Board Computer: Hardware Evolution and Reliability-Oriented Design",
 				"authors": [
-					"Eduarda Marques, Rafael Silva, Gabrielle Sousa, Lucas Pacheco, Manuella Oliveira, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Eduarda Marques, Rafael Silva, Gabrielle Sousa, Lucas Pacheco, Manuella Oliveira, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -1549,7 +1549,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-168",
 				"title": "High-Efficiency Power Generation for CubeSats: MPPT Hardware Architecture and Validation Strategy",
 				"authors": [
-					"Lucas Pacheco, Pedro Mattos, Rafael Silva, Manuella Oliveira, Eduarda Marques, Gabrielle Sousa, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Lucas Pacheco, Pedro Mattos, Rafael Silva, Manuella Oliveira, Eduarda Marques, Gabrielle Sousa, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -1557,7 +1557,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-172",
 				"title": "Reliable Communication Architecture for CubeSats: CAN Protocol Implementation and Validation Strategy",
 				"authors": [
-					"Gabrielle Sousa, Lucas Pacheco, Rafael Silva, Manuella Oliveira, Eduarda Marques, Claudio Miceli, Fabio Krykhtine, Victor Moreira, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Gabrielle Sousa, Lucas Pacheco, Rafael Silva, Manuella Oliveira, Eduarda Marques, Claudio Miceli, Fabio Krykhtine, Victor Moreira, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -1565,7 +1565,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-170",
 				"title": "Design of a Low-Cost FlatSat Platform for CubeSat Integration, Simulation and Remote Verification",
 				"authors": [
-					"Rafael Bernardino, Eduarda Marques, Gabrielle Sousa, Lucas Pacheco, Cesar Matheus Pestana, Manuella Oliveira, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro (UFRJ), Brazil"
+					"Rafael Bernardino, Eduarda Marques, Gabrielle Sousa, Lucas Pacheco, Cesar Matheus Pestana, Manuella Oliveira, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro, Brazil"
 				]
 			}
 		]
@@ -1665,7 +1665,7 @@ export const technicalSessions: TechnicalSession[] = [
 				"id": "SciTech2026-154",
 				"title": "AI-Based Pre-Filtering for State Vectors from SP3 Files",
 				"authors": [
-					"Hector Jose Puentes Ruiz, Jhonathan Orlando Murcia Pineros, Antonio Prado, National Institute for Space Research (INPE), Brazil"
+					"Hector Jose Puentes Ruiz, Jhonathan Orlando Murcia Pineros, Antonio Prado, National Institute for Space Research, Brazil"
 				]
 			}
 		]
