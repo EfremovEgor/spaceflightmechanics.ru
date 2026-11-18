@@ -231,8 +231,8 @@ export const program: ProgramDay[] = [
 						kind: "lecture",
 						number: 13,
 						time: "15:30 – 16:00",
-						title: "Space Technology for Societal Benefits",
-						speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre, India"
+						title: "Lightweight Polymer Composites for Next-Generation Space Systems",
+						speaker: "Meena Laad, Symbiosis Institute of Technology, India"
 					},
 					{
 						kind: "lecture",
@@ -247,6 +247,13 @@ export const program: ProgramDay[] = [
 						time: "16:30 – 17:00",
 						title: "Tree Ensembles Outperform Deep Learning for Label-Scarce Winter Wheat Mapping: Evidence from Planet-NICFI Time Series in Zimbabwe",
 						speaker: "Davis Shekede, Zimbabwe National Geospatial and Space Agency, Zimbabwe"
+					},
+					{
+						kind: "lecture",
+						number: 16,
+						time: "17:00 – 17:30",
+						title: "Staged Mission Planning for Gradual Deployment of Multipurpose Digital Sky Megaconstellation",
+						speaker: "Dmitry Monakhov, L5 Ltd., Russia"
 					}
 				]
 			}
@@ -262,42 +269,42 @@ export const program: ProgramDay[] = [
 				items: [
 					{
 						kind: "lecture",
-						number: 16,
+						number: 17,
 						time: "10:00 – 10:30",
 						title: "Pulsating and Oscillating Flows on Spiked Blunt Bodies with Various Forebody Bulges and Spikes at Supersonic Speed",
 						speaker: "Sudip Das, Birla Institute of Technology, India"
 					},
 					{
 						kind: "lecture",
-						number: 17,
+						number: 18,
 						time: "10:30 – 11:00",
-						title: "Lightweight Polymer Composites for Next-Generation Space Systems",
-						speaker: "Meena Laad, Symbiosis Institute of Technology, India"
+						title: "Space Technology for Societal Benefits",
+						speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre, India"
 					},
 					{
 						kind: "lecture",
-						number: 18,
+						number: 19,
 						time: "11:00 – 11:30",
 						title: "From NewSpace to Deep-Space Consortia: A New Economic Model of Cooperation in Far-Space Exploration",
 						speaker: "Maria Ulyanova, Institute of Oriental Studies of the Russian Academy of Sciences, Russia"
 					},
 					{
 						kind: "lecture",
-						number: 19,
+						number: 20,
 						time: "11:30 – 12:00",
 						title: "International Virtual Observatory",
 						speaker: "Oleg Malkov, Institute of Astronomy of the Russian Academy of Sciences, Russia"
 					},
 					{
 						kind: "lecture",
-						number: 20,
+						number: 21,
 						time: "12:00 – 12:30",
 						title: "The Foundation of International Space Law and the Challenge of Space Sustainability",
 						speaker: "Narkhanim Orujova, Space Agency of the Republic of Azerbaijan, Azerbaijan"
 					},
 					{
 						kind: "lecture",
-						number: 21,
+						number: 22,
 						time: "12:30 – 13:00",
 						title: "Investment in Space: Accelerating Global Space Technology",
 						speaker: "Ray Zimmerman, Global Investment Administration, USA"
@@ -316,28 +323,28 @@ export const program: ProgramDay[] = [
 				items: [
 					{
 						kind: "lecture",
-						number: 22,
+						number: 23,
 						time: "14:00 – 14:30",
 						title: "Beyond the Rocket Equation: the Spin-Density Model as a Physical Basis for Future Space Capabilities",
 						speaker: "Yury Razoumny, RUDN University, Russia"
 					},
 					{
 						kind: "lecture",
-						number: 23,
+						number: 24,
 						time: "14:30 – 15:00",
 						title: "Legacy of “Intercosmos” Association and Modern International Cooperation in Space Science",
 						speaker: "Anatoli Petrukovich, Space Research Institute of the Russian Academy of Sciences, Russia"
 					},
 					{
 						kind: "lecture",
-						number: 24,
+						number: 25,
 						time: "15:00 – 15:30",
 						title: "Detailed Study of the GR-Caused Distortions of Quasi-Elliptic Trajectories in the Vicinity of the Sun",
 						speaker: "Aleksandr Yefremov, RUDN University, Russia"
 					},
 					{
 						kind: "lecture",
-						number: 25,
+						number: 26,
 						time: "15:30 – 16:00",
 						title: "Opportunities and Challenges for Space Solar Systems",
 						speaker: "John Mankins, Artemis Innovation Management Solutions, USA"
@@ -465,9 +472,9 @@ export const highlightLectures: HighlightLecture[] = [
 		number: 13,
 		date: "Wednesday, November 25",
 		time: "15:30 – 16:00",
-		title: "Space Technology for Societal Benefits",
-		speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre, India",
-		abstract: "India's space programme has emphasized using space technology for national development and societal benefit. Over six decades ISRO has built indigenous capabilities in Earth observation, satellite communication and navigation. Remote sensing and geospatial technologies support agriculture, water management, environmental conservation, urban planning and disaster risk reduction, using satellites such as Resourcesat, RISAT-1A, NISAR and NavIC. Initiatives like the Bhuvan geoportal and the National Database for Emergency Management widen access to geospatial information. The talk highlights India's achievements and operational applications, discusses emerging opportunities from AI, cloud computing and high-resolution observation, and outlines directions towards an inclusive, resilient and sustainable India."
+		title: "Lightweight Polymer Composites for Next-Generation Space Systems",
+		speaker: "Meena Laad, Symbiosis Institute of Technology, India",
+		abstract: "Spacecraft materials must withstand extreme thermal cycling (−150 °C to +120 °C), atomic oxygen, radiation, vacuum and micrometeoroids, while every kilogram raises launch cost. This work presents a lightweight hybrid nanocomposite film of PVDF reinforced with graphite nanoparticles and multiwalled carbon nanotubes, produced by ultrasonication and solution casting. FTIR, XRD, FESEM and EDS confirmed filler–matrix interaction, a uniform CNT network and oxidation-free processing. Comparable PVDF/carbon composites show degradation onset rising from 425 °C to 451–461 °C and nearly doubled storage modulus over the orbital temperature range, making the hybrid promising for satellite panels, thermal management and smart aerospace structures."
 	},
 	{
 		number: 14,
@@ -487,6 +494,14 @@ export const highlightLectures: HighlightLecture[] = [
 	},
 	{
 		number: 16,
+		date: "Wednesday, November 25",
+		time: "17:00 – 17:30",
+		title: "Staged Mission Planning for Gradual Deployment of Multipurpose Digital Sky Megaconstellation",
+		speaker: "Dmitry Monakhov, L5 Ltd., Russia",
+		abstract: "Global transportation infrastructure accounts for about 40% of the value of global infrastructure, while space activity accounts for only about 3%. As the global economy may grow fourfold within 25–40 years, at least a quarter of it could rely on space assets, driving rapid constellation deployment. This calls for new forms of participation, not only for megacorporations but also for medium-sized players and emerging space nations, with a sustainable revenue model from the first 10–30 satellites: remote sensing, IoT, navigation, situational awareness and connectivity. The lecture outlines staged growth towards a 10,000+ satellite constellation for the economy of the 2040s."
+	},
+	{
+		number: 17,
 		date: "Thursday, November 26",
 		time: "10:00 – 10:30",
 		title: "Pulsating and Oscillating Flows on Spiked Blunt Bodies with Various Forebody Bulges and Spikes at Supersonic Speed",
@@ -494,15 +509,15 @@ export const highlightLectures: HighlightLecture[] = [
 		abstract: "Aerodynamic spikes ahead of blunt bodies reduce pressure drag at supersonic and hypersonic speeds by weakening the shock system and creating a shielding recirculation zone, but they make the flow unstable. Two instability types occur: violent, low-frequency pulsation of the shock system, and smaller-amplitude oscillation with a steady recirculation zone. This study examines a flat-faced cylindrical forebody with sharp spikes of L/D 0.5, 1.0 and 1.75 at Mach 2.0. Strong pulsation appears at L/D 0.5 and 1.0, depending on spike geometry; at L/D 1.75 it turns into oscillation, explained by Kenworthy's shear-layer hypothesis. Forebody bulges influence the fluctuations."
 	},
 	{
-		number: 17,
+		number: 18,
 		date: "Thursday, November 26",
 		time: "10:30 – 11:00",
-		title: "Lightweight Polymer Composites for Next-Generation Space Systems",
-		speaker: "Meena Laad, Symbiosis Institute of Technology, India",
-		abstract: "Spacecraft materials must withstand extreme thermal cycling (−150 °C to +120 °C), atomic oxygen, radiation, vacuum and micrometeoroids, while every kilogram raises launch cost. This work presents a lightweight hybrid nanocomposite film of PVDF reinforced with graphite nanoparticles and multiwalled carbon nanotubes, produced by ultrasonication and solution casting. FTIR, XRD, FESEM and EDS confirmed filler–matrix interaction, a uniform CNT network and oxidation-free processing. Comparable PVDF/carbon composites show degradation onset rising from 425 °C to 451–461 °C and nearly doubled storage modulus over the orbital temperature range, making the hybrid promising for satellite panels, thermal management and smart aerospace structures."
+		title: "Space Technology for Societal Benefits",
+		speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre, India",
+		abstract: "India's space programme has emphasized using space technology for national development and societal benefit. Over six decades ISRO has built indigenous capabilities in Earth observation, satellite communication and navigation. Remote sensing and geospatial technologies support agriculture, water management, environmental conservation, urban planning and disaster risk reduction, using satellites such as Resourcesat, RISAT-1A, NISAR and NavIC. Initiatives like the Bhuvan geoportal and the National Database for Emergency Management widen access to geospatial information. The talk highlights India's achievements and operational applications, discusses emerging opportunities from AI, cloud computing and high-resolution observation, and outlines directions towards an inclusive, resilient and sustainable India."
 	},
 	{
-		number: 18,
+		number: 19,
 		date: "Thursday, November 26",
 		time: "11:00 – 11:30",
 		title: "From NewSpace to Deep-Space Consortia: A New Economic Model of Cooperation in Far-Space Exploration",
@@ -510,7 +525,7 @@ export const highlightLectures: HighlightLecture[] = [
 		abstract: "Near space has shifted to a commercial NewSpace paradigm, while far space remains dominated by state agencies. This paper proposes a hybrid cooperation model that replaces legacy national programmes with transboundary consortia: the state acts as anchor tenant, private capital provides agility, and international partners share infrastructure, risk and data, in compliance with Article II of the Outer Space Treaty. Three pillars are identified: anchor demand mechanisms, interoperable open-access infrastructure and innovative risk-pooling finance. Concepts of “functional sovereignty” and “registered operator zones” allow private participation without national appropriation. Far-space leadership belongs to those building the most inclusive cooperation architecture."
 	},
 	{
-		number: 19,
+		number: 20,
 		date: "Thursday, November 26",
 		time: "11:30 – 12:00",
 		title: "International Virtual Observatory",
@@ -518,7 +533,7 @@ export const highlightLectures: HighlightLecture[] = [
 		abstract: "The talk deals with the implementation of an international astronomy project, the Virtual Observatory (VO), whose principal idea is to make all the world's astronomical data transparently available from one's desktop. VO standards are now mature and underpin data discovery, usage and interoperability at most major observatories; new facilities are being built with these standards fully integrated. The VO enables excellence through interoperability of services and data exchange. The talk gives an overview of the importance of the VO to the modern observatory, highlighting its successes and discussing upcoming challenges."
 	},
 	{
-		number: 20,
+		number: 21,
 		date: "Thursday, November 26",
 		time: "12:00 – 12:30",
 		title: "The Foundation of International Space Law and the Challenge of Space Sustainability",
@@ -526,7 +541,7 @@ export const highlightLectures: HighlightLecture[] = [
 		abstract: "This highlight lecture traces the path from the foundational rules of international space law to the practical challenge of keeping orbits usable. The first part outlines the institutional and treaty architecture: the UN Committee on the Peaceful Uses of Outer Space, the UN Office for Outer Space Affairs, the 1967 Outer Space Treaty and the four treaties that followed it. The second part examines how space debris mitigation and space traffic management are governed today through non-binding instruments, including the IADC and COPUOS guidelines, and where gaps between treaty obligations and operational practice remain."
 	},
 	{
-		number: 21,
+		number: 22,
 		date: "Thursday, November 26",
 		time: "12:30 – 13:00",
 		title: "Investment in Space: Accelerating Global Space Technology",
@@ -534,7 +549,7 @@ export const highlightLectures: HighlightLecture[] = [
 		abstract: "Space is no longer only a domain of government programmes. Private capital now plays a major role in turning new space technologies into working systems and services. The talk discusses how investment shapes the global space economy, from launch services and satellite constellations to in-orbit servicing and lunar infrastructure. Key funding models are reviewed, including venture capital, public–private partnerships and international cooperation. Criteria are outlined that investors use to assess technical maturity and market potential. Ways are proposed to connect research teams, industry and investors and to bring promising technologies faster from the laboratory to orbit."
 	},
 	{
-		number: 22,
+		number: 23,
 		date: "Thursday, November 26",
 		time: "14:00 – 14:30",
 		title: "Beyond the Rocket Equation: the Spin-Density Model as a Physical Basis for Future Space Capabilities",
@@ -542,7 +557,7 @@ export const highlightLectures: HighlightLecture[] = [
 		abstract: "A principle of motion without mass ejection is presented. For a dumbbell with a flywheel in a central field, it is shown that the orbit can be changed by internal exchange of angular momentum. The principle is extended to the quantum level, where spin acts as a flywheel and thrust is directed perpendicular to the spin. The vacuum is treated as a three-phase medium of spinning carriers, and the Spin-Density Model of space-time is proposed. Newton's law of gravitation and inertia are recovered, and laboratory and astronomical tests are outlined. Implications for propellantless space transport are discussed."
 	},
 	{
-		number: 23,
+		number: 24,
 		date: "Thursday, November 26",
 		time: "14:30 – 15:00",
 		title: "Legacy of “Intercosmos” Association and Modern International Cooperation in Space Science",
@@ -550,7 +565,7 @@ export const highlightLectures: HighlightLecture[] = [
 		abstract: "The development of exploration programs opens new horizons for international cooperation in space. 2026 marks the 60th anniversary of “Intercosmos”, the special Council of the USSR Academy of Sciences, a unique milestone in cooperation and the peaceful use of outer space. More than 100 robotic spacecraft carried scientific payloads designed by many countries, and cosmonauts from more than ten countries flew in international crews to the Salyut and Mir orbital stations. Scientists built instruments for missions to the Moon, Mars, Venus and Halley's Comet. The lecture reviews modern international cooperation of Russian institutions in space science."
 	},
 	{
-		number: 24,
+		number: 25,
 		date: "Thursday, November 26",
 		time: "15:00 – 15:30",
 		title: "Detailed Study of the GR-Caused Distortions of Quasi-Elliptic Trajectories in the Vicinity of the Sun",
@@ -558,7 +573,7 @@ export const highlightLectures: HighlightLecture[] = [
 		abstract: "Besides the well-known effects of General Relativity (GR), the trajectory of a space probe near the Sun is subject to further, purely relativistic distortions. The lecture critically analyses the standard calculation of a known GR effect, the secular precession of the quasi-elliptical orbit of a massive body, and highlights new observational aspects. Fundamental theoretical issues are discussed. A computational (tabular) tool is proposed for rapid numerical construction of such trajectories, using an extended time step in the weak-field approximation, and for high-precision analysis of the influence of each relativistic factor on the motion of a space object."
 	},
 	{
-		number: 25,
+		number: 26,
 		date: "Thursday, November 26",
 		time: "15:30 – 16:00",
 		title: "Opportunities and Challenges for Space Solar Systems",

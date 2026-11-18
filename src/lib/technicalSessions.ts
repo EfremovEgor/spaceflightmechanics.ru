@@ -385,7 +385,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"code": "SPLE",
 		"title": "Space Policy, Law & Economics",
 		"group": "Wednesday, November 25 – Morning sessions",
-		"time": "10:00 – 13:00",
+		"time": "10:00 – 12:45",
 		"hall": "Hall Pluton",
 		"description": "The session is devoted to the discussion of the complex and increasingly critical intersection of legal frameworks, policy development and economic considerations that govern space activities. It is also focused on governance, regulation and sustainable economic growth in the space sector, protective arrangements around long-term lunar activities, national space legislation and licensing, emerging space economies, human capital for NewSpace, space debris mitigation and the commercialization of space exploration activities.",
 		"chairs": [
@@ -425,14 +425,6 @@ export const technicalSessions: TechnicalSession[] = [
 			},
 			{
 				"time": "10:45 – 11:00",
-				"id": "SciTech2026-176",
-				"title": "Staged mission planning for gradual deployment of multipurpose Digital Sky megaconstellation",
-				"authors": [
-					"Dmitry Monakhov, L5 LTD., Russia"
-				]
-			},
-			{
-				"time": "11:00 – 11:15",
 				"id": "SciTech2026-102",
 				"title": "From Safari to Space: Reimagining Africa's Tourism Economy Through Commercial Spaceflight and NewSpace Entrepreneurship Ecosystems",
 				"authors": [
@@ -440,11 +432,19 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "11:15 – 11:30",
+				"time": "11:00 – 11:15",
 				"id": "SciTech2026-185",
 				"title": "Accountable Autonomy in Space Mission Operations: A Trust–Liability Governance Framework for Human-Agentic AI Teaming",
 				"authors": [
 					"Nageswara Rao Aderla, Ravinder Rena, Woxsen University, India"
+				]
+			},
+			{
+				"time": "11:15 – 11:30",
+				"id": "SciTech2026-141",
+				"title": "Operational Planning of Critical Rocket Missions: Organizational Structure, Safety Protocols and Lessons from a Motor Static Firing and a Flight Operation",
+				"authors": [
+					"Lucas Miranda, Pablo Moura, Joao Vitor Macena, Gabriela Aragao, Laurent Janod, Denilson Junior, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
 				]
 			},
 			{
@@ -466,14 +466,6 @@ export const technicalSessions: TechnicalSession[] = [
 			},
 			{
 				"time": "12:00 – 12:15",
-				"id": "SciTech2026-141",
-				"title": "Operational Planning of Critical Rocket Missions: Organizational Structure, Safety Protocols and Lessons from a Motor Static Firing and a Flight Operation",
-				"authors": [
-					"Lucas Miranda, Pablo Moura, Joao Vitor Macena, Gabriela Aragao, Laurent Janod, Denilson Junior, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
-				]
-			},
-			{
-				"time": "12:15 – 12:30",
 				"id": "SciTech2026-120",
 				"title": "Organizational Learning and Technological Capability Accumulation in University aerospace engineering research group: Member Turnover and Knowledge Transfer",
 				"authors": [
@@ -481,7 +473,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "12:30 – 12:45",
+				"time": "12:15 – 12:30",
 				"id": "SciTech2026-133",
 				"title": "Current Opportunities for Space Exploration: Legal and Economic Aspects",
 				"authors": [
@@ -489,7 +481,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "12:45 – 13:00",
+				"time": "12:30 – 12:45",
 				"id": "SciTech2026-192",
 				"title": "Legal Regulation of Dark and Quiet Skies and Unintended Electromagnetic Radiation from Large Satellite Constellations: International Legal Gaps and Ways Forward",
 				"authors": [
