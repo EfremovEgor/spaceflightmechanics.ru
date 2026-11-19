@@ -115,6 +115,13 @@ export const program: ProgramDay[] = [
 				moderator: "Aarti Holla-Maini, Director of UNOOSA, Austria"
 			},
 			{
+				kind: "item",
+				time: "15:00 – 15:45",
+				title: "Meeting of RUDN and MGIMO students with Director of UNOOSA Aarti Holla-Maini",
+				note: "RUDN Space Mission Control Center, by invitation only",
+				special: true
+			},
+			{
 				kind: "plenary",
 				title: "Plenary Session 3",
 				moderator: "Ravinder Rena, Durban University of Technology, Republic of South Africa",
@@ -188,13 +195,6 @@ export const program: ProgramDay[] = [
 						speaker: "Tarun P. Singh, Symbiosis Institute of Geoinformatics, India"
 					}
 				]
-			},
-			{
-				kind: "item",
-				time: "13:00 – 14:00",
-				title: "Meeting of RUDN and MGIMO students with Director of UNOOSA Aarti Holla-Maini",
-				note: "RUDN Space Mission Control Center, by invitation only",
-				special: true
 			},
 			{
 				kind: "item",
@@ -279,7 +279,7 @@ export const program: ProgramDay[] = [
 						number: 18,
 						time: "10:30 – 11:00",
 						title: "Space Technology for Societal Benefits",
-						speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre, India"
+						speaker: "Prakash Chauhan, Indian National Space Promotion and Authorization Centre, India"
 					},
 					{
 						kind: "lecture",
@@ -513,7 +513,7 @@ export const highlightLectures: HighlightLecture[] = [
 		date: "Thursday, November 26",
 		time: "10:30 – 11:00",
 		title: "Space Technology for Societal Benefits",
-		speaker: "Chandra Prakash Singh, Indian National Space Promotion and Authorization Centre, India",
+		speaker: "Prakash Chauhan, Indian National Space Promotion and Authorization Centre, India",
 		abstract: "India's space programme has emphasized using space technology for national development and societal benefit. Over six decades ISRO has built indigenous capabilities in Earth observation, satellite communication and navigation. Remote sensing and geospatial technologies support agriculture, water management, environmental conservation, urban planning and disaster risk reduction, using satellites such as Resourcesat, RISAT-1A, NISAR and NavIC. Initiatives like the Bhuvan geoportal and the National Database for Emergency Management widen access to geospatial information. The talk highlights India's achievements and operational applications, discusses emerging opportunities from AI, cloud computing and high-resolution observation, and outlines directions towards an inclusive, resilient and sustainable India."
 	},
 	{
