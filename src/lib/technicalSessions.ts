@@ -333,7 +333,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"code": "SMS",
 		"title": "Spacecraft Materials & Structures 1",
 		"date": "Wednesday, November 25",
-		"time": "10:00 – 12:45",
+		"time": "10:00 – 13:00",
 		"hall": "Hall Mars",
 		"chairs": [
 			{
@@ -438,6 +438,14 @@ export const technicalSessions: TechnicalSession[] = [
 				"title": "Aerogel insulation materials in the construction of space-based structures: thermal protection, energy efficiency, and prospects for application on the Moon and Mars",
 				"authors": [
 					"Shakir M. N. Al-Oayef, Asser M. Elsheikh, Vladimir Migin, RUDN University, Russia"
+				]
+			},
+			{
+				"time": "12:45 – 13:00",
+				"id": "SciTech2026-206",
+				"title": "Graphene-Reinforced Polymer Nanocomposites for Space Structures: A Literature-Based ANOVA of Loading Effects on Mechanical Properties",
+				"authors": [
+					"Fiza Pathan, Meena Laad, Symbiosis Institute of Technology, India"
 				]
 			}
 		]
@@ -564,7 +572,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"code": "SPLE",
 		"title": "Space Policy, Law & Economics 1",
 		"date": "Wednesday, November 25",
-		"time": "10:00 – 12:30",
+		"time": "10:00 – 12:45",
 		"hall": "Hall Pluton",
 		"chairs": [
 			{
@@ -587,6 +595,14 @@ export const technicalSessions: TechnicalSession[] = [
 			},
 			{
 				"time": "10:15 – 10:30",
+				"id": "SciTech2026-213",
+				"title": "A Commons Approach to Governance of Outer Space Exploitation",
+				"authors": [
+					"Nomfundo Pearl Zondi, Anthoni van Nieuwkerk, Thabo Mbeki African School of Public and International Affairs, South Africa"
+				]
+			},
+			{
+				"time": "10:30 – 10:45",
 				"id": "SciTech2026-198",
 				"title": "Registration Aspects of Space Objects: Considerations from the Perspective of ISL Science",
 				"authors": [
@@ -594,7 +610,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "10:30 – 10:45",
+				"time": "10:45 – 11:00",
 				"id": "SciTech2026-199",
 				"title": "Contribution of the International Telecommunication Union to Regulating the Use of Radio Spectrum and Orbital Satellites",
 				"authors": [
@@ -602,7 +618,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "10:45 – 11:00",
+				"time": "11:00 – 11:15",
 				"id": "SciTech2026-200",
 				"title": "Active Remediation of Space Debris Objects: Legal Barriers and Consent Regimes",
 				"authors": [
@@ -610,7 +626,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "11:00 – 11:15",
+				"time": "11:15 – 11:30",
 				"id": "SciTech2026-201",
 				"title": "International Legal Activities of the USSR in Shaping the International Legal Regime for the Exploration and Use of Outer Space at the Final Stage of Its Existence (1985-1991)",
 				"authors": [
@@ -618,7 +634,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "11:15 – 11:30",
+				"time": "11:30 – 11:45",
 				"id": "SciTech2026-202",
 				"title": "From Observation to Threat Assessment: The International Legal Significance of the Distinction Between SSA and SDA",
 				"authors": [
@@ -626,7 +642,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "11:30 – 11:45",
+				"time": "11:45 – 12:00",
 				"id": "SciTech2026-203",
 				"title": "In-Orbit Servicing: Challenges for International Law",
 				"authors": [
@@ -634,7 +650,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "11:45 – 12:00",
+				"time": "12:00 – 12:15",
 				"id": "SciTech2026-204",
 				"title": "International legal aspects of the extraction of space resources: experience of Arctic development",
 				"authors": [
@@ -642,7 +658,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "12:00 – 12:15",
+				"time": "12:15 – 12:30",
 				"id": "SciTech2026-205",
 				"title": "Perspectives on American projects for the deployment of data centers in outer space",
 				"authors": [
@@ -650,7 +666,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "12:15 – 12:30",
+				"time": "12:30 – 12:45",
 				"id": "SciTech2026-101",
 				"title": "Beyond Launches: Building Resilient Space Operations Ecosystems for Africa's Emerging NewSpace Economy and Sustainable Development",
 				"authors": [
@@ -770,7 +786,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"code": "SSE",
 		"title": "Solar System Exploration",
 		"date": "Wednesday, November 25",
-		"time": "14:00 – 16:30",
+		"time": "14:00 – 16:45",
 		"hall": "Hall Mercury",
 		"chairs": [
 			{
@@ -872,6 +888,14 @@ export const technicalSessions: TechnicalSession[] = [
 					"Haoyue Yang, RUDN University, China",
 					"Mani Momeni, RUDN University, Russia"
 				]
+			},
+			{
+				"time": "16:30 – 16:45",
+				"id": "SciTech2026-211",
+				"title": "ASTRA: Uncertainty-Aware Classification of Kepler Transit Candidates with Subjective Logic and Conformal Prediction",
+				"authors": [
+					"Advik Sethi, Meena Laad, Symbiosis Institute of Technology, India"
+				]
 			}
 		]
 	},
@@ -880,7 +904,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"code": "SPP",
 		"title": "Space Power & Propulsion",
 		"date": "Wednesday, November 25",
-		"time": "14:00 – 16:45",
+		"time": "14:00 – 17:00",
 		"hall": "Hall Mars",
 		"chairs": [
 			{
@@ -979,6 +1003,14 @@ export const technicalSessions: TechnicalSession[] = [
 				"title": "Comparative Validation of Sounding Rocket Flight Trajectory Simulations Through Experimental Data and Uncertainty Analysis",
 				"authors": [
 					"Sofia Dias, Pablo Moura, Joao Vitor Macena, Fabio Krykhtine, Federal University of Rio de Janeiro, Brazil"
+				]
+			},
+			{
+				"time": "16:45 – 17:00",
+				"id": "SciTech2026-210",
+				"title": "Dielectric Materials Withstanding Low Temperatures",
+				"authors": [
+					"Gunjan Goyal, Akansha Wadhwani, Meena Laad, Symbiosis Institute of Technology, India"
 				]
 			}
 		]
@@ -1086,7 +1118,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"code": "SSA",
 		"title": "Small Satellites, Space Sensors & Actuators 1",
 		"date": "Wednesday, November 25",
-		"time": "14:00 – 16:30",
+		"time": "14:00 – 16:45",
 		"hall": "Hall Pluton",
 		"chairs": [
 			{
@@ -1179,6 +1211,14 @@ export const technicalSessions: TechnicalSession[] = [
 				"title": "Probabilistic and Risk-Based Multi-Criteria Approach for the Scheduling of Space Project Activities at the Preliminary Design Phase",
 				"authors": [
 					"Eugenii Tatarchenko, Research Center for Space Economy and Policy, Russia"
+				]
+			},
+			{
+				"time": "16:30 – 16:45",
+				"id": "SciTech2026-209",
+				"title": "Statistical Assessment of Magnetic Materials for Aerospace Applications: A Literature-Based Comparative Study",
+				"authors": [
+					"Priyanka Jagtap, Meena Laad, Symbiosis Institute of Technology, India"
 				]
 			}
 		]
@@ -1393,7 +1433,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"code": "SMS",
 		"title": "Spacecraft Materials & Structures 2",
 		"date": "Thursday, November 26",
-		"time": "10:00 – 13:00",
+		"time": "10:00 – 13:15",
 		"hall": "Hall Mars",
 		"chairs": [
 			{
@@ -1504,6 +1544,14 @@ export const technicalSessions: TechnicalSession[] = [
 				"title": "In-Flight Performance Assessment of a Reefing Parachute for Experimental Rocket Recovery Systems",
 				"authors": [
 					"Gabrielle Correa de Camargo, Gabriela Aragao, Pablo Moura, Joao Vitor Macena, Laurent Janod, Luigi Bussadori, Joao Pedro Martini, Luis Guilherme Torres, Fabio Krykhtine, Claudio Miceli, Federal University of Rio de Janeiro, Brazil"
+				]
+			},
+			{
+				"time": "13:00 – 13:15",
+				"id": "SciTech2026-207",
+				"title": "Self-Cleaning Functional Coatings for Space Applications: A Descriptive Statistical Analysis of Materials, Performance and Research Trends",
+				"authors": [
+					"Akhila Shalu, Meena Laad, Symbiosis Institute of Technology, India"
 				]
 			}
 		]
@@ -1632,7 +1680,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"code": "SSA",
 		"title": "Small Satellites, Space Sensors & Actuators 2",
 		"date": "Thursday, November 26",
-		"time": "10:00 – 12:15",
+		"time": "10:00 – 12:30",
 		"hall": "Hall Pluton",
 		"chairs": [
 			{
@@ -1719,6 +1767,14 @@ export const technicalSessions: TechnicalSession[] = [
 				"authors": [
 					"Rafael Bernardino, Eduarda Marques, Gabrielle Sousa, Lucas Pacheco, Cesar Matheus Pestana, Manuella Oliveira, Claudio Miceli, Fabio Krykhtine, Federal University of Rio de Janeiro, Brazil"
 				]
+			},
+			{
+				"time": "12:15 – 12:30",
+				"id": "SciTech2026-208",
+				"title": "A Mission-Driven Comparison Method for Metallic and Composite Deployable Booms",
+				"authors": [
+					"Avani Singh, Meena Laad, Symbiosis Institute of Technology, India"
+				]
 			}
 		]
 	},
@@ -1727,7 +1783,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"code": "EO",
 		"title": "Earth Observations 2",
 		"date": "Thursday, November 26",
-		"time": "10:00 – 12:15",
+		"time": "10:00 – 12:30",
 		"hall": "Hall Neptune",
 		"chairs": [
 			{
@@ -1818,6 +1874,14 @@ export const technicalSessions: TechnicalSession[] = [
 				"authors": [
 					"Hector Jose Puentes Ruiz, Jhonathan Orlando Murcia Pineros, Antonio Prado, National Institute for Space Research, Brazil"
 				]
+			},
+			{
+				"time": "12:15 – 12:30",
+				"id": "SciTech2026-212",
+				"title": "Monitoring Urban Expansion and Vegetation Loss in Pune’s Urban Hills Using Multi-Temporal Satellite Imagery",
+				"authors": [
+					"Shaina Dewangan, Meena Laad, Symbiosis Institute of Technology, India"
+				]
 			}
 		]
 	},
@@ -1826,7 +1890,7 @@ export const technicalSessions: TechnicalSession[] = [
 		"code": "SPLE",
 		"title": "Space Policy, Law & Economics 2",
 		"date": "Thursday, November 26",
-		"time": "10:00 – 12:30",
+		"time": "10:00 – 12:45",
 		"hall": "Hall Venus",
 		"chairs": [
 			{
@@ -1865,6 +1929,17 @@ export const technicalSessions: TechnicalSession[] = [
 			},
 			{
 				"time": "10:45 – 11:00",
+				"id": "SciTech2026-214",
+				"title": "Equity in the Use of Geostationary Orbit Resources",
+				"authors": [
+					"Fabio Krykhtine, Federal University of Rio de Janeiro, Brazil",
+					"Oludolapo A. Olanrewaju, Durban University of Technology, South Africa",
+					"Sergio Gonzalez-Rojo, Instituto Tecnológico de Chihuahua, Mexico",
+					"Felix Mora-Camino, Federal University of Rio de Janeiro, Brazil"
+				]
+			},
+			{
+				"time": "11:00 – 11:15",
 				"id": "SciTech2026-102",
 				"title": "From Safari to Space: Reimagining Africa's Tourism Economy Through Commercial Spaceflight and NewSpace Entrepreneurship Ecosystems",
 				"authors": [
@@ -1872,7 +1947,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "11:00 – 11:15",
+				"time": "11:15 – 11:30",
 				"id": "SciTech2026-185",
 				"title": "Accountable Autonomy in Space Mission Operations: A Trust–Liability Governance Framework for Human-Agentic AI Teaming",
 				"authors": [
@@ -1880,7 +1955,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "11:15 – 11:30",
+				"time": "11:30 – 11:45",
 				"id": "SciTech2026-141",
 				"title": "Operational Planning of Critical Rocket Missions: Organizational Structure, Safety Protocols and Lessons from a Motor Static Firing and a Flight Operation",
 				"authors": [
@@ -1888,7 +1963,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "11:30 – 11:45",
+				"time": "11:45 – 12:00",
 				"id": "SciTech2026-184",
 				"title": "Talent as the Binding Constraint: A Human-Capital Readiness Framework for India’s Liberalised NewSpace Economy",
 				"authors": [
@@ -1896,7 +1971,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "11:45 – 12:00",
+				"time": "12:00 – 12:15",
 				"id": "SciTech2026-120",
 				"title": "Organizational Learning and Technological Capability Accumulation in University aerospace engineering research group: Member Turnover and Knowledge Transfer",
 				"authors": [
@@ -1904,7 +1979,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "12:00 – 12:15",
+				"time": "12:15 – 12:30",
 				"id": "SciTech2026-133",
 				"title": "Current Opportunities for Space Exploration: Legal and Economic Aspects",
 				"authors": [
@@ -1912,7 +1987,7 @@ export const technicalSessions: TechnicalSession[] = [
 				]
 			},
 			{
-				"time": "12:15 – 12:30",
+				"time": "12:30 – 12:45",
 				"id": "SciTech2026-192",
 				"title": "Legal Regulation of Dark and Quiet Skies and Unintended Electromagnetic Radiation from Large Satellite Constellations: International Legal Gaps and Ways Forward",
 				"authors": [

@@ -81,7 +81,7 @@ const en = {
 		organized:
 			"The Forum is organized by <b>Russian Academy of Sciences</b>, <b>International Academy of Astronautics</b> and <b>RUDN University</b>.",
 		format:
-			"Hybrid format (on-site and online) is supposed (the online format is supported for participants outside Moscow region). The participation in the Forum is free. Participants can attend the Forum with or without paper presentation. Paper presentation needs the <submission>Submission</submission> and <registration>Registration</registration> processes. Participation without presentation requires only registration.",
+			"Hybrid format (on-site and online) is supposed. The participation in the Forum is free. Participants can attend the Forum with or without paper presentation. Paper presentation needs the <submission>Submission</submission> and <registration>Registration</registration> processes. Participation without presentation requires only registration.",
 		venue: "<b>Venue:</b> <ext>RUDN University</ext>, 6 Miklukho-Maklaya Str., Moscow, 117198, Russia",
 		languages: "<b>Working languages</b>: English, Russian (simultaneous translation)",
 		selection:
@@ -264,7 +264,7 @@ const ru: Dict = {
 		organized:
 			"Организаторы форума — <b>Российская академия наук</b>, <b>Международная академия астронавтики</b> и <b>РУДН</b>.",
 		format:
-			"Форум пройдёт в гибридном формате (очно и онлайн): онлайн-участие доступно для участников за пределами Московского региона. Участие в форуме бесплатное. Участвовать можно с докладом или без него. Для участия с докладом нужно пройти <submission>подачу тезисов</submission> и <registration>регистрацию</registration>. Для участия без доклада достаточно регистрации.",
+			"Форум пройдёт в гибридном формате (очно и онлайн). Участие в форуме бесплатное. Участвовать можно с докладом или без него. Для участия с докладом нужно пройти <submission>подачу тезисов</submission> и <registration>регистрацию</registration>. Для участия без доклада достаточно регистрации.",
 		venue: "<b>Место проведения:</b> <ext>РУДН</ext>, ул. Миклухо-Маклая, д. 6, Москва, 117198, Россия",
 		languages: "<b>Рабочие языки</b>: английский, русский (синхронный перевод)",
 		selection:

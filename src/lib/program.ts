@@ -661,12 +661,16 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 				affiliation: "Chief of Space Application Section, UNOOSA, Austria"
 			},
 			{
-				name: "Ekaterina Gosteva",
-				affiliation: "RUDN University, Russia"
+				name: "Svetlana Agasieva",
+				affiliation: "Deputy Director of Engineering Academy of RUDN University, Russia"
 			},
 			{
 				name: "Doreen Agaba",
 				affiliation: "Head of Space Office, Ministry of Science, Republic of Uganda"
+			},
+			{
+				name: "Adolf Mkenda Faustine",
+				affiliation: "Minister, Ministry of Education, Science and Technology, Tanzania"
 			},
 			{
 				name: "Tarun P. Singh",
@@ -724,6 +728,10 @@ export const roundtableMeetings: RoundtableMeeting[] = [
 			{
 				name: "Shufan Wu",
 				affiliation: "Dean of the School of Aeronautics and Astronautics, Shanghai Jiao Tong University, China"
+			},
+			{
+				name: "Preksedis M. Ndomba",
+				affiliation: "Rector of the Dar es Salaam Institute of Technology, Tanzania"
 			},
 			{
 				name: "Ketan Kotecha",
